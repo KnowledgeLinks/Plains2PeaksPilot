@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <h1>Plains2Peaks.org Pilot</h1>
+    <h3>Participating Institutions</h3>
+    <ul>
+        {% for page in pages %}
+        <li>{{ page.meta.title }} <strong>Status:</strong> <em>{{ page.meta.status|title }}</em></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
