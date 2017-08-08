@@ -1,15 +1,25 @@
 __author__ = "Jeremy Nelson"
 
-import csv, datetime, uuid, rdflib, requests
+import csv, datetime, uuid, rdflib, re, requests
 import bibcat.rml.processor as processor
 import bibcat.linkers.deduplicate as deduplicate
 
-BF = rdflib.Namespace('')
+RANGE_4YEARS = re.compile(r"(\d{4})-(\d{4})")
+RANGE_4to2YEARS = re.compile(r"(\d{4})-(\d{2})\b")
+YEAR = re.compile("(\d{4})")
+
+BF = rdflib.Namespace("http://id.loc.gov/ontologies/bibframe/")
 
 def add_dpl(**kwargs):
     graph = kwargs.get('graph')
     field = kwargs.get('field')
     row = kwargs.get('row')
+
+def history_colo_workflow():
+    hist_col_urls = dict()
+    for row in csv.DictReader(open("E:/2017/Plains2PeaksPilot/input/history-colorado-urls.csv")):
+        hist_col_urls[row.get("Object ID")] = {"item": row["Portal Link"],
+                                               "cover": row["Image Link"]}
     
 def marmot_workflow(marmot_url):
 	start = datetime.datetime.utcnow()
@@ -41,11 +51,8 @@ def marmot_workflow(marmot_url):
 
  
 def setup_hist_co():
-    global csv2bf, hist_co_pilot, hist_rows,  p2p_deduplicator
+    global csv2bf, hist_co_pilot, p2p_deduplicator
     hist_co_pilot = csv.DictReader(open("E:/2017/Plains2PeaksPilot/input/history-colorado-2017-07-11.csv"))
-    hist_rows = []
-    while (len(hist_rows) < 100):
-        hist_rows.append(next(hist_co_pilot))
     csv2bf = processor.CSVRowProcessor(rml_rules=['bibcat-base.ttl',
         'E:/2017/dpla-service-hub/profiles/history-colo-csv.ttl'])
     p2p_deduplicator = deduplicate.Deduplicator(
@@ -91,7 +98,7 @@ def temp_marmot(url):
         bf_graph.add((title, rdflib.RDFS.label,
             title_label))
         bf_graph.add((title, BF.mainTitle, title_label)) 
-            bf_graph.add((instance_uri, BF.title, title))
+        bf_graph.add((instance_uri, BF.title, title))
         for row in doc.get('place', []):
             place = rdflib.BNode()
             bf_graph.add((place, rdflib.RDF.type, BF.Place))
@@ -131,12 +138,12 @@ def temp_marmot(url):
             manufacture = rdflib.BNode()
             bf_graph.add((manufacture, rdflib.RDF.type, BF.Manufacture))
             bf_graph.add((instance_uri, BF.provisionActivity, manufacture))
-             agent = rdflib.BNode()
+            agent = rdflib.BNode()
             bf_graph.add((manufacture, BF.agent, agent))
             bf_graph.add((agent, rdflib.RDF.type, BF.Agent))
             bf_graph.add((agent, rdflib.RDF.value,
                        rdflib.Literal(row)))
-         carrier_type = rdflib.BNode()
+        carrier_type = rdflib.BNode()
         bf_graph.add((carrier_type, rdflib.RDF.type, BF.Carrier))
         bf_graph.add((instance_uri, BF.carrier, carrier_type))
         bf_graph.add((carrier_type, rdflib.RDF.value,
@@ -155,3 +162,53 @@ def temp_marmot(url):
             bf_graph.add((work_uri, BF.partOf, collection))
     return bf_graph
 
+class DateGenerator(object):
+    """Class dates a raw string and attempts to generate RDF associations"""
+
+    def __init__(self, **kwargs):
+        self.graph = kwargs.get("graph")
+        self.work = self.graph.value(predicate=rdflib.RDF.type,
+                                     object=BF.Work)
+        if self.work is None:
+            raise ValueError("Work missing from graph")
+
+
+    def add_range(self, start, end):
+        for date_row in range(int(start), int(end)+1):
+            self.add_year(date_row)
+    
+    def add_4_years(self, result):
+        self.graph.add((
+            self.work,
+            BF.temporalCoverage,
+            rdflib.Literal(result.string)))
+        start, end = result.groups()
+        self.add_range(start, end)
+
+    def add_4_to_2_years(self, result):
+        start_year, stub_year = result.groups()
+        end_year = "{}{}".format(start_year[0:2], stub_year)
+        self.graph.add((self.work, 
+                        BF.temporalCoverage, 
+                        rdflib.Literal("{} to {}".format(start_year, end_year))))
+        self.add_range(start_year, end_year)
+
+    def add_year(self, year):
+        bnode = rdflib.BNode()
+        self.graph.add((self.work, BF.subject, bnode))
+        self.graph.add((bnode, rdflib.RDF.type, BF.Temporal))
+        self.graph.add((bnode, rdflib.RDF.value, rdflib.Literal(year)))
+
+    def run(self, raw_date):
+        if len(raw_date) == 4 and YEAR.search(raw_date):
+            self.add_year(raw_date)
+        if "," in raw_date:
+            for comma_row in raw_date.split(","):
+                self.run(comma_row.strip())
+        else:
+            result = RANGE_4YEARS.search(raw_date)
+            if result is not None:
+                self.add_4_years(result)
+            result = RANGE_4to2YEARS.search(raw_date)
+            if result is not None:
+                self.add_4_to_2_years(result)
