@@ -1,25 +1,142 @@
 __author__ = "Jeremy Nelson"
 
-import csv, datetime, uuid, rdflib, re, requests
+import csv
+import datetime
+import re
+import sys
+import uuid
+import bibcat
+import requests
+import rdflib 
 import bibcat.rml.processor as processor
 import bibcat.linkers.deduplicate as deduplicate
 
+sys.path.append("E:/2017/dpla-service-hub")
+import date_generator
+
+BASE_URL = "https://plains2peaks.org/"
 RANGE_4YEARS = re.compile(r"(\d{4})-(\d{4})")
 RANGE_4to2YEARS = re.compile(r"(\d{4})-(\d{2})\b")
 YEAR = re.compile("(\d{4})")
 
 BF = rdflib.Namespace("http://id.loc.gov/ontologies/bibframe/")
 
+RIGHTS_STATEMENTS = {
+    'COPYRIGHT NOT EVALUATED': rdflib.URIRef("http://rightsstatements.org/vocab/CNE/1.0/"),
+    'IN COPYRIGHT-EDUCATIONAL USE PERMITTED': rdflib.URIRef('http://rightsstatements.org/vocab/InC-EDU/1.0/'),
+    'NO COPYRIGHT-UNITED STATES': rdflib.URIRef('http://rightsstatements.org/vocab/NoC-US/1.0/'),
+    'NO KNOWN COPYRIGHT': rdflib.URIRef('http://rightsstatements.org/vocab/NKC/1.0/')
+}
+TRIPLESTORE_URL = 'http://localhost:9999/blazegraph/sparql'
+
 def add_dpl(**kwargs):
     graph = kwargs.get('graph')
     field = kwargs.get('field')
     row = kwargs.get('row')
+
+def hist_co_collections(row, bf_graph):
+    raw_collection = row.get("Collection Name")
+    collection_iri = rdflib.URIRef("{}{}".format(BASE_URL, 
+        bibcat.slugify(raw_collection)))
+    work = bf_graph.value(predicate=rdflib.RDF.type,
+        object=BF.Work)
+    bf_graph.add((work, BF.partOf, collection_iri))
+    bf_graph.add((collection_iri, rdflib.RDF.type, BF.Collection))
+    bf_graph.add((collection_iri, rdflib.RDFS.label, rdflib.Literal(raw_collection)))
+    
+
+def hist_co_subjects_process(row, bf_graph):
+    work = bf_graph.value(predicate=rdflib.RDF.type,
+        object=BF.Work)
+    raw_subject_terms = row.get("Subject.Term")
+    subject_terms = [r.strip() for r in raw_subject_terms.split(",")]
+    for term in subject_terms:
+        if "collection" in term.lower():
+            collection_iri = bf_graph.value(subject=work,
+                predicate=BF.partOf)
+            temp_iri = rdflib.URIRef("{}{}".format(BASE_URL, bibcat.slugify(term)))
+            if collection_iri == temp_iri:
+                continue
+        topic_bnode = rdflib.BNode()
+        bf_graph.add((work, BF.subject, topic_bnode))
+        bf_graph.add((topic_bnode, rdflib.RDF.type, BF.Topic))
+        bf_graph.add((topic_bnode, rdflib.RDF.value, rdflib.Literal(term)))
+    raw_local_terms = row.get("Locale.Term")
+    for term in [r.strip() for r in raw_local_terms.split(",")]:
+        if len(term) < 1:
+            continue
+        local_bnode = rdflib.BNode()
+        bf_graph.add((work, BF.place, local_bnode))
+        bf_graph.add((local_bnode, rdflib.RDF.type, BF.Place))
+        bf_graph.add((local_bnode, rdflib.RDF.value, rdflib.Literal(term)))
+    raw_used_terms = row.get("Used.Term")
+    for term in [r.strip() for r in raw_used_terms.split(",")]:
+        related_bnode = rdflib.BNode()
+        bf_graph.add((work, BF.relatedTo, related_bnode))
+        bf_graph.add((related_bnode, rdflib.RDF.type, rdflib.RDFS.Resource))
+        bf_graph.add((related_bnode, rdflib.RDF.value, rdflib.Literal(term)))   
+
+
 
 def history_colo_workflow():
     hist_col_urls = dict()
     for row in csv.DictReader(open("E:/2017/Plains2PeaksPilot/input/history-colorado-urls.csv")):
         hist_col_urls[row.get("Object ID")] = {"item": row["Portal Link"],
                                                "cover": row["Image Link"]}
+    history_colo_graph = None
+    start_workflow = datetime.datetime.utcnow()
+    output_filename = "E:/2017/Plains2PeaksPilot/output/history-colorado.xml"
+    print("Starting History Colorado Workflow at {}".format(start_workflow.isoformat()))
+    for i,row in enumerate(hist_co_pilot):
+        try:
+            item_iri = hist_col_urls.get(row.get("Object ID")).get("item")
+            csv2bf.run(row=row,
+                instance_iri="{}{}".format(BASE_URL, uuid.uuid1()),
+                item_iri=item_iri)
+            hist_co_collections(row, csv2bf.output)
+            hist_co_subjects_process(row, csv2bf.output)
+            p2p_date_generator = date_generator.DateGenerator(graph=csv2bf.output)
+            p2p_date_generator.run(row.get("Dates.Date Range"))
+            rights_stmt = row.get("DPLA Rights").upper()
+            if rights_stmt in RIGHTS_STATEMENTS:
+                csv2bf.output.add((rdflib.URIRef(item_iri), 
+                                   BF.AccessPolicy, 
+                                   RIGHTS_STATEMENTS.get(rights_stmt)))
+            p2p_deduplicator.run(csv2bf.output, [BF.Agent, 
+                                                 BF.Person, 
+                                                 BF.Organization, 
+                                                 BF.Place,
+                                                 BF.Topic])
+            # Ingest into triplestore
+            #result = requests.post(TRIPLESTORE_URL,
+            #    data=csv2bf.output.serialize(),
+            #    headers={"Content-Type": "application/rdf+xml"})
+        except:
+            print("E{:,} ".format(i), end="")
+            print(sys.exc_info()[1], end=" ")
+            continue
+
+        if not i%10 and i > 0:
+            print(".", end="")
+        if not i%100:
+            print("{:,}".format(i), end="")
+        if not i%250 and i > 0:
+            with open(output_filename, "wb+") as fo:
+                fo.write(history_colo_graph.serialize())
+        if history_colo_graph is None:
+            history_colo_graph = csv2bf.output
+        else:
+            history_colo_graph += csv2bf.output
+    end_workflow = datetime.datetime.utcnow()
+    with open(output_filename, "wb+") as fo:
+        fo.write(history_colo_graph.serialize())
+    print("Finished History Colorado at {}, total time {} minutes for {:,} objects".format(
+        end_workflow.isoformat(),
+        (end_workflow-start_workflow).seconds / 60.0,
+        i))
+    
+    
+    
     
 def marmot_workflow(marmot_url):
 	start = datetime.datetime.utcnow()
@@ -57,7 +174,7 @@ def setup_hist_co():
         'E:/2017/dpla-service-hub/profiles/history-colo-csv.ttl'])
     p2p_deduplicator = deduplicate.Deduplicator(
         triplestore_url='http://localhost:9999/blazegraph/sparql',
-        base_url='https://plains2peaks.org/')
+        base_url=BASE_URL)
 
 def temp_marmot(url):
     result = requests.get(url)
