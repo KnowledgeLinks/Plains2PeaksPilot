@@ -10,6 +10,8 @@ import requests
 import rdflib 
 import bibcat.rml.processor as processor
 import bibcat.linkers.deduplicate as deduplicate
+import bibcat.linkers.geonames as geonames
+import bibcat.ingesters.oai_pmh as ingesters
 
 sys.path.append("E:/2017/dpla-service-hub")
 import date_generator
@@ -34,7 +36,7 @@ def add_dpl(**kwargs):
     field = kwargs.get('field')
     row = kwargs.get('row')
 
-def hist_co_collections(row, bf_graph):
+def __hist_co_collections__(row, bf_graph):
     raw_collection = row.get("Collection Name")
     collection_iri = rdflib.URIRef("{}{}".format(BASE_URL, 
         bibcat.slugify(raw_collection)))
@@ -44,8 +46,15 @@ def hist_co_collections(row, bf_graph):
     bf_graph.add((collection_iri, rdflib.RDF.type, BF.Collection))
     bf_graph.add((collection_iri, rdflib.RDFS.label, rdflib.Literal(raw_collection)))
     
+def __hist_co_cover__(instance_url, cover_art_url, bf_graph):
+    instance_iri = rdflib.URIRef(instance_url)
+    cover_art_iri = rdflib.URIRef(cover_art_url)
+    cover_art_bnode = rdflib.BNode()
+    bf_graph.add((instance_iri, BF.coverArt, cover_art_bnode))
+    bf_graph.add((cover_art_bnode, rdflib.RDF.type, BF.CoverArt))
+    bf_graph.add((cover_art_bnode, rdflib.RDF.value, cover_art_iri))
 
-def hist_co_subjects_process(row, bf_graph):
+def __hist_co_subjects_process__(row, bf_graph):
     work = bf_graph.value(predicate=rdflib.RDF.type,
         object=BF.Work)
     raw_subject_terms = row.get("Subject.Term")
@@ -76,38 +85,40 @@ def hist_co_subjects_process(row, bf_graph):
         bf_graph.add((related_bnode, rdflib.RDF.type, rdflib.RDFS.Resource))
         bf_graph.add((related_bnode, rdflib.RDF.value, rdflib.Literal(term)))   
 
+def __process_hist_colo_row__(row):
+    item_iri = hist_col_urls.get(row.get("Object ID")).get("item")
+    instance_url = "{}{}".format(BASE_URL, uuid.uuid1())
+    cover_art_url = hist_col_urls.get(row.get("Object ID")).get('cover')
+    csv2bf.run(row=row,
+        instance_iri=instance_url,
+        item_iri=item_iri)
+    __hist_co_cover__(instance_url, cover_art_url, csv2bf.output)
+    __hist_co_collections__(row, csv2bf.output)
+    __hist_co_subjects_process__(row, csv2bf.output)
+      
+    p2p_date_generator = date_generator.DateGenerator(graph=csv2bf.output)
+    p2p_date_generator.run(row.get("Dates.Date Range"))
+    rights_stmt = row.get("DPLA Rights").upper()
+    if rights_stmt in RIGHTS_STATEMENTS:
+        csv2bf.output.add((rdflib.URIRef(item_iri), 
+                           BF.AccessPolicy, 
+                           RIGHTS_STATEMENTS.get(rights_stmt)))
+    p2p_deduplicator.run(csv2bf.output, [BF.Agent, 
+                                         BF.Person, 
+                                         BF.Organization, 
+                                         BF.Topic])
+    return csv2bf.output
+
 
 
 def history_colo_workflow():
-    hist_col_urls = dict()
-    for row in csv.DictReader(open("E:/2017/Plains2PeaksPilot/input/history-colorado-urls.csv")):
-        hist_col_urls[row.get("Object ID")] = {"item": row["Portal Link"],
-                                               "cover": row["Image Link"]}
     history_colo_graph = None
     start_workflow = datetime.datetime.utcnow()
     output_filename = "E:/2017/Plains2PeaksPilot/output/history-colorado.xml"
     print("Starting History Colorado Workflow at {}".format(start_workflow.isoformat()))
     for i,row in enumerate(hist_co_pilot):
         try:
-            item_iri = hist_col_urls.get(row.get("Object ID")).get("item")
-            csv2bf.run(row=row,
-                instance_iri="{}{}".format(BASE_URL, uuid.uuid1()),
-                item_iri=item_iri)
-            hist_co_collections(row, csv2bf.output)
-            hist_co_subjects_process(row, csv2bf.output)
-            p2p_date_generator = date_generator.DateGenerator(graph=csv2bf.output)
-            p2p_date_generator.run(row.get("Dates.Date Range"))
-            rights_stmt = row.get("DPLA Rights").upper()
-            if rights_stmt in RIGHTS_STATEMENTS:
-                csv2bf.output.add((rdflib.URIRef(item_iri), 
-                                   BF.AccessPolicy, 
-                                   RIGHTS_STATEMENTS.get(rights_stmt)))
-            p2p_deduplicator.run(csv2bf.output, [BF.Agent, 
-                                                 BF.Person, 
-                                                 BF.Organization, 
-                                                 BF.Place,
-                                                 BF.Topic])
-            # Ingest into triplestore
+            row_graph = __process_hist_colo_row__(row)
             #result = requests.post(TRIPLESTORE_URL,
             #    data=csv2bf.output.serialize(),
             #    headers={"Content-Type": "application/rdf+xml"})
@@ -124,9 +135,9 @@ def history_colo_workflow():
             with open(output_filename, "wb+") as fo:
                 fo.write(history_colo_graph.serialize())
         if history_colo_graph is None:
-            history_colo_graph = csv2bf.output
+            history_colo_graph = row_graph 
         else:
-            history_colo_graph += csv2bf.output
+            history_colo_graph += row_graph
     end_workflow = datetime.datetime.utcnow()
     with open(output_filename, "wb+") as fo:
         fo.write(history_colo_graph.serialize())
@@ -134,8 +145,6 @@ def history_colo_workflow():
         end_workflow.isoformat(),
         (end_workflow-start_workflow).seconds / 60.0,
         i))
-    
-    
     
     
 def marmot_workflow(marmot_url):
@@ -164,17 +173,100 @@ def marmot_workflow(marmot_url):
 		end.isoformat(),
 		(end-start).seconds / 60.0))
 
+def __univ_wym_covers__(bf_graph):
+    for item_iri in bf_graph.subjects(predicate=rdflib.RDF.type,
+        object=BF.Item):
+        item_url = str(item_iri)
+        cover_tn_url = "{}datastream/TN".format(item_url)
+        cover_exists = requests.get(cover_tn_url)
+        if cover_exists.status_code < 400:
+            instance_iri = bf_graph.value(subject=item_iri, predicate=BF.itemOf)
+            cover_bnode = rdflib.BNode()
+            bf_graph.add((instance_iri, BF.coverArt, cover_bnode))
+            bf_graph.add((cover_bnode, rdflib.RDF.type, BF.CoverArt))
+            bf_graph.add((cover_bnode, rdflib.RDF.value, rdflib.URIRef(cover_tn_url)))
+   
+def __univ_wym_periodicals__(pid):
+    pid_url ="https://uwdigital.uwyo.edu/islandora/object/{pid}/".format(
+        pid=pid)
+    mods_url = "{}datastream/MODS".format(pid_url)
+    mods_result = requests.get(mods_url)
+    mods_ingester.run(mods_result.text)
+    bf_dedup.run(mods_ingester.output, 
+        [BF.Person, 
+         BF.Agent,
+         BF.Topic,
+         BF.Organization])
+    return mods_ingester.output
 
+def univ_wym_workflow():
+    start = datetime.datetime.utcnow()
+    out_file = "E:/2017/Plains2PeaksPilot/output/university-wyoming.ttl"
+    print("Starting University of Wyoming Workflow using Islandora OAI-PMH at {}".format(
+        start.isoformat()))
+    univ_wym_graph = None
+    for collection_pid in wym_collections:
+        if univ_wym_graph is None:
+            start_size = 0
+        else:
+            start_size = len(univ_wym_graph) 
+        i_harvester.harvest(setSpec=collection_pid, dedup=bf_dedup)
+        __univ_wym_covers__(i_harvester.repo_graph)
+        if univ_wym_graph is None:
+            univ_wym_graph = i_harvester.repo_graph
+        else:
+            univ_wym_graph += i_harvester.output
+        print("=====\nFinished {} number of triples {}".format(collection_pid, 
+            len(univ_wym_graph) - start_size), end="")
+        return univ_wym_graph
+        with open(out_file, 'wb+') as fo:
+            fo.write(univ_wym_graph.serialize(format='turtle'))
+    for periodical_pid in wym_periodicals:
+        univ_wym_graph += __univ_wym_periodicals__(periodical_pid)
+    with open(out_file, "wb+") as fo:
+        fo.write(univ_wym_graph.serialize(format='turtle'))
+    end = datetime.datetime.utcnow()
+    print("""Finished University of Wyoming pilot at {}
+Total number of triples: {} 
+             Total time: {} minutes""".format(end.isoformat(),
+        len(univ_wym_graph),
+        (end-start).seconds / 60.0)) 
 
  
 def setup_hist_co():
-    global csv2bf, hist_co_pilot, p2p_deduplicator
+    global csv2bf, hist_co_pilot, p2p_deduplicator, hist_col_urls
     hist_co_pilot = csv.DictReader(open("E:/2017/Plains2PeaksPilot/input/history-colorado-2017-07-11.csv"))
     csv2bf = processor.CSVRowProcessor(rml_rules=['bibcat-base.ttl',
         'E:/2017/dpla-service-hub/profiles/history-colo-csv.ttl'])
     p2p_deduplicator = deduplicate.Deduplicator(
         triplestore_url='http://localhost:9999/blazegraph/sparql',
         base_url=BASE_URL)
+    hist_col_urls = dict()
+    for row in csv.DictReader(open("E:/2017/Plains2PeaksPilot/input/history-colorado-urls.csv")):
+        hist_col_urls[row.get("Object ID")] = {"item": row["Portal Link"],
+                                               "cover": row["Image Link"]}
+def setup_univ_wym():
+    global wym_collections, wym_periodicals, i_harvester, bf_dedup, mods_ingester
+#    wym_collections = ['wyu_12113', 'wyu_5359', 'wyu_5394', 'wyu_2807', 'wyu_161514']
+    wym_collections = ['wyu_5359']
+    wym_periodicals = [
+        'wyu:2807', 
+        'wyu:161514',
+        'wyu:12541',
+        'wyu:168429',
+        'wyu:169935'
+    ]
+    bf_dedup = deduplicate.Deduplicator(triplestore_url=TRIPLESTORE_URL,
+                                        classes=[BF.Agent, BF.Person, BF.Organization, BF.Topic],
+                                        base_url='https://plains2peaks.org/')
+    mods_ingester = processor.XMLProcessor(
+        rml_rules = ['bibcat-base.ttl', 'bibcat-mods-to-bf.ttl'],
+        triplestore_url=TRIPLESTORE_URL) 
+    i_harvester = ingesters.IslandoraIngester(
+            triplestore_url=TRIPLESTORE_URL,
+            base_url='https://plains2peaks.org/',
+            repository='https://uwdigital.uwyo.edu/')
+
 
 def temp_marmot(url):
     result = requests.get(url)
