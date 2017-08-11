@@ -2,9 +2,11 @@ __author__ = "Jeremy Nelson"
 
 import csv
 import datetime
+import logging
 import os
 import re
 import sys
+import time
 import uuid
 import bibcat
 import requests
@@ -14,8 +16,17 @@ import bibcat.linkers.deduplicate as deduplicate
 import bibcat.linkers.geonames as geonames
 import bibcat.ingesters.oai_pmh as ingesters
 
-sys.path.append("E:/2017/dpla-service-hub")
+import lxml.etree
+
+if sys.platform.startswith("win"):
+    sys.path.append("E:/2017/dpla-service-hub")
+    error_log  = "E:/2017/Plains2PeaksPilot/errors/error-{}.log".format(time.monotonic())
+else:
+    sys.path.append("/Users/jeremynelson/2017/dpla-server-hub")
+    error_log = "/Users/jeremynelson/2017/Plains2PeaksPilot/errors/error-{}.log".format(time.monotonic())
 import date_generator
+
+logging.basicConfig(filename=error_log, level=logging.WARNING)
 
 BASE_URL = "https://plains2peaks.org/"
 RANGE_4YEARS = re.compile(r"(\d{4})-(\d{4})")
@@ -126,6 +137,10 @@ def history_colo_workflow():
         except:
             print("E{:,} ".format(i), end="")
             print(sys.exc_info()[1], end=" ")
+            logging.error("{} History Colorado - record {}, {}".format(
+                time.monotonic(),
+                i,
+                sys.exc_info()[1]))
             continue
 
         if not i%10 and i > 0:
@@ -233,22 +248,105 @@ Total number of triples: {}
         len(univ_wy_graph),
         (end-start).seconds / 60.0)) 
 
+def __wy_state_collections__(raw_name, bf_graph, existing_collections):
+    if raw_name in existing_collections:
+        return existing_collections.get('raw_name')
+    collection_iri = rdflib.URIRef("{}wy-state/{}".format(
+        BASE_URL, bibcat.slugify(raw_name)))
+    first_type = bf_graph.value(subject=collection_iri,
+        predicate=rdflib.RDF.type)
+    if first_type is None:
+        bf_graph.add((collection_iri, rdflib.RDF.type, BF.Collection))
+        bf_graph.add((collection_iri, rdflib.RDFS.label, rdflib.Literal(raw_name)))
+    existing_collections[raw_name] = collection_iri
+    return collection_iri
+    
+    
+
+
 def wy_state_workflow(**kwargs):
     source_dir = kwargs.get('source')
     out_file = kwargs.get('out_file')
-    ptfs_rules = kwargs.get('ptfs_rml')
+    wy_state_rule = kwargs.get('wy_rule')
     def __setup__():
+        global ptfs_processor, p2p_deduplicator
         ptfs_processor = processor.XMLProcessor(
             triplestore_url=TRIPLESTORE_URL,
             base_url=BASE_URL,
-            rml_rules = ['bibat-base.ttl',
-                         ptfs_rules])
+            rml_rules = ['bibcat-base.ttl',
+                         'bibcat-ptfs-to-bf.ttl',
+                         wy_state_rule])
+        p2p_deduplicator = deduplicate.Deduplicator(
+            triplestore_url=TRIPLESTORE_URL,
+            base_url=BASE_URL)
     __setup__()     
     start = datetime.datetime.utcnow()
     print("Starting Wyoming State Library at {}".format(start.isoformat()))
-    wy_state_graph = None
+    wy_state_graph = rdflib.Graph()
+    wy_state_graph.namespace_manager.bind("bf", BF)
+    collections = {}
+    counter = 0
     for root, dirs, files in os.walk(source_dir):
-        pass
+        root_name = root.split(source_dir)[-1]
+        if len(root_name) < 1:
+            parent_collection = None
+        else:
+            if root_name.startswith("\\"):
+                root_name = root_name[1:]
+            if not root_name in collections:
+                parent_collection = __wy_state_collections__(root_name,
+                    wy_state_graph,
+                    collections)
+            else:
+                parent_collection = collections.get(root_name)
+        #print("\nStarting {}".format(parent_collection or root))
+        for directory in dirs:
+            collection_iri = collections.get(directory)
+            if collection_iri is None:
+                # Check or Create a collection IRI if doesn't exist
+                collection_iri = __wy_state_collections__(directory, wy_state_graph, collections)
+            if parent_collection is not None:
+                wy_state_graph.add((collection_iri, BF.partOf, parent_collection))
+        for i,file_name in enumerate(files):
+            xml_path = os.path.join(root, file_name)
+            counter += 1
+            if os.path.exists(xml_path):
+                instance_uri = "{}{}".format(BASE_URL, uuid.uuid1())
+                with open(xml_path) as fo:
+                    raw_xml = fo.read()
+                xml_record = lxml.etree.XML(raw_xml.encode())
+                try:
+                    ptfs_processor.run(xml_record, 
+                        instance_iri=instance_uri)
+                except AssertionError:
+                    print("E{}".format(counter), end="")
+                    logging.error("{} Wyoming State Library - file {}, error={}".format(
+                        time.monotonic(),
+                        xml_path,
+                        "Assertion Error"))
+                    continue
+                p2p_deduplicator.run(ptfs_processor.output,
+                                     [BF.Agent, 
+                                      BF.Person, 
+                                      BF.Organization, 
+                                      BF.Topic])
+                instance_iri = rdflib.URIRef(instance_uri)
+                work_iri = ptfs_processor.output.value(subject=instance_iri,
+                    predicate=BF.instanceOf)
+                ptfs_processor.output.add((work_iri, BF.partOf, parent_collection))
+                wy_state_graph += ptfs_processor.output
+                if not counter%10 and counter >0:
+                    print(".", end="")
+                if not counter%100:
+                    print(counter, end="")
+    with open(out_file, 'wb+') as fo:
+        fo.write(wy_state_graph.serialize(format='turtle'))
+    end = datetime.datetime.utcnow()
+    print("Finished at {}, took {} minutes for {} total PTFS XML records" .format(
+        end.isoformat(),
+        (end-start).seconds / 60.0,
+        counter))
+
     
     
 

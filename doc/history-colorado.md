@@ -1,7 +1,7 @@
 title: History Colorado
 published: 2017-08-08
-status: started     
-bf_instances: 0
-bf_items: 0
+status: Completed     
+bf_instances: 7292 
+bf_items: 7292
 
 ## Open Issues

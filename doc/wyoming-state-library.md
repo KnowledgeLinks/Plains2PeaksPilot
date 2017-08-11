@@ -4,10 +4,12 @@ status: started
 bf_instances: 0
 bf_items: 0
 
-## Open Issues
+## Close Issues
 
-1.   Use directory structure within the export as collections?
+1.  Use directory structure within the export as collections?
+    Yes, using parent directory as a BF Collection
 
 1.   Rightsstatement.org URI
+    Yes, use ["Copyright not evaluated"](http://rightsstatements.org/vocab/CNE/1.0/)
 
 1.   BF Item URI in XML?
