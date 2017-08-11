@@ -2,6 +2,7 @@ __author__ = "Jeremy Nelson"
 
 import csv
 import datetime
+import os
 import re
 import sys
 import uuid
@@ -173,7 +174,7 @@ def marmot_workflow(marmot_url):
 		end.isoformat(),
 		(end-start).seconds / 60.0))
 
-def __univ_wym_covers__(bf_graph):
+def __univ_wy_covers__(bf_graph):
     for item_iri in bf_graph.subjects(predicate=rdflib.RDF.type,
         object=BF.Item):
         item_url = str(item_iri)
@@ -186,7 +187,7 @@ def __univ_wym_covers__(bf_graph):
             bf_graph.add((cover_bnode, rdflib.RDF.type, BF.CoverArt))
             bf_graph.add((cover_bnode, rdflib.RDF.value, rdflib.URIRef(cover_tn_url)))
    
-def __univ_wym_periodicals__(pid):
+def __univ_wy_periodicals__(pid):
     pid_url ="https://uwdigital.uwyo.edu/islandora/object/{pid}/".format(
         pid=pid)
     mods_url = "{}datastream/MODS".format(pid_url)
@@ -199,38 +200,57 @@ def __univ_wym_periodicals__(pid):
          BF.Organization])
     return mods_ingester.output
 
-def univ_wym_workflow():
+def univ_wy_workflow():
     start = datetime.datetime.utcnow()
     out_file = "E:/2017/Plains2PeaksPilot/output/university-wyoming.ttl"
     print("Starting University of Wyoming Workflow using Islandora OAI-PMH at {}".format(
         start.isoformat()))
-    univ_wym_graph = None
-    for collection_pid in wym_collections:
-        if univ_wym_graph is None:
+    univ_wy_graph = None
+    for collection_pid in wy_collections:
+        if univ_wy_graph is None:
             start_size = 0
         else:
-            start_size = len(univ_wym_graph) 
+            start_size = len(univ_wy_graph) 
         i_harvester.harvest(setSpec=collection_pid, dedup=bf_dedup)
-        __univ_wym_covers__(i_harvester.repo_graph)
-        if univ_wym_graph is None:
-            univ_wym_graph = i_harvester.repo_graph
+        __univ_wy_covers__(i_harvester.repo_graph)
+        if univ_wy_graph is None:
+            univ_wy_graph = i_harvester.repo_graph
         else:
-            univ_wym_graph += i_harvester.output
+            univ_wy_graph += i_harvester.output
         print("=====\nFinished {} number of triples {}".format(collection_pid, 
-            len(univ_wym_graph) - start_size), end="")
-        return univ_wym_graph
+            len(univ_wy_graph) - start_size), end="")
+        return univ_wy_graph
         with open(out_file, 'wb+') as fo:
-            fo.write(univ_wym_graph.serialize(format='turtle'))
-    for periodical_pid in wym_periodicals:
-        univ_wym_graph += __univ_wym_periodicals__(periodical_pid)
+            fo.write(univ_wy_graph.serialize(format='turtle'))
+    for periodical_pid in wy_periodicals:
+        univ_wy_graph += __univ_wy_periodicals__(periodical_pid)
     with open(out_file, "wb+") as fo:
-        fo.write(univ_wym_graph.serialize(format='turtle'))
+        fo.write(univ_wy_graph.serialize(format='turtle'))
     end = datetime.datetime.utcnow()
     print("""Finished University of Wyoming pilot at {}
 Total number of triples: {} 
              Total time: {} minutes""".format(end.isoformat(),
-        len(univ_wym_graph),
+        len(univ_wy_graph),
         (end-start).seconds / 60.0)) 
+
+def wy_state_workflow(**kwargs):
+    source_dir = kwargs.get('source')
+    out_file = kwargs.get('out_file')
+    ptfs_rules = kwargs.get('ptfs_rml')
+    def __setup__():
+        ptfs_processor = processor.XMLProcessor(
+            triplestore_url=TRIPLESTORE_URL,
+            base_url=BASE_URL,
+            rml_rules = ['bibat-base.ttl',
+                         ptfs_rules])
+    __setup__()     
+    start = datetime.datetime.utcnow()
+    print("Starting Wyoming State Library at {}".format(start.isoformat()))
+    wy_state_graph = None
+    for root, dirs, files in os.walk(source_dir):
+        pass
+    
+    
 
  
 def setup_hist_co():
@@ -245,11 +265,11 @@ def setup_hist_co():
     for row in csv.DictReader(open("E:/2017/Plains2PeaksPilot/input/history-colorado-urls.csv")):
         hist_col_urls[row.get("Object ID")] = {"item": row["Portal Link"],
                                                "cover": row["Image Link"]}
-def setup_univ_wym():
-    global wym_collections, wym_periodicals, i_harvester, bf_dedup, mods_ingester
-#    wym_collections = ['wyu_12113', 'wyu_5359', 'wyu_5394', 'wyu_2807', 'wyu_161514']
-    wym_collections = ['wyu_5359']
-    wym_periodicals = [
+def setup_univ_wy():
+    global wy_collections, wy_periodicals, i_harvester, bf_dedup, mods_ingester
+#    wy_collections = ['wyu_12113', 'wyu_5359', 'wyu_5394', 'wyu_2807', 'wyu_161514']
+    wy_collections = ['wyu_5359']
+    wy_periodicals = [
         'wyu:2807', 
         'wyu:161514',
         'wyu:12541',
@@ -267,6 +287,7 @@ def setup_univ_wym():
             base_url='https://plains2peaks.org/',
             repository='https://uwdigital.uwyo.edu/')
 
+        
 
 def temp_marmot(url):
     result = requests.get(url)
