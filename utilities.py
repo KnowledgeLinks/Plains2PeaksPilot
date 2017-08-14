@@ -34,6 +34,7 @@ RANGE_4to2YEARS = re.compile(r"(\d{4})-(\d{2})\b")
 YEAR = re.compile("(\d{4})")
 
 BF = rdflib.Namespace("http://id.loc.gov/ontologies/bibframe/")
+SCHEMA = rdflib.Namespace("http://schema.org/")
 
 RIGHTS_STATEMENTS = {
     'COPYRIGHT NOT EVALUATED': rdflib.URIRef("http://rightsstatements.org/vocab/CNE/1.0/"),
@@ -163,31 +164,43 @@ def history_colo_workflow():
         i))
     
     
-def marmot_workflow(marmot_url):
-	start = datetime.datetime.utcnow()
-	print("Started Marmot Harvest at {}".format(start))
-	initial_graph, total_pages = temp_marmot(marmot_url)
-	for page in range(2, total_pages+1):
-		shard_url = "{}&page={}".format(marmot_url,
-						page)
-		if not page%5:
-			print(".", end="")
-		if not page%10:
-			with open("E:/2017/Plains2PeaksPilot/output/marmot-{}-{}.ttl".format(page-10, page), "wb+") as fo:
-				fo.write(initial_graph.serialize(format='turtle'))
-			initial_graph = None
-			print(page, end="")
-		if initial_graph is None:
-			initial_graph = temp_marmot(shard_url)[0]
-		else:
-			initial_graph += temp_marmot(shard_url)[0]
-	with open("E:/2017/Plains2PeaksPilot/output/marmot-{}-final.ttl".format(page),
-		  "wb+") as fo:
-		fo.write(initial_graph.serialize(format='turtle'))
-	end = datetime.datetime.utcnow()
-	print("Finished at {}, total time {} mins".format(
-		end.isoformat(),
-		(end-start).seconds / 60.0))
+def marmot_workflow(marmot_url, org_file):
+    global marmot_orgs, marmot_orgs_dict, org_filepath
+    org_filepath = org_file
+    marmot_orgs_dict = dict()
+    marmot_orgs = rdflib.Graph()
+    marmot_orgs.parse(org_file, format='turtle')
+    for library_iri in marmot_orgs.subjects(predicate=rdflib.RDF.type,
+        object=SCHEMA.Library):
+        label = marmot_orgs.value(subject=library_iri, predicate=rdflib.RDFS.label)
+        marmot_orgs_dict[str(label)] = library_iri
+    for library_iri in marmot_orgs.subjects(predicate=rdflib.RDF.type,
+        object=SCHEMA.Library):
+        label = marmot_orgs.value(subject=library_iri, predicate=rdflib.RDFS.label)
+        marmot_orgs_dict[str(label)] = library_iri
+    start = datetime.datetime.utcnow()
+    initial_graph, total_pages = temp_marmot(marmot_url)
+    print("Started Marmot Harvest at {}, total pages = {} ".format(start, total_pages))
+    for page in range(2, total_pages+1):
+        shard_url = "{}&page={}".format(marmot_url,
+                                        page)
+        print(".", end="")
+        if not page%5:
+            with open("E:/2017/Plains2PeaksPilot/output/marmot-{}-{}.ttl".format(page-10, page), "wb+") as fo:
+                fo.write(initial_graph.serialize(format='turtle'))
+                initial_graph = None
+                print(page, end="")
+        if initial_graph is None:
+            initial_graph = temp_marmot(shard_url)[0]
+        else:
+            initial_graph += temp_marmot(shard_url)[0]
+    with open("E:/2017/Plains2PeaksPilot/output/marmot-{}-final.ttl".format(page),
+               "wb+") as fo:
+       fo.write(initial_graph.serialize(format='turtle'))
+    end = datetime.datetime.utcnow()
+    print("Finished at {}, total time {} mins".format(
+            end.isoformat(),
+            (end-start).seconds / 60.0))
 
 def __univ_wy_covers__(bf_graph):
     for item_iri in bf_graph.subjects(predicate=rdflib.RDF.type,
@@ -385,12 +398,32 @@ def setup_univ_wy():
             base_url='https://plains2peaks.org/',
             repository='https://uwdigital.uwyo.edu/')
 
-        
+def __marmot_orgs__(label):
+    library_iri = marmot_orgs_dict.get(label)
+    if library_iri is None:
+        print("{} not found in marmot_orgs".format(label))
+        new_iri = rdflib.URIRef(input(">> new library iri"))
+        marmot_orgs_dict[str(label)] = new_iri
+        marmot_orgs.add((new_iri, rdflib.RDF.type, BF.Organization))
+        marmot_orgs.add((new_iri, rdflib.RDF.type, SCHEMA.Library))
+        marmot_orgs.add((new_iri, rdflib.RDFS.label, rdflib.Literal(label, lang="en")))
+        with open(org_filepath, "wb+") as fo:
+            fo.write(marmot_orgs.serialize(format='turtle'))
+        library_iri = new_iri
+    return library_iri 
 
 def temp_marmot(url):
     result = requests.get(url)
-    marmot_json = result.json()
+    if result.status_code < 400:
+        marmot_json = result.json()
+    else:
+        print("{} Error getting {}, sleeping 10 seconds".format(result.text,
+            url))
+        time.sleep(10)
+        result = requests.get(url)
+        marmot_json = result.json()
     docs = marmot_json['result']['docs']
+    total_pages = marmot_json['result']['numPages']
     bf_graph = rdflib.Graph()
     bf_graph.namespace_manager.bind("bf", BF)
     for doc in docs:
@@ -408,10 +441,8 @@ def temp_marmot(url):
         bf_graph.add((instance_uri, BF.coverArt, cover_art))
         bf_graph.add((cover_art, rdflib.RDF.value,
             rdflib.URIRef(doc.get('preview'))))
-        institution = rdflib.BNode()
-        bf_graph.add((institution, rdflib.RDF.type, BF.Organization))
-        bf_graph.add((institution, rdflib.RDFS.label,
-            rdflib.Literal(doc.get('dataProvider'))))
+        institution = __marmot_orgs__(doc.get('dataProvider'))
+        bf_graph.add((item_uri, BF.heldBy, institution))
         publication = rdflib.BNode()
         bf_graph.add((publication, rdflib.RDF.type, BF.Publication))
         bf_graph.add((publication, BF.agent, institution))
@@ -433,12 +464,7 @@ def temp_marmot(url):
             bf_graph.add((place, rdflib.RDF.value,
                                    rdflib.Literal(row)))
             bf_graph.add((work_uri, BF.subject, place))
- 
-        right = rdflib.BNode()
-        bf_graph.add((instance_uri, BF.usageAndAccessPolicy, right))
-        bf_graph.add((right, rdflib.RDF.type, BF.UsageAndAccessPolicy))
-        bf_graph.add((right, rdflib.RDF.value,
-                               rdflib.Literal(doc.get('rights'))))
+        bf_graph.add((item_uri, BF.usageAndAccessPolicy, rdflib.URIRef(doc.get('rights'))))
         for row in doc.get('subject', []):
             subject = rdflib.BNode()
             label = rdflib.Literal(row)
@@ -488,7 +514,7 @@ def temp_marmot(url):
             bf_graph.add((collection, rdflib.RDFS.label,
                        rdflib.Literal(row)))
             bf_graph.add((work_uri, BF.partOf, collection))
-    return bf_graph
+        return bf_graph, int(total_pages)
 
 class DateGenerator(object):
     """Class dates a raw string and attempts to generate RDF associations"""

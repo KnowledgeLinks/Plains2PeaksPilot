@@ -1,10 +1,10 @@
 title: Wyoming State Library
 published: 2017-08-04
 status: started
-bf_instances: 0
-bf_items: 0
+bf_instances: 2452
+bf_items: 2321
 
-## Close Issues
+## Closed Issues
 
 1.  Use directory structure within the export as collections?
     Yes, using parent directory as a BF Collection

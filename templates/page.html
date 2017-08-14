@@ -2,6 +2,10 @@
 
 {% block main %}
 <h1>{{ page.meta.title }}</h1>
+{% if page.meta.bf_items %}
+<h3>BF Items: {{ page.meta.bf_items }}</h3>
+<h3>BF Instances: {{ page.meta.bf_instances }}</h3>
+{% endif %}
 
 {{ page.html|safe }}
 
