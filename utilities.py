@@ -54,18 +54,18 @@ def add_dpl(**kwargs):
 def __cc_collection__(pid, bf_graph):
     def set_label(pid):
         mods_url = "{}{}/datastream/MODS".format(cc_repo_base, pid)
-        result = request.get(mods_url)
+        result = requests.get(mods_url)
         if result.status_code > 399:
             return
-        mods_xml = lxml.etree.parse(data=result.text)
+        mods_xml = lxml.etree.XML(result.text)
         title = mods_xml.xpath("mods:titleInfo/mods:title", 
             namespaces=cc_processor.xml_ns)
         if title is None:
             return
         bf_graph.add((collection_iri, 
             rdflib.RDFS.label, 
-            rdflib.Literal(title.text, lang="en"))) 
-    child_results = requsts.post(fedora_ri_search,
+            rdflib.Literal(title.text[0], lang="en"))) 
+    child_results = requests.post(fedora_ri_search,
         data={"type": "tuples",
               "lang": "sparql",
               "format": "json",
@@ -73,13 +73,13 @@ def __cc_collection__(pid, bf_graph):
 WHERE {{
       ?s <fedora-rels-ext:isMemberOfCollection> <info:fedora/{}> .
 }}""".format(pid)},
-    auth=fedora_auth)
+        auth=fedora_auth)
     if child_results.status_code > 399:
         raise ValueError("Could not add CC collection")
     collection_iri = rdflib.URIRef("{}{}".format(cc_repo_base, pid))
     bf_graph.add((collection_iri, rdflib.RDF.type, BF.Collection))
     set_label(pid)
-    for child_row in child_results.json():
+    for child_row in child_results.json().get("results"):
         child_pid = child_row.get("s").split("/")[-1]
         item_iri = __cc_pid__(child_pid, bf_graph)
         instance_iri = bf_graph.value(subject=item_iri,
@@ -103,10 +103,13 @@ def __cc_pid__(pid, bf_graph):
         bf_graph = cc_processor.output
     else:
         bf_graph += cc_processor.output
+    work_uri = bf_graph.value(subject=rdflib.URIRef(instance_iri),
+            predicate=BF.instanceOf)
     rels_url = "{}{}/datastream/RELS-EXT".format(cc_repo_base, pid)
     rels_result = requests.get(rels_url)
     rels_processor.run(rels_result.text,
-        instance_iri=instance_iri)
+        instance_iri=instance_iri,
+        work_iri=str(work_uri))
     bf_graph += rels_processor.output
     return item_iri
 
