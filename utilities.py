@@ -37,21 +37,29 @@ YEAR = re.compile("(\d{4})")
 BF = rdflib.Namespace("http://id.loc.gov/ontologies/bibframe/")
 RELATORS = rdflib.Namespace("http://id.loc.gov/vocabulary/relators/")
 SCHEMA = rdflib.Namespace("http://schema.org/")
+SKOS = rdflib.Namespace("http://www.w3.org/2004/02/skos/core#")
 
 RIGHTS_STATEMENTS = {
     'COPYRIGHT NOT EVALUATED': rdflib.URIRef("http://rightsstatements.org/vocab/CNE/1.0/"),
+    'IN COPYRIGHT': rdflib.URIRef("http://rightsstatements.org/vocab/InC/1.0/"),
     'IN COPYRIGHT-EDUCATIONAL USE PERMITTED': rdflib.URIRef('http://rightsstatements.org/vocab/InC-EDU/1.0/'),
     'NO COPYRIGHT-UNITED STATES': rdflib.URIRef('http://rightsstatements.org/vocab/NoC-US/1.0/'),
     'NO KNOWN COPYRIGHT': rdflib.URIRef('http://rightsstatements.org/vocab/NKC/1.0/')
 }
 TRIPLESTORE_URL = 'http://localhost:9999/blazegraph/sparql'
 
+P2P_DEDUPLICATOR = deduplicate.Deduplicator(
+    triplestore_url=TRIPLESTORE_URL,
+    base_url=BASE_URL,
+    classes=[BF.Agent, BF.Organization, BF.Person, BF.Topic])
+
+
 def add_dpl(**kwargs):
     graph = kwargs.get('graph')
     field = kwargs.get('field')
     row = kwargs.get('row')
 
-def __cc_collection__(pid, bf_graph):
+def __cc_collection__(pid, bf_graph, rights_stmt=RIGHTS_STATEMENTS["IN COPYRIGHT"]):
     def set_label(pid):
         mods_url = "{}{}/datastream/MODS".format(cc_repo_base, pid)
         result = requests.get(mods_url)
@@ -64,7 +72,7 @@ def __cc_collection__(pid, bf_graph):
             return
         bf_graph.add((collection_iri, 
             rdflib.RDFS.label, 
-            rdflib.Literal(title.text[0], lang="en"))) 
+            rdflib.Literal(title[0].text, lang="en"))) 
     child_results = requests.post(fedora_ri_search,
         data={"type": "tuples",
               "lang": "sparql",
@@ -79,16 +87,50 @@ WHERE {{
     collection_iri = rdflib.URIRef("{}{}".format(cc_repo_base, pid))
     bf_graph.add((collection_iri, rdflib.RDF.type, BF.Collection))
     set_label(pid)
-    for child_row in child_results.json().get("results"):
+    start = datetime.datetime.utcnow()
+    print("Start processing collection {} at {}".format(
+        pid,
+        start))
+    for i,child_row in enumerate(child_results.json().get("results")):
         child_pid = child_row.get("s").split("/")[-1]
+        if __cc_is_collection__(child_pid):
+            __cc_collection__(child_pid, bf_graph, rights_stmt)
+            continue
         item_iri = __cc_pid__(child_pid, bf_graph)
+        bf_graph.add((item_iri, BF.AccessPolicy, rights_stmt))
         instance_iri = bf_graph.value(subject=item_iri,
             predicate=BF.itemOf)
         work_iri = bf_graph.value(subject=instance_iri,
             predicate=BF.instanceOf)
         bf_graph.add((work_iri, BF.partOf, collection_iri))
-            
-        
+        if not i%5 and i>0:
+            print('.', end="")
+        if not i%10:
+            print(i, end="")
+    end = datetime.datetime.utcnow()
+    print("Finished processing at {}, total {} mins for {} objects fo PID {}".format(
+        end,
+        (end-start).seconds / 60.0,
+        i,
+        pid)) 
+
+def __cc_is_collection__(pid):
+    sparql = """SELECT DISTINCT ?o
+WHERE {{        
+  <info:fedora/{0}> <fedora-model:hasModel> <info:fedora/islandora:collectionCModel> .
+  <info:fedora/{0}> <fedora-model:hasModel> ?o
+}}""".format(pid)
+    collection_result = requests.post(fedora_ri_search,
+        data={"type": "tuples",
+              "lang": "sparql",
+              "format": "json",
+              "query": sparql},
+        auth=fedora_auth)
+    if len(collection_result.json().get('results')) > 0:
+        return True
+    return False
+
+
         
 def __cc_pid__(pid, bf_graph):
     mods_url = "{}{}/datastream/MODS".format(cc_repo_base, pid)
@@ -103,14 +145,24 @@ def __cc_pid__(pid, bf_graph):
         bf_graph = cc_processor.output
     else:
         bf_graph += cc_processor.output
+    held_by = bf_graph.value(subject=item_iri, predicate=BF.heldBy)
+    if held_by is None:
+        bf_graph.add((item_iri, 
+                      BF.heldBy, 
+                      rdflib.URIRef("https://www.coloradocollege.edu/")))
     work_uri = bf_graph.value(subject=rdflib.URIRef(instance_iri),
             predicate=BF.instanceOf)
+    if work_uri is None:
+        work_uri = rdflib.URIRef("{}#Work".format(instance_iri))
+        bf_graph.add((work_uri, rdflib.RDF.type, BF.Work))
+        bf_graph.add((rdflib.URIRef(instance_iri), BF.instanceOf, work_uri))
     rels_url = "{}{}/datastream/RELS-EXT".format(cc_repo_base, pid)
     rels_result = requests.get(rels_url)
     rels_processor.run(rels_result.text,
         instance_iri=instance_iri,
         work_iri=str(work_uri))
     bf_graph += rels_processor.output
+    P2P_DEDUPLICATOR.run(bf_graph)
     return item_iri
 
 def colorado_college_workflow(**kwargs):
@@ -194,7 +246,7 @@ def __process_hist_colo_row__(row):
         csv2bf.output.add((rdflib.URIRef(item_iri), 
                            BF.AccessPolicy, 
                            RIGHTS_STATEMENTS.get(rights_stmt)))
-    p2p_deduplicator.run(csv2bf.output, [BF.Agent, 
+    P2P_DEDUPLICATOR.run(csv2bf.output, [BF.Agent, 
                                          BF.Person, 
                                          BF.Organization, 
                                          BF.Topic])
@@ -241,9 +293,8 @@ def history_colo_workflow():
         (end_workflow-start_workflow).seconds / 60.0,
         i))
     
-    
-def marmot_workflow(marmot_url, org_file):
-    global marmot_orgs, marmot_orgs_dict, org_filepath
+def __marmot_setup__(org_file):   
+    global marmot_orgs, marmot_orgs_dict, org_filepath 
     org_filepath = org_file
     marmot_orgs_dict = dict()
     marmot_orgs = rdflib.Graph()
@@ -256,25 +307,21 @@ def marmot_workflow(marmot_url, org_file):
         object=SCHEMA.Library):
         label = marmot_orgs.value(subject=library_iri, predicate=rdflib.RDFS.label)
         marmot_orgs_dict[str(label)] = library_iri
+
+
+def marmot_workflow(marmot_url, org_file, total_pages=85):
+    __marmot_setup__(org_file)
     start = datetime.datetime.utcnow()
-    initial_graph, total_pages = temp_marmot(marmot_url)
     print("Started Marmot Harvest at {}, total pages = {} ".format(start, total_pages))
-    for page in range(2, total_pages+1):
+    for page in range(1, total_pages+1):
         shard_url = "{}&page={}".format(marmot_url,
                                         page)
         print(".", end="")
-        if not page%5:
-            with open("E:/2017/Plains2PeaksPilot/output/marmot-{}-{}.ttl".format(page-10, page), "wb+") as fo:
-                fo.write(initial_graph.serialize(format='turtle'))
-                initial_graph = None
-                print(page, end="")
-        if initial_graph is None:
-            initial_graph = temp_marmot(shard_url)[0]
-        else:
-            initial_graph += temp_marmot(shard_url)[0]
-    with open("E:/2017/Plains2PeaksPilot/output/marmot-{}-final.ttl".format(page),
-               "wb+") as fo:
-       fo.write(initial_graph.serialize(format='turtle'))
+        initial_graph = temp_marmot(shard_url)[0]
+        with open("E:/2017/Plains2PeaksPilot/output/marmot-{}.ttl".format(page), "wb+") as fo:
+            fo.write(initial_graph.serialize(format='turtle'))
+        if not page%10:
+            print(page, end="")
     end = datetime.datetime.utcnow()
     print("Finished at {}, total time {} mins".format(
             end.isoformat(),
@@ -521,11 +568,11 @@ def temp_marmot(url):
             uuid.uuid1()))
         __generation_process__(instance_uri, bf_graph)
         bf_graph.add((instance_uri, rdflib.RDF.type, BF.Instance))
-        work_uri = rdflib.URIRef("{}#work".format(instance_uri))
+        work_uri = rdflib.URIRef("{}#Work".format(instance_uri))
         bf_graph.add((work_uri, rdflib.RDF.type, BF.Work))
         bf_graph.add((instance_uri, BF.instanceOf, work_uri))
         item_uri = rdflib.URIRef(doc.get('isShownAt'))
-        __generation_process__(item_iri, bf_graph)
+        __generation_process__(item_uri, bf_graph)
         bf_graph.add((item_uri, BF.itemOf, instance_uri))
         bf_graph.add((item_uri, rdflib.RDF.type, BF.Item))
         cover_art = rdflib.BNode()
@@ -569,7 +616,12 @@ def temp_marmot(url):
             bf_graph.add((creator, rdflib.RDF.type, BF.Agent))
             bf_graph.add((creator, rdflib.RDF.value, label))
             bf_graph.add((work_uri, RELATORS.cre, creator))
- 
+        extent_str = doc.get('extent','')
+        if len(extent_str) > 0:
+            extent = rdflib.BNode()
+            bf_graph.add((instance_uri, BF.extent, extent))
+            bf_graph.add((extent, rdflib.RDF.type, BF.Extent))
+            bf_graph.add((extent, rdflib.RDF.value, rdflib.Literal(extent_str)))
         description = doc.get('description')
         if len(description) > 0:
             summary = rdflib.BNode()
@@ -600,13 +652,16 @@ def temp_marmot(url):
                rdflib.Literal(doc.get('identifier'))))
         bf_graph.add((instance_uri, BF.identifiedBy, ident))
         for row in doc.get('relation', []):
-            collection = rdflib.BNode()
+            collection = rdflib.URIRef("{}marmot-collection/{}".format(
+                BASE_URL,
+                bibcat.slugify(row)))
             bf_graph.add((collection, rdflib.RDF.type,
                        BF.Collection))
             bf_graph.add((collection, rdflib.RDFS.label,
                        rdflib.Literal(row)))
             bf_graph.add((work_uri, BF.partOf, collection))
-        return bf_graph, int(total_pages)
+    P2P_DEDUPLICATOR.run(bf_graph)
+    return bf_graph, int(total_pages)
 
 class DateGenerator(object):
     """Class dates a raw string and attempts to generate RDF associations"""
