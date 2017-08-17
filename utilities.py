@@ -130,14 +130,20 @@ WHERE {{
         return True
     return False
 
-
+def __cc_is_member__(pid):
+    return False
         
 def __cc_pid__(pid, bf_graph):
+    if __cc_is_member__(pid):
+        return
     mods_url = "{}{}/datastream/MODS".format(cc_repo_base, pid)
+    
     item_iri = rdflib.URIRef("{}{}".format(cc_repo_base, pid))
     instance_iri = "{}{}".format(BASE_URL, uuid.uuid1())
     mods_result = requests.get(mods_url)
     mods_xml = mods_result.text
+    if isinstance(mods_xml, str):
+        mods_xml = mods_xml.encode()
     cc_processor.run(mods_xml, 
         instance_iri=instance_iri,
         item_iri=item_iri)
