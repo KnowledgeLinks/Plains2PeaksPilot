@@ -131,6 +131,17 @@ WHERE {{
     return False
 
 def __cc_is_member__(pid):
+    rels_ext_url = "{}{}/datastream/RELS-EXT".format(
+            cc_repo_base,
+            pid)
+    rels_ext_result = requests.get(rels_ext_url)
+    if rels_ext_result.status_code < 399:
+        rels_ext_xml = lxml.etree.XML(rels_ext_result.text)
+        is_constituent =  rels_ext_xml.xpath(
+            "rdf:Description/fedora:isConstituentOf",
+            namespaces=rels_processor.xml_ns)
+        if len(is_constituent) > 0:
+            return True
     return False
         
 def __cc_pid__(pid, bf_graph):
@@ -142,8 +153,8 @@ def __cc_pid__(pid, bf_graph):
     instance_iri = "{}{}".format(BASE_URL, uuid.uuid1())
     mods_result = requests.get(mods_url)
     mods_xml = mods_result.text
-    if isinstance(mods_xml, str):
-        mods_xml = mods_xml.encode()
+    #if isinstance(mods_xml, str):
+    #    mods_xml = mods_xml.encode()
     cc_processor.run(mods_xml, 
         instance_iri=instance_iri,
         item_iri=item_iri)
@@ -360,6 +371,7 @@ def __univ_wy_periodicals__(pid):
     return mods_ingester.output
 
 def univ_wy_workflow():
+    setup_univ_wy()
     start = datetime.datetime.utcnow()
     out_file = "E:/2017/Plains2PeaksPilot/output/university-wyoming.ttl"
     print("Starting University of Wyoming Workflow using Islandora OAI-PMH at {}".format(

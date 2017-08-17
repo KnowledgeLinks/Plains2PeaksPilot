@@ -1,6 +1,6 @@
 title: Wyoming State Library
 published: 2017-08-04
-status: started
+status: completed
 bf_instances: 2452
 bf_items: 2321
 

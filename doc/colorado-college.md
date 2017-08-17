@@ -1,6 +1,6 @@
 title: Colorado College
 published: 2017-08-04
-status: not started
+status: started
 bf_instances: 0
 bf_items: 0
 
