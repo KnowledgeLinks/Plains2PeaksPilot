@@ -1,8 +1,8 @@
 title: University of Wyoming
 published: 2017-08-04
 status: started
-bf_instances: 0
-bf_items: 0
+bf_instances: 447 
+bf_items: 447
 
 
 [Amanda R. Lehman][ARL] is the main contact point for University of Wyoming 

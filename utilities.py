@@ -59,6 +59,34 @@ def add_dpl(**kwargs):
     field = kwargs.get('field')
     row = kwargs.get('row')
 
+def __amer_heritage_add_collection(bf_graph, collection_iri):
+    pass
+
+def amer_heritage_workflow():
+    def __setup__():
+        global collections, luna_harvester
+        collections = [("uwydbuwy~22~22", rdflib.URIRef("http://digitalcollections.uwyo.edu/luna/servlet/uwydbuwy~22~22")), 
+                       ("uwydbuwy~96~96", rdflib.URIRef("http://digitalcollections.uwyo.edu/luna/servlet/uwydbuwy~96~96")),
+                       ("uwydbuwy~148~148", rdflib.URIRef("http://digitalcollections.uwyo.edu/luna/servlet/uwydbuwy~148~148"))]
+        luna_harvester = ingesters.LunaIngester(
+            repository='http://digitalcollections.uwyo.edu/luna/servlet/oai',
+            base_url=BASE_URL)
+    __setup__()
+    start = datetime.datetime.utcnow()
+    print("Starting American Heritage Harvester")
+    amer_graph = None
+    for collection in collections:
+        luna_harvester.harvest(setSpec=collection[0], 
+            instance_iri=lambda x: "{}/{}".format(BASE_URL, uuid.uuid1()))
+        if amer_graph is None:
+            amer_graph = luna_harvester.repo_graph
+        else:
+            amer_graph += luna_harvester.repo_graph
+                
+
+
+    end = datetime.datetime.utcnow()
+
 def __cc_collection__(pid, bf_graph, rights_stmt=RIGHTS_STATEMENTS["IN COPYRIGHT"]):
     def set_label(pid):
         mods_url = "{}{}/datastream/MODS".format(cc_repo_base, pid)
@@ -97,6 +125,8 @@ WHERE {{
             __cc_collection__(child_pid, bf_graph, rights_stmt)
             continue
         item_iri = __cc_pid__(child_pid, bf_graph)
+        if item_iri is None:
+            continue
         bf_graph.add((item_iri, BF.AccessPolicy, rights_stmt))
         instance_iri = bf_graph.value(subject=item_iri,
             predicate=BF.itemOf)
@@ -108,7 +138,7 @@ WHERE {{
         if not i%10:
             print(i, end="")
     end = datetime.datetime.utcnow()
-    print("Finished processing at {}, total {} mins for {} objects fo PID {}".format(
+    print("Finished processing at {}, total {} mins, {} objects for PID {}".format(
         end,
         (end-start).seconds / 60.0,
         i,
@@ -344,6 +374,13 @@ def marmot_workflow(marmot_url, org_file, total_pages=85):
             end.isoformat(),
             (end-start).seconds / 60.0))
 
+def __add_univ_wy_collection__(bf_graph, collection_pid):
+    collection_iri = wy_collection_iri.get(collection_pid)
+    for work_iri in bf_graph.subjects(predicate=rdflib.RDF.type,
+                                      object=BF.Work):
+        bf_graph.add((work_iri, BF.partOf, collection_iri))
+    
+
 def __univ_wy_covers__(bf_graph):
     for item_iri in bf_graph.subjects(predicate=rdflib.RDF.type,
         object=BF.Item):
@@ -356,6 +393,10 @@ def __univ_wy_covers__(bf_graph):
             bf_graph.add((instance_iri, BF.coverArt, cover_bnode))
             bf_graph.add((cover_bnode, rdflib.RDF.type, BF.CoverArt))
             bf_graph.add((cover_bnode, rdflib.RDF.value, rdflib.URIRef(cover_tn_url)))
+        held_by = bf_graph.value(subject=item_iri, predicate=BF.heldBy)
+        if held_by is None:
+            bf_graph.add((item_iri, BF.heldBy, wy_iri))
+        
    
 def __univ_wy_periodicals__(pid):
     pid_url ="https://uwdigital.uwyo.edu/islandora/object/{pid}/".format(
@@ -376,21 +417,16 @@ def univ_wy_workflow():
     out_file = "E:/2017/Plains2PeaksPilot/output/university-wyoming.ttl"
     print("Starting University of Wyoming Workflow using Islandora OAI-PMH at {}".format(
         start.isoformat()))
-    univ_wy_graph = None
+    univ_wy_graph = rdflib.Graph()
+    univ_wy_graph.parse(out_file, format='turtle') 
     for collection_pid in wy_collections:
-        if univ_wy_graph is None:
-            start_size = 0
-        else:
-            start_size = len(univ_wy_graph) 
+        start_size = len(univ_wy_graph) 
         i_harvester.harvest(setSpec=collection_pid, dedup=bf_dedup)
         __univ_wy_covers__(i_harvester.repo_graph)
-        if univ_wy_graph is None:
-            univ_wy_graph = i_harvester.repo_graph
-        else:
-            univ_wy_graph += i_harvester.output
+        __add_univ_wy_collection__(i_harvester.repo_graph, collection_pid)
+        univ_wy_graph += i_harvester.repo_graph
         print("=====\nFinished {} number of triples {}".format(collection_pid, 
             len(univ_wy_graph) - start_size), end="")
-        return univ_wy_graph
         with open(out_file, 'wb+') as fo:
             fo.write(univ_wy_graph.serialize(format='turtle'))
     for periodical_pid in wy_periodicals:
@@ -521,8 +557,17 @@ def setup_hist_co():
                                                "cover": row["Image Link"]}
 def setup_univ_wy():
     global wy_collections, wy_periodicals, i_harvester, bf_dedup, mods_ingester
-#    wy_collections = ['wyu_12113', 'wyu_5359', 'wyu_5394', 'wyu_2807', 'wyu_161514']
-    wy_collections = ['wyu_5359']
+    global wy_collection_iri, wy_iri
+    wy_iri = rdflib.URIRef("http://www.uwyo.edu/")
+    # Finished 'wyu_12113',
+    wy_collections = [ 'wyu_5359', 'wyu_5394', 'wyu_2807', 'wyu_161514']
+    wy_collection_iri = {'wyu_12113': rdflib.URIRef('https://uwdigital.uwyo.edu/islandora/object/wyu:12113'),
+        'wyu_5359': rdflib.URIRef('https://uwdigital.uwyo.edu/islandora/object/wyu:5359'), 
+        'wyu_5394': rdflib.URIRef('https://uwdigital.uwyo.edu/islandora/object/wyu:5394'), 
+        'wyu_2807': rdflib.URIRef('https://uwdigital.uwyo.edu/islandora/object/wyu:2807'), 
+        'wyu_161514': rdflib.URIRef('https://uwdigital.uwyo.edu/islandora/object/wyu:161514')}
+
+#    wy_collections = ['wyu_5359']
     wy_periodicals = [
         'wyu:2807', 
         'wyu:161514',
@@ -535,10 +580,12 @@ def setup_univ_wy():
                                         base_url='https://plains2peaks.org/')
     mods_ingester = processor.XMLProcessor(
         rml_rules = ['bibcat-base.ttl', 'bibcat-mods-to-bf.ttl'],
-        triplestore_url=TRIPLESTORE_URL) 
+        triplestore_url=TRIPLESTORE_URL,
+        base_url=BASE_URL) 
     i_harvester = ingesters.IslandoraIngester(
             triplestore_url=TRIPLESTORE_URL,
-            base_url='https://plains2peaks.org/',
+            base_url=BASE_URL,
+            dedup=bf_dedup,
             repository='https://uwdigital.uwyo.edu/')
 
 def __marmot_orgs__(label):
