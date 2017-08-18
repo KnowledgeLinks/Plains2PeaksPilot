@@ -23,7 +23,7 @@ if sys.platform.startswith("win"):
     sys.path.append("E:/2017/dpla-service-hub")
     error_log  = "E:/2017/Plains2PeaksPilot/errors/error-{}.log".format(time.monotonic())
 else:
-    sys.path.append("/Users/jeremynelson/2017/dpla-server-hub")
+    sys.path.append("/Users/jeremynelson/2017/dpla-service-hub")
     error_log = "/Users/jeremynelson/2017/Plains2PeaksPilot/errors/error-{}.log".format(time.monotonic())
 import date_generator
 
@@ -59,33 +59,48 @@ def add_dpl(**kwargs):
     field = kwargs.get('field')
     row = kwargs.get('row')
 
-def __amer_heritage_add_collection(bf_graph, collection_iri):
-    pass
+def __amer_heritage_add_collection__(bf_graph, collection_iri):
+    for work_iri in bf_graph.subjects(predicate=rdflib.RDF.type,
+        object=BF.Work):
+        bf_graph.add((work_iri, BF.partOf, collection_iri))
+    for item_iri in bf_graph.subjects(predicate=rdflib.RDF.type,
+            object=BF.Item):
+        held_by = bf_graph.value(subject=item_iri, predicate=BF.heldBy)
+        if held_by is None:
+            bf_graph.add((item_iri, BF.heldBy, amer_iri))
 
-def amer_heritage_workflow():
+def amer_heritage_workflow(out_file):
     def __setup__():
-        global collections, luna_harvester
+        global collections, luna_harvester, amer_graph, amer_iri
         collections = [("uwydbuwy~22~22", rdflib.URIRef("http://digitalcollections.uwyo.edu/luna/servlet/uwydbuwy~22~22")), 
                        ("uwydbuwy~96~96", rdflib.URIRef("http://digitalcollections.uwyo.edu/luna/servlet/uwydbuwy~96~96")),
                        ("uwydbuwy~148~148", rdflib.URIRef("http://digitalcollections.uwyo.edu/luna/servlet/uwydbuwy~148~148"))]
         luna_harvester = ingesters.LunaIngester(
             repository='http://digitalcollections.uwyo.edu/luna/servlet/oai',
             base_url=BASE_URL)
+        amer_iri = rdflib.URIRef("http://www.uwyo.edu/ahc/")
     __setup__()
     start = datetime.datetime.utcnow()
     print("Starting American Heritage Harvester")
     amer_graph = None
     for collection in collections:
         luna_harvester.harvest(setSpec=collection[0], 
-            instance_iri=lambda x: "{}/{}".format(BASE_URL, uuid.uuid1()))
+            instance_iri=lambda: "{}/{}".format(BASE_URL, uuid.uuid1()))
+        __amer_heritage_add_collection__(luna_harvester.repo_graph, collection[1])
         if amer_graph is None:
             amer_graph = luna_harvester.repo_graph
         else:
             amer_graph += luna_harvester.repo_graph
-                
+        
 
-
+    with open(out_file, "wb+") as fo:
+        fo.write(amer_graph.serialize(format='turtle'))
     end = datetime.datetime.utcnow()
+    print("Finished at {}, total time {} number of triples {}".format(
+        end,
+        (end-start).seconds / 60.0,
+        len(amer_graph)))
+    return amer_graph
 
 def __cc_collection__(pid, bf_graph, rights_stmt=RIGHTS_STATEMENTS["IN COPYRIGHT"]):
     def set_label(pid):
@@ -115,6 +130,7 @@ WHERE {{
     collection_iri = rdflib.URIRef("{}{}".format(cc_repo_base, pid))
     bf_graph.add((collection_iri, rdflib.RDF.type, BF.Collection))
     set_label(pid)
+    count = 0
     start = datetime.datetime.utcnow()
     print("Start processing collection {} at {}".format(
         pid,
@@ -137,11 +153,12 @@ WHERE {{
             print('.', end="")
         if not i%10:
             print(i, end="")
+        coutn += 1
     end = datetime.datetime.utcnow()
     print("Finished processing at {}, total {} mins, {} objects for PID {}".format(
         end,
         (end-start).seconds / 60.0,
-        i,
+        count,
         pid)) 
 
 def __cc_is_collection__(pid):
@@ -403,7 +420,9 @@ def __univ_wy_periodicals__(pid):
         pid=pid)
     mods_url = "{}datastream/MODS".format(pid_url)
     mods_result = requests.get(mods_url)
-    mods_ingester.run(mods_result.text)
+    mods_ingester.run(mods_result.text,
+        instance_iri="{}/{}".format(BASE_URL, uuid.uuid1()),
+        item_iri=pid_url)
     bf_dedup.run(mods_ingester.output, 
         [BF.Person, 
          BF.Agent,
@@ -411,10 +430,9 @@ def __univ_wy_periodicals__(pid):
          BF.Organization])
     return mods_ingester.output
 
-def univ_wy_workflow():
+def univ_wy_workflow(out_file):
     setup_univ_wy()
     start = datetime.datetime.utcnow()
-    out_file = "E:/2017/Plains2PeaksPilot/output/university-wyoming.ttl"
     print("Starting University of Wyoming Workflow using Islandora OAI-PMH at {}".format(
         start.isoformat()))
     univ_wy_graph = rdflib.Graph()
@@ -557,7 +575,7 @@ def setup_hist_co():
                                                "cover": row["Image Link"]}
 def setup_univ_wy():
     global wy_collections, wy_periodicals, i_harvester, bf_dedup, mods_ingester
-    global wy_collection_iri, wy_iri
+    global wy_collection_iri, wy_iri, univ_wy_graph
     wy_iri = rdflib.URIRef("http://www.uwyo.edu/")
     # Finished 'wyu_12113',
     wy_collections = [ 'wyu_5359', 'wyu_5394', 'wyu_2807', 'wyu_161514']
@@ -581,7 +599,8 @@ def setup_univ_wy():
     mods_ingester = processor.XMLProcessor(
         rml_rules = ['bibcat-base.ttl', 'bibcat-mods-to-bf.ttl'],
         triplestore_url=TRIPLESTORE_URL,
-        base_url=BASE_URL) 
+        base_url=BASE_URL,
+        namespaces={"mods": "http://www.loc.gov/mods/v3"}) 
     i_harvester = ingesters.IslandoraIngester(
             triplestore_url=TRIPLESTORE_URL,
             base_url=BASE_URL,
