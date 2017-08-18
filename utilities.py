@@ -153,7 +153,7 @@ WHERE {{
             print('.', end="")
         if not i%10:
             print(i, end="")
-        coutn += 1
+        count += 1
     end = datetime.datetime.utcnow()
     print("Finished processing at {}, total {} mins, {} objects for PID {}".format(
         end,
