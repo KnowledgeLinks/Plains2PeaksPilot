@@ -1,0 +1,51 @@
+
+<mods:modsCollection xmlns="http://www.loc.gov/mods/v3" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-2.xsd">
+  <mods:mods version="3.2">
+    <mods:titleInfo>
+      <mods:title>Medicare supplement insurance : July 2012 medigap options for Colorado consumers</mods:title>
+    </mods:titleInfo>
+    <mods:name type="corporate">
+      <mods:namePart>Colorado. Division of Insurance.</mods:namePart>
+      <mods:role>
+        <mods:roleTerm authority="marcrelator" type="text">contributor</mods:roleTerm>
+      </mods:role>
+    </mods:name>
+    <mods:typeOfResource>text</mods:typeOfResource>
+    <mods:originInfo>
+      <mods:place>
+        <mods:placeTerm type="text">Denver, Colo.</mods:placeTerm>
+      </mods:place>
+      <mods:publisher>Colorado Department of Regulatory Agencies, Division of Insurance, State Health Insurance Assistance Program</mods:publisher>
+      <mods:dateIssued keyDate="yes">2012</mods:dateIssued>
+    </mods:originInfo>
+    <mods:language>
+      <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+    </mods:language>
+    <mods:physicalDescription>
+      <mods:extent>1 online resource (18 pages)</mods:extent>
+    </mods:physicalDescription>
+    <mods:subject authority="lcsh">
+      <mods:topic>Medigap</mods:topic>
+      <mods:geographic>Colorado</mods:geographic>
+    </mods:subject>
+    <mods:subject authority="lcsh">
+      <mods:topic>Older people--Insurance requirements</mods:topic>
+      <mods:topic>Insurance requirements</mods:topic>
+    </mods:subject>
+    <mods:subject authority="lcsh">
+      <mods:topic>Medicare</mods:topic>
+    </mods:subject>
+    <mods:note>sponsored by the State Health Insurance Assistance Program (SHIP) and the Colorado Division of Insurance</mods:note>
+    <mods:note>Description based on online resource; title from PDF cover; (viewed May 2015)</mods:note>
+    <mods:classification authority="codocs">REG4.2/M46/2012/INTERNET</mods:classification>
+    <mods:recordInfo>
+      <mods:recordIdentifier source="OCoLC">910249454</mods:recordIdentifier>
+      <mods:languageOfCataloging>
+        <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+      </mods:languageOfCataloging>
+    </mods:recordInfo>
+    <mods:location>
+      <mods:url>http://hdl.handle.net/11629/co:20315</mods:url>
+    </mods:location>
+  </mods:mods>
+</mods:modsCollection>

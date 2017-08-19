@@ -1,0 +1,70 @@
+
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3">  
+          <mods:titleInfo> 
+            <mods:title>Retirement, retention, and recruitment [electronic resource] : the future of librarianship in Colorado</mods:title> 
+          </mods:titleInfo>  
+          <mods:name type="personal"> 
+            <mods:namePart>Steffen, Nicolle.</mods:namePart>  
+            <mods:role> 
+              <mods:roleTerm authority="marcrelator" type="text">contributor</mods:roleTerm> 
+            </mods:role> 
+          </mods:name>  
+          <mods:name type="corporate"> 
+            <mods:namePart>Colorado. Library Research Service.</mods:namePart>  
+            <mods:role> 
+              <mods:roleTerm authority="marcrelator" type="text">contributor</mods:roleTerm> 
+            </mods:role> 
+          </mods:name>  
+          <mods:typeOfResource>text</mods:typeOfResource>  
+          <mods:originInfo> 
+            <mods:place> 
+              <mods:placeTerm type="text">Denver, CO</mods:placeTerm> 
+            </mods:place>  
+            <mods:publisher>Library Research Service</mods:publisher>  
+            <mods:dateIssued keyDate="yes">2004</mods:dateIssued> 
+          </mods:originInfo>  
+          <mods:language> 
+            <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm> 
+          </mods:language>  
+          <mods:physicalDescription> 
+            <mods:form authority="gmd">]]</mods:form>  
+            <mods:extent>1 PDF (135, A14, B22, C2 p. : ill. ; 604 KB)</mods:extent> 
+          </mods:physicalDescription>  
+          <mods:note>&quot;September 2004.&quot;</mods:note>  
+          <mods:note>Includes bibliographical references (p. C1-C2).</mods:note>  
+          <mods:subject> 
+            <mods:geographicCode authority="marcgac">n-us-co</mods:geographicCode> 
+          </mods:subject>  
+          <mods:subject authority="lcsh"> 
+            <mods:topic>Librarians</mods:topic>  
+            <mods:topic>Supply and demand</mods:topic>  
+            <mods:geographic>Colorado</mods:geographic> 
+          </mods:subject>  
+          <mods:subject authority="lcsh"> 
+            <mods:topic>Library technicians</mods:topic> 
+          </mods:subject>  
+          <mods:subject authority="lcsh"> 
+            <mods:topic></mods:topic>  
+            <mods:topic>Recruiting</mods:topic> 
+          </mods:subject>  
+          <mods:subject authority="lcsh"> 
+            <mods:topic></mods:topic>  
+            <mods:topic>Retirement</mods:topic> 
+          </mods:subject>  
+          <mods:subject authority="lcsh"> 
+            <mods:topic></mods:topic> 
+          </mods:subject>  
+          <mods:subject authority="lcsh"> 
+            <mods:topic></mods:topic> 
+          </mods:subject>  
+          <mods:subject authority="lcsh"> 
+            <mods:topic>Employee retention</mods:topic> 
+          </mods:subject>  
+          <mods:classification authority="codocs">ED3/110.2/R31/2004/INTERNET</mods:classification>  
+          <mods:recordInfo> 
+            <mods:recordIdentifier source="OCoLC">152579141</mods:recordIdentifier> 
+          </mods:recordInfo>  
+          <mods:location> 
+            <mods:url usage="primary display">http://hdl.handle.net/10176/co:2196</mods:url> 
+          </mods:location> 
+        </mods:mods>

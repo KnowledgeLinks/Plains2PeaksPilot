@@ -1,0 +1,51 @@
+
+<mods:modsCollection xmlns="http://www.loc.gov/mods/v3" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-2.xsd">
+  <mods:mods version="3.2">
+    <mods:titleInfo>
+      <mods:title>County Commissioner/county administrator guide for recruiting and hiring a director</mods:title>
+    </mods:titleInfo>
+    <mods:titleInfo type="alternative">
+      <mods:title>County Commissioner county administrator guide for recruiting and hiring a director</mods:title>
+    </mods:titleInfo>
+    <mods:name type="corporate">
+      <mods:namePart>Colorado. Department of Human Services. Field Administration Division.</mods:namePart>
+      <mods:role>
+        <mods:roleTerm authority="marcrelator" type="text">contributor</mods:roleTerm>
+      </mods:role>
+    </mods:name>
+    <mods:typeOfResource>text</mods:typeOfResource>
+    <mods:originInfo>
+      <mods:place>
+        <mods:placeTerm type="text">Denver, Colo.</mods:placeTerm>
+      </mods:place>
+      <mods:publisher>Colorado Department of Human Services, Office of Performance Improvement, Field Administration Division</mods:publisher>
+      <mods:dateIssued keyDate="yes">2004</mods:dateIssued>
+    </mods:originInfo>
+    <mods:language>
+      <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+    </mods:language>
+    <mods:physicalDescription>
+      <mods:extent>1 online resource (13 pages)</mods:extent>
+    </mods:physicalDescription>
+    <mods:abstract>This is a guide for Commissioners to use in hiring a Director of a Social or Human Services Department. Hiring a new Director is one of the most important decisions a Board can make and this guide provides some ideas for Commissioners to consider. The guide contains sections on: The County Board Appoints the County Director, Characteristics (Functions) of Directors, Summary of Director Responsibilities, Hiring Requirements, Necessary Knowledge and Skills of County Directors and Recruitment Tools.</mods:abstract>
+    <mods:subject authority="lcsh">
+      <mods:topic>Human services personnel</mods:topic>
+      <mods:geographic>Colorado</mods:geographic>
+    </mods:subject>
+    <mods:subject authority="lcsh">
+      <mods:topic>Employment interviewing</mods:topic>
+    </mods:subject>
+    <mods:note>Publication date from PDF file properties.</mods:note>
+    <mods:note>Description based on online resource; title from PDF cover; (viewed May 2015)</mods:note>
+    <mods:classification authority="codocs">HU1/30.8/D62/2004/INTERNET</mods:classification>
+    <mods:recordInfo>
+      <mods:recordIdentifier source="OCoLC">909783833</mods:recordIdentifier>
+      <mods:languageOfCataloging>
+        <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+      </mods:languageOfCataloging>
+    </mods:recordInfo>
+    <mods:location>
+      <mods:url>http://hdl.handle.net/11629/co:20301</mods:url>
+    </mods:location>
+  </mods:mods>
+</mods:modsCollection>

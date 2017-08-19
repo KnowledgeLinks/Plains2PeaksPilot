@@ -19,9 +19,12 @@ def page(name):
 
 @app.route("/")
 def home():
-    total_items = 0
+    total_items, total_instances = 0, 0
     for page in pages:
         total_items += int(page.meta.get("bf_items"))
+        total_instances += int(page.meta.get("bf_instances"))
+    print(total_items, total_instances)
     return render_template("index.html",
         pages=pages,
-        total=total_items)
+        total_items=total_items,
+        total_instances=total_instances)

@@ -1,0 +1,50 @@
+
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3">  
+          <mods:titleInfo> 
+            <mods:title>Children&apos;s Extensive Support (CES) 2004 family satisfaction survey</mods:title> 
+          </mods:titleInfo>  
+          <mods:name type="corporate"> 
+            <mods:namePart>Colorado. Division for Developmental Disabilities.</mods:namePart>  
+            <mods:role> 
+              <mods:roleTerm authority="marcrelator" type="text">contributor</mods:roleTerm> 
+            </mods:role> 
+          </mods:name>  
+          <mods:typeOfResource>text</mods:typeOfResource>  
+          <mods:originInfo> 
+            <mods:place> 
+              <mods:placeTerm type="text">Denver, Colo.</mods:placeTerm> 
+            </mods:place>  
+            <mods:publisher>Program Evaluation and Information Services, Division of Developmental Disabilities, Office of Adult, Disability, and Rehabilitation Services, Colorado Department of Human Services</mods:publisher>  
+            <mods:dateIssued keyDate="yes">2005</mods:dateIssued> 
+          </mods:originInfo>  
+          <mods:language> 
+            <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm> 
+          </mods:language>  
+          <mods:physicalDescription> 
+            <mods:form authority="gmd">electronic resource</mods:form>  
+            <mods:extent>1 PDF (63 p. ; 1086 KB)</mods:extent> 
+          </mods:physicalDescription>  
+          <mods:note>Cover title.</mods:note>  
+          <mods:note>&quot;April 2005.&quot;</mods:note>  
+          <mods:subject> 
+            <mods:geographicCode authority="marcgac">n-us-co</mods:geographicCode> 
+          </mods:subject>  
+          <mods:subject authority="lcsh"> 
+            <mods:topic>Children with disabilities</mods:topic>  
+            <mods:topic>Care</mods:topic>  
+            <mods:geographic>Colorado</mods:geographic> 
+          </mods:subject>  
+          <mods:subject authority="lcsh"> 
+            <mods:topic>Developmental disabilities</mods:topic> 
+          </mods:subject>  
+          <mods:subject authority="lcsh"> 
+            <mods:topic>Medicaid</mods:topic> 
+          </mods:subject>  
+          <mods:classification authority="codocs">HU2/10.2/F21/2005/INTERNET</mods:classification>  
+          <mods:recordInfo> 
+            <mods:recordIdentifier source="OCoLC">214414156</mods:recordIdentifier> 
+          </mods:recordInfo>  
+          <mods:location> 
+            <mods:url usage="primary display">http://hdl.handle.net/10176/co:1081</mods:url> 
+          </mods:location> 
+        </mods:mods>

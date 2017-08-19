@@ -1,0 +1,53 @@
+
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3">
+  <mods:titleInfo>
+    <mods:title>Colorado Office of Economic Development and International Trade</mods:title>
+  </mods:titleInfo>
+  <mods:name type="corporate">
+    <mods:namePart>Colorado. Office of Economic Development and International Trade.</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="marcrelator" type="text">creator</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:originInfo>
+    <mods:place>
+      <mods:placeTerm type="text">Denver, CO</mods:placeTerm>
+    </mods:place>
+    <mods:publisher>Colorado Office of Economic Development and International Trade</mods:publisher>
+    <mods:dateIssued keyDate="yes">2010</mods:dateIssued>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:extent>1 online resource (25 p.)</mods:extent>
+  </mods:physicalDescription>
+  <mods:physicalDescription>
+    <mods:form authority="gmd">electronic resource</mods:form>
+  </mods:physicalDescription>
+  <mods:subject authority="lcsh">
+    <mods:name type="corporate">
+      <mods:namePart>Colorado.</mods:namePart>
+      <mods:namePart>Office of Economic Development and International Trade.</mods:namePart>
+    </mods:name>
+  </mods:subject>
+  <mods:subject authority="lcsh">
+    <mods:topic>Foreign trade promotion</mods:topic>
+    <mods:geographic>Colorado</mods:geographic>
+  </mods:subject>
+  <mods:subject authority="lcsh">
+    <mods:topic>Small business</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh">
+    <mods:topic>Industries</mods:topic>
+  </mods:subject>
+  <mods:note>Business finance -- Business development -- Colorado creative industries --Colorado Tourism Office -- International Trade Office -- Small business development centers -- Minority and women-owned business support.</mods:note>
+  <mods:classification authority="codocs">GOV34.2/EC2/2010/INTERNET</mods:classification>
+  <mods:recordInfo>
+    <mods:recordIdentifier source="OCoLC">829119099</mods:recordIdentifier>
+  </mods:recordInfo>
+  <mods:location>
+    <mods:url usage="primary display">http://hdl.handle.net/10176/co:11783</mods:url>
+  </mods:location>
+</mods:mods>

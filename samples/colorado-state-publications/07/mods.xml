@@ -1,0 +1,52 @@
+
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3">
+  <mods:titleInfo>
+    <mods:title>Division of Central Services, Colorado fiscal year 2010/2011 : first choice for service</mods:title>
+  </mods:titleInfo>
+  <mods:name type="corporate">
+    <mods:namePart>Colorado. Division of Central Services.</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="marcrelator" type="text">creator</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:originInfo>
+    <mods:place>
+      <mods:placeTerm type="text">Denver, Colo.</mods:placeTerm>
+    </mods:place>
+    <mods:publisher>Colorado Division of Central Services</mods:publisher>
+    <mods:dateIssued keyDate="yes">200u</mods:dateIssued>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:extent>1 online resource (15 p.) : ill.</mods:extent>
+  </mods:physicalDescription>
+  <mods:physicalDescription>
+    <mods:form authority="gmd">electronic resource</mods:form>
+  </mods:physicalDescription>
+  <mods:subject authority="lcsh">
+    <mods:name type="corporate">
+      <mods:namePart>Colorado.</mods:namePart>
+      <mods:namePart>Division of Central Services.</mods:namePart>
+    </mods:name>
+  </mods:subject>
+  <mods:subject authority="lcsh">
+    <mods:topic>Support services (Management)</mods:topic>
+    <mods:geographic>Colorado</mods:geographic>
+  </mods:subject>
+  <mods:subject authority="lcsh">
+    <mods:topic>Administrative agencies</mods:topic>
+  </mods:subject>
+  <mods:subject authority="lcsh">
+    <mods:topic>Management</mods:topic>
+  </mods:subject>
+  <mods:classification authority="codocs">PA4.2/C33/2011/INTERNET</mods:classification>
+  <mods:recordInfo>
+    <mods:recordIdentifier source="OCoLC">843113583</mods:recordIdentifier>
+  </mods:recordInfo>
+  <mods:location>
+    <mods:url usage="primary display">http://hdl.handle.net/10176/co:12114</mods:url>
+  </mods:location>
+</mods:mods>

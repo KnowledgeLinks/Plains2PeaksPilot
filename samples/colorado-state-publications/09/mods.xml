@@ -1,0 +1,51 @@
+
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3">  
+          <mods:titleInfo> 
+            <mods:title>2008 sunrise review, qualified intermediaries</mods:title> 
+          </mods:titleInfo>  
+          <mods:titleInfo type="alternative"> 
+            <mods:title>Qualified intermediaries</mods:title> 
+          </mods:titleInfo>  
+          <mods:name type="corporate"> 
+            <mods:namePart>Colorado. Dept. of Regulatory Agencies. Office of Policy, Research, and Regulatory Reform.</mods:namePart>  
+            <mods:role> 
+              <mods:roleTerm authority="marcrelator" type="text">creator</mods:roleTerm> 
+            </mods:role> 
+          </mods:name>  
+          <mods:typeOfResource>text</mods:typeOfResource>  
+          <mods:originInfo> 
+            <mods:place> 
+              <mods:placeTerm type="text">Denver, CO</mods:placeTerm> 
+            </mods:place>  
+            <mods:publisher>Colorado Department of Regulatory Agencies, Office of Policy, Research and Regulatory Reform</mods:publisher>  
+            <mods:dateIssued keyDate="yes">2008</mods:dateIssued> 
+          </mods:originInfo>  
+          <mods:language> 
+            <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm> 
+          </mods:language>  
+          <mods:physicalDescription> 
+            <mods:form authority="gmd">electronic resource</mods:form>  
+            <mods:extent>1 PDF (39 p. ; 830KB)</mods:extent> 
+          </mods:physicalDescription>  
+          <mods:note>Cover title.</mods:note>  
+          <mods:note>&quot;January 4, 2008.&quot;</mods:note>  
+          <mods:note>Includes bibliographical references.</mods:note>  
+          <mods:subject> 
+            <mods:geographicCode authority="marcgac">n-us-co</mods:geographicCode> 
+          </mods:subject>  
+          <mods:subject authority="lcsh"> 
+            <mods:topic>Tax shelters</mods:topic>  
+            <mods:geographic>Colorado</mods:geographic> 
+          </mods:subject>  
+          <mods:subject authority="lcsh"> 
+            <mods:topic>Real estate investment</mods:topic>  
+            <mods:topic>Taxation</mods:topic> 
+          </mods:subject>  
+          <mods:classification authority="codocs">REG12.2/QU2/2008/INTERNET</mods:classification>  
+          <mods:recordInfo> 
+            <mods:recordIdentifier source="OCoLC">226414829</mods:recordIdentifier> 
+          </mods:recordInfo>  
+          <mods:location> 
+            <mods:url usage="primary display">http://hdl.handle.net/10176/co:4901</mods:url> 
+          </mods:location> 
+        </mods:mods>

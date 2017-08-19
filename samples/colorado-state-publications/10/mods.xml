@@ -1,0 +1,45 @@
+
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-2.xsd" version="3.2">
+  <mods:titleInfo>
+    <mods:title>Potential rail line acquisition report to the Transportation Legislative Review Committee</mods:title>
+  </mods:titleInfo>
+  <mods:name type="corporate">
+    <mods:namePart>Colorado. Department of Transportation.</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="marcrelator" type="text">contributor</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:originInfo>
+    <mods:place>
+      <mods:placeTerm type="text">Denver, Colo.</mods:placeTerm>
+    </mods:place>
+    <mods:publisher>Colorado Department of Transportation</mods:publisher>
+    <mods:dateIssued keyDate="yes">2009</mods:dateIssued>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:extent>1 online resource (11 pages) : illustrations</mods:extent>
+  </mods:physicalDescription>
+  <mods:abstract>Report on rail abandonments and recommendations relative to possible rail line acquisitions.</mods:abstract>
+  <mods:subject authority="lcsh">
+    <mods:topic>Railroads--Abandonment</mods:topic>
+    <mods:topic>Abandonment</mods:topic>
+    <mods:geographic>Colorado</mods:geographic>
+  </mods:subject>
+  <mods:subject authority="lcsh">
+    <mods:topic>Right of way</mods:topic>
+    <mods:topic>Right of way</mods:topic>
+  </mods:subject>
+  <mods:note>prepared by the Colorado Department of Transportation.</mods:note>
+  <mods:note>Online resource; title from PDF cover (viewed January 2016)</mods:note>
+  <mods:classification authority="codocs">TRA1.2/AC7/2009/INTERNET</mods:classification>
+  <mods:recordInfo>
+    <mods:recordIdentifier source="OCoLC">933744844</mods:recordIdentifier>
+    <mods:languageOfCataloging>
+      <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+    </mods:languageOfCataloging>
+  </mods:recordInfo>
+</mods:mods>

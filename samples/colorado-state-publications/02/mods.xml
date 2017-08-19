@@ -1,0 +1,49 @@
+
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3">  
+          <mods:titleInfo> 
+            <mods:title>Denver area high occupancy vehicles &amp; express lanes</mods:title> 
+          </mods:titleInfo>  
+          <mods:name type="corporate"> 
+            <mods:namePart>Colorado. Dept. of Transportation. Public Relations Office.</mods:namePart>  
+            <mods:role> 
+              <mods:roleTerm authority="marcrelator" type="text">contributor</mods:roleTerm> 
+            </mods:role> 
+          </mods:name>  
+          <mods:typeOfResource>text</mods:typeOfResource>  
+          <mods:originInfo> 
+            <mods:place> 
+              <mods:placeTerm type="text">Denver, Colo.</mods:placeTerm> 
+            </mods:place>  
+            <mods:publisher>Colorado Department of Transportation, Public Relations Office</mods:publisher>  
+            <mods:dateIssued keyDate="yes">2006</mods:dateIssued> 
+          </mods:originInfo>  
+          <mods:language> 
+            <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm> 
+          </mods:language>  
+          <mods:physicalDescription> 
+            <mods:form authority="gmd">electronic resource</mods:form>  
+            <mods:extent>1 PDF (1 p. : ill., map ; 190 KB)</mods:extent> 
+          </mods:physicalDescription>  
+          <mods:note>Caption title.</mods:note>  
+          <mods:subject> 
+            <mods:geographicCode authority="marcgac">n-us-co</mods:geographicCode> 
+          </mods:subject>  
+          <mods:subject authority="lcsh"> 
+            <mods:topic>High occupancy vehicle lanes</mods:topic>  
+            <mods:geographic>Colorado</mods:geographic>  
+            <mods:geographic>Denver Metropolitan Area</mods:geographic> 
+          </mods:subject>  
+          <mods:subject authority="lcsh"> 
+            <mods:topic>Express highways</mods:topic> 
+          </mods:subject>  
+          <mods:subject authority="lcsh"> 
+            <mods:topic>Transportation</mods:topic> 
+          </mods:subject>  
+          <mods:classification authority="codocs">TRA1/20.2/H53/2006/INTERNET</mods:classification>  
+          <mods:recordInfo> 
+            <mods:recordIdentifier source="OCoLC">231399551</mods:recordIdentifier> 
+          </mods:recordInfo>  
+          <mods:location> 
+            <mods:url usage="primary display">http://hdl.handle.net/10176/co:5102</mods:url> 
+          </mods:location> 
+        </mods:mods>

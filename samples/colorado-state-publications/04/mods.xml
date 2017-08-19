@@ -1,0 +1,52 @@
+
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3">  
+          <mods:titleInfo> 
+            <mods:title>Colorado Department of Revenue electronic hearings, 2002 sunset review</mods:title> 
+          </mods:titleInfo>  
+          <mods:name type="corporate"> 
+            <mods:namePart>Colorado. Dept. of Regulatory Agencies. Office of Policy and Research.</mods:namePart>  
+            <mods:role> 
+              <mods:roleTerm authority="marcrelator" type="text">contributor</mods:roleTerm> 
+            </mods:role> 
+          </mods:name>  
+          <mods:typeOfResource>text</mods:typeOfResource>  
+          <mods:originInfo> 
+            <mods:place> 
+              <mods:placeTerm type="text">Denver, Colo.</mods:placeTerm> 
+            </mods:place>  
+            <mods:publisher>Colorado Dept. of Regulatory Agencies, Office of Policy and Research</mods:publisher>  
+            <mods:dateIssued keyDate="yes">2002</mods:dateIssued> 
+          </mods:originInfo>  
+          <mods:language> 
+            <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm> 
+          </mods:language>  
+          <mods:physicalDescription> 
+            <mods:form authority="gmd">electronic resource</mods:form>  
+            <mods:extent>1 PDF (25 leaves ; 655KB)</mods:extent> 
+          </mods:physicalDescription>  
+          <mods:note>Cover title.</mods:note>  
+          <mods:subject> 
+            <mods:geographicCode authority="marcgac">n-us-co</mods:geographicCode> 
+          </mods:subject>  
+          <mods:subject authority="lcsh"> 
+            <mods:topic>Traffic courts</mods:topic>  
+            <mods:geographic>Colorado</mods:geographic>  
+            <mods:topic>Automation</mods:topic> 
+          </mods:subject>  
+          <mods:subject authority="lcsh"> 
+            <mods:topic>Traffic violations</mods:topic> 
+          </mods:subject>  
+          <mods:subject authority="lcsh"> 
+            <mods:name type="corporate"> 
+              <mods:namePart>Colorado.</mods:namePart>  
+              <mods:namePart>Dept. of Revenue.</mods:namePart> 
+            </mods:name> 
+          </mods:subject>  
+          <mods:classification authority="codocs">REG12.2/EL2/2002/INTERNET</mods:classification>  
+          <mods:recordInfo> 
+            <mods:recordIdentifier source="OCoLC">173190973</mods:recordIdentifier> 
+          </mods:recordInfo>  
+          <mods:location> 
+            <mods:url usage="primary display">http://hdl.handle.net/10176/co:4714</mods:url> 
+          </mods:location> 
+        </mods:mods>
