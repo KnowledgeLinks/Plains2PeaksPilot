@@ -1,0 +1,30 @@
+{
+  "alternativeTitle": "Ft. Arnett  1940",
+  "dataProvider": "Eagle Valley Library District",
+  "description": "Ft. Arnett in Red Cliff as it appeared in 1940.",
+  "extent": "2.125 x 3.125 in. Print, Photographic Original",
+  "format": "Still Image",
+  "identifier": "evld:579",
+  "includeInDPLA": "default",
+  "isShownAt": "https://evld.marmot.org/Archive/evld%3A579/LargeImage",
+  "place": [
+    "Red Cliff, Colorado"
+  ],
+  "preview": "https://islandora.marmot.org/islandora/object/evld:579/datastream/SC/view",
+  "relation": [
+    "Eagle Valley Local History Archive"
+  ],
+  "rights": "http://rightsstatements.org/page/CNE/1.0/?language=en",
+  "rightsHolder": [
+    "Eagle County Historical Society"
+  ],
+  "subject": [
+    "Ft. Arnett 1940",
+    "historic sites",
+    "geography",
+    "fort arnett red cliff",
+    "red cliff colorado"
+  ],
+  "title": "Ft. Arnett 1940",
+  "type": "Image"
+}

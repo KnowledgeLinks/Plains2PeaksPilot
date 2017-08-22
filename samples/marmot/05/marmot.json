@@ -1,0 +1,30 @@
+{
+  "creator": [
+    "Frank Kuykendall"
+  ],
+  "dataProvider": "Salida Regional Library (Salida, Colo.)",
+  "description": "A photograph of downtown Maysville in the 1880s. Visible business fronts: Stationery &amp; Post Office, and the Bakery.&#xD;\nThis photo is part of the Donna Nevens Collection.",
+  "extent": "1 photograph",
+  "format": "Still Image",
+  "identifier": "salida:494",
+  "includeInDPLA": "default",
+  "isShownAt": "https://salida.marmot.org/Archive/salida%3A494/LargeImage",
+  "language": "English",
+  "place": [
+    "Maysville, Colorado"
+  ],
+  "preview": "https://islandora.marmot.org/islandora/object/salida:494/datastream/TN/view",
+  "relation": [
+    "Donna Nevens Collection"
+  ],
+  "rights": "http://rightsstatements.org/page/CNE/1.0/?language=en",
+  "rightsHolder": [
+    "Salida Regional Library"
+  ],
+  "subject": [
+    "Stationery Store & Bakery in Maysville",
+    "maysville  -- history"
+  ],
+  "title": "Stationery Store & Bakery in Maysville",
+  "type": "Image"
+}

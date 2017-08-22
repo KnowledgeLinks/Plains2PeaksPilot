@@ -1,0 +1,32 @@
+{
+  "alternativeTitle": "Beck, McIlnay and Robinson at logging camp",
+  "dataProvider": "Eagle Valley Library District",
+  "description": "From left, Buster Beck, Durbin McIlnay, and Frank Robinson at a logging camp on the upper Wearyman Creek.",
+  "extent": "3 x 3 in. Print, Photographic Original",
+  "format": "Still Image",
+  "identifier": "evld:2294",
+  "includeInDPLA": "default",
+  "isShownAt": "https://evld.marmot.org/Archive/evld%3A2294/LargeImage",
+  "place": [
+    "Wearyman Creek, Colorado"
+  ],
+  "preview": "https://islandora.marmot.org/islandora/object/evld:2294/datastream/SC/view",
+  "publisher": [
+    "Buster Michael Beck",
+    "Durbin Burbank \"Mac\" McIlnay",
+    "Franklin \"Frank\" Arthur Robinson"
+  ],
+  "relation": [
+    "Eagle Valley Local History Archive"
+  ],
+  "rights": "http://rightsstatements.org/page/CNE/1.0/?language=en",
+  "subject": [
+    "Buster Beck, Durbin McIlnay, Frank Robinson",
+    "business &amp; commerce",
+    "logging",
+    "wearyman creek colorado",
+    "warren brothers &amp; robinson sawmill"
+  ],
+  "title": "Buster Beck, Durbin McIlnay, Frank Robinson",
+  "type": "Image"
+}

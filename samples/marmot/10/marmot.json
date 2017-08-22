@@ -1,0 +1,27 @@
+{
+  "alternativeTitle": "Locomotive at the depot in Minturn  April  1951",
+  "dataProvider": "Eagle Valley Library District",
+  "description": " ",
+  "extent": "4 x 2.75 in. Print, Photographic Original",
+  "format": "Still Image",
+  "identifier": "evld:4406",
+  "includeInDPLA": "default",
+  "isShownAt": "https://evld.marmot.org/Archive/evld%3A4406/LargeImage",
+  "place": [
+    "Minturn, Colorado"
+  ],
+  "preview": "https://islandora.marmot.org/islandora/object/evld:4406/datastream/SC/view",
+  "relation": [
+    "Eagle Valley Local History Archive"
+  ],
+  "rights": "http://rightsstatements.org/page/CNE/1.0/?language=en",
+  "rightsHolder": [
+    "Eagle County Historical Society"
+  ],
+  "subject": [
+    "Locomotive at depot",
+    ""
+  ],
+  "title": "Locomotive at depot",
+  "type": "Image"
+}

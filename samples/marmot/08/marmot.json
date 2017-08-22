@@ -1,0 +1,21 @@
+{
+  "dataProvider": "Leslie J. Savage Library",
+  "description": "",
+  "extent": "5\" X 8\"",
+  "format": "Still Image",
+  "identifier": "western:276",
+  "includeInDPLA": "default",
+  "isShownAt": "https://western.marmot.org/Archive/western%3A276/LargeImage",
+  "language": "English",
+  "preview": "https://islandora.marmot.org/islandora/object/western:276/datastream/SC/view",
+  "relation": [
+    "Western Historical Photograph Collection"
+  ],
+  "rights": "http://rightsstatements.org/page/CNE/1.0/?language=en",
+  "subject": [
+    "Alpine ski competition south of Crested Butte, 1950s.",
+    "cross-country skiing--colorado"
+  ],
+  "title": "Alpine ski competition south of Crested Butte, 1950s.",
+  "type": "Image"
+}

@@ -1,0 +1,34 @@
+{
+  "alternativeTitle": "Buster Beck and Alan Albert",
+  "dataProvider": "Eagle Valley Library District",
+  "description": "Returning to Gilman for a tour on July 26, 1997.  Buster Beck and Alan Albert.",
+  "extent": "6 x 4 in. Print, Photographic Original",
+  "format": "Still Image",
+  "identifier": "evld:4361",
+  "includeInDPLA": "default",
+  "isShownAt": "https://evld.marmot.org/Archive/evld%3A4361/LargeImage",
+  "place": [
+    "Red Cliff, Colorado"
+  ],
+  "preview": "https://islandora.marmot.org/islandora/object/evld:4361/datastream/SC/view",
+  "publisher": [
+    "Buster Michael Beck",
+    "Alan Shields Albert"
+  ],
+  "relation": [
+    "Eagle Valley Local History Archive"
+  ],
+  "rights": "http://rightsstatements.org/page/CNE/1.0/?language=en",
+  "rightsHolder": [
+    "Eagle County Historical Society"
+  ],
+  "subject": [
+    "Buster Beck and Alan Albert",
+    "buildings",
+    "mining",
+    "towns",
+    ""
+  ],
+  "title": "Buster Beck and Alan Albert",
+  "type": "Image"
+}
