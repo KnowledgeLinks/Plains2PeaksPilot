@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+<link rel="shortcut icon" href="https://uwdigital.uwyo.edu/sites/default/files/newbookmark.png" type="image/png" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming | UW Digital</title>
+  <style media="all">
+@import url("https://uwdigital.uwyo.edu/modules/system/system.base.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/modules/system/system.messages.css?ov3hkz");
+</style>
+<style media="all">
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.button.min.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader/BookReader.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.slider.min.css?ov3hkz");
+</style>
+<style media="all">
+@import url("https://uwdigital.uwyo.edu/modules/aggregator/aggregator.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/modules/comment/comment.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/date/date_api/date.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/modules/field/theme/field.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora/css/islandora.base.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora/css/islandora.theme.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_audio/css/islandora_audio.theme.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_collection/css/islandora_basic_collection.base.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_collection/css/islandora_basic_collection.theme.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_image/css/islandora_basic_image.theme.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_batch/css/views_table_contextual_links_fix.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_bookmark/css/islandora_bookmark.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_fits/css/islandora_fits.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_large_image/css/islandora_large_image.theme.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_metadata_analyzer/css/analyzerStyle.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_newspaper/css/islandora_newspaper.base.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_newspaper/css/islandora_newspaper.theme.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_oralhistories/css/islandora_oralhistories.theme.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_oralhistories/bootstrap/css/oh-bootstrap-all.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_pdf/css/islandora_pdf.theme.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_premis/css/islandora_premis.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solr_search/css/islandora_solr.base.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solr_metadata/css/islandora_solr_metadata.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_video/css/islandora_video.theme.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/modules/node/node.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/modules/search/search.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/modules/user/user.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/views/css/views.css?ov3hkz");
+</style>
+<style media="all">
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/colorbox/styles/default/colorbox_style.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/ctools/css/ctools.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/css/islandora_internet_archive_bookreader.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_compound/css/islandora_compound_object.block.css?ov3hkz");
+</style>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" media="all" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=EB+Garamond|IM+Fell+Double+Pica|Open+Sans|Montserrat" media="all" />
+<style media="all">
+@import url("https://uwdigital.uwyo.edu/sites/all/themes/gratis/css/normalize.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/themes/gratis/css/color-palettes.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/themes/gratis/css/styles.css?ov3hkz");
+</style>
+<style media="all">
+@import url("https://uwdigital.uwyo.edu/sites/all/themes/gratis/css/hacks.css?ov3hkz");
+</style>
+  <script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
+<script src="https://uwdigital.uwyo.edu/misc/jquery.once.js?v=1.2"></script>
+<script src="https://uwdigital.uwyo.edu/misc/drupal.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.10.2"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js?v=1.10.2"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.effect.min.js?v=1.10.2"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.button.min.js?v=1.10.2"></script>
+<script src="https://uwdigital.uwyo.edu/misc/jquery.ba-bbq.js?v=1.2.1"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.mouse.min.js?v=1.10.2"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.slider.min.js?v=1.10.2"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.draggable.min.js?v=1.10.2"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader//jquery.bt.min.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/detectmobilebrowser.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/jquery_1_5.min.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/jquery.ui-1.8.10/jquery-ui.min.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader/dragscrollable.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader/jquery.bt.min.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/libraries/colorbox/jquery.colorbox-min.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader/BookReader.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/islandora_book_reader.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/islandora_internet_archive_bookreader.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/misc/ajax.js?v=7.56"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/js/jquery_update.js?v=0.0.1"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_oralhistories/bootstrap/js/bootstrap.min.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/colorbox/js/colorbox.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/colorbox/styles/default/colorbox_style.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/misc/jquery.form.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/misc/progress.js?v=7.56"></script>
+<script src="https://uwdigital.uwyo.edu/misc/collapse.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/misc/form.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/google_analytics/googleanalytics.js?ov3hkz"></script>
+<script>
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-55843934-1", {"cookieDomain":".uwdigital.uwyo.edu"});ga("require", "linkid", "linkid.js");ga("set", "anonymizeIp", true);ga("set", "page", location.pathname + location.search + location.hash);ga("send", "pageview");
+</script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/collapse.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/themes/gratis/js-source/site.js?ov3hkz"></script>
+<script>
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"gratis","theme_token":"rj6RqtNSF1wZMF4whSv3y4mobGg1jpCui_xEjjX0iDc","jquery_version":"1.7","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.effect.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.button.min.js":1,"misc\/jquery.ba-bbq.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.slider.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.draggable.min.js":1,"sites\/all\/libraries\/bookreader\/BookReader\/\/jquery.bt.min.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/detectmobilebrowser.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/jquery_1_5.min.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/jquery.ui-1.8.10\/jquery-ui.min.js":1,"sites\/all\/libraries\/bookreader\/BookReader\/dragscrollable.js":1,"sites\/all\/libraries\/bookreader\/BookReader\/jquery.bt.min.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/libraries\/bookreader\/BookReader\/BookReader.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/islandora_book_reader.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/islandora_internet_archive_bookreader.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/islandora_solution_pack_oralhistories\/bootstrap\/js\/bootstrap.min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js":1,"misc\/jquery.form.js":1,"misc\/progress.js":1,"misc\/collapse.js":1,"misc\/form.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/collapse.js":1,"sites\/all\/themes\/gratis\/js-source\/site.js":1,"1":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.button.css":1,"sites\/all\/libraries\/bookreader\/BookReader\/BookReader.css":1,"misc\/ui\/jquery.ui.slider.css":1,"modules\/aggregator\/aggregator.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/islandora\/css\/islandora.base.css":1,"sites\/all\/modules\/islandora\/css\/islandora.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_audio\/css\/islandora_audio.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_collection\/css\/islandora_basic_collection.base.css":1,"sites\/all\/modules\/islandora_solution_pack_collection\/css\/islandora_basic_collection.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_image\/css\/islandora_basic_image.theme.css":1,"sites\/all\/modules\/islandora_batch\/css\/views_table_contextual_links_fix.css":1,"sites\/all\/modules\/islandora_bookmark\/css\/islandora_bookmark.css":1,"sites\/all\/modules\/islandora_fits\/css\/islandora_fits.css":1,"sites\/all\/modules\/islandora_solution_pack_large_image\/css\/islandora_large_image.theme.css":1,"sites\/all\/modules\/islandora_metadata_analyzer\/css\/analyzerStyle.css":1,"sites\/all\/modules\/islandora_solution_pack_newspaper\/css\/islandora_newspaper.base.css":1,"sites\/all\/modules\/islandora_solution_pack_newspaper\/css\/islandora_newspaper.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_oralhistories\/css\/islandora_oralhistories.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_oralhistories\/bootstrap\/css\/oh-bootstrap-all.css":1,"sites\/all\/modules\/islandora_solution_pack_pdf\/css\/islandora_pdf.theme.css":1,"sites\/all\/modules\/islandora_premis\/css\/islandora_premis.css":1,"sites\/all\/modules\/islandora_solr_search\/css\/islandora_solr.base.css":1,"sites\/all\/modules\/islandora_solr_metadata\/css\/islandora_solr_metadata.css":1,"sites\/all\/modules\/islandora_solution_pack_video\/css\/islandora_video.theme.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/css\/islandora_internet_archive_bookreader.css":1,"sites\/all\/modules\/islandora_solution_pack_compound\/css\/islandora_compound_object.block.css":1,"\/\/cdnjs.cloudflare.com\/ajax\/libs\/font-awesome\/4.3.0\/css\/font-awesome.min.css":1,"\/\/fonts.googleapis.com\/css?family=EB+Garamond|IM+Fell+Double+Pica|Open+Sans|Montserrat":1,"sites\/all\/themes\/gratis\/css\/normalize.css":1,"sites\/all\/themes\/gratis\/css\/color-palettes.css":1,"sites\/all\/themes\/gratis\/css\/core.css":1,"sites\/all\/themes\/gratis\/css\/styles.css":1,"sites\/all\/themes\/gratis\/system.theme.css":1,"sites\/all\/themes\/gratis\/system.menus.css":1,"sites\/all\/themes\/gratis\/css\/hacks.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"islandoraInternetArchiveBookReader":{"book":"wyu:136060","info":"   \u003Cfieldset class=\u0022islandora islandora-metadata\u0022\u003E\n  \u003Clegend\u003E\u003Cspan class=\u0022fieldset-legend\u0022\u003EDetails\u003C\/span\u003E\u003C\/legend\u003E\n  \u003Cdiv class=\u0022fieldset-wrapper\u0022\u003E\n    \u003Cdl xmlns:dcterms=\u0022http:\/\/purl.org\/dc\/terms\/\u0022 class=\u0022islandora-inline-metadata islandora-metadata-fields\u0022\u003E\n                    \u003Cdt class=\u0022 first\u0022\u003E\n          Title        \u003C\/dt\u003E\n        \u003Cdd class=\u0022 first\u0022\u003E\n          \u003Cp\u003EMountain-valley cattle ranching in Wyoming\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Alternative Title        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003EMountain valley cattle ranching in Wyoming\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Creator(s)        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E\u003Ca href=\u0022\/islandora\/search\/mods_name_personal_namePart_ms%3A%22Stevens%252C%255C%2BDelwin%255C%2BM.%255C%2B%255C%2528Delwin%255C%2BMoore%255C%2529%22\u0022\u003EStevens, Delwin M. (Delwin Moore)\u003C\/a\u003E\u003Cbr \/\u003E\u003Ca href=\u0022\/islandora\/search\/mods_name_personal_namePart_ms%3A%221912%255C-1992%22\u0022\u003E1912-1992\u003C\/a\u003E\u003Cbr \/\u003E\u003Ca href=\u0022\/islandora\/search\/mods_name_personal_namePart_ms%3A%22Agee%252C%255C%2BDouglas%255C%2BE.%22\u0022\u003EAgee, Douglas E.\u003C\/a\u003E\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Corporate Creator(s)        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003EUniversity of Wyoming\u003Cbr \/\u003E\nAgricultural Experiment Station\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Type of Resource        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003Etext\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Place of Publication        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003ELaramie, WY\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Publisher        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003EAgricultural Experiment Station, University of Wyoming\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Date Created        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E1962\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Date Issued        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E1962\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Extent        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E56 p. : ill., map ; 23 cm.\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Form        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003Eprint\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Topics        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_topic_ms%3A%22Animal%255C%2Bindustry%22\u0022\u003EAnimal industry\u003C\/a\u003E\u003Cbr \/\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_topic_ms%3A%22Animal%255C%2Bindustry%22\u0022\u003EAnimal industry\u003C\/a\u003E\u003Cbr \/\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_topic_ms%3A%22Costs%22\u0022\u003ECosts\u003C\/a\u003E\u003Cbr \/\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_topic_ms%3A%22Animal%255C%2Bindustry%22\u0022\u003EAnimal industry\u003C\/a\u003E\u003Cbr \/\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_topic_ms%3A%22Management%22\u0022\u003EManagement\u003C\/a\u003E\u003Cbr \/\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_topic_ms%3A%22Cattle%22\u0022\u003ECattle\u003C\/a\u003E\u003Cbr \/\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_topic_ms%3A%22Economic%255C%2Baspects%22\u0022\u003EEconomic aspects\u003C\/a\u003E\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Geographic Subjects        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_geographic_ms%3A%22Wyoming%22\u0022\u003EWyoming\u003C\/a\u003E\u003Cbr \/\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_geographic_ms%3A%22Wyoming%22\u0022\u003EWyoming\u003C\/a\u003E\u003Cbr \/\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_geographic_ms%3A%22Wyoming%22\u0022\u003EWyoming\u003C\/a\u003E\u003Cbr \/\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_geographic_ms%3A%22Wyoming%22\u0022\u003EWyoming\u003C\/a\u003E\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Series Title        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E\u003Ca href=\u0022\/islandora\/search\/mods_relatedItem_series_titleInfo_title_ms%3A%22Bulletin%255C%2B%255C%2528Wyoming%255C%2BAgricultural%255C%2BExperiment%255C%2BStation%255C%2529%22\u0022\u003EBulletin (Wyoming Agricultural Experiment Station)\u003C\/a\u003E\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Rights Statement        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003EIn Copyright\u003C\/p\u003E\n        \u003C\/dd\u003E\n                  \u003C\/dl\u003E\n  \u003C\/div\u003E\n\u003C\/fieldset\u003E\n  ","label":"Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","searchUri":"https:\/\/uwdigital.uwyo.edu\/internet_archive_bookreader_search\/wyu%3A136060\/TERM","textUri":"https:\/\/uwdigital.uwyo.edu\/internet_archive_bookreader_text\/PID","dimensionsUri":"https:\/\/uwdigital.uwyo.edu\/internet_archive_bookreader_dimensions\/PID","tokenUri":"https:\/\/uwdigital.uwyo.edu\/internet_archive_bookreader_get_image_uri\/PID","djatokaUri":"\/adore-djatoka\/","imagesFolderUri":"https:\/\/uwdigital.uwyo.edu\/sites\/all\/libraries\/bookreader\/BookReader\/images\/","compression":"4","pageProgression":"rl","pages":[{"pid":"wyu:136061","page":"001","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1120","height":"1742","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136061\/datastream\/JP2\/view?token=585d3e9ce5b91e93f6f3b9ef6deca00b825d8cd3b8a019eaf033713ca7029c9c"},{"pid":"wyu:136062","page":"002","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1084","height":"1718","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136062\/datastream\/JP2\/view?token=1fea210d4c1c865384b05df3772fca7b2d6e728485890b9ae6af8420d9e33041"},{"pid":"wyu:136063","page":"003","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1620","height":"2571","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136063\/datastream\/JP2\/view?token=e71fe9ef81035c077d1258b15e4e44bef5218634438c4e36476e866fa5e5eb84"},{"pid":"wyu:136064","page":"004","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1617","height":"2580","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136064\/datastream\/JP2\/view?token=f81b7f6d310dd09082e262babb15141ece1fdcae0faaffa010bd084f374c485f"},{"pid":"wyu:136065","page":"005","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1617","height":"2583","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136065\/datastream\/JP2\/view?token=7f5b673cf08b776313357eaca473c49d8d06e2f5eae2a0b0c95a8b62c7dae2ce"},{"pid":"wyu:136066","page":"006","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1614","height":"2583","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136066\/datastream\/JP2\/view?token=1be15e1244e19ec4067e36ea8e6612e7040b3015604ba196ffb0093465ce497d"},{"pid":"wyu:136067","page":"007","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1623","height":"2574","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136067\/datastream\/JP2\/view?token=6693fc507f9bad33d51321292d1c24b8ea0983bc1daeaceba15fb18ae2d6e486"},{"pid":"wyu:136068","page":"008","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1623","height":"2580","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136068\/datastream\/JP2\/view?token=24a094f6135269be087777a9e5ac2eb69780b02ee03ce7535f5c996a04f2e953"},{"pid":"wyu:136069","page":"009","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1614","height":"2583","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136069\/datastream\/JP2\/view?token=37d2bbfa88068a2e00a4ae5e25589ce3ce4894db3be4f1694b4af252d341cca8"},{"pid":"wyu:136070","page":"010","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1608","height":"2577","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136070\/datastream\/JP2\/view?token=c243c7ba7d18aca2d6dc1bd0a5e66a3220bda139227c764500a3c50258d3015b"},{"pid":"wyu:136071","page":"011","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1602","height":"2583","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136071\/datastream\/JP2\/view?token=3d6dd6981687b59b3d12bf78ff61fb1182765c89678a4a15ba6d79c8ff63ecad"},{"pid":"wyu:136072","page":"012","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1602","height":"2577","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136072\/datastream\/JP2\/view?token=337e0499db03cb9e62b65fc39b12d064c098b5f90d37114158a7f272d12e979c"},{"pid":"wyu:136073","page":"013","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1614","height":"2571","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136073\/datastream\/JP2\/view?token=04f5cf1557cf28f7b6295fd0c255877aa3e09359fe56ead81044892d64983fa5"},{"pid":"wyu:136074","page":"014","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1626","height":"2613","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136074\/datastream\/JP2\/view?token=40b8f3b2fbfbb5444b569a029e5143e2fb220ddff55acc52e7a9f3deca81bdab"},{"pid":"wyu:136075","page":"015","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1635","height":"2613","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136075\/datastream\/JP2\/view?token=06540e8c917a101bb9297ce14828f802265a126b68f6bc1a3062b6a7c99bf8ab"},{"pid":"wyu:136076","page":"016","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1088","height":"1742","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136076\/datastream\/JP2\/view?token=02d69f71270ba9a7f5ac8ef2854409834d54e297afd9711115921a0e1745b027"},{"pid":"wyu:136077","page":"017","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1620","height":"2619","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136077\/datastream\/JP2\/view?token=4e790d82d6a4936a50d0103f9e5a768f3f287b33658e21a7a6f8f2170c75ad0d"},{"pid":"wyu:136078","page":"018","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1623","height":"2610","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136078\/datastream\/JP2\/view?token=ae7b71280b0d5710fa83afb778513d64f8baa17515037dddc2e5ab337edb0f3c"},{"pid":"wyu:136079","page":"019","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1620","height":"2613","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136079\/datastream\/JP2\/view?token=cd9b24c0717eee48599d8af26a3087d3cfef12090deea837322fa5903c0c7f9d"},{"pid":"wyu:136080","page":"020","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1611","height":"2613","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136080\/datastream\/JP2\/view?token=5b730b13adec0ff3a8c752757b640433b7a0d2b6a94a8ace48bfa258208d4da3"},{"pid":"wyu:136081","page":"021","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1638","height":"2607","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136081\/datastream\/JP2\/view?token=441762648082d67f610748f12d1c52bea491300514b49605e34ac49824098c82"},{"pid":"wyu:136082","page":"022","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1629","height":"2604","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136082\/datastream\/JP2\/view?token=5417c53f2a23d6e04cabd30f46877d3aef5e3b77f083b4c84022b1de4259747c"},{"pid":"wyu:136083","page":"023","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1629","height":"2610","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136083\/datastream\/JP2\/view?token=0901a18228624bfcdac60815ac4dca62ab09ac97f75dfc3f9d4889c585ee0a7c"},{"pid":"wyu:136084","page":"024","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1629","height":"2622","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136084\/datastream\/JP2\/view?token=cf2e089001b09ea39e4b4aa220ecf411235b66c44fb85e5404fe154c51e80148"},{"pid":"wyu:136085","page":"025","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1617","height":"2610","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136085\/datastream\/JP2\/view?token=6e340134566e85fcb4f4479744069c7ff63114b3c1bacc0e4e4c8dc474ce4e36"},{"pid":"wyu:136086","page":"026","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1629","height":"2613","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136086\/datastream\/JP2\/view?token=15217fd4088f39d9e6ab56fb57a85feab4ef86d5b5a0f7f2c327f80bf7f99d46"},{"pid":"wyu:136087","page":"027","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1090","height":"1744","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136087\/datastream\/JP2\/view?token=9e076e3899c52cbdf5685429cf571ad1f0eba1b621330668c701be209a298e3b"},{"pid":"wyu:136088","page":"028","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1078","height":"1738","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136088\/datastream\/JP2\/view?token=f1a80befcc6ff7df3899dfc62dfa6f4ca4ac431c2168bd0616aa9549faf4c20a"},{"pid":"wyu:136089","page":"029","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1638","height":"2601","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136089\/datastream\/JP2\/view?token=7d5832c3b3f5c43a872ffe9e735502c8a53538d66abae0562b58741469b6105c"},{"pid":"wyu:136090","page":"030","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1626","height":"2589","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136090\/datastream\/JP2\/view?token=539b5e6b87640a252010a6e1595ef0f10821533b42e9b62101d603d0d4562f3a"},{"pid":"wyu:136091","page":"031","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1626","height":"2601","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136091\/datastream\/JP2\/view?token=2cadaaee3c3ef87fc5ea7a72aee64f0f8400a1a3253da76527daef6f59ef7d81"},{"pid":"wyu:136092","page":"032","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1608","height":"2610","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136092\/datastream\/JP2\/view?token=f7b96e191fb96c2b488154e24e6ad7baab035f503d1ef8cbf8f002ca60d5b6c4"},{"pid":"wyu:136093","page":"033","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1608","height":"2601","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136093\/datastream\/JP2\/view?token=4aa21a4cb0287d29ac787e94074ac93c528c9de7780a70861aed37d99b2c1f72"},{"pid":"wyu:136094","page":"034","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1617","height":"2610","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136094\/datastream\/JP2\/view?token=6c0488828417c144a12f2580a80950d175a31620d37247a740f1233d57369310"},{"pid":"wyu:136095","page":"035","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1641","height":"2604","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136095\/datastream\/JP2\/view?token=b1720658cdb89258aabe2e4251f0a19b734354b2cceab2d0658baff60eb8e0d3"},{"pid":"wyu:136096","page":"036","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1629","height":"2601","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136096\/datastream\/JP2\/view?token=c2b9670d088f61181563a49aa3c10f9f1fc88bfc0eaee209ef0997c9514bd1a8"},{"pid":"wyu:136097","page":"037","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1650","height":"2604","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136097\/datastream\/JP2\/view?token=663ad311ae3e86eff98102ef4c634621be73498006845177cbe0b2f9e7745e12"},{"pid":"wyu:136098","page":"038","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1629","height":"2592","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136098\/datastream\/JP2\/view?token=910a0662babacb55aa89c0c63195163bc980a11a5598d6a7279a8120187ff39a"},{"pid":"wyu:136099","page":"039","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1098","height":"1728","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136099\/datastream\/JP2\/view?token=e3690a966abf8b76579f19712452dc5348e415e27f0cec1650b8b1f6383872b4"},{"pid":"wyu:136100","page":"040","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1635","height":"2598","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136100\/datastream\/JP2\/view?token=45178d40716ac98ab94075a9ed6b82e97798bd978eda53421576bd2e37d54bff"},{"pid":"wyu:136101","page":"041","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1632","height":"2598","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136101\/datastream\/JP2\/view?token=0fd758162ccfac14a6b87be60d6ae1b7347aac2e86a4d5eddc0ce55ee14c63c4"},{"pid":"wyu:136102","page":"042","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1629","height":"2604","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136102\/datastream\/JP2\/view?token=420a705c439f98514acadb52b74c75994bc3fa7e6e679a78b92e6b15f117cea9"},{"pid":"wyu:136103","page":"043","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1632","height":"2592","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136103\/datastream\/JP2\/view?token=c5ed338018e0c32cca54d192587fd0b8df8ef24edf8879e414d30b0a6b2ec90a"},{"pid":"wyu:136104","page":"044","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1635","height":"2604","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136104\/datastream\/JP2\/view?token=4dac3b4dd41382e4655081999b5194717240ecc889933bfa3da8baca3267f12c"},{"pid":"wyu:136105","page":"045","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1623","height":"2601","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136105\/datastream\/JP2\/view?token=95c67f7dd4859281d35926ef68656f35ca8c20035f6f863bfbaf469eb370b365"},{"pid":"wyu:136106","page":"046","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1626","height":"2604","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136106\/datastream\/JP2\/view?token=476bf7562324e8306ea1fe5a67f55c8c10ef151ecdc4999b1815841972843dd2"},{"pid":"wyu:136107","page":"047","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1623","height":"2601","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136107\/datastream\/JP2\/view?token=5fa4e4f4b97158294570bd9fa09f4fe8076b66b458ec55f65e73295b35b2e024"},{"pid":"wyu:136108","page":"048","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1659","height":"2604","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136108\/datastream\/JP2\/view?token=d8d51af2ac23d015449306192b70b909ee64179f313c1b4e6989f8e6839917be"},{"pid":"wyu:136109","page":"049","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1662","height":"2586","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136109\/datastream\/JP2\/view?token=3559b430c1c277fc797164b958f7cd7c4d8dfa1127d574717e2be82c0b27f88c"},{"pid":"wyu:136110","page":"050","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1638","height":"2586","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136110\/datastream\/JP2\/view?token=1c41c7e33435d9c8aaaede10dceabb127f5f5f9ef433c26c6516621f0072c075"},{"pid":"wyu:136111","page":"051","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1635","height":"2595","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136111\/datastream\/JP2\/view?token=3bb9152ac5a39aaab1d7a3d6a624f1ba49c1bf6c1546b821cff71cb1ba392cfe"},{"pid":"wyu:136112","page":"052","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1626","height":"2586","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136112\/datastream\/JP2\/view?token=19f3a8243d94b8c87e2cf8602e11f745053ee3e4c46f3394e3ea6acf8a6fdba8"},{"pid":"wyu:136113","page":"053","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1638","height":"2586","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136113\/datastream\/JP2\/view?token=179f380f6b29520883b02e1e960907594e3dbe078eac7e3d8d15e2442df53c9c"},{"pid":"wyu:136114","page":"054","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1626","height":"2586","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136114\/datastream\/JP2\/view?token=bb97bf8b295f64f966cf5c10f8ef16de90fd89db6bdf74dec7a46b9e46ddc506"},{"pid":"wyu:136115","page":"055","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1626","height":"2583","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136115\/datastream\/JP2\/view?token=421fe8305dd98e3f6a6a0afe37ad310eb5dd107740ed63b58bafee8f672196fe"},{"pid":"wyu:136116","page":"056","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1623","height":"2592","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136116\/datastream\/JP2\/view?token=b191f6d2bc04fd346002f260765997661a6a17ffdc7ad7da6ed787a9bcf582f6"},{"pid":"wyu:136117","page":"057","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1629","height":"2592","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136117\/datastream\/JP2\/view?token=8fbeb977ef4487849091b5bb7344bc570653bf8e1b0fc5211b2403b87e57653d"},{"pid":"wyu:136118","page":"058","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1629","height":"2571","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136118\/datastream\/JP2\/view?token=b2a48e8e15977c05ac69a4076fa6c08fbce34d6962e86381999d8810b2bbafee"},{"pid":"wyu:136119","page":"059","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1080","height":"1724","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136119\/datastream\/JP2\/view?token=00959df1e52271d5312291d4674621559f2c6d56308de68428869c2f65e71841"},{"pid":"wyu:136120","page":"060","label":"[Page of] Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming","width":"1536","height":"2580","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A136120\/datastream\/JP2\/view?token=30ba2111c54d06358e2561409c6163705165942ce45a3ed7abb51479f0b5989f"}],"pageCount":60,"overlayOpacity":"0.5","mode":2,"mobilize":0,"content_type":"book","useBackupUri":0},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|tif|jpg|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1,"trackDomainMode":"1","trackUrlFragments":1},"urlIsAjaxTrusted":{"\/islandora\/object\/wyu:136060\/\/datastream\/MODS":true}});
+</script>
+    <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="html not-front not-logged-in no-sidebars page-islandora page-islandora-object page-islandora-object-wyu136060 page-islandora-object-wyu136060- page-islandora-object-wyu136060--datastream page-islandora-object-wyu136060--datastream-mods designkit preface-three postscript-one footer-three site-name-show site-slogan-show site-slogan-not-empty color-palette-chartreuse heading-typeface-opensans body-typeface-opensans header-left-right not-node themebg-dark default-layout bg_pattern_01 no_tint">
+<div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+</div>
+
+  <div class="l-page-wrapper">
+    <div class="l-page">
+
+      <!-- top links-->
+            <!-- //top links-->
+
+      <!-- header -->
+      <div id="header-bar" class="l-header-wrapper" role="banner">
+        <header class="l-header l-setwidth" >
+
+                    <div class="l-logo">
+              <a href="/" title="UW Digital » UW Libraries Digital Repository.">
+                <img id="logo-img" src="https://uwdigital.uwyo.edu/sites/default/files/digilogo200.png" alt="UW Digital » UW Libraries Digital Repository."/></a>
+            </div><!--// l-logo-->
+            
+                    <div class="l-branding">
+
+                                  <h1 class="site-name">
+                    <a href="/">
+                      UW Digital</a>
+                  </h1>
+              
+                                      <h3 class="site-slogan">UW Libraries Digital Repository.</h3>
+                
+          </div><!--//branding-->
+            
+        </header>
+      </div><!-- // l-header -wrapper-->
+
+      <div id="menu-wrapper" class="l-menu-wrapper main-menu" role="navigation">
+        <div class="l-setwidth" >
+
+                      <a id="off-canvas-left-show" href="#off-canvas" class="l-off-canvas-show l-off-canvas-show--left">Show Navigation</a>
+            <div id="off-canvas-left" class="l-off-canvas l-off-canvas--left">
+              <a id="off-canvas-left-hide" href="#" class="l-off-canvas-hide l-off-canvas-hide--left">Hide Navigation</a>
+
+              <div class="main-menu-wrapper">
+
+                <ul class="menu primary"><li class="first leaf menu-218 home level-1"><a href="/" title="" class="alink menu-218 home">Home</a></li>
+<li class="expanded menu-676 collections level-1"><a href="/featured-collections" title="Check out our featured collections!" class="alink menu-676 collections">Collections</a><ul class="menu"><li class="first leaf menu-675 browseourtoplevelcollections level-2"><a href="/islandora" title="Browse top collections." class="alink menu-675 browseourtoplevelcollections">Browse Our Top-Level Collections</a></li>
+<li class="leaf menu-1076 popularitems level-2"><a href="/usage-highest" title="Check out what everyone else is looking at." class="alink menu-1076 popularitems">Popular Items</a></li>
+<li class="leaf menu-1079 specialcollections level-2"><a href="http://hdl.handle.net/10176/wyu:25864" title="Books in the public domain from our Special Collections at UW Libraries. " class="alink menu-1079 specialcollections">Special Collections</a></li>
+<li class="leaf menu-681 agriculturalbulletins level-2"><a href="/agricultural-bulletins" title="Wyoming Agricultural Experiment Station Bulletins" class="alink menu-681 agriculturalbulletins">Agricultural Bulletins</a></li>
+<li class="leaf menu-678 botanicalfieldbookstimeline level-2"><a href="/browse-fieldbooks-date" title="" class="alink menu-678 botanicalfieldbookstimeline">Botanical Fieldbooks Timeline</a></li>
+<li class="leaf menu-677 yearbooks level-2"><a href="/yearbooks" title="Check out our various digitized yearbooks!" class="alink menu-677 yearbooks">Yearbooks</a></li>
+<li class="last leaf menu-1396 willismcdonaldivcollection level-2"><a href="/willis-mcdonald-iv-collection" title="Details on the private Business Equity Collection" class="alink menu-1396 willismcdonaldivcollection">Willis McDonald IV Collection</a></li>
+</ul></li>
+<li class="leaf menu-1090 exhibits level-1"><a href="https://www-lib.uwyo.edu/digital/exhibits/" title="Check out our Digital Exhibit Platform!" class="alink menu-1090 exhibits">Exhibits</a></li>
+<li class="expanded menu-670 repositories level-1"><a href="/repositories" title="Check out the different repositories available from the Digital Collections Office." class="alink menu-670 repositories">Repositories</a><ul class="menu"><li class="first leaf menu-1295 uwdatarepository level-2"><a href="http://data.uwyo.edu/" title="Check out our Repository for Research data at UW." class="alink menu-1295 uwdatarepository">UW Data Repository</a></li>
+<li class="leaf menu-671 wyscholarsrepository level-2"><a href="/wysr" title="Wyoming Scholar&#039;s Repository" class="alink menu-671 wyscholarsrepository">Wy Scholars Repository</a></li>
+<li class="last leaf menu-674 digitalherbaria level-2"><a href="/digital-herbaria" class="alink menu-674 digitalherbaria">Digital Herbaria</a></li>
+</ul></li>
+<li class="expanded menu-682 about level-1"><a href="/about" title="Contact Information, FAQ&#039;s, Equipment, Software, and Policies." class="alink menu-682 about">About</a><ul class="menu"><li class="first leaf menu-684 people level-2"><a href="/people" title="We who work the digital." class="alink menu-684 people">People</a></li>
+<li class="leaf menu-686 digitizationequipment level-2"><a href="/equipment" title="Take a look at how we do what we do." class="alink menu-686 digitizationequipment">Digitization Equipment</a></li>
+<li class="last leaf menu-729 login level-2"><a href="https://uwdigital.uwyo.edu/login" title="Sign into the secure site." class="alink menu-729 login">Login</a></li>
+</ul></li>
+<li class="last collapsed menu-746 uwlibraries level-1"><a href="http://www-lib.uwyo.edu/" title="Visit the UW Libraries Website." class="alink menu-746 uwlibraries">UW Libraries</a></li>
+</ul>              </div>
+            </div><!-- // off-canvas-left -->
+                    <!-- //main menu -->
+
+          <!-- for third party menu systems or modules-->
+          
+        </div>
+      </div>
+
+<div class="l-content-wrap">
+
+  
+              <div id="breadcrumbs-wrapper" class="l-breadcrumbs">
+          <div class="breadcrumbs l-setwidth" >
+            <div class="s-grid"><h2 class="element-invisible">You are here</h2><nav class="breadcrumb"><a href="/">Home</a> » <a href="/islandora">Browse Our Top-Level Collections</a> » <a href="/islandora/object/wyu%3A6417">Wyoming Agricultural Experiment Station</a> » <a href="/islandora/object/wyu%3A12113">Wyoming Agricultural Experiment Station Bulletins</a> » Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming</nav></div>
+          </div>
+        </div>
+      
+      <!-- preface -->
+      
+        <div id="preface-wrap" class="l-preface-wrap">
+          <div id="preface-container" class="l-preface l-setwidth" >
+
+            <!--Preface -->
+                          <div class="preface">
+                
+
+
+  <div class="region region-preface-first">
+    <div id="block-service-links-service-links-not-node" class="block block-service-links">
+
+      
+  <div class="service-links"><a href="http://www.facebook.com/sharer.php?u=https%3A//uwdigital.uwyo.edu/islandora/object/wyu%253A136060//datastream/MODS&amp;t=Bulletin%20No.%20386%20-%20Mountain-valley%20cattle%20ranching%20in%20Wyoming" title="Share on Facebook" class="service-links-facebook" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="https://uwdigital.uwyo.edu/sites/all/modules/service_links/images/facebook.png" alt="Facebook logo" /></a> <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//uwdigital.uwyo.edu/islandora/object/wyu%253A136060//datastream/MODS&amp;title=Bulletin%20No.%20386%20-%20Mountain-valley%20cattle%20ranching%20in%20Wyoming&amp;summary=&amp;source=UW%20Digital" title="Publish this post to LinkedIn" class="service-links-linkedin" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="https://uwdigital.uwyo.edu/sites/all/modules/service_links/images/linkedin.png" alt="LinkedIn logo" /></a> <a href="http://www.stumbleupon.com/submit?url=https%3A//uwdigital.uwyo.edu/islandora/object/wyu%253A136060//datastream/MODS&amp;title=Bulletin%20No.%20386%20-%20Mountain-valley%20cattle%20ranching%20in%20Wyoming" title="Thumb this up at StumbleUpon" class="service-links-stumbleupon" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="https://uwdigital.uwyo.edu/sites/all/modules/service_links/images/stumbleit.png" alt="StumbleUpon logo" /></a> <a href="https://plus.google.com/share?url=https%3A//uwdigital.uwyo.edu/islandora/object/wyu%253A136060//datastream/MODS" title="Share this on Google+" class="service-links-google-plus" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="https://uwdigital.uwyo.edu/sites/all/modules/service_links/images/google_plus.png" alt="Google+ logo" /></a></div>
+</div>
+  </div>
+              </div>
+            
+                          <div class="preface">
+                
+
+
+  <div class="region region-preface-second">
+    <div id="block-block-42" class="block block-block">
+
+      
+  <p> </p>
+
+</div>
+  </div>
+              </div>
+            
+                          <div class="preface">
+                
+
+
+  <div class="region region-preface-third">
+    <div id="block-islandora-solr-simple" class="block block-islandora-solr">
+
+      
+  <form action="/islandora/object/wyu:136060//datastream/MODS" method="post" id="islandora-solr-simple-search-form" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-simple"><div class="form-item form-type-textfield form-item-islandora-simple-search-query">
+  <input type="text" id="edit-islandora-simple-search-query" name="islandora_simple_search_query" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<input type="submit" id="edit-submit" name="op" value="search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-gIoqCFHJ9-HIKd9dpIq0BjdO1LS1x0_j3TOPAnd2h4g" />
+<input type="hidden" name="form_id" value="islandora_solr_simple_search_form" />
+</div></form>
+</div>
+  </div>
+              </div>
+            
+          </div>
+        </div>
+        <!-- // preface -->
+
+      
+      <div class="main" >
+        <div class="l-main l-setwidth" role="main" >
+
+          <div class="l-content">
+            <a id="main-content"></a>
+                                      <h1>Bulletin No. 386 - Mountain-valley cattle ranching in Wyoming</h1>
+                                                <h2 class="element-invisible">Primary tabs</h2><ul class="tabs primary"><li class="active"><a href="/islandora/object/wyu%3A136060" class="active">View<span class="element-invisible">(active tab)</span></a></li>
+<li><a href="/islandora/object/wyu%3A136060/view_mods_as_marcxml">MARCXML</a></li>
+<li><a href="/islandora/object/wyu%3A136060/pages">Pages</a></li>
+</ul>                                    
+
+
+  <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+      
+    <div id="book-viewer">
+    <div id="BookReader" class="islandora-internet-archive-bookreader">
+   Loading the Internet Archive BookReader, please wait...
+</div>
+  </div>
+
+  <div class="islandora-book-metadata">
+          <div>
+    <h2>In collections</h2>
+    <ul>
+              <li><a href="/islandora/object/wyu%3A12113">Wyoming Agricultural Experiment Station Bulletins</a></li>
+          </ul>
+  </div>
+       <fieldset class="islandora islandora-metadata collapsible">
+  <legend><span class="fieldset-legend">Details</span></legend>
+  <div class="fieldset-wrapper">
+    <dl xmlns:dcterms="http://purl.org/dc/terms/" class="islandora-inline-metadata islandora-metadata-fields">
+                    <dt class=" first">
+          Title        </dt>
+        <dd class=" first">
+          <p>Mountain-valley cattle ranching in Wyoming</p>
+        </dd>
+                      <dt class="">
+          Alternative Title        </dt>
+        <dd class="">
+          <p>Mountain valley cattle ranching in Wyoming</p>
+        </dd>
+                      <dt class="">
+          Creator(s)        </dt>
+        <dd class="">
+          <p><a href="/islandora/search/mods_name_personal_namePart_ms%3A%22Stevens%252C%255C%2BDelwin%255C%2BM.%255C%2B%255C%2528Delwin%255C%2BMoore%255C%2529%22">Stevens, Delwin M. (Delwin Moore)</a><br /><a href="/islandora/search/mods_name_personal_namePart_ms%3A%221912%255C-1992%22">1912-1992</a><br /><a href="/islandora/search/mods_name_personal_namePart_ms%3A%22Agee%252C%255C%2BDouglas%255C%2BE.%22">Agee, Douglas E.</a></p>
+        </dd>
+                      <dt class="">
+          Corporate Creator(s)        </dt>
+        <dd class="">
+          <p>University of Wyoming<br />
+Agricultural Experiment Station</p>
+        </dd>
+                      <dt class="">
+          Type of Resource        </dt>
+        <dd class="">
+          <p>text</p>
+        </dd>
+                      <dt class="">
+          Place of Publication        </dt>
+        <dd class="">
+          <p>Laramie, WY</p>
+        </dd>
+                      <dt class="">
+          Publisher        </dt>
+        <dd class="">
+          <p>Agricultural Experiment Station, University of Wyoming</p>
+        </dd>
+                      <dt class="">
+          Date Created        </dt>
+        <dd class="">
+          <p>1962</p>
+        </dd>
+                      <dt class="">
+          Date Issued        </dt>
+        <dd class="">
+          <p>1962</p>
+        </dd>
+                      <dt class="">
+          Extent        </dt>
+        <dd class="">
+          <p>56 p. : ill., map ; 23 cm.</p>
+        </dd>
+                      <dt class="">
+          Form        </dt>
+        <dd class="">
+          <p>print</p>
+        </dd>
+                      <dt class="">
+          Topics        </dt>
+        <dd class="">
+          <p><a href="/islandora/search/mods_subject_topic_ms%3A%22Animal%255C%2Bindustry%22">Animal industry</a><br /><a href="/islandora/search/mods_subject_topic_ms%3A%22Animal%255C%2Bindustry%22">Animal industry</a><br /><a href="/islandora/search/mods_subject_topic_ms%3A%22Costs%22">Costs</a><br /><a href="/islandora/search/mods_subject_topic_ms%3A%22Animal%255C%2Bindustry%22">Animal industry</a><br /><a href="/islandora/search/mods_subject_topic_ms%3A%22Management%22">Management</a><br /><a href="/islandora/search/mods_subject_topic_ms%3A%22Cattle%22">Cattle</a><br /><a href="/islandora/search/mods_subject_topic_ms%3A%22Economic%255C%2Baspects%22">Economic aspects</a></p>
+        </dd>
+                      <dt class="">
+          Geographic Subjects        </dt>
+        <dd class="">
+          <p><a href="/islandora/search/mods_subject_geographic_ms%3A%22Wyoming%22">Wyoming</a><br /><a href="/islandora/search/mods_subject_geographic_ms%3A%22Wyoming%22">Wyoming</a><br /><a href="/islandora/search/mods_subject_geographic_ms%3A%22Wyoming%22">Wyoming</a><br /><a href="/islandora/search/mods_subject_geographic_ms%3A%22Wyoming%22">Wyoming</a></p>
+        </dd>
+                      <dt class="">
+          Series Title        </dt>
+        <dd class="">
+          <p><a href="/islandora/search/mods_relatedItem_series_titleInfo_title_ms%3A%22Bulletin%255C%2B%255C%2528Wyoming%255C%2BAgricultural%255C%2BExperiment%255C%2BStation%255C%2529%22">Bulletin (Wyoming Agricultural Experiment Station)</a></p>
+        </dd>
+                      <dt class="">
+          Rights Statement        </dt>
+        <dd class="">
+          <p>In Copyright</p>
+        </dd>
+                  </dl>
+  </div>
+</fieldset>
+    </div>
+
+</div>
+<div id="block-views-permanent-link-block" class="block block-views">
+
+      
+  <div class="view view-permanent-link view-id-permanent_link view-display-id-block view-dom-id-87e6586ab15e2610dffa5ed45ac00cc3">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content">Permanently Link to this Resource: <a href="http://hdl.handle.net/10176/wyu:136060" title="A handle is a permanent link to this resource, no matter what the URL might become over time.">hdl.handle.net/10176/wyu:136060</a></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+</div>
+<div id="block-islandora-downloadable-pdf-pdf-download" class="block block-islandora-downloadable-pdf">
+
+      
+  <div class="downloadlink"><a href="https://uwdigital.uwyo.edu/islandora/object/wyu:136060/datastream/PDF/view">Download PDF</a></div>
+</div>
+  </div>
+                      </div>
+
+                            </div>
+
+      </div>
+
+      
+
+      <footer id="footer" role="footer" class="l-footer-wrapper">
+        <div class="l-setwidth l-footer" >
+
+          <!--footer -->
+                      <div class="footer">
+              
+
+
+  <div class="region region-footer-first">
+    <div id="block-block-71" class="block block-block">
+
+      
+  <h3>Contact Digital Collections</h3>
+<p>Phone: 307-766-5560 <br /><a href="mailto:digcol@uwyo.edu">email: digcol{at}uwyo{dot}edu</a></p>
+
+</div>
+  </div>
+            </div>
+          
+                      <div class="footer">
+              
+
+
+  <div class="region region-footer-second">
+    <div id="block-block-70" class="block block-block">
+
+      
+  <p> </p>
+
+</div>
+  </div>
+            </div>
+          
+                      <div class="footer">
+              
+
+
+  <div class="region region-footer-third">
+    <div id="block-block-72" class="block block-block">
+
+      
+  <p><a href="http://uwdigital.uwyo.edu/contact">Contact Form <img src="http://www-lib.uwyo.edu/img/feedback.png" /></a>  <br /><br /><a href="https://uwdigital.uwyo.edu/login">Login</a><br /><a href="/user/logout">Log Out</a></p>
+
+</div>
+  </div>
+            </div>
+          
+        </div>
+      </footer>
+
+</div>
+
+    </div>
+    <a href="#" class="scrolltop">Scroll to the top</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+<link rel="shortcut icon" href="https://uwdigital.uwyo.edu/sites/default/files/newbookmark.png" type="image/png" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>The Yearling - 1959 | UW Digital</title>
+  <style media="all">
+@import url("https://uwdigital.uwyo.edu/modules/system/system.base.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/modules/system/system.messages.css?ov3hkz");
+</style>
+<style media="all">
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.button.min.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader/BookReader.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.slider.min.css?ov3hkz");
+</style>
+<style media="all">
+@import url("https://uwdigital.uwyo.edu/modules/aggregator/aggregator.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/modules/comment/comment.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/date/date_api/date.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/modules/field/theme/field.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora/css/islandora.base.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora/css/islandora.theme.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_audio/css/islandora_audio.theme.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_collection/css/islandora_basic_collection.base.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_collection/css/islandora_basic_collection.theme.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_image/css/islandora_basic_image.theme.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_batch/css/views_table_contextual_links_fix.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_bookmark/css/islandora_bookmark.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_fits/css/islandora_fits.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_large_image/css/islandora_large_image.theme.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_metadata_analyzer/css/analyzerStyle.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_newspaper/css/islandora_newspaper.base.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_newspaper/css/islandora_newspaper.theme.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_oralhistories/css/islandora_oralhistories.theme.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_oralhistories/bootstrap/css/oh-bootstrap-all.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_pdf/css/islandora_pdf.theme.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_premis/css/islandora_premis.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solr_search/css/islandora_solr.base.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solr_metadata/css/islandora_solr_metadata.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_video/css/islandora_video.theme.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/modules/node/node.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/modules/search/search.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/modules/user/user.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/views/css/views.css?ov3hkz");
+</style>
+<style media="all">
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/colorbox/styles/default/colorbox_style.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/ctools/css/ctools.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/css/islandora_internet_archive_bookreader.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_compound/css/islandora_compound_object.block.css?ov3hkz");
+</style>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" media="all" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=EB+Garamond|IM+Fell+Double+Pica|Open+Sans|Montserrat" media="all" />
+<style media="all">
+@import url("https://uwdigital.uwyo.edu/sites/all/themes/gratis/css/normalize.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/themes/gratis/css/color-palettes.css?ov3hkz");
+@import url("https://uwdigital.uwyo.edu/sites/all/themes/gratis/css/styles.css?ov3hkz");
+</style>
+<style media="all">
+@import url("https://uwdigital.uwyo.edu/sites/all/themes/gratis/css/hacks.css?ov3hkz");
+</style>
+  <script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
+<script src="https://uwdigital.uwyo.edu/misc/jquery.once.js?v=1.2"></script>
+<script src="https://uwdigital.uwyo.edu/misc/drupal.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.10.2"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js?v=1.10.2"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.effect.min.js?v=1.10.2"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.button.min.js?v=1.10.2"></script>
+<script src="https://uwdigital.uwyo.edu/misc/jquery.ba-bbq.js?v=1.2.1"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.mouse.min.js?v=1.10.2"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.slider.min.js?v=1.10.2"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.draggable.min.js?v=1.10.2"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader//jquery.bt.min.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/detectmobilebrowser.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/jquery_1_5.min.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/jquery.ui-1.8.10/jquery-ui.min.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader/dragscrollable.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader/jquery.bt.min.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/libraries/colorbox/jquery.colorbox-min.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader/BookReader.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/islandora_book_reader.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/islandora_internet_archive_bookreader.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/misc/ajax.js?v=7.56"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/js/jquery_update.js?v=0.0.1"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_oralhistories/bootstrap/js/bootstrap.min.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/colorbox/js/colorbox.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/colorbox/styles/default/colorbox_style.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/misc/jquery.form.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/misc/progress.js?v=7.56"></script>
+<script src="https://uwdigital.uwyo.edu/misc/collapse.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/misc/form.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/google_analytics/googleanalytics.js?ov3hkz"></script>
+<script>
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-55843934-1", {"cookieDomain":".uwdigital.uwyo.edu"});ga("require", "linkid", "linkid.js");ga("set", "anonymizeIp", true);ga("set", "page", location.pathname + location.search + location.hash);ga("send", "pageview");
+</script>
+<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/collapse.js?ov3hkz"></script>
+<script src="https://uwdigital.uwyo.edu/sites/all/themes/gratis/js-source/site.js?ov3hkz"></script>
+<script>
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"gratis","theme_token":"rPZgulBd7AsZYwt2ka7NbVXi3bX0nwGbb7KcGwwszBo","jquery_version":"1.7","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.effect.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.button.min.js":1,"misc\/jquery.ba-bbq.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.slider.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.draggable.min.js":1,"sites\/all\/libraries\/bookreader\/BookReader\/\/jquery.bt.min.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/detectmobilebrowser.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/jquery_1_5.min.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/jquery.ui-1.8.10\/jquery-ui.min.js":1,"sites\/all\/libraries\/bookreader\/BookReader\/dragscrollable.js":1,"sites\/all\/libraries\/bookreader\/BookReader\/jquery.bt.min.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/libraries\/bookreader\/BookReader\/BookReader.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/islandora_book_reader.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/islandora_internet_archive_bookreader.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/islandora_solution_pack_oralhistories\/bootstrap\/js\/bootstrap.min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js":1,"misc\/jquery.form.js":1,"misc\/progress.js":1,"misc\/collapse.js":1,"misc\/form.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/collapse.js":1,"sites\/all\/themes\/gratis\/js-source\/site.js":1,"1":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.button.css":1,"sites\/all\/libraries\/bookreader\/BookReader\/BookReader.css":1,"misc\/ui\/jquery.ui.slider.css":1,"modules\/aggregator\/aggregator.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/islandora\/css\/islandora.base.css":1,"sites\/all\/modules\/islandora\/css\/islandora.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_audio\/css\/islandora_audio.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_collection\/css\/islandora_basic_collection.base.css":1,"sites\/all\/modules\/islandora_solution_pack_collection\/css\/islandora_basic_collection.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_image\/css\/islandora_basic_image.theme.css":1,"sites\/all\/modules\/islandora_batch\/css\/views_table_contextual_links_fix.css":1,"sites\/all\/modules\/islandora_bookmark\/css\/islandora_bookmark.css":1,"sites\/all\/modules\/islandora_fits\/css\/islandora_fits.css":1,"sites\/all\/modules\/islandora_solution_pack_large_image\/css\/islandora_large_image.theme.css":1,"sites\/all\/modules\/islandora_metadata_analyzer\/css\/analyzerStyle.css":1,"sites\/all\/modules\/islandora_solution_pack_newspaper\/css\/islandora_newspaper.base.css":1,"sites\/all\/modules\/islandora_solution_pack_newspaper\/css\/islandora_newspaper.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_oralhistories\/css\/islandora_oralhistories.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_oralhistories\/bootstrap\/css\/oh-bootstrap-all.css":1,"sites\/all\/modules\/islandora_solution_pack_pdf\/css\/islandora_pdf.theme.css":1,"sites\/all\/modules\/islandora_premis\/css\/islandora_premis.css":1,"sites\/all\/modules\/islandora_solr_search\/css\/islandora_solr.base.css":1,"sites\/all\/modules\/islandora_solr_metadata\/css\/islandora_solr_metadata.css":1,"sites\/all\/modules\/islandora_solution_pack_video\/css\/islandora_video.theme.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/css\/islandora_internet_archive_bookreader.css":1,"sites\/all\/modules\/islandora_solution_pack_compound\/css\/islandora_compound_object.block.css":1,"\/\/cdnjs.cloudflare.com\/ajax\/libs\/font-awesome\/4.3.0\/css\/font-awesome.min.css":1,"\/\/fonts.googleapis.com\/css?family=EB+Garamond|IM+Fell+Double+Pica|Open+Sans|Montserrat":1,"sites\/all\/themes\/gratis\/css\/normalize.css":1,"sites\/all\/themes\/gratis\/css\/color-palettes.css":1,"sites\/all\/themes\/gratis\/css\/core.css":1,"sites\/all\/themes\/gratis\/css\/styles.css":1,"sites\/all\/themes\/gratis\/system.theme.css":1,"sites\/all\/themes\/gratis\/system.menus.css":1,"sites\/all\/themes\/gratis\/css\/hacks.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"islandoraInternetArchiveBookReader":{"book":"wyu:53625","info":"   \u003Cfieldset class=\u0022islandora islandora-metadata\u0022\u003E\n  \u003Clegend\u003E\u003Cspan class=\u0022fieldset-legend\u0022\u003EDetails\u003C\/span\u003E\u003C\/legend\u003E\n  \u003Cdiv class=\u0022fieldset-wrapper\u0022\u003E\n    \u003Cdl xmlns:dcterms=\u0022http:\/\/purl.org\/dc\/terms\/\u0022 class=\u0022islandora-inline-metadata islandora-metadata-fields\u0022\u003E\n                    \u003Cdt class=\u0022 first\u0022\u003E\n          Title        \u003C\/dt\u003E\n        \u003Cdd class=\u0022 first\u0022\u003E\n          \u003Cp\u003EThe Yearling 1959\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Corporate Creator(s)        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003EUniversity of Wyoming\u003Cbr \/\u003E\nUniversity High School (1939-1973)\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Type of Resource        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003Etext\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Place of Publication        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003ELaramie, Wyo\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Publisher        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003EUniversity High School\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Date Created        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E1959\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Extent        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003Ev. : ill. ; 28 cm.\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Form        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003Eprint\u003Cbr \/\u003E\nTIFF\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Topics        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_topic_ms%3A%22Students%22\u0022\u003EStudents\u003C\/a\u003E\u003Cbr \/\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_topic_ms%3A%22Yearbooks%22\u0022\u003EYearbooks\u003C\/a\u003E\u003Cbr \/\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_topic_ms%3A%22School%255C%2Byearbooks%22\u0022\u003ESchool yearbooks\u003C\/a\u003E\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Geographic Subjects        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_geographic_ms%3A%22Wyoming%22\u0022\u003EWyoming\u003C\/a\u003E\u003Cbr \/\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_geographic_ms%3A%22Laramie%22\u0022\u003ELaramie\u003C\/a\u003E\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Organizations        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_name_corporate_namePart_ms%3A%22University%255C%2Bof%255C%2BWyoming%22\u0022\u003EUniversity of Wyoming\u003C\/a\u003E\u003Cbr \/\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_name_corporate_namePart_ms%3A%22University%255C%2BHigh%255C%2BSchool%255C%2B%255C%25281939%255C-1973%255C%2529%22\u0022\u003EUniversity High School (1939-1973)\u003C\/a\u003E\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Rights Statement        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003EIn Copyright\u003C\/p\u003E\n        \u003C\/dd\u003E\n                  \u003C\/dl\u003E\n  \u003C\/div\u003E\n\u003C\/fieldset\u003E\n  ","label":"The Yearling - 1959","searchUri":"https:\/\/uwdigital.uwyo.edu\/internet_archive_bookreader_search\/wyu%3A53625\/TERM","textUri":"https:\/\/uwdigital.uwyo.edu\/internet_archive_bookreader_text\/PID","dimensionsUri":"https:\/\/uwdigital.uwyo.edu\/internet_archive_bookreader_dimensions\/PID","tokenUri":"https:\/\/uwdigital.uwyo.edu\/internet_archive_bookreader_get_image_uri\/PID","djatokaUri":"\/adore-djatoka\/","imagesFolderUri":"https:\/\/uwdigital.uwyo.edu\/sites\/all\/libraries\/bookreader\/BookReader\/images\/","compression":"4","pageProgression":"rl","pages":[{"pid":"wyu:53683","page":"001","label":"[Page of] The Yearling - 1959","width":"3248","height":"4261","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53683\/datastream\/JP2\/view?token=6bf088b083cc86192d3f64fc5fae70f0bf78a25ecf7bba049c0195cc03a93b99"},{"pid":"wyu:53668","page":"002","label":"[Page of] The Yearling - 1959","width":"3211","height":"4278","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53668\/datastream\/JP2\/view?token=19292dcfb420bbd35710fe6ec5275f4b55d8e6b91c35632004dddcd1469cf707"},{"pid":"wyu:53686","page":"003","label":"[Page of] The Yearling - 1959","width":"3273","height":"4278","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53686\/datastream\/JP2\/view?token=74046726931fbd13aaa4e495512b75f24dee2e5851ce5a20d99c7c56f16b04c1"},{"pid":"wyu:53659","page":"004","label":"[Page of] The Yearling - 1959","width":"3328","height":"4265","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53659\/datastream\/JP2\/view?token=f065e42bae69ed70d44371d4820d8a4f7cebebcdc1f92d84bbf7ff021f2f389a"},{"pid":"wyu:53631","page":"005","label":"[Page of] The Yearling - 1959","width":"3151","height":"4254","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53631\/datastream\/JP2\/view?token=22fc4d5af06ca6fbcea820e82b11ac7ff92f35f715bf340596e654bc8fbd568a"},{"pid":"wyu:53666","page":"006","label":"[Page of] The Yearling - 1959","width":"3220","height":"4262","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53666\/datastream\/JP2\/view?token=1e21fce179e9fea81fadc66737123fc48c08a0ecb046d35b6c188433ead1b6b4"},{"pid":"wyu:53643","page":"007","label":"[Page of] The Yearling - 1959","width":"3262","height":"4265","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53643\/datastream\/JP2\/view?token=957b1619d84273e1caffbc82dcf61f6de7985df0147138d10c251c079435303f"},{"pid":"wyu:53670","page":"008","label":"[Page of] The Yearling - 1959","width":"3236","height":"4267","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53670\/datastream\/JP2\/view?token=8c78f784b2334b659f74bb5100ed45af6d75d31da28818233ba910cff21c14c2"},{"pid":"wyu:53714","page":"009","label":"[Page of] The Yearling - 1959","width":"3251","height":"4267","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53714\/datastream\/JP2\/view?token=f26970c81a8cdd94c6d7a46dfd916c6a33a4122b1b8e8d260aa245fef43b0e9d"},{"pid":"wyu:53664","page":"010","label":"[Page of] The Yearling - 1959","width":"3251","height":"4267","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53664\/datastream\/JP2\/view?token=9409cd1a32921df29a75ecaebc8b1e23d4d0f2314a02cd7889db8a306d4fa4a7"},{"pid":"wyu:53690","page":"011","label":"[Page of] The Yearling - 1959","width":"3236","height":"4267","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53690\/datastream\/JP2\/view?token=e65f895646609f4718f6005e9d1d940574eb378c2065b2eb6ceaefc68b0e5317"},{"pid":"wyu:53653","page":"012","label":"[Page of] The Yearling - 1959","width":"3322","height":"4256","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53653\/datastream\/JP2\/view?token=e6c5b6c963f0bee3ec8b929b87758c516bb219088baccce1e0159d9184fe1d6e"},{"pid":"wyu:53688","page":"013","label":"[Page of] The Yearling - 1959","width":"3163","height":"4267","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53688\/datastream\/JP2\/view?token=98b54aadab1957eae2797d9811cf2c5818e2ff120d3d847be2bba59fd19bebba"},{"pid":"wyu:53707","page":"014","label":"[Page of] The Yearling - 1959","width":"3254","height":"4266","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53707\/datastream\/JP2\/view?token=97b3232c005526fb8634ae7743b7731a51e61aa47eb6a1c54a8718e46905b36f"},{"pid":"wyu:53672","page":"015","label":"[Page of] The Yearling - 1959","width":"3253","height":"4267","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53672\/datastream\/JP2\/view?token=6899e19c3615c92b4f28d10c48acc5f05b3b322a17221d5f2ca241b9171b9b53"},{"pid":"wyu:53675","page":"016","label":"[Page of] The Yearling - 1959","width":"3269","height":"4268","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53675\/datastream\/JP2\/view?token=bf0e070d24e242d486abe2cb75a25089c85130e4fd9ee5f64bdb87212d522878"},{"pid":"wyu:53685","page":"017","label":"[Page of] The Yearling - 1959","width":"3217","height":"4264","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53685\/datastream\/JP2\/view?token=ec62f5abe7db086b4598d54273c0d64182a14118bfad5499ddfe530c93e964a2"},{"pid":"wyu:53676","page":"018","label":"[Page of] The Yearling - 1959","width":"3280","height":"4266","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53676\/datastream\/JP2\/view?token=c3f8143dac5e1330d454cf90f0ef73aa9fec50f0ca040b9288bc0df90f01b4a3"},{"pid":"wyu:53654","page":"019","label":"[Page of] The Yearling - 1959","width":"3229","height":"4266","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53654\/datastream\/JP2\/view?token=0c183f0eb24d61d705ab8227097e99bd875ed7049f082f7e454234d8049b823f"},{"pid":"wyu:53636","page":"020","label":"[Page of] The Yearling - 1959","width":"3282","height":"4266","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53636\/datastream\/JP2\/view?token=7046917cb8984ab51db7c18d7250b61f7941051c52a628368d1d384878bfdf95"},{"pid":"wyu:53706","page":"021","label":"[Page of] The Yearling - 1959","width":"3203","height":"4262","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53706\/datastream\/JP2\/view?token=cbfcefc643106ca08aafd7a13086bc780c23851c5ab0f60203fbf74e37f4a598"},{"pid":"wyu:53627","page":"022","label":"[Page of] The Yearling - 1959","width":"3277","height":"4259","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53627\/datastream\/JP2\/view?token=9a3d8ad9921ed833a243a99fe50debd939cb6a6cd56a860a782ca40fd27dac58"},{"pid":"wyu:53644","page":"023","label":"[Page of] The Yearling - 1959","width":"3241","height":"4265","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53644\/datastream\/JP2\/view?token=b7b0c45835505872e5b3cbf22939e9465ab30d5dd3854b6b561487ba1f8842fb"},{"pid":"wyu:53705","page":"024","label":"[Page of] The Yearling - 1959","width":"3303","height":"4264","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53705\/datastream\/JP2\/view?token=38e92c05bed703a68cc7c33af8d7f02e8dc606a54319fef6e707c320ff6eee59"},{"pid":"wyu:53658","page":"025","label":"[Page of] The Yearling - 1959","width":"3204","height":"4257","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53658\/datastream\/JP2\/view?token=813e20bb6fa3f0d5ae7ffee9ba95dfe7f5d550c9b87f1458a8f0f3240af44b0b"},{"pid":"wyu:53649","page":"026","label":"[Page of] The Yearling - 1959","width":"3293","height":"4263","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53649\/datastream\/JP2\/view?token=d574f5f23563c8c3a5e573b0f76e90a53614349bba8bc391bd85ebfba4081d3a"},{"pid":"wyu:53640","page":"027","label":"[Page of] The Yearling - 1959","width":"3219","height":"4263","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53640\/datastream\/JP2\/view?token=e358c17622a9e4625126d0a80a665f2f696e2e566505c154b4c96b9fa97cf3da"},{"pid":"wyu:53655","page":"028","label":"[Page of] The Yearling - 1959","width":"3303","height":"4248","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53655\/datastream\/JP2\/view?token=f4e660c1e5deb9dd7770a543c7a343638bf005cb4b3174af25586e4d008a9674"},{"pid":"wyu:53650","page":"029","label":"[Page of] The Yearling - 1959","width":"3185","height":"4265","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53650\/datastream\/JP2\/view?token=053c4c400ea026f4b25f2dc64d8514aab7d135020f12c1cab6533d7880e00ec9"},{"pid":"wyu:53697","page":"030","label":"[Page of] The Yearling - 1959","width":"3272","height":"4262","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53697\/datastream\/JP2\/view?token=9afe47772f4c9694bad246b6d0c0af1c5de6542951bf8bda8c74a3634844251c"},{"pid":"wyu:53673","page":"031","label":"[Page of] The Yearling - 1959","width":"3204","height":"4262","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53673\/datastream\/JP2\/view?token=ac3bc49553a6af3d9239984d9fe8963473873b730989fae30daff3240a808027"},{"pid":"wyu:53687","page":"032","label":"[Page of] The Yearling - 1959","width":"3299","height":"4263","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53687\/datastream\/JP2\/view?token=c407d96117461f3f090ee0bbd80ecbf59d6c5e7db53ac92ad9f5ee5e4423b8dd"},{"pid":"wyu:53701","page":"033","label":"[Page of] The Yearling - 1959","width":"3196","height":"4251","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53701\/datastream\/JP2\/view?token=acc3326f9a2696ced6e1d3df90aad65e81caf505101c92a88d64ceb32642c945"},{"pid":"wyu:53665","page":"034","label":"[Page of] The Yearling - 1959","width":"3297","height":"4259","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53665\/datastream\/JP2\/view?token=20ec33568ccd3bb00d3c5e3bd08e57f5206bce028524570a0afcbcf56a812c7f"},{"pid":"wyu:53662","page":"035","label":"[Page of] The Yearling - 1959","width":"3203","height":"4263","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53662\/datastream\/JP2\/view?token=38fbd3c591c1c56b2662fee281d274a9cb3c50b7cad0f5f1b5fdff4f3b1ca880"},{"pid":"wyu:53669","page":"036","label":"[Page of] The Yearling - 1959","width":"3289","height":"4263","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53669\/datastream\/JP2\/view?token=05222cd9d24cb096f321347b5943ef47b33e0d47e4aa62592ad884656415f9f2"},{"pid":"wyu:53692","page":"037","label":"[Page of] The Yearling - 1959","width":"3204","height":"4259","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53692\/datastream\/JP2\/view?token=b2cf4ca2fe62a333eb016057ff1afa562194a4f0015fcefa1fbf59f6c0171fd8"},{"pid":"wyu:53674","page":"038","label":"[Page of] The Yearling - 1959","width":"3300","height":"4285","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53674\/datastream\/JP2\/view?token=5cbb0bd2ff36cae180847bde12fbdeb8344c85cfbe3cab14e1bcca6ff57dc1ac"},{"pid":"wyu:53702","page":"039","label":"[Page of] The Yearling - 1959","width":"3255","height":"4272","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53702\/datastream\/JP2\/view?token=35a87ebca18ffc16dfcc197bd5466811db72c0b495bb1bd121eb49c83f68109d"},{"pid":"wyu:53712","page":"040","label":"[Page of] The Yearling - 1959","width":"3317","height":"4271","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53712\/datastream\/JP2\/view?token=7fa75ea9d34294d9fcb04ad6223b75e3df6b09a64db2aa5d28cbc3b564b686fb"},{"pid":"wyu:53700","page":"041","label":"[Page of] The Yearling - 1959","width":"3258","height":"4272","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53700\/datastream\/JP2\/view?token=23627604865ef242e18d3e161f49b400b516bd96043bebb8004b421797a9bbbd"},{"pid":"wyu:53648","page":"042","label":"[Page of] The Yearling - 1959","width":"3335","height":"4283","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53648\/datastream\/JP2\/view?token=99a33467b7d6ecb38839a5a353a1ca8c1d4f0bfdbc0761054a78eb36035dc25c"},{"pid":"wyu:53699","page":"043","label":"[Page of] The Yearling - 1959","width":"3197","height":"4286","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53699\/datastream\/JP2\/view?token=7345506fc8415d324a4a93872accc5dfeb2e16d68ad2d79307773e7b13355d90"},{"pid":"wyu:53713","page":"044","label":"[Page of] The Yearling - 1959","width":"3319","height":"4270","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53713\/datastream\/JP2\/view?token=076b2854a5342c1fe974d1198bd77701ccbdd4c2425dcb8472b72227d6709676"},{"pid":"wyu:53684","page":"045","label":"[Page of] The Yearling - 1959","width":"3244","height":"4271","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53684\/datastream\/JP2\/view?token=a65eb1db36ab9a32029c36b7172320adf76542ec66103e4c9e7e63c16f98d6eb"},{"pid":"wyu:53641","page":"046","label":"[Page of] The Yearling - 1959","width":"3280","height":"4271","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53641\/datastream\/JP2\/view?token=60770a956a3389f107694849ebd0a557bb5f28adfb530d92188515aacd734eab"},{"pid":"wyu:53711","page":"047","label":"[Page of] The Yearling - 1959","width":"3222","height":"4258","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53711\/datastream\/JP2\/view?token=4f518d475d708d29abb29f597dcd4f6ca29ffe1396152720e2299c6f3ef73e8d"},{"pid":"wyu:53646","page":"048","label":"[Page of] The Yearling - 1959","width":"3268","height":"4273","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53646\/datastream\/JP2\/view?token=5993e7f797b58617b0398d7b8f1522d38985896d7f3327a48fe7d6cc82b801a6"},{"pid":"wyu:53638","page":"049","label":"[Page of] The Yearling - 1959","width":"3244","height":"4273","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53638\/datastream\/JP2\/view?token=3fb47d22df51ff7506817b5b043bc186f77ffd9cd72d1de02c867d878f444c0c"},{"pid":"wyu:53671","page":"050","label":"[Page of] The Yearling - 1959","width":"3283","height":"4272","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53671\/datastream\/JP2\/view?token=fdd88be31a51221bb085828231f67910b2d28e937e5a5d2f963ed61ed3b7fd39"},{"pid":"wyu:53691","page":"051","label":"[Page of] The Yearling - 1959","width":"3245","height":"4273","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53691\/datastream\/JP2\/view?token=526675a650007121cfec4e4964e4c766aab9525be5ffe9602585b51c8b03d5b3"},{"pid":"wyu:53635","page":"052","label":"[Page of] The Yearling - 1959","width":"3296","height":"4273","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53635\/datastream\/JP2\/view?token=2647219faf3249561d65e64e8eddccfe323162c91d851606dea315b7b12cfca2"},{"pid":"wyu:53663","page":"053","label":"[Page of] The Yearling - 1959","width":"3244","height":"4274","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53663\/datastream\/JP2\/view?token=22ccde82d3faef5d67c6f34d57c5bb4a7739556b530f9b9041e26c285f37081a"},{"pid":"wyu:53634","page":"054","label":"[Page of] The Yearling - 1959","width":"3286","height":"4274","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53634\/datastream\/JP2\/view?token=733cf4e0ba091806f3b67a54c36c12b0916f18757b47381315eadf3a078f5ed3"},{"pid":"wyu:53715","page":"055","label":"[Page of] The Yearling - 1959","width":"3226","height":"4274","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53715\/datastream\/JP2\/view?token=2c9b2726632a3c663efa12e6aa32b2305727a164495ce3ae5675e3c84db09d67"},{"pid":"wyu:53626","page":"056","label":"[Page of] The Yearling - 1959","width":"3302","height":"4271","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53626\/datastream\/JP2\/view?token=0f920344c16242ca25d0f03d18ab768aac74d5e3cbec2b0458dfd86c6923c3f4"},{"pid":"wyu:53657","page":"057","label":"[Page of] The Yearling - 1959","width":"3234","height":"4255","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53657\/datastream\/JP2\/view?token=b7423e3f339ca86c81ef1c96bbe43986dadfcfabb790cd1aa5fe7650d4169d6d"},{"pid":"wyu:53694","page":"058","label":"[Page of] The Yearling - 1959","width":"3289","height":"4272","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53694\/datastream\/JP2\/view?token=8226091261cfa2c5b09bfcecebc47161af193ed94257d49c53dbd2279642fce9"},{"pid":"wyu:53661","page":"059","label":"[Page of] The Yearling - 1959","width":"3229","height":"4254","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53661\/datastream\/JP2\/view?token=888c9ace9697a747fb179e254d0bb13dd636083fb400fd8afc3bd3f2b80b46ca"},{"pid":"wyu:53704","page":"060","label":"[Page of] The Yearling - 1959","width":"3258","height":"4234","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53704\/datastream\/JP2\/view?token=72d7755d7e292fd1b434532b379f919d0dc6d2f3bf5af9380a09be0080fa8c8d"},{"pid":"wyu:53651","page":"061","label":"[Page of] The Yearling - 1959","width":"3196","height":"4234","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53651\/datastream\/JP2\/view?token=13ffa99dd2a35c2069080320b39cfe995ed8805a2ba56f84c3fa977772a0963f"},{"pid":"wyu:53678","page":"062","label":"[Page of] The Yearling - 1959","width":"3247","height":"4233","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53678\/datastream\/JP2\/view?token=fd3dc173472847daaff06093f9e6c73d8548a9d57aa4dd967b30bfcf5c9b33ee"},{"pid":"wyu:53689","page":"063","label":"[Page of] The Yearling - 1959","width":"3207","height":"4235","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53689\/datastream\/JP2\/view?token=556289672f08de965d4f2a79b414c6bba2f4d3e1c0cb487daadeea54b9f0ea8a"},{"pid":"wyu:53710","page":"064","label":"[Page of] The Yearling - 1959","width":"3265","height":"4234","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53710\/datastream\/JP2\/view?token=af3f832349f1f11fa72c62b9b4d65413b61eed95b6abea38e3e67aec2cdd7c99"},{"pid":"wyu:53633","page":"065","label":"[Page of] The Yearling - 1959","width":"3181","height":"4226","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53633\/datastream\/JP2\/view?token=9aff561bbf58c175173a674c04771de6a2ea78d23465b376e1f17d418251bc4a"},{"pid":"wyu:53630","page":"066","label":"[Page of] The Yearling - 1959","width":"3262","height":"4225","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53630\/datastream\/JP2\/view?token=53fc7572adf87df462ec2baffca5a6140b7d3857b1bdb0345a06d5a4d7998492"},{"pid":"wyu:53667","page":"067","label":"[Page of] The Yearling - 1959","width":"3212","height":"4233","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53667\/datastream\/JP2\/view?token=b7cdfe5ed6ef4f10dab8ec3fa97ed9f64d935790861669caab4f8002e6310543"},{"pid":"wyu:53682","page":"068","label":"[Page of] The Yearling - 1959","width":"3288","height":"4242","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53682\/datastream\/JP2\/view?token=47f975da13e64e2ca28f5bbe64c9268f7fa76228df8b6a96c6566e6828cc893b"},{"pid":"wyu:53709","page":"069","label":"[Page of] The Yearling - 1959","width":"3214","height":"4242","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53709\/datastream\/JP2\/view?token=471dcadf2f5e3f3a3a30390cba7476839d57afe58f10c1b83d6c13e63db5a69c"},{"pid":"wyu:53677","page":"070","label":"[Page of] The Yearling - 1959","width":"3263","height":"4239","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53677\/datastream\/JP2\/view?token=e97c8586dbb2baf528ed7ab1551f80c6df95a1885cd1ca0823e1103c53f431b2"},{"pid":"wyu:53708","page":"071","label":"[Page of] The Yearling - 1959","width":"3217","height":"4239","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53708\/datastream\/JP2\/view?token=3dc0c18adfe6394dbb616de74597ccccd3b1161b7e7163be1f9b15aa96c00916"},{"pid":"wyu:53660","page":"072","label":"[Page of] The Yearling - 1959","width":"3263","height":"4239","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53660\/datastream\/JP2\/view?token=dce7acef1c7f4ee79e594dd9545e17d71413912cdf5004403b246f94f15311a1"},{"pid":"wyu:53656","page":"073","label":"[Page of] The Yearling - 1959","width":"3199","height":"4239","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53656\/datastream\/JP2\/view?token=d4aed3796da2091b40d75894608eb7ce8014b3ceb8d14e59b7a09525e229eeca"},{"pid":"wyu:53639","page":"074","label":"[Page of] The Yearling - 1959","width":"3253","height":"4230","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53639\/datastream\/JP2\/view?token=5d97d1b11e984f30201f360906c8d764d3f17565c6773445dc4b4158be4b22a7"},{"pid":"wyu:53628","page":"075","label":"[Page of] The Yearling - 1959","width":"3211","height":"4241","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53628\/datastream\/JP2\/view?token=5d7a983900a2bef12abe69dd7748be89112eaab9be4428441c86eeebbf5a1bfb"},{"pid":"wyu:53652","page":"076","label":"[Page of] The Yearling - 1959","width":"3273","height":"4241","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53652\/datastream\/JP2\/view?token=b58e67b29bbd8ea64a524f0bb51098d5c3d0d766d1f62d00bebd42bbe7909577"},{"pid":"wyu:53680","page":"077","label":"[Page of] The Yearling - 1959","width":"3211","height":"4241","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53680\/datastream\/JP2\/view?token=f3c9969b8877e5d36b7059d327e12d9eff5773f4e7e012cdd620ed8f328b3391"},{"pid":"wyu:53681","page":"078","label":"[Page of] The Yearling - 1959","width":"3275","height":"4238","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53681\/datastream\/JP2\/view?token=62281e98975c1fb0a83303d75cb63061b5f74b2636ea23a687130c1bbf96590c"},{"pid":"wyu:53642","page":"079","label":"[Page of] The Yearling - 1959","width":"3213","height":"4238","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53642\/datastream\/JP2\/view?token=04864ca2ca2967fe90c47453f2a2a76d8a601e46e29c55951b91c5da8472b6c3"},{"pid":"wyu:53696","page":"080","label":"[Page of] The Yearling - 1959","width":"3261","height":"4240","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53696\/datastream\/JP2\/view?token=a87014fdefc3fd0390eb8445fda00267d51d99a8837dc2c586c79b34de068891"},{"pid":"wyu:53695","page":"081","label":"[Page of] The Yearling - 1959","width":"3176","height":"4243","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53695\/datastream\/JP2\/view?token=cd9a29cc8a7d6d4c474ea89349cb7012f19cd082865d7da1adf9e6e7fc66921a"},{"pid":"wyu:53632","page":"082","label":"[Page of] The Yearling - 1959","width":"3288","height":"4242","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53632\/datastream\/JP2\/view?token=726f24f5066a9243a656ad81f2df7b8696e72505d631d52498761546fcbd63e8"},{"pid":"wyu:53679","page":"083","label":"[Page of] The Yearling - 1959","width":"3169","height":"4242","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53679\/datastream\/JP2\/view?token=1ccc53c86a5c347e45d0b09f3753c09fe71c07cbbedc6259736b82b9b39fd7e4"},{"pid":"wyu:53698","page":"084","label":"[Page of] The Yearling - 1959","width":"3407","height":"4233","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53698\/datastream\/JP2\/view?token=cf4a6274f85886596720e5e5b7e4e0903158b4b63728909e2609876b174e683e"},{"pid":"wyu:53703","page":"085","label":"[Page of] The Yearling - 1959","width":"3028","height":"4228","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53703\/datastream\/JP2\/view?token=02ce00ea85cf7a130081982a1b9ed3c1df0f321ac6178e0b7ac6616ffa3dadc4"},{"pid":"wyu:53647","page":"086","label":"[Page of] The Yearling - 1959","width":"3417","height":"4253","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53647\/datastream\/JP2\/view?token=65dd7df6198749bb2f7a942186bc1895d25de0e3b4dc798ca7956dfb97956cfd"},{"pid":"wyu:53645","page":"087","label":"[Page of] The Yearling - 1959","width":"3033","height":"4237","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53645\/datastream\/JP2\/view?token=c5280efcbb4df7234394e84670ba63092292e528d42e2d600a3f247cba3ebaae"},{"pid":"wyu:53629","page":"088","label":"[Page of] The Yearling - 1959","width":"3257","height":"4268","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53629\/datastream\/JP2\/view?token=a1a043d0ffc2c21c4e055b424aaa310993eee9438adbbc7caa7acf3913f3534a"},{"pid":"wyu:53637","page":"089","label":"[Page of] The Yearling - 1959","width":"3141","height":"4268","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53637\/datastream\/JP2\/view?token=248418bc37bd030f36f753309107965def96b2d4199196fabd5065d5a0df509a"},{"pid":"wyu:53693","page":"090","label":"[Page of] The Yearling - 1959","width":"3266","height":"4270","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A53693\/datastream\/JP2\/view?token=cb0d08a92c38431294da2242e63bbdd51ecf3593032904dd9e5398093adf728f"}],"pageCount":90,"overlayOpacity":"0.5","mode":2,"mobilize":0,"content_type":"book","useBackupUri":0},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|tif|jpg|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1,"trackDomainMode":"1","trackUrlFragments":1},"urlIsAjaxTrusted":{"\/islandora\/object\/wyu:53625\/\/datastream\/RELS-EXT":true}});
+</script>
+    <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="html not-front not-logged-in no-sidebars page-islandora page-islandora-object page-islandora-object-wyu53625 page-islandora-object-wyu53625- page-islandora-object-wyu53625--datastream page-islandora-object-wyu53625--datastream-rels-ext designkit preface-three postscript-one footer-three site-name-show site-slogan-show site-slogan-not-empty color-palette-chartreuse heading-typeface-opensans body-typeface-opensans header-left-right not-node themebg-dark default-layout bg_pattern_01 no_tint">
+<div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+</div>
+
+  <div class="l-page-wrapper">
+    <div class="l-page">
+
+      <!-- top links-->
+            <!-- //top links-->
+
+      <!-- header -->
+      <div id="header-bar" class="l-header-wrapper" role="banner">
+        <header class="l-header l-setwidth" >
+
+                    <div class="l-logo">
+              <a href="/" title="UW Digital » UW Libraries Digital Repository.">
+                <img id="logo-img" src="https://uwdigital.uwyo.edu/sites/default/files/digilogo200.png" alt="UW Digital » UW Libraries Digital Repository."/></a>
+            </div><!--// l-logo-->
+            
+                    <div class="l-branding">
+
+                                  <h1 class="site-name">
+                    <a href="/">
+                      UW Digital</a>
+                  </h1>
+              
+                                      <h3 class="site-slogan">UW Libraries Digital Repository.</h3>
+                
+          </div><!--//branding-->
+            
+        </header>
+      </div><!-- // l-header -wrapper-->
+
+      <div id="menu-wrapper" class="l-menu-wrapper main-menu" role="navigation">
+        <div class="l-setwidth" >
+
+                      <a id="off-canvas-left-show" href="#off-canvas" class="l-off-canvas-show l-off-canvas-show--left">Show Navigation</a>
+            <div id="off-canvas-left" class="l-off-canvas l-off-canvas--left">
+              <a id="off-canvas-left-hide" href="#" class="l-off-canvas-hide l-off-canvas-hide--left">Hide Navigation</a>
+
+              <div class="main-menu-wrapper">
+
+                <ul class="menu primary"><li class="first leaf menu-218 home level-1"><a href="/" title="" class="alink menu-218 home">Home</a></li>
+<li class="expanded menu-676 collections level-1"><a href="/featured-collections" title="Check out our featured collections!" class="alink menu-676 collections">Collections</a><ul class="menu"><li class="first leaf menu-675 browseourtoplevelcollections level-2"><a href="/islandora" title="Browse top collections." class="alink menu-675 browseourtoplevelcollections">Browse Our Top-Level Collections</a></li>
+<li class="leaf menu-1076 popularitems level-2"><a href="/usage-highest" title="Check out what everyone else is looking at." class="alink menu-1076 popularitems">Popular Items</a></li>
+<li class="leaf menu-1079 specialcollections level-2"><a href="http://hdl.handle.net/10176/wyu:25864" title="Books in the public domain from our Special Collections at UW Libraries. " class="alink menu-1079 specialcollections">Special Collections</a></li>
+<li class="leaf menu-681 agriculturalbulletins level-2"><a href="/agricultural-bulletins" title="Wyoming Agricultural Experiment Station Bulletins" class="alink menu-681 agriculturalbulletins">Agricultural Bulletins</a></li>
+<li class="leaf menu-678 botanicalfieldbookstimeline level-2"><a href="/browse-fieldbooks-date" title="" class="alink menu-678 botanicalfieldbookstimeline">Botanical Fieldbooks Timeline</a></li>
+<li class="leaf menu-677 yearbooks level-2"><a href="/yearbooks" title="Check out our various digitized yearbooks!" class="alink menu-677 yearbooks">Yearbooks</a></li>
+<li class="last leaf menu-1396 willismcdonaldivcollection level-2"><a href="/willis-mcdonald-iv-collection" title="Details on the private Business Equity Collection" class="alink menu-1396 willismcdonaldivcollection">Willis McDonald IV Collection</a></li>
+</ul></li>
+<li class="leaf menu-1090 exhibits level-1"><a href="https://www-lib.uwyo.edu/digital/exhibits/" title="Check out our Digital Exhibit Platform!" class="alink menu-1090 exhibits">Exhibits</a></li>
+<li class="expanded menu-670 repositories level-1"><a href="/repositories" title="Check out the different repositories available from the Digital Collections Office." class="alink menu-670 repositories">Repositories</a><ul class="menu"><li class="first leaf menu-1295 uwdatarepository level-2"><a href="http://data.uwyo.edu/" title="Check out our Repository for Research data at UW." class="alink menu-1295 uwdatarepository">UW Data Repository</a></li>
+<li class="leaf menu-671 wyscholarsrepository level-2"><a href="/wysr" title="Wyoming Scholar&#039;s Repository" class="alink menu-671 wyscholarsrepository">Wy Scholars Repository</a></li>
+<li class="last leaf menu-674 digitalherbaria level-2"><a href="/digital-herbaria" class="alink menu-674 digitalherbaria">Digital Herbaria</a></li>
+</ul></li>
+<li class="expanded menu-682 about level-1"><a href="/about" title="Contact Information, FAQ&#039;s, Equipment, Software, and Policies." class="alink menu-682 about">About</a><ul class="menu"><li class="first leaf menu-684 people level-2"><a href="/people" title="We who work the digital." class="alink menu-684 people">People</a></li>
+<li class="leaf menu-686 digitizationequipment level-2"><a href="/equipment" title="Take a look at how we do what we do." class="alink menu-686 digitizationequipment">Digitization Equipment</a></li>
+<li class="last leaf menu-729 login level-2"><a href="https://uwdigital.uwyo.edu/login" title="Sign into the secure site." class="alink menu-729 login">Login</a></li>
+</ul></li>
+<li class="last collapsed menu-746 uwlibraries level-1"><a href="http://www-lib.uwyo.edu/" title="Visit the UW Libraries Website." class="alink menu-746 uwlibraries">UW Libraries</a></li>
+</ul>              </div>
+            </div><!-- // off-canvas-left -->
+                    <!-- //main menu -->
+
+          <!-- for third party menu systems or modules-->
+          
+        </div>
+      </div>
+
+<div class="l-content-wrap">
+
+  
+              <div id="breadcrumbs-wrapper" class="l-breadcrumbs">
+          <div class="breadcrumbs l-setwidth" >
+            <div class="s-grid"><h2 class="element-invisible">You are here</h2><nav class="breadcrumb"><a href="/">Home</a> » <a href="/islandora">Browse Our Top-Level Collections</a> » <a href="/islandora/object/wyu%3A117289">Yearbooks</a> » <a href="/islandora/object/wyu%3A5394">The Yearling (1953 - 1973) Yearbook</a> » The Yearling - 1959</nav></div>
+          </div>
+        </div>
+      
+      <!-- preface -->
+      
+        <div id="preface-wrap" class="l-preface-wrap">
+          <div id="preface-container" class="l-preface l-setwidth" >
+
+            <!--Preface -->
+                          <div class="preface">
+                
+
+
+  <div class="region region-preface-first">
+    <div id="block-service-links-service-links-not-node" class="block block-service-links">
+
+      
+  <div class="service-links"><a href="http://www.facebook.com/sharer.php?u=https%3A//uwdigital.uwyo.edu/islandora/object/wyu%253A53625//datastream/RELS-EXT&amp;t=The%20Yearling%20-%201959" title="Share on Facebook" class="service-links-facebook" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="https://uwdigital.uwyo.edu/sites/all/modules/service_links/images/facebook.png" alt="Facebook logo" /></a> <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//uwdigital.uwyo.edu/islandora/object/wyu%253A53625//datastream/RELS-EXT&amp;title=The%20Yearling%20-%201959&amp;summary=&amp;source=UW%20Digital" title="Publish this post to LinkedIn" class="service-links-linkedin" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="https://uwdigital.uwyo.edu/sites/all/modules/service_links/images/linkedin.png" alt="LinkedIn logo" /></a> <a href="http://www.stumbleupon.com/submit?url=https%3A//uwdigital.uwyo.edu/islandora/object/wyu%253A53625//datastream/RELS-EXT&amp;title=The%20Yearling%20-%201959" title="Thumb this up at StumbleUpon" class="service-links-stumbleupon" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="https://uwdigital.uwyo.edu/sites/all/modules/service_links/images/stumbleit.png" alt="StumbleUpon logo" /></a> <a href="https://plus.google.com/share?url=https%3A//uwdigital.uwyo.edu/islandora/object/wyu%253A53625//datastream/RELS-EXT" title="Share this on Google+" class="service-links-google-plus" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="https://uwdigital.uwyo.edu/sites/all/modules/service_links/images/google_plus.png" alt="Google+ logo" /></a></div>
+</div>
+  </div>
+              </div>
+            
+                          <div class="preface">
+                
+
+
+  <div class="region region-preface-second">
+    <div id="block-block-42" class="block block-block">
+
+      
+  <p> </p>
+
+</div>
+  </div>
+              </div>
+            
+                          <div class="preface">
+                
+
+
+  <div class="region region-preface-third">
+    <div id="block-islandora-solr-simple" class="block block-islandora-solr">
+
+      
+  <form action="/islandora/object/wyu:53625//datastream/RELS-EXT" method="post" id="islandora-solr-simple-search-form" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-simple"><div class="form-item form-type-textfield form-item-islandora-simple-search-query">
+  <input type="text" id="edit-islandora-simple-search-query" name="islandora_simple_search_query" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<input type="submit" id="edit-submit" name="op" value="search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-NgvbSaH00773kjnatt-0rKoCb0rWmhVYZG2opHArFhs" />
+<input type="hidden" name="form_id" value="islandora_solr_simple_search_form" />
+</div></form>
+</div>
+  </div>
+              </div>
+            
+          </div>
+        </div>
+        <!-- // preface -->
+
+      
+      <div class="main" >
+        <div class="l-main l-setwidth" role="main" >
+
+          <div class="l-content">
+            <a id="main-content"></a>
+                                      <h1>The Yearling - 1959</h1>
+                                                <h2 class="element-invisible">Primary tabs</h2><ul class="tabs primary"><li class="active"><a href="/islandora/object/wyu%3A53625" class="active">View<span class="element-invisible">(active tab)</span></a></li>
+<li><a href="/islandora/object/wyu%3A53625/view_mods_as_marcxml">MARCXML</a></li>
+<li><a href="/islandora/object/wyu%3A53625/pages">Pages</a></li>
+</ul>                                    
+
+
+  <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+      
+    <div id="book-viewer">
+    <div id="BookReader" class="islandora-internet-archive-bookreader">
+   Loading the Internet Archive BookReader, please wait...
+</div>
+  </div>
+
+  <div class="islandora-book-metadata">
+          <div>
+    <h2>In collections</h2>
+    <ul>
+              <li><a href="/islandora/object/wyu%3A5394">The Yearling (1953 - 1973) Yearbook</a></li>
+          </ul>
+  </div>
+       <fieldset class="islandora islandora-metadata collapsible">
+  <legend><span class="fieldset-legend">Details</span></legend>
+  <div class="fieldset-wrapper">
+    <dl xmlns:dcterms="http://purl.org/dc/terms/" class="islandora-inline-metadata islandora-metadata-fields">
+                    <dt class=" first">
+          Title        </dt>
+        <dd class=" first">
+          <p>The Yearling 1959</p>
+        </dd>
+                      <dt class="">
+          Corporate Creator(s)        </dt>
+        <dd class="">
+          <p>University of Wyoming<br />
+University High School (1939-1973)</p>
+        </dd>
+                      <dt class="">
+          Type of Resource        </dt>
+        <dd class="">
+          <p>text</p>
+        </dd>
+                      <dt class="">
+          Place of Publication        </dt>
+        <dd class="">
+          <p>Laramie, Wyo</p>
+        </dd>
+                      <dt class="">
+          Publisher        </dt>
+        <dd class="">
+          <p>University High School</p>
+        </dd>
+                      <dt class="">
+          Date Created        </dt>
+        <dd class="">
+          <p>1959</p>
+        </dd>
+                      <dt class="">
+          Extent        </dt>
+        <dd class="">
+          <p>v. : ill. ; 28 cm.</p>
+        </dd>
+                      <dt class="">
+          Form        </dt>
+        <dd class="">
+          <p>print<br />
+TIFF</p>
+        </dd>
+                      <dt class="">
+          Topics        </dt>
+        <dd class="">
+          <p><a href="/islandora/search/mods_subject_topic_ms%3A%22Students%22">Students</a><br /><a href="/islandora/search/mods_subject_topic_ms%3A%22Yearbooks%22">Yearbooks</a><br /><a href="/islandora/search/mods_subject_topic_ms%3A%22School%255C%2Byearbooks%22">School yearbooks</a></p>
+        </dd>
+                      <dt class="">
+          Geographic Subjects        </dt>
+        <dd class="">
+          <p><a href="/islandora/search/mods_subject_geographic_ms%3A%22Wyoming%22">Wyoming</a><br /><a href="/islandora/search/mods_subject_geographic_ms%3A%22Laramie%22">Laramie</a></p>
+        </dd>
+                      <dt class="">
+          Organizations        </dt>
+        <dd class="">
+          <p><a href="/islandora/search/mods_subject_name_corporate_namePart_ms%3A%22University%255C%2Bof%255C%2BWyoming%22">University of Wyoming</a><br /><a href="/islandora/search/mods_subject_name_corporate_namePart_ms%3A%22University%255C%2BHigh%255C%2BSchool%255C%2B%255C%25281939%255C-1973%255C%2529%22">University High School (1939-1973)</a></p>
+        </dd>
+                      <dt class="">
+          Rights Statement        </dt>
+        <dd class="">
+          <p>In Copyright</p>
+        </dd>
+                  </dl>
+  </div>
+</fieldset>
+    </div>
+
+</div>
+<div id="block-views-permanent-link-block" class="block block-views">
+
+      
+  <div class="view view-permanent-link view-id-permanent_link view-display-id-block view-dom-id-a186c0bb3ac6952c4b9a9da2a08734df">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content">Permanently Link to this Resource: <a href="http://hdl.handle.net/10176/wyu:53625" title="A handle is a permanent link to this resource, no matter what the URL might become over time.">hdl.handle.net/10176/wyu:53625</a></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+</div>
+<div id="block-islandora-downloadable-pdf-pdf-download" class="block block-islandora-downloadable-pdf">
+
+      
+  <div class="downloadlink"><a href="https://uwdigital.uwyo.edu/islandora/object/wyu:53625/datastream/PDF/view">Download PDF</a></div>
+</div>
+  </div>
+                      </div>
+
+                            </div>
+
+      </div>
+
+      
+
+      <footer id="footer" role="footer" class="l-footer-wrapper">
+        <div class="l-setwidth l-footer" >
+
+          <!--footer -->
+                      <div class="footer">
+              
+
+
+  <div class="region region-footer-first">
+    <div id="block-block-71" class="block block-block">
+
+      
+  <h3>Contact Digital Collections</h3>
+<p>Phone: 307-766-5560 <br /><a href="mailto:digcol@uwyo.edu">email: digcol{at}uwyo{dot}edu</a></p>
+
+</div>
+  </div>
+            </div>
+          
+                      <div class="footer">
+              
+
+
+  <div class="region region-footer-second">
+    <div id="block-block-70" class="block block-block">
+
+      
+  <p> </p>
+
+</div>
+  </div>
+            </div>
+          
+                      <div class="footer">
+              
+
+
+  <div class="region region-footer-third">
+    <div id="block-block-72" class="block block-block">
+
+      
+  <p><a href="http://uwdigital.uwyo.edu/contact">Contact Form <img src="http://www-lib.uwyo.edu/img/feedback.png" /></a>  <br /><br /><a href="https://uwdigital.uwyo.edu/login">Login</a><br /><a href="/user/logout">Log Out</a></p>
+
+</div>
+  </div>
+            </div>
+          
+        </div>
+      </footer>
+
+</div>
+
+    </div>
+    <a href="#" class="scrolltop">Scroll to the top</a>
+  </div>
+</body>
+</html>
