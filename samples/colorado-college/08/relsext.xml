@@ -1,0 +1,17 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+         xmlns:fedora="info:fedora/fedora-system:def/relations-external#" 
+         xmlns:islandora="http://islandora.ca/ontology/relsext#" 
+         xmlns:dc="http://purl.org/dc/elements/1.1/" 
+         xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" 
+         xmlns:fedora-model="info:fedora/fedora-system:def/model#">
+ <rdf:Description rdf:about="info:fedora/coccc:23839">
+   <fedora:isMemberOfCollection rdf:resource="info:fedora/coccc:19567"></fedora:isMemberOfCollection>
+   <fedora-model:hasModel rdf:resource="info:fedora/islandora:sp_large_image_cmodel"></fedora-model:hasModel>
+   <fedora-model:hasModel rdf:resource="info:fedora/fedora-system:FedoraObject-3.0"/>
+   
+   
+   
+   
+ </rdf:Description>
+</rdf:RDF>

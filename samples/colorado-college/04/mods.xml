@@ -1,0 +1,146 @@
+<mods xmlns:mods="http://www.loc.gov/mods/v3" 
+           xmlns="http://www.loc.gov/mods/v3" 
+           xmlns:xlink="http://www.w3.org/1999/xlink" 
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <abstract>
+   This map of the world was originally paired with the screen, the Battle of Lepanto.
+  </abstract>
+  
+  
+  <identifier type="ideas-local"
+    displayLabel="IDEAS Identifier">
+   soc000815
+  </identifier>
+  
+  <note type="admin">
+  
+  Materials may be used for educational, non-commercial purposes only.
+  
+  </note>
+  
+  
+  
+  
+  <typeOfResource>still image</typeOfResource>
+  
+  <accessCondition type="useAndReproduction">Copyright restrictions apply.</accessCondition>
+  <physicalDescription>
+    
+    <extent>1024 w x 465 h, 72 ppi</extent>
+    
+  </physicalDescription>
+  
+  
+  <name type="personal">
+    
+    <role>
+        <roleTerm type="text" authority="marcrelator">Editor</roleTerm>
+    </role>
+    
+    <namePart>Kucera, Karil</namePart>
+  </name>
+  
+  <name type="personal">
+    
+    <role>
+        <roleTerm type="text" authority="marcrelator">photographer</roleTerm>
+    </role>
+    
+    <namePart>Woudenberg, Annie</namePart>
+  </name>
+  
+  
+  <name type="corporate">
+    <role>
+      <roleTerm type="text" authority="marcrt">sponsor</roleTerm>
+    </role>
+    <namePart>Asian Studies Program</namePart>
+  </name>
+  
+  
+  <name type="corporate">
+    <namePart>St. Olaf College</namePart>
+    <role>
+      <roleTerm type="text" authority="marcrt">sponsor</roleTerm>
+    </role>
+  </name>
+  
+  
+  <subject>
+    <topic>Geography-Maps</topic>
+  </subject>
+  
+  <subject>
+    <topic>Arts-Painting</topic>
+  </subject>
+  
+  <subject>
+    <topic>Screens</topic>
+  </subject>
+  
+  
+  <subject>
+    <geographic>Japan</geographic>
+  </subject>
+  
+  
+   <subject>
+     <temporal>2005-08-22</temporal>
+   </subject>
+  
+   <subject>
+     <temporal>1573-1615 CE</temporal>
+   </subject>
+  
+   <subject>
+     <temporal>Japan - Azuchi-Momoyama 1573 - 1615</temporal>
+   </subject>
+  
+  
+  <titleInfo>
+    <title>Map of the World</title>
+  </titleInfo>
+  
+  <originInfo>
+    
+    <publisher>St. Olaf College</publisher>
+    
+    
+     <dateOther >
+      2005-02-17
+     </dateOther>
+    
+     <dateOther >
+      2003-07
+     </dateOther>
+    
+     <dateCreated keyDate="yes">
+      2005-08-22
+     </dateCreated>
+    
+     <dateModified >
+      2008-03-11
+     </dateModified>
+    
+     <dateValid >
+      1573-1615 CE
+     </dateValid>
+    
+    
+    
+    
+    
+    <place>
+      <placeTerm>None,
+                  None
+     </placeTerm>
+    </place>
+    
+  </originInfo>
+  
+  <language>
+    <languageTerm>English</languageTerm>
+  </language>
+  
+</mods>

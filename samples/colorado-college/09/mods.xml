@@ -1,0 +1,154 @@
+<mods xmlns:mods="http://www.loc.gov/mods/v3" 
+           xmlns="http://www.loc.gov/mods/v3" 
+           xmlns:xlink="http://www.w3.org/1999/xlink" 
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <abstract>
+   Coastal features, straight Pacific coast: wave-eroded sea cliffs, wave-cut terrace, Mizushirazaki.  --  Japan has about 18,000 miles of coastline whose configuration differs from place to place depending upon the interaction between shoreline erosive processes and earth crustal movement.  At Mizushirazaki, the trend of rocks and geological structures is nearly parallel with the coast resulting in a fairly straight coastline.  (Compare this coastline with that shown in slide 1.19.)  Waves are actively eroding and undercutting the base of sea cliffs causing them to collapse into the water.  As the coastline retreats in this manner, a flat wave-cut bench is produced offshore a few feet below sea level.  The flat surface covered with trees above the cliffs is an old wave-cut bench that has been uplifted above sea level by crustal movement.  --  Notice the small beaches that have formed from sediment deposition in areas sheltered behind rock promontories.
+  </abstract>
+  
+  
+  <identifier type="ideas-local"
+    displayLabel="IDEAS Identifier">
+   ecasia000297
+  </identifier>
+  
+  <note type="admin">
+  
+  Materials may be used for non-commercial, educational purposes only, in accordance with Fair Use policies.  Acknowledgement to be given to the IDEAS project and to the photographer.  Photographer retains copyright.
+  
+  </note>
+  
+  
+  
+  
+  <typeOfResource>still image</typeOfResource>
+  
+  <accessCondition type="useAndReproduction">Copyright restrictions apply.</accessCondition>
+  <physicalDescription>
+    
+    <extent>1500 w  x  996 h, 150ppi</extent>
+    
+  </physicalDescription>
+  
+  
+  <name type="personal">
+    
+    <role>
+        <roleTerm type="text" authority="marcrelator">Editor</roleTerm>
+    </role>
+    
+    <namePart>Thiedeman, Michael</namePart>
+  </name>
+  
+  <name type="personal">
+    
+    <role>
+        <roleTerm type="text" authority="marcrelator">photographer</roleTerm>
+    </role>
+    
+    <namePart>Martin, Charles</namePart>
+  </name>
+  
+  
+  <name type="corporate">
+    <role>
+      <roleTerm type="text" authority="marcrt">sponsor</roleTerm>
+    </role>
+    <namePart>Asian Studies Program</namePart>
+  </name>
+  
+  
+  <name type="corporate">
+    <namePart>Earlham College</namePart>
+    <role>
+      <roleTerm type="text" authority="marcrt">sponsor</roleTerm>
+    </role>
+  </name>
+  
+  
+  <subject>
+    <topic>Environment-Environmental Challenges</topic>
+  </subject>
+  
+  <subject>
+    <topic>Environment-Geology</topic>
+  </subject>
+  
+  <subject>
+    <topic>Environment-Plants</topic>
+  </subject>
+  
+  <subject>
+    <topic>Geography-Landscapes</topic>
+  </subject>
+  
+  <subject>
+    <topic>Transportation-Water</topic>
+  </subject>
+  
+  <subject>
+    <topic></topic>
+  </subject>
+  
+  
+  <subject>
+    <geographic>Japan</geographic>
+  </subject>
+  
+  
+   <subject>
+     <temporal>1978</temporal>
+   </subject>
+  
+   <subject>
+     <temporal>2005-10-24</temporal>
+   </subject>
+  
+  
+  <titleInfo>
+    <title>Landscapes of Japan, 18, Coastal features, straight Pacific coast: wave-eroded sea cliffs, wave-cut terrace, Mizushirazaki.</title>
+  </titleInfo>
+  
+  <originInfo>
+    
+    <publisher>Earlham College</publisher>
+    
+    
+     <dateOther >
+      2005-10-21
+     </dateOther>
+    
+     <dateOther >
+      2005-07-09
+     </dateOther>
+    
+     <dateCaptured >
+      1978
+     </dateCaptured>
+    
+     <dateCreated keyDate="yes">
+      2005-10-24
+     </dateCreated>
+    
+     <dateModified >
+      2005-10-24
+     </dateModified>
+    
+    
+    
+    
+    
+    <place>
+      <placeTerm>None,
+                  None
+     </placeTerm>
+    </place>
+    
+  </originInfo>
+  
+  <language>
+    <languageTerm>English</languageTerm>
+  </language>
+  
+</mods>

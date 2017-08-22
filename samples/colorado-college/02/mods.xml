@@ -1,0 +1,114 @@
+
+<mods xmlns:mods="http://www.loc.gov/mods/v3" 
+           xmlns="http://www.loc.gov/mods/v3" 
+           xmlns:xlink="http://www.w3.org/1999/xlink" 
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <abstract>
+   	The American South has almost always been largely defined by its brand of fiery, passionate, evangelical Christianity. Within this, one of the most enduring images of Southern religion in the mind of the American public is the ritual of serpent handling. Featured in popular culture from Saturday Night Live skits to movies starring Will Ferrell, serpent handling has become almost synonymous with ideas and parodies of white, American Christian zealots.  Further associated with poor, uneducated, white, âbackwoodsâ members of Southern society, the power and meaning of serpent handling to believers is often overlooked in favor of sensationalized media accounts, which have led to unfair, unsympathetic national bias and stereotypes of a minority American religious group. What this thesis aims to do is, in part, begin to chip away at many of these stereotypes through exploring the cultural, social and theological origins of this uniquely Southern religious practice and help give serpent handling a legitimate place in the American religious history it deserves. 
+What this thesis posits is that serpent handling emerged with the birth of the Pentecostal Church as a reaction to a white, Southern, masculine identity crisis that gripped the Post-Reconstruction South. More specifically, the genesis of this religious ritual was both highly temporal and regional in nature and emerged as a socially-reactive response to the cultural shifts brought on by the industrialization of the South, and originating at almost the exact the same time as other extreme movements in the area, such as the second generation of the Ku Klux Klan. By examining the practice through lens of masculine overcompensation thesis, a social theory which posits that when under both perceived and actual cultural threats, men reassert their manliness through bold, often dangerous, demonstrations of masculinity, what this thesis argues is that serpent handling emerged as a theologically and symbolically viable Christian fundamentalist means by which early Southern Pentecostals sought to reclaim their sense of manhood during a time of change. 
+  </abstract>
+  
+  <note type="admin">The author has given permission for this work to be deposited in the Digital Archive of Colorado College.</note>
+  
+  <note type="admin">Colorado College Honor Code upheld.</note>
+  
+  
+  <note type="thesis">Senior Thesis -- Colorado College</note>
+  
+  <note type="thesis" displayLabel="Degree Name">Bachelor of Arts</note>
+  <note type="thesis" displayLabel="Degree Type">bachelor</note>
+  
+  <note type="bibliography">Includes bibliographical references.</note>
+  <typeOfResource>text</typeOfResource>
+  <genre authority="marcgt">thesis</genre>
+  <accessCondition type="useAndReproduction">Copyright restrictions apply.</accessCondition>
+  <physicalDescription>
+    
+    <extent>155 pages : illustrations</extent>
+    
+    <digitalOrigin>born digital</digitalOrigin>
+  </physicalDescription>
+  
+  <name type="personal">
+    <role>
+      <roleTerm type="text" authority="marcrelator">creator</roleTerm>
+    </role>
+    <namePart>Sarafan, Jamie  Anne</namePart>
+  </name>
+  
+  
+  <name type="personal">
+    <role>
+      <roleTerm type="text" authority="marcrelator">thesis advisor</roleTerm>
+    </role>
+    <namePart>Rommel-Ruiz, Bryan</namePart>
+  </name>
+  
+  <name type="personal">
+    <role>
+      <roleTerm type="text" authority="marcrelator">thesis advisor</roleTerm>
+    </role>
+    <namePart></namePart>
+  </name>
+  
+  
+  
+  <name type="corporate">
+    <role>
+      <roleTerm type="text" authority="marcrt">sponsor</roleTerm>
+    </role>
+    <namePart>History</namePart>
+  </name>
+  
+  
+  <name type="corporate">
+    <namePart>Colorado College</namePart>
+    <role>
+      <roleTerm type="text" authority="marcrt">degree grantor</roleTerm>
+    </role>
+  </name>
+  
+  
+  <subject>
+    <topic>pentecostal</topic>
+  </subject>
+  
+  <subject>
+    <topic>serpent handling </topic>
+  </subject>
+  
+  <subject>
+    <topic>appalachian </topic>
+  </subject>
+  
+  
+  <titleInfo>
+    <title>They Shall Take Up Serpents</title>
+  </titleInfo>
+  
+  <originInfo>
+    
+    <publisher>Colorado College</publisher>
+    
+    
+    <dateIssued keyDate="yes">2016-05</dateIssued>
+    <dateCreated>2016-05</dateCreated>
+    
+    
+    <place>
+      <placeTerm>Colorado Springs,
+                  Colorado
+     </placeTerm>
+    </place>
+    
+  </originInfo>
+  
+  <language>
+    <languageTerm>English</languageTerm>
+  </language>
+  
+  <location>
+    <url usage="primary display">https://digitalcc.coloradocollege.edu/islandora/objects/coccc:26207</url>
+  </location>
+</mods>

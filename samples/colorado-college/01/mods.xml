@@ -1,0 +1,150 @@
+
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <titleInfo>
+    <title>Eres, Dolores, bella</title>
+  </titleInfo>
+  <titleInfo type="alternative">
+    <title></title>
+  </titleInfo>
+  <name type="personal">
+    <namePart>Leyba, Francisco S.</namePart>
+    <role>
+      <roleTerm authority="marcrelator" type="text">creator</roleTerm>
+    </role>
+  </name>
+  <name type="personal">
+    <namePart>Cobos, Ruben</namePart>
+    <role>
+      <roleTerm authority="marcrelator" type="text">contributor</roleTerm>
+    </role>
+  </name>
+  <name type="corporate">
+    <namePart></namePart>
+    <role>
+      <roleTerm authority="marcrelator" type="text">creator</roleTerm>
+    </role>
+  </name>
+  <name type="corporate">
+    <namePart>Colorado College. Charles L. Tutt Library</namePart>
+    <role>
+      <roleTerm authority="marcrelator" type="text">contributor</roleTerm>
+    </role>
+  </name>
+  <typeOfResource>sound recording</typeOfResource>
+  <originInfo>
+    <place>
+      <placeTerm type="text">Colorado Springs, Colorado</placeTerm>
+    </place>
+    <publisher>Charles L. Tutt Library, Colorado College</publisher>
+    <dateIssued></dateIssued>
+    <dateCreated keyDate="yes">1958</dateCreated>
+    <copyrightDate></copyrightDate>
+    <dateOther></dateOther>
+    <dateCaptured>2006-01-01</dateCaptured>
+    <frequency></frequency>
+  </originInfo>
+  <genre authority="marcgt"></genre>
+  <language>
+    <languageTerm type="text">Spanish</languageTerm>
+  </language>
+  <physicalDescription>
+    <extent></extent>
+    <form>audio/x-wav</form>
+    <form>audio/mpeg</form>
+    <digitalOrigin>reformatted digital</digitalOrigin>
+    <note></note>
+  </physicalDescription>
+  <abstract>Leyba, New Mexico. Quality: Fair.</abstract>
+  <targetAudience></targetAudience>
+  <note>The RubÃ©n Cobos Collection of Spanish New Mexican Folklore is a sound archive containing over 2000 pieces, including ballads, poems, prayers, nursery rhymes, riddles, proverbs, stories, personal narratives, songs, instrumental music, and descriptions of social customs, ritual practices, and children&apos;s games. The recordings were made between 1944 and 1974 in northern New Mexico and southern Colorado.</note>
+  <note>Researchers may find it useful to use the published catalog of the music collection, &quot;Music in the RubÃ©n Cobos Collection of Spanish New Mexican Folklore&quot;, edited by Victoria Lindsay Levine and Amanda Chace, available in the Colorado College library and several other U.S. libraries.</note>
+  <note></note>
+  <note type="admin"></note>
+  <note type="funding">In 2005, Colorado College received a grant from the Colorado Digitization Project to digitize the music in the Cobos Collection.</note>
+  <subject>
+    <topic>Folk Music</topic>
+  </subject>
+  <subject>
+    <topic>New Mexico</topic>
+  </subject>
+  <subject>
+    <topic>cancion</topic>
+  </subject>
+  <subject>
+    <geographic></geographic>
+  </subject>
+  <subject>
+    <temporal></temporal>
+  </subject>
+  <subject>
+    <name type="personal">
+      <namePart></namePart>
+    </name>
+  </subject>
+  <subject>
+    <name type="corporate">
+      <namePart></namePart>
+    </name>
+  </subject>
+  <subject>
+    <genre></genre>
+  </subject>
+  <subject>
+    <cartographics>
+      <scale></scale>
+    </cartographics>
+  </subject>
+  <subject>
+    <cartographics>
+      <coordinates></coordinates>
+    </cartographics>
+  </subject>
+  <relatedItem type="host">
+    <titleInfo>
+      <title>Ruben Cobos Collection of Spanish New Mexican folklore</title>
+    </titleInfo>
+  </relatedItem>
+  <relatedItem type="host">
+    <titleInfo>
+      <title>Ruben Cobos Collection of New Mexican Indo-Hispanic folklore</title>
+    </titleInfo>
+  </relatedItem>
+  <relatedItem type="host">
+    <titleInfo>
+      <title>Heritage Colorado</title>
+    </titleInfo>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title></title>
+    </titleInfo>
+  </relatedItem>
+  <relatedItem type="series">
+    <titleInfo>
+      <title></title>
+    </titleInfo>
+  </relatedItem>
+  <relatedItem type="preceding">
+    <titleInfo>
+      <title></title>
+    </titleInfo>
+  </relatedItem>
+  <relatedItem type="succeeding">
+    <titleInfo>
+      <title></title>
+    </titleInfo>
+  </relatedItem>
+  <identifier type="local">CCCobos 10.28</identifier>
+  <identifier type="isbn"></identifier>
+  <identifier type="issn"></identifier>
+  <accessCondition type="useAndReproduction">Copyright to this resource is held by Colorado College and is provided here for educational purposes only. It may not be used for commercial purposes. Contact Colorado College Special Collections for permission to publish.</accessCondition>
+  <recordInfo>
+    <languageOfCataloging>
+      <languageTerm authority="iso639-2b" type="text">English</languageTerm>
+      <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+    </languageOfCataloging>
+  </recordInfo>
+  <location>
+    <url usage="primary display">http://hdl.handle.net/10176/coccc:7106</url>
+  </location>
+</mods>

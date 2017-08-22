@@ -1,8 +1,8 @@
 title: Colorado College
 published: 2017-08-04
-status: started
-bf_instances: 12289 
-bf_items: 12289
+status: completed
+bf_instances: 9453 
+bf_items: 9453
 
 
 [Jeremy Nelson](/people/nelson-jeremy) Metadata and Systems Librarian.

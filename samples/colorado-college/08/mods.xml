@@ -1,0 +1,167 @@
+<mods xmlns:mods="http://www.loc.gov/mods/v3" 
+           xmlns="http://www.loc.gov/mods/v3" 
+           xmlns:xlink="http://www.w3.org/1999/xlink" 
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <abstract>
+   This is the Korean traditional drumming originally used to keep the farmers spirits up. As time progressed, it was used more and more for other occasions. Seoul, South Korea.
+  </abstract>
+  
+  
+  <identifier type="getty-geographic"
+    displayLabel="Getty Geographic ID">
+   7002223
+  </identifier>
+  
+  <identifier type="ideas-local"
+    displayLabel="IDEAS Identifier">
+   soc000839
+  </identifier>
+  
+  <note type="admin">
+  
+  Materials may be used for educational, non-commercial purposes only.
+  
+  </note>
+  
+  
+  
+  
+  <typeOfResource>sound recording</typeOfResource>
+  
+  <accessCondition type="useAndReproduction">Copyright restrictions apply.</accessCondition>
+  <physicalDescription>
+    
+    <extent>00'37, 640 x 480</extent>
+    
+  </physicalDescription>
+  
+  
+  <name type="personal">
+    
+    <role>
+        <roleTerm type="text" authority="marcrelator">Editor</roleTerm>
+    </role>
+    
+    <namePart>Kucera, Karil</namePart>
+  </name>
+  
+  <name type="personal">
+    
+    <role>
+        <roleTerm type="text" authority="marcrelator">photographer</roleTerm>
+    </role>
+    
+    <namePart>Goplen, David</namePart>
+  </name>
+  
+  
+  <name type="corporate">
+    <role>
+      <roleTerm type="text" authority="marcrt">sponsor</roleTerm>
+    </role>
+    <namePart>Asian Studies Program</namePart>
+  </name>
+  
+  
+  <name type="corporate">
+    <namePart>St. Olaf College</namePart>
+    <role>
+      <roleTerm type="text" authority="marcrt">sponsor</roleTerm>
+    </role>
+  </name>
+  
+  
+  <subject>
+    <topic>Arts-Music</topic>
+  </subject>
+  
+  <subject>
+    <topic>Daily Life-Celebrations</topic>
+  </subject>
+  
+  <subject>
+    <topic>Daily Life-Material Culture</topic>
+  </subject>
+  
+  <subject>
+    <topic>Korean traditional drumming</topic>
+  </subject>
+  
+  
+  <subject>
+    <geographic>Soul-t'ukpyolsi (special city), Seoul (inhabited place)</geographic>
+  </subject>
+  
+  <subject>
+    <geographic>South Korea</geographic>
+  </subject>
+  
+  
+   <subject>
+     <temporal>2004-11-16</temporal>
+   </subject>
+  
+   <subject>
+     <temporal>2005-05-20</temporal>
+   </subject>
+  
+   <subject>
+     <temporal>2004-11-16</temporal>
+   </subject>
+  
+   <subject>
+     <temporal>Japan - Modern 1868 - present</temporal>
+   </subject>
+  
+  
+  <titleInfo>
+    <title>Salmulnori</title>
+  </titleInfo>
+  
+  <originInfo>
+    
+    <publisher>St. Olaf College</publisher>
+    
+    
+     <dateOther >
+      2005-05-05
+     </dateOther>
+    
+     <dateOther >
+      2004-11-16
+     </dateOther>
+    
+     <dateCaptured >
+      2004-11-16
+     </dateCaptured>
+    
+     <dateCreated keyDate="yes">
+      2005-05-20
+     </dateCreated>
+    
+     <dateModified >
+      2008-01-18
+     </dateModified>
+    
+     <dateValid >
+      2004-11-16
+     </dateValid>
+    
+    
+    
+    
+    
+    <place>
+      <placeTerm>None,
+                  None
+     </placeTerm>
+    </place>
+    
+  </originInfo>
+  
+  <language>
+    <languageTerm>English</languageTerm>
+  </language>
+  
+</mods>

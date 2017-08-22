@@ -1,0 +1,158 @@
+<mods xmlns:mods="http://www.loc.gov/mods/v3" 
+           xmlns="http://www.loc.gov/mods/v3" 
+           xmlns:xlink="http://www.w3.org/1999/xlink" 
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <abstract>
+   Fruit sellers peddle their wares in front of the Haidian Clock Retail Sales Department
+  </abstract>
+  
+  
+  <identifier type="getty-geographic"
+    displayLabel="Getty Geographic ID">
+   7001758; 1068531
+  </identifier>
+  
+  <identifier type="ideas-local"
+    displayLabel="IDEAS Identifier">
+   cocbjn000028
+  </identifier>
+  
+  <note type="admin">
+  
+  This image and its metadata are available for use under the Creative Commons &#34;Attribution-NonCommercial 2.5&#34; license. You are free to use this work for any noncommercial purpose, providing you acknowledge both &#34;IDEAS: Image Database to Enhance Asian Studies,&#34; and &#34;John Williams, History Department, Colorado College.&#34; For more information on this license, please see http://creativecommons.org/licenses/by-nc/2.5/ For uses that fall outside this license, please contact IDEAS.
+  
+  </note>
+  
+  
+  
+  
+  <typeOfResource>still image</typeOfResource>
+  
+  <accessCondition type="useAndReproduction">Copyright restrictions apply.</accessCondition>
+  <physicalDescription>
+    
+  </physicalDescription>
+  
+  
+  <name type="personal">
+    
+    <role>
+        <roleTerm type="text" authority="marcrelator">Editor</roleTerm>
+    </role>
+    
+    <namePart>Lawson, Steve</namePart>
+  </name>
+  
+  <name type="personal">
+    
+    <role>
+        <roleTerm type="text" authority="marcrelator">Editor</roleTerm>
+    </role>
+    
+    <namePart> Withee, Sarah</namePart>
+  </name>
+  
+  <name type="personal">
+    
+    <role>
+        <roleTerm type="text" authority="marcrelator">photographer</roleTerm>
+    </role>
+    
+    <namePart>Williams, John R., 1968 -</namePart>
+  </name>
+  
+  
+  <name type="corporate">
+    <role>
+      <roleTerm type="text" authority="marcrt">sponsor</roleTerm>
+    </role>
+    <namePart>Asian Studies Program</namePart>
+  </name>
+  
+  
+  <name type="corporate">
+    <namePart>Colorado College</namePart>
+    <role>
+      <roleTerm type="text" authority="marcrt">sponsor</roleTerm>
+    </role>
+  </name>
+  
+  
+  
+  <subject>
+    <geographic>Beijing Shi (municipality); Beijing (inhabited place); Haidian</geographic>
+  </subject>
+  
+  <subject>
+    <geographic>China</geographic>
+  </subject>
+  
+  
+   <subject>
+     <temporal>1988</temporal>
+   </subject>
+  
+   <subject>
+     <temporal>2006-08-04</temporal>
+   </subject>
+  
+   <subject>
+     <temporal>1988</temporal>
+   </subject>
+  
+   <subject>
+     <temporal>China - People's Republic of China 1949 - present</temporal>
+   </subject>
+  
+  
+  <titleInfo>
+    <title>Haidian Clock Retail Sales Department</title>
+  </titleInfo>
+  
+  <originInfo>
+    
+    <publisher>Colorado College</publisher>
+    
+    
+     <dateOther >
+      2006-08
+     </dateOther>
+    
+     <dateOther >
+      7-15-2005
+     </dateOther>
+    
+     <dateCaptured >
+      1988
+     </dateCaptured>
+    
+     <dateCreated keyDate="yes">
+      2006-08-04
+     </dateCreated>
+    
+     <dateModified >
+      2006-11-13
+     </dateModified>
+    
+     <dateValid >
+      1988
+     </dateValid>
+    
+    
+    
+    
+    
+    <place>
+      <placeTerm>None,
+                  None
+     </placeTerm>
+    </place>
+    
+  </originInfo>
+  
+  <language>
+    <languageTerm>English</languageTerm>
+  </language>
+  
+</mods>

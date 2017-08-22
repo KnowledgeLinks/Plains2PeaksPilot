@@ -1,0 +1,124 @@
+
+<mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <mods:titleInfo>
+    <mods:title>Colorado College Block Calendar [2005-2006 Block 3]</mods:title>
+  </mods:titleInfo>
+  <mods:name type="corporate">
+    <mods:namePart></mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="marcrelator" type="text">contributor</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:typeOfResource>text</mods:typeOfResource>
+  <mods:originInfo>
+    <mods:place>
+      <mods:placeTerm>Colorado Springs, Colorado</mods:placeTerm>
+    </mods:place>
+    <mods:publisher>Colorado College</mods:publisher>
+    <mods:dateCreated keyDate="yes">2005</mods:dateCreated>
+    <mods:dateCaptured></mods:dateCaptured>
+    <mods:frequency>Eight issues yearly, Sept.-May.</mods:frequency>
+    <mods:place>
+      <mods:placeTerm type="text"></mods:placeTerm>
+    </mods:place>
+    <mods:dateIssued></mods:dateIssued>
+    <mods:copyrightDate></mods:copyrightDate>
+    <mods:dateOther></mods:dateOther>
+  </mods:originInfo>
+  <mods:language type="text">
+    <mods:languageTerm></mods:languageTerm>
+  </mods:language>
+  <mods:physicalDescription>
+    <mods:extent></mods:extent>
+    <mods:digitalOrigin>born digital</mods:digitalOrigin>
+    <mods:form></mods:form>
+    <mods:note></mods:note>
+  </mods:physicalDescription>
+  <mods:abstract>The Colorado College Block Calendar is the campus calendar of events for each block. This issue was published Block 3, 2005.</mods:abstract>
+  <mods:note type="admin">File transferred from the graphic designer, Keith Emmons (Colorado College Office of Communications) in 2009. Converted from PDF to PDF/A for preservation.</mods:note>
+  <mods:subject>
+    <mods:topic>Student activities</mods:topic>
+  </mods:subject>
+  <mods:subject>
+    <mods:name type="corporate">
+      <mods:namePart>Colorado College</mods:namePart>
+    </mods:name>
+  </mods:subject>
+  <mods:subject>
+    <mods:temporal>2000-2009</mods:temporal>
+  </mods:subject>
+  <mods:subject>
+    <mods:genre>Calendars</mods:genre>
+  </mods:subject>
+  <mods:location>
+    <mods:url usage="primary display">http://hdl.handle.net/10176/coccc:2771</mods:url>
+  </mods:location>
+  <mods:accessCondition type="useAndReproduction">Copyright restrictions apply. Contact Colorado College Special Collections for permission to publish.</mods:accessCondition>
+  <mods:recordInfo>
+    <mods:languageOfCataloging>
+      <mods:languageTerm authority="iso639-2b" type="text">English</mods:languageTerm>
+      <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+    </mods:languageOfCataloging>
+  </mods:recordInfo>
+  <mods:titleInfo type="alternative">
+    <mods:title></mods:title>
+  </mods:titleInfo>
+  <mods:name type="personal">
+    <mods:namePart></mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="marcrelator" type="text">creator</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:name type="personal">
+    <mods:namePart>Emmons, Keith</mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="marcrelator" type="text">contributor</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:name type="corporate">
+    <mods:namePart></mods:namePart>
+    <mods:role>
+      <mods:roleTerm authority="marcrelator" type="text">creator</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:genre authority="marcgt"></mods:genre>
+  <mods:targetAudience></mods:targetAudience>
+  <mods:note></mods:note>
+  <mods:note type="funding"></mods:note>
+  <mods:subject>
+    <mods:geographic></mods:geographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:name type="personal">
+      <mods:namePart></mods:namePart>
+    </mods:name>
+  </mods:subject>
+  <mods:relatedItem type="host">
+    <mods:titleInfo>
+      <mods:title></mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:relatedItem type="constituent">
+    <mods:titleInfo>
+      <mods:title></mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:relatedItem type="series">
+    <mods:titleInfo>
+      <mods:title></mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:relatedItem type="preceding">
+    <mods:titleInfo>
+      <mods:title></mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:relatedItem type="succeeding">
+    <mods:titleInfo>
+      <mods:title></mods:title>
+    </mods:titleInfo>
+  </mods:relatedItem>
+  <mods:identifier type="local"></mods:identifier>
+  <mods:identifier type="isbn"></mods:identifier>
+  <mods:identifier type="issn"></mods:identifier>
+</mods:mods>
