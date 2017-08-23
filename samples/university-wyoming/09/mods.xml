@@ -1,451 +1,57 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-<link rel="shortcut icon" href="https://uwdigital.uwyo.edu/sites/default/files/newbookmark.png" type="image/png" />
-<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta http-equiv="cleartype" content="on">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <title>Bulletin No. 105 - The eradication of the sheep tick | UW Digital</title>
-  <style media="all">
-@import url("https://uwdigital.uwyo.edu/modules/system/system.base.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/modules/system/system.messages.css?ov3hkz");
-</style>
-<style media="all">
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.button.min.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader/BookReader.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.slider.min.css?ov3hkz");
-</style>
-<style media="all">
-@import url("https://uwdigital.uwyo.edu/modules/aggregator/aggregator.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/modules/comment/comment.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/date/date_api/date.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/modules/field/theme/field.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora/css/islandora.base.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora/css/islandora.theme.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_audio/css/islandora_audio.theme.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_collection/css/islandora_basic_collection.base.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_collection/css/islandora_basic_collection.theme.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_image/css/islandora_basic_image.theme.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_batch/css/views_table_contextual_links_fix.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_bookmark/css/islandora_bookmark.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_fits/css/islandora_fits.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_large_image/css/islandora_large_image.theme.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_metadata_analyzer/css/analyzerStyle.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_newspaper/css/islandora_newspaper.base.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_newspaper/css/islandora_newspaper.theme.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_oralhistories/css/islandora_oralhistories.theme.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_oralhistories/bootstrap/css/oh-bootstrap-all.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_pdf/css/islandora_pdf.theme.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_premis/css/islandora_premis.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solr_search/css/islandora_solr.base.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solr_metadata/css/islandora_solr_metadata.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_video/css/islandora_video.theme.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/modules/node/node.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/modules/search/search.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/modules/user/user.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/views/css/views.css?ov3hkz");
-</style>
-<style media="all">
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/colorbox/styles/default/colorbox_style.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/ctools/css/ctools.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/css/islandora_internet_archive_bookreader.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_compound/css/islandora_compound_object.block.css?ov3hkz");
-</style>
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" media="all" />
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=EB+Garamond|IM+Fell+Double+Pica|Open+Sans|Montserrat" media="all" />
-<style media="all">
-@import url("https://uwdigital.uwyo.edu/sites/all/themes/gratis/css/normalize.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/themes/gratis/css/color-palettes.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/themes/gratis/css/styles.css?ov3hkz");
-</style>
-<style media="all">
-@import url("https://uwdigital.uwyo.edu/sites/all/themes/gratis/css/hacks.css?ov3hkz");
-</style>
-  <script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
-<script src="https://uwdigital.uwyo.edu/misc/jquery.once.js?v=1.2"></script>
-<script src="https://uwdigital.uwyo.edu/misc/drupal.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.10.2"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js?v=1.10.2"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.effect.min.js?v=1.10.2"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.button.min.js?v=1.10.2"></script>
-<script src="https://uwdigital.uwyo.edu/misc/jquery.ba-bbq.js?v=1.2.1"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.mouse.min.js?v=1.10.2"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.slider.min.js?v=1.10.2"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.draggable.min.js?v=1.10.2"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader//jquery.bt.min.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/detectmobilebrowser.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/jquery_1_5.min.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/jquery.ui-1.8.10/jquery-ui.min.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader/dragscrollable.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader/jquery.bt.min.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/libraries/colorbox/jquery.colorbox-min.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader/BookReader.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/islandora_book_reader.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/islandora_internet_archive_bookreader.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/misc/ajax.js?v=7.56"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/js/jquery_update.js?v=0.0.1"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_oralhistories/bootstrap/js/bootstrap.min.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/colorbox/js/colorbox.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/colorbox/styles/default/colorbox_style.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/misc/jquery.form.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/misc/progress.js?v=7.56"></script>
-<script src="https://uwdigital.uwyo.edu/misc/collapse.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/misc/form.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/google_analytics/googleanalytics.js?ov3hkz"></script>
-<script>
-(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-55843934-1", {"cookieDomain":".uwdigital.uwyo.edu"});ga("require", "linkid", "linkid.js");ga("set", "anonymizeIp", true);ga("set", "page", location.pathname + location.search + location.hash);ga("send", "pageview");
-</script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/collapse.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/themes/gratis/js-source/site.js?ov3hkz"></script>
-<script>
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"gratis","theme_token":"EXfDd0ZPNXvtRo3czUInfdMlVF-GeSGhUAa0ZThC6o8","jquery_version":"1.7","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.effect.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.button.min.js":1,"misc\/jquery.ba-bbq.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.slider.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.draggable.min.js":1,"sites\/all\/libraries\/bookreader\/BookReader\/\/jquery.bt.min.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/detectmobilebrowser.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/jquery_1_5.min.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/jquery.ui-1.8.10\/jquery-ui.min.js":1,"sites\/all\/libraries\/bookreader\/BookReader\/dragscrollable.js":1,"sites\/all\/libraries\/bookreader\/BookReader\/jquery.bt.min.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/libraries\/bookreader\/BookReader\/BookReader.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/islandora_book_reader.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/islandora_internet_archive_bookreader.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/islandora_solution_pack_oralhistories\/bootstrap\/js\/bootstrap.min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js":1,"misc\/jquery.form.js":1,"misc\/progress.js":1,"misc\/collapse.js":1,"misc\/form.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/collapse.js":1,"sites\/all\/themes\/gratis\/js-source\/site.js":1,"1":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.button.css":1,"sites\/all\/libraries\/bookreader\/BookReader\/BookReader.css":1,"misc\/ui\/jquery.ui.slider.css":1,"modules\/aggregator\/aggregator.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/islandora\/css\/islandora.base.css":1,"sites\/all\/modules\/islandora\/css\/islandora.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_audio\/css\/islandora_audio.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_collection\/css\/islandora_basic_collection.base.css":1,"sites\/all\/modules\/islandora_solution_pack_collection\/css\/islandora_basic_collection.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_image\/css\/islandora_basic_image.theme.css":1,"sites\/all\/modules\/islandora_batch\/css\/views_table_contextual_links_fix.css":1,"sites\/all\/modules\/islandora_bookmark\/css\/islandora_bookmark.css":1,"sites\/all\/modules\/islandora_fits\/css\/islandora_fits.css":1,"sites\/all\/modules\/islandora_solution_pack_large_image\/css\/islandora_large_image.theme.css":1,"sites\/all\/modules\/islandora_metadata_analyzer\/css\/analyzerStyle.css":1,"sites\/all\/modules\/islandora_solution_pack_newspaper\/css\/islandora_newspaper.base.css":1,"sites\/all\/modules\/islandora_solution_pack_newspaper\/css\/islandora_newspaper.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_oralhistories\/css\/islandora_oralhistories.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_oralhistories\/bootstrap\/css\/oh-bootstrap-all.css":1,"sites\/all\/modules\/islandora_solution_pack_pdf\/css\/islandora_pdf.theme.css":1,"sites\/all\/modules\/islandora_premis\/css\/islandora_premis.css":1,"sites\/all\/modules\/islandora_solr_search\/css\/islandora_solr.base.css":1,"sites\/all\/modules\/islandora_solr_metadata\/css\/islandora_solr_metadata.css":1,"sites\/all\/modules\/islandora_solution_pack_video\/css\/islandora_video.theme.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/css\/islandora_internet_archive_bookreader.css":1,"sites\/all\/modules\/islandora_solution_pack_compound\/css\/islandora_compound_object.block.css":1,"\/\/cdnjs.cloudflare.com\/ajax\/libs\/font-awesome\/4.3.0\/css\/font-awesome.min.css":1,"\/\/fonts.googleapis.com\/css?family=EB+Garamond|IM+Fell+Double+Pica|Open+Sans|Montserrat":1,"sites\/all\/themes\/gratis\/css\/normalize.css":1,"sites\/all\/themes\/gratis\/css\/color-palettes.css":1,"sites\/all\/themes\/gratis\/css\/core.css":1,"sites\/all\/themes\/gratis\/css\/styles.css":1,"sites\/all\/themes\/gratis\/system.theme.css":1,"sites\/all\/themes\/gratis\/system.menus.css":1,"sites\/all\/themes\/gratis\/css\/hacks.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"islandoraInternetArchiveBookReader":{"book":"wyu:119456","info":"   \u003Cfieldset class=\u0022islandora islandora-metadata\u0022\u003E\n  \u003Clegend\u003E\u003Cspan class=\u0022fieldset-legend\u0022\u003EDetails\u003C\/span\u003E\u003C\/legend\u003E\n  \u003Cdiv class=\u0022fieldset-wrapper\u0022\u003E\n    \u003Cdl xmlns:dcterms=\u0022http:\/\/purl.org\/dc\/terms\/\u0022 class=\u0022islandora-inline-metadata islandora-metadata-fields\u0022\u003E\n                    \u003Cdt class=\u0022 first\u0022\u003E\n          Title        \u003C\/dt\u003E\n        \u003Cdd class=\u0022 first\u0022\u003E\n          \u003Cp\u003EThe eradication of the sheep tick\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Creator(s)        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E\u003Ca href=\u0022\/islandora\/search\/mods_name_personal_namePart_ms%3A%22Swingle%252C%255C%2BLeroy%255C%2BD.%255C%2B%255C%2528Leroy%255C%2BDey%255C%2529%22\u0022\u003ESwingle, Leroy D. (Leroy Dey)\u003C\/a\u003E\u003Cbr \/\u003E\u003Ca href=\u0022\/islandora\/search\/mods_name_personal_namePart_ms%3A%221881%255C-%22\u0022\u003E1881-\u003C\/a\u003E\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Corporate Creator(s)        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003EUniversity of Wyoming\u003Cbr \/\u003E\nAgricultural Experiment Station\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Type of Resource        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003Etext\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Place of Publication        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003ELaramie, WY\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Publisher        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003EUniversity of Wyoming, Agricultural Experiment Station\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Date Created        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E1915-01-01\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Date Issued        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E1915-01-01\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Extent        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003Ep. [27]-47 ; 22 cm.\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Form        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003Eprint\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Note        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003EErrata inserted.\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Topics        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_topic_ms%3A%22Sheep%255C-tick%22\u0022\u003ESheep-tick\u003C\/a\u003E\u003Cbr \/\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_topic_ms%3A%22Sheep%255C-dip%22\u0022\u003ESheep-dip\u003C\/a\u003E\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Series Title        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E\u003Ca href=\u0022\/islandora\/search\/mods_relatedItem_series_titleInfo_title_ms%3A%22Bulletin%255C%2B%255C%2528Wyoming%255C%2BAgricultural%255C%2BExperiment%255C%2BStation%255C%2529%22\u0022\u003EBulletin (Wyoming Agricultural Experiment Station)\u003C\/a\u003E\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Rights Statement        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003EIn Copyright\u003C\/p\u003E\n        \u003C\/dd\u003E\n                  \u003C\/dl\u003E\n  \u003C\/div\u003E\n\u003C\/fieldset\u003E\n  ","label":"Bulletin No. 105 - The eradication of the sheep tick","searchUri":"https:\/\/uwdigital.uwyo.edu\/internet_archive_bookreader_search\/wyu%3A119456\/TERM","textUri":"https:\/\/uwdigital.uwyo.edu\/internet_archive_bookreader_text\/PID","dimensionsUri":"https:\/\/uwdigital.uwyo.edu\/internet_archive_bookreader_dimensions\/PID","tokenUri":"https:\/\/uwdigital.uwyo.edu\/internet_archive_bookreader_get_image_uri\/PID","djatokaUri":"\/adore-djatoka\/","imagesFolderUri":"https:\/\/uwdigital.uwyo.edu\/sites\/all\/libraries\/bookreader\/BookReader\/images\/","compression":"4","pageProgression":"rl","pages":[{"pid":"wyu:119463","page":"FN-000000","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3248","height":"5578","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119463\/datastream\/JP2\/view?token=9f48355cd7b489b2991ae5809643603eb79dc69dd89dd713b4ad372dacdc63af"},{"pid":"wyu:119462","page":"FN-000001","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3545","height":"5830","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119462\/datastream\/JP2\/view?token=f38930d2d2399799df1aedee93da42858dec3a723a33fb13692f6c7d68d43137"},{"pid":"wyu:119478","page":"FN-000002","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3305","height":"5565","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119478\/datastream\/JP2\/view?token=7f0822a03a97dd1b63c449c639d45e0d6960b2a50319a88f22f61b6fb7cfed2a"},{"pid":"wyu:119466","page":"FN-000003","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3240","height":"5570","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119466\/datastream\/JP2\/view?token=f387c82b6c90050f557aeb1a1af49923c957ea5767fe15076e14776641a50894"},{"pid":"wyu:119481","page":"FN-000004","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3478","height":"5788","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119481\/datastream\/JP2\/view?token=e5b27e3ed0ed2040921a900e1051ece82bb603a8cf681d30d99c29aa9cca89d2"},{"pid":"wyu:119461","page":"FN-000005","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3266","height":"5553","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119461\/datastream\/JP2\/view?token=bbbc32de8da07ac597be279ac8767adfcbb1110a31a3b4ad68ecc1819e5bd334"},{"pid":"wyu:119473","page":"FN-000006","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3530","height":"5838","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119473\/datastream\/JP2\/view?token=d72ed3c8072082871890e21efcee79696d48ceedbd6acdf197a1d3d652d83d82"},{"pid":"wyu:119471","page":"FN-000007","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3290","height":"5561","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119471\/datastream\/JP2\/view?token=7ddb719d07065e9f579e77c467340af1df9fb00ff6e1aa78746a4ec9f5e3c8da"},{"pid":"wyu:119472","page":"FN-000008","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3413","height":"5835","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119472\/datastream\/JP2\/view?token=83dbc30b7b110c107c900a7550989602fca98389c3d301231a92a2c3e2cd18c9"},{"pid":"wyu:119479","page":"FN-000009","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3290","height":"5566","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119479\/datastream\/JP2\/view?token=d25e6769b69420eb8dd00bda6104e90875e56d7073a71b4f539befdbe5eaa208"},{"pid":"wyu:119474","page":"FN-000010","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3385","height":"5826","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119474\/datastream\/JP2\/view?token=4f83b3f3bd672afe90d372b175e27005f59a43f2841b9073bcc185993e611b6e"},{"pid":"wyu:119469","page":"FN-000011","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3238","height":"5551","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119469\/datastream\/JP2\/view?token=47df2463383fe75c10ab878e34756bcb190e4aff890870dd28565d8b2ba79c0f"},{"pid":"wyu:119464","page":"FN-000012","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3281","height":"5808","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119464\/datastream\/JP2\/view?token=5fd118b1ff15dbfb7a3090f53552d665335d132e2c9c308bdc19b4eb86347377"},{"pid":"wyu:119467","page":"FN-000013","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3176","height":"5563","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119467\/datastream\/JP2\/view?token=dd0b300de5bb5261dbdd80b07af3e5203579b0e07916a9286c01a3ec44851d3b"},{"pid":"wyu:119458","page":"FN-000014","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3363","height":"5833","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119458\/datastream\/JP2\/view?token=fadb50510d7c957b8b5297de2a1388c5f16b8f326d164c653858fee1ad83a2b1"},{"pid":"wyu:119460","page":"FN-000015","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3233","height":"5545","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119460\/datastream\/JP2\/view?token=e15a43f15ca9e143f666b71613281af387f6eb75b144b5f3c03c3e824faba084"},{"pid":"wyu:119475","page":"FN-000016","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3393","height":"5850","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119475\/datastream\/JP2\/view?token=51692eca1bb89fa468bd4085cade515128411313f1b53dae9d35c50a4643d950"},{"pid":"wyu:119480","page":"FN-000017","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3231","height":"5551","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119480\/datastream\/JP2\/view?token=831e495f2b7de324a2007c13ead02555d1ed6dfb4db9f18f74430a524a06047c"},{"pid":"wyu:119476","page":"FN-000018","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3465","height":"5845","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119476\/datastream\/JP2\/view?token=7810d1eb25170c0a2f88238462bb0f12ce6c0a717757b4d456ff8a2c89c8ff9c"},{"pid":"wyu:119459","page":"FN-000019","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3270","height":"5565","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119459\/datastream\/JP2\/view?token=96f827e37338b75ef9ea7340901e30772272a28631a5b4e9bc3465fc1f173965"},{"pid":"wyu:119465","page":"FN-000020","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3473","height":"5735","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119465\/datastream\/JP2\/view?token=cb21434e59a17cf53741ccf101c3696d4c0226a70e79aa988bfa2041863ab021"},{"pid":"wyu:119470","page":"FN-000021","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3278","height":"5586","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119470\/datastream\/JP2\/view?token=417c9935aca043d33126c9ab5ef55bea1817f67937d55d70f703c41f426783c5"},{"pid":"wyu:119477","page":"FN-000022","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3503","height":"5790","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119477\/datastream\/JP2\/view?token=3b734b45b907a265f9005806af25f22fcfee183ce2f5e9f8dc1546dff22677a5"},{"pid":"wyu:119457","page":"FN-000023","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3261","height":"5545","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119457\/datastream\/JP2\/view?token=623ba7bc192059412d5be79dc9315dc6592d29c88233c21d8b7f2db586d6ae50"},{"pid":"wyu:119468","page":"FN-000024","label":"[Page of] Bulletin No. 105 - The eradication of the sheep tick","width":"3481","height":"5780","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A119468\/datastream\/JP2\/view?token=0998409f1e8c1209d540b8f59a811c5663e693c99214ed60353b4032617ee1b9"}],"pageCount":25,"overlayOpacity":"0.5","mode":2,"mobilize":0,"content_type":"book","useBackupUri":0},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|tif|jpg|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1,"trackDomainMode":"1","trackUrlFragments":1},"urlIsAjaxTrusted":{"\/islandora\/object\/wyu:119456\/\/datastream\/MODS":true}});
-</script>
-    <!--[if lt IE 9]>
-  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-</head>
-<body class="html not-front not-logged-in no-sidebars page-islandora page-islandora-object page-islandora-object-wyu119456 page-islandora-object-wyu119456- page-islandora-object-wyu119456--datastream page-islandora-object-wyu119456--datastream-mods designkit preface-three postscript-one footer-three site-name-show site-slogan-show site-slogan-not-empty color-palette-chartreuse heading-typeface-opensans body-typeface-opensans header-left-right not-node themebg-dark default-layout bg_pattern_01 no_tint">
-<div id="skip-link">
-    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
-</div>
 
-  <div class="l-page-wrapper">
-    <div class="l-page">
-
-      <!-- top links-->
-            <!-- //top links-->
-
-      <!-- header -->
-      <div id="header-bar" class="l-header-wrapper" role="banner">
-        <header class="l-header l-setwidth" >
-
-                    <div class="l-logo">
-              <a href="/" title="UW Digital » UW Libraries Digital Repository.">
-                <img id="logo-img" src="https://uwdigital.uwyo.edu/sites/default/files/digilogo200.png" alt="UW Digital » UW Libraries Digital Repository."/></a>
-            </div><!--// l-logo-->
-            
-                    <div class="l-branding">
-
-                                  <h1 class="site-name">
-                    <a href="/">
-                      UW Digital</a>
-                  </h1>
-              
-                                      <h3 class="site-slogan">UW Libraries Digital Repository.</h3>
-                
-          </div><!--//branding-->
-            
-        </header>
-      </div><!-- // l-header -wrapper-->
-
-      <div id="menu-wrapper" class="l-menu-wrapper main-menu" role="navigation">
-        <div class="l-setwidth" >
-
-                      <a id="off-canvas-left-show" href="#off-canvas" class="l-off-canvas-show l-off-canvas-show--left">Show Navigation</a>
-            <div id="off-canvas-left" class="l-off-canvas l-off-canvas--left">
-              <a id="off-canvas-left-hide" href="#" class="l-off-canvas-hide l-off-canvas-hide--left">Hide Navigation</a>
-
-              <div class="main-menu-wrapper">
-
-                <ul class="menu primary"><li class="first leaf menu-218 home level-1"><a href="/" title="" class="alink menu-218 home">Home</a></li>
-<li class="expanded menu-676 collections level-1"><a href="/featured-collections" title="Check out our featured collections!" class="alink menu-676 collections">Collections</a><ul class="menu"><li class="first leaf menu-675 browseourtoplevelcollections level-2"><a href="/islandora" title="Browse top collections." class="alink menu-675 browseourtoplevelcollections">Browse Our Top-Level Collections</a></li>
-<li class="leaf menu-1076 popularitems level-2"><a href="/usage-highest" title="Check out what everyone else is looking at." class="alink menu-1076 popularitems">Popular Items</a></li>
-<li class="leaf menu-1079 specialcollections level-2"><a href="http://hdl.handle.net/10176/wyu:25864" title="Books in the public domain from our Special Collections at UW Libraries. " class="alink menu-1079 specialcollections">Special Collections</a></li>
-<li class="leaf menu-681 agriculturalbulletins level-2"><a href="/agricultural-bulletins" title="Wyoming Agricultural Experiment Station Bulletins" class="alink menu-681 agriculturalbulletins">Agricultural Bulletins</a></li>
-<li class="leaf menu-678 botanicalfieldbookstimeline level-2"><a href="/browse-fieldbooks-date" title="" class="alink menu-678 botanicalfieldbookstimeline">Botanical Fieldbooks Timeline</a></li>
-<li class="leaf menu-677 yearbooks level-2"><a href="/yearbooks" title="Check out our various digitized yearbooks!" class="alink menu-677 yearbooks">Yearbooks</a></li>
-<li class="last leaf menu-1396 willismcdonaldivcollection level-2"><a href="/willis-mcdonald-iv-collection" title="Details on the private Business Equity Collection" class="alink menu-1396 willismcdonaldivcollection">Willis McDonald IV Collection</a></li>
-</ul></li>
-<li class="leaf menu-1090 exhibits level-1"><a href="https://www-lib.uwyo.edu/digital/exhibits/" title="Check out our Digital Exhibit Platform!" class="alink menu-1090 exhibits">Exhibits</a></li>
-<li class="expanded menu-670 repositories level-1"><a href="/repositories" title="Check out the different repositories available from the Digital Collections Office." class="alink menu-670 repositories">Repositories</a><ul class="menu"><li class="first leaf menu-1295 uwdatarepository level-2"><a href="http://data.uwyo.edu/" title="Check out our Repository for Research data at UW." class="alink menu-1295 uwdatarepository">UW Data Repository</a></li>
-<li class="leaf menu-671 wyscholarsrepository level-2"><a href="/wysr" title="Wyoming Scholar&#039;s Repository" class="alink menu-671 wyscholarsrepository">Wy Scholars Repository</a></li>
-<li class="last leaf menu-674 digitalherbaria level-2"><a href="/digital-herbaria" class="alink menu-674 digitalherbaria">Digital Herbaria</a></li>
-</ul></li>
-<li class="expanded menu-682 about level-1"><a href="/about" title="Contact Information, FAQ&#039;s, Equipment, Software, and Policies." class="alink menu-682 about">About</a><ul class="menu"><li class="first leaf menu-684 people level-2"><a href="/people" title="We who work the digital." class="alink menu-684 people">People</a></li>
-<li class="leaf menu-686 digitizationequipment level-2"><a href="/equipment" title="Take a look at how we do what we do." class="alink menu-686 digitizationequipment">Digitization Equipment</a></li>
-<li class="last leaf menu-729 login level-2"><a href="https://uwdigital.uwyo.edu/login" title="Sign into the secure site." class="alink menu-729 login">Login</a></li>
-</ul></li>
-<li class="last collapsed menu-746 uwlibraries level-1"><a href="http://www-lib.uwyo.edu/" title="Visit the UW Libraries Website." class="alink menu-746 uwlibraries">UW Libraries</a></li>
-</ul>              </div>
-            </div><!-- // off-canvas-left -->
-                    <!-- //main menu -->
-
-          <!-- for third party menu systems or modules-->
-          
-        </div>
-      </div>
-
-<div class="l-content-wrap">
-
-  
-              <div id="breadcrumbs-wrapper" class="l-breadcrumbs">
-          <div class="breadcrumbs l-setwidth" >
-            <div class="s-grid"><h2 class="element-invisible">You are here</h2><nav class="breadcrumb"><a href="/">Home</a> » <a href="/islandora">Browse Our Top-Level Collections</a> » <a href="/islandora/object/wyu%3A6417">Wyoming Agricultural Experiment Station</a> » <a href="/islandora/object/wyu%3A12113">Wyoming Agricultural Experiment Station Bulletins</a> » Bulletin No. 105 - The eradication of the sheep tick</nav></div>
-          </div>
-        </div>
-      
-      <!-- preface -->
-      
-        <div id="preface-wrap" class="l-preface-wrap">
-          <div id="preface-container" class="l-preface l-setwidth" >
-
-            <!--Preface -->
-                          <div class="preface">
-                
-
-
-  <div class="region region-preface-first">
-    <div id="block-service-links-service-links-not-node" class="block block-service-links">
-
-      
-  <div class="service-links"><a href="http://www.facebook.com/sharer.php?u=https%3A//uwdigital.uwyo.edu/islandora/object/wyu%253A119456//datastream/MODS&amp;t=Bulletin%20No.%20105%20-%20The%20eradication%20of%20the%20sheep%20tick" title="Share on Facebook" class="service-links-facebook" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="https://uwdigital.uwyo.edu/sites/all/modules/service_links/images/facebook.png" alt="Facebook logo" /></a> <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//uwdigital.uwyo.edu/islandora/object/wyu%253A119456//datastream/MODS&amp;title=Bulletin%20No.%20105%20-%20The%20eradication%20of%20the%20sheep%20tick&amp;summary=&amp;source=UW%20Digital" title="Publish this post to LinkedIn" class="service-links-linkedin" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="https://uwdigital.uwyo.edu/sites/all/modules/service_links/images/linkedin.png" alt="LinkedIn logo" /></a> <a href="http://www.stumbleupon.com/submit?url=https%3A//uwdigital.uwyo.edu/islandora/object/wyu%253A119456//datastream/MODS&amp;title=Bulletin%20No.%20105%20-%20The%20eradication%20of%20the%20sheep%20tick" title="Thumb this up at StumbleUpon" class="service-links-stumbleupon" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="https://uwdigital.uwyo.edu/sites/all/modules/service_links/images/stumbleit.png" alt="StumbleUpon logo" /></a> <a href="https://plus.google.com/share?url=https%3A//uwdigital.uwyo.edu/islandora/object/wyu%253A119456//datastream/MODS" title="Share this on Google+" class="service-links-google-plus" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="https://uwdigital.uwyo.edu/sites/all/modules/service_links/images/google_plus.png" alt="Google+ logo" /></a></div>
-</div>
-  </div>
-              </div>
-            
-                          <div class="preface">
-                
-
-
-  <div class="region region-preface-second">
-    <div id="block-block-42" class="block block-block">
-
-      
-  <p> </p>
-
-</div>
-  </div>
-              </div>
-            
-                          <div class="preface">
-                
-
-
-  <div class="region region-preface-third">
-    <div id="block-islandora-solr-simple" class="block block-islandora-solr">
-
-      
-  <form action="/islandora/object/wyu:119456//datastream/MODS" method="post" id="islandora-solr-simple-search-form" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-simple"><div class="form-item form-type-textfield form-item-islandora-simple-search-query">
-  <input type="text" id="edit-islandora-simple-search-query" name="islandora_simple_search_query" value="" size="15" maxlength="128" class="form-text" />
-</div>
-<input type="submit" id="edit-submit" name="op" value="search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-bs8yoiwd04dgUeUhYJauSBaeT1wQkHnZ_74AaT_epEM" />
-<input type="hidden" name="form_id" value="islandora_solr_simple_search_form" />
-</div></form>
-</div>
-  </div>
-              </div>
-            
-          </div>
-        </div>
-        <!-- // preface -->
-
-      
-      <div class="main" >
-        <div class="l-main l-setwidth" role="main" >
-
-          <div class="l-content">
-            <a id="main-content"></a>
-                                      <h1>Bulletin No. 105 - The eradication of the sheep tick</h1>
-                                                <h2 class="element-invisible">Primary tabs</h2><ul class="tabs primary"><li class="active"><a href="/islandora/object/wyu%3A119456" class="active">View<span class="element-invisible">(active tab)</span></a></li>
-<li><a href="/islandora/object/wyu%3A119456/view_mods_as_marcxml">MARCXML</a></li>
-<li><a href="/islandora/object/wyu%3A119456/pages">Pages</a></li>
-</ul>                                    
-
-
-  <div class="region region-content">
-    <div id="block-system-main" class="block block-system">
-
-      
-    <div id="book-viewer">
-    <div id="BookReader" class="islandora-internet-archive-bookreader">
-   Loading the Internet Archive BookReader, please wait...
-</div>
-  </div>
-
-  <div class="islandora-book-metadata">
-          <div>
-    <h2>In collections</h2>
-    <ul>
-              <li><a href="/islandora/object/wyu%3A12113">Wyoming Agricultural Experiment Station Bulletins</a></li>
-          </ul>
-  </div>
-       <fieldset class="islandora islandora-metadata collapsible">
-  <legend><span class="fieldset-legend">Details</span></legend>
-  <div class="fieldset-wrapper">
-    <dl xmlns:dcterms="http://purl.org/dc/terms/" class="islandora-inline-metadata islandora-metadata-fields">
-                    <dt class=" first">
-          Title        </dt>
-        <dd class=" first">
-          <p>The eradication of the sheep tick</p>
-        </dd>
-                      <dt class="">
-          Creator(s)        </dt>
-        <dd class="">
-          <p><a href="/islandora/search/mods_name_personal_namePart_ms%3A%22Swingle%252C%255C%2BLeroy%255C%2BD.%255C%2B%255C%2528Leroy%255C%2BDey%255C%2529%22">Swingle, Leroy D. (Leroy Dey)</a><br /><a href="/islandora/search/mods_name_personal_namePart_ms%3A%221881%255C-%22">1881-</a></p>
-        </dd>
-                      <dt class="">
-          Corporate Creator(s)        </dt>
-        <dd class="">
-          <p>University of Wyoming<br />
-Agricultural Experiment Station</p>
-        </dd>
-                      <dt class="">
-          Type of Resource        </dt>
-        <dd class="">
-          <p>text</p>
-        </dd>
-                      <dt class="">
-          Place of Publication        </dt>
-        <dd class="">
-          <p>Laramie, WY</p>
-        </dd>
-                      <dt class="">
-          Publisher        </dt>
-        <dd class="">
-          <p>University of Wyoming, Agricultural Experiment Station</p>
-        </dd>
-                      <dt class="">
-          Date Created        </dt>
-        <dd class="">
-          <p>1915-01-01</p>
-        </dd>
-                      <dt class="">
-          Date Issued        </dt>
-        <dd class="">
-          <p>1915-01-01</p>
-        </dd>
-                      <dt class="">
-          Extent        </dt>
-        <dd class="">
-          <p>p. [27]-47 ; 22 cm.</p>
-        </dd>
-                      <dt class="">
-          Form        </dt>
-        <dd class="">
-          <p>print</p>
-        </dd>
-                      <dt class="">
-          Note        </dt>
-        <dd class="">
-          <p>Errata inserted.</p>
-        </dd>
-                      <dt class="">
-          Topics        </dt>
-        <dd class="">
-          <p><a href="/islandora/search/mods_subject_topic_ms%3A%22Sheep%255C-tick%22">Sheep-tick</a><br /><a href="/islandora/search/mods_subject_topic_ms%3A%22Sheep%255C-dip%22">Sheep-dip</a></p>
-        </dd>
-                      <dt class="">
-          Series Title        </dt>
-        <dd class="">
-          <p><a href="/islandora/search/mods_relatedItem_series_titleInfo_title_ms%3A%22Bulletin%255C%2B%255C%2528Wyoming%255C%2BAgricultural%255C%2BExperiment%255C%2BStation%255C%2529%22">Bulletin (Wyoming Agricultural Experiment Station)</a></p>
-        </dd>
-                      <dt class="">
-          Rights Statement        </dt>
-        <dd class="">
-          <p>In Copyright</p>
-        </dd>
-                  </dl>
-  </div>
-</fieldset>
-    </div>
-
-</div>
-<div id="block-views-permanent-link-block" class="block block-views">
-
-      
-  <div class="view view-permanent-link view-id-permanent_link view-display-id-block view-dom-id-fc3da830252a9612aab0a1320b553306">
-        
-  
-  
-      <div class="view-content">
-        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
-      
-  <div class="views-field views-field-nothing">        <span class="field-content">Permanently Link to this Resource: <a href="http://hdl.handle.net/10176/wyu:119456" title="A handle is a permanent link to this resource, no matter what the URL might become over time.">hdl.handle.net/10176/wyu:119456</a></span>  </div>  </div>
-    </div>
-  
-  
-  
-  
-  
-  
-</div>
-</div>
-<div id="block-islandora-downloadable-pdf-pdf-download" class="block block-islandora-downloadable-pdf">
-
-      
-  <div class="downloadlink"><a href="https://uwdigital.uwyo.edu/islandora/object/wyu:119456/datastream/PDF/view">Download PDF</a></div>
-</div>
-  </div>
-                      </div>
-
-                            </div>
-
-      </div>
-
-      
-
-      <footer id="footer" role="footer" class="l-footer-wrapper">
-        <div class="l-setwidth l-footer" >
-
-          <!--footer -->
-                      <div class="footer">
-              
-
-
-  <div class="region region-footer-first">
-    <div id="block-block-71" class="block block-block">
-
-      
-  <h3>Contact Digital Collections</h3>
-<p>Phone: 307-766-5560 <br /><a href="mailto:digcol@uwyo.edu">email: digcol{at}uwyo{dot}edu</a></p>
-
-</div>
-  </div>
-            </div>
-          
-                      <div class="footer">
-              
-
-
-  <div class="region region-footer-second">
-    <div id="block-block-70" class="block block-block">
-
-      
-  <p> </p>
-
-</div>
-  </div>
-            </div>
-          
-                      <div class="footer">
-              
-
-
-  <div class="region region-footer-third">
-    <div id="block-block-72" class="block block-block">
-
-      
-  <p><a href="http://uwdigital.uwyo.edu/contact">Contact Form <img src="http://www-lib.uwyo.edu/img/feedback.png" /></a>  <br /><br /><a href="https://uwdigital.uwyo.edu/login">Login</a><br /><a href="/user/logout">Log Out</a></p>
-
-</div>
-  </div>
-            </div>
-          
-        </div>
-      </footer>
-
-</div>
-
-    </div>
-    <a href="#" class="scrolltop">Scroll to the top</a>
-  </div>
-</body>
-</html>
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <titleInfo>
+    <title>The eradication of the sheep tick</title>
+  </titleInfo>
+  <name type="personal">
+    <namePart>Swingle, Leroy D. (Leroy Dey)</namePart>
+    <namePart type="date">1881-</namePart>
+    <role>
+      <roleTerm authority="marcrelator" type="text">creator</roleTerm>
+    </role>
+  </name>
+  <name type="corporate">
+    <namePart>University of Wyoming</namePart>
+    <namePart>Agricultural Experiment Station</namePart>
+  </name>
+  <typeOfResource>text</typeOfResource>
+  <originInfo>
+    <place>
+      <placeTerm authority="marccountry" type="code">wyu</placeTerm>
+    </place>
+    <place>
+      <placeTerm type="text">Laramie, WY</placeTerm>
+    </place>
+    <publisher>University of Wyoming, Agricultural Experiment Station</publisher>
+    <dateIssued>1915-01-01</dateIssued>
+    <dateCreated keyDate="yes">1915-01-01</dateCreated>
+    <dateCaptured>2014-11-18</dateCaptured>
+    <issuance>monographic</issuance>
+  </originInfo>
+  <language>
+    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+  </language>
+  <physicalDescription>
+    <form authority="marcform">print</form>
+    <extent>p. [27]-47 ; 22 cm.</extent>
+  </physicalDescription>
+  <note>Errata inserted.</note>
+  <subject authority="lcsh">
+    <topic>Sheep-tick</topic>
+  </subject>
+  <subject authority="lcsh">
+    <topic>Sheep-dip</topic>
+  </subject>
+  <relatedItem type="series">
+    <titleInfo>
+      <title>Bulletin (Wyoming Agricultural Experiment Station)</title>
+    </titleInfo>
+    <detail>
+      <part>105</part>
+    </detail>
+  </relatedItem>
+  <accessCondition displayLabel="Standardized rights statement" type="use and reproduction" xlink:href="http://rightsstatements.org/page/InC/1.0/">In Copyright</accessCondition>
+  <location>
+    <url usage="primary display">http://hdl.handle.net/10176/wyu:119456</url>
+  </location>
+</mods>

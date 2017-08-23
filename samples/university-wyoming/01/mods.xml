@@ -1,451 +1,60 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-<link rel="shortcut icon" href="https://uwdigital.uwyo.edu/sites/default/files/newbookmark.png" type="image/png" />
-<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta http-equiv="cleartype" content="on">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <title>Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range | UW Digital</title>
-  <style media="all">
-@import url("https://uwdigital.uwyo.edu/modules/system/system.base.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/modules/system/system.messages.css?ov3hkz");
-</style>
-<style media="all">
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.button.min.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader/BookReader.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.slider.min.css?ov3hkz");
-</style>
-<style media="all">
-@import url("https://uwdigital.uwyo.edu/modules/aggregator/aggregator.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/modules/comment/comment.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/date/date_api/date.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/modules/field/theme/field.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora/css/islandora.base.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora/css/islandora.theme.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_audio/css/islandora_audio.theme.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_collection/css/islandora_basic_collection.base.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_collection/css/islandora_basic_collection.theme.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_image/css/islandora_basic_image.theme.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_batch/css/views_table_contextual_links_fix.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_bookmark/css/islandora_bookmark.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_fits/css/islandora_fits.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_large_image/css/islandora_large_image.theme.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_metadata_analyzer/css/analyzerStyle.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_newspaper/css/islandora_newspaper.base.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_newspaper/css/islandora_newspaper.theme.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_oralhistories/css/islandora_oralhistories.theme.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_oralhistories/bootstrap/css/oh-bootstrap-all.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_pdf/css/islandora_pdf.theme.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_premis/css/islandora_premis.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solr_search/css/islandora_solr.base.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solr_metadata/css/islandora_solr_metadata.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_video/css/islandora_video.theme.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/modules/node/node.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/modules/search/search.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/modules/user/user.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/views/css/views.css?ov3hkz");
-</style>
-<style media="all">
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/colorbox/styles/default/colorbox_style.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/ctools/css/ctools.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/css/islandora_internet_archive_bookreader.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_compound/css/islandora_compound_object.block.css?ov3hkz");
-</style>
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" media="all" />
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=EB+Garamond|IM+Fell+Double+Pica|Open+Sans|Montserrat" media="all" />
-<style media="all">
-@import url("https://uwdigital.uwyo.edu/sites/all/themes/gratis/css/normalize.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/themes/gratis/css/color-palettes.css?ov3hkz");
-@import url("https://uwdigital.uwyo.edu/sites/all/themes/gratis/css/styles.css?ov3hkz");
-</style>
-<style media="all">
-@import url("https://uwdigital.uwyo.edu/sites/all/themes/gratis/css/hacks.css?ov3hkz");
-</style>
-  <script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
-<script src="https://uwdigital.uwyo.edu/misc/jquery.once.js?v=1.2"></script>
-<script src="https://uwdigital.uwyo.edu/misc/drupal.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.10.2"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js?v=1.10.2"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.effect.min.js?v=1.10.2"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.button.min.js?v=1.10.2"></script>
-<script src="https://uwdigital.uwyo.edu/misc/jquery.ba-bbq.js?v=1.2.1"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.mouse.min.js?v=1.10.2"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.slider.min.js?v=1.10.2"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.draggable.min.js?v=1.10.2"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader//jquery.bt.min.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/detectmobilebrowser.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/jquery_1_5.min.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/jquery.ui-1.8.10/jquery-ui.min.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader/dragscrollable.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader/jquery.bt.min.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/libraries/colorbox/jquery.colorbox-min.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/libraries/bookreader/BookReader/BookReader.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/islandora_book_reader.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/islandora_internet_archive_bookreader.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/misc/ajax.js?v=7.56"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/jquery_update/js/jquery_update.js?v=0.0.1"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_solution_pack_oralhistories/bootstrap/js/bootstrap.min.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/colorbox/js/colorbox.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/colorbox/styles/default/colorbox_style.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/misc/jquery.form.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/misc/progress.js?v=7.56"></script>
-<script src="https://uwdigital.uwyo.edu/misc/collapse.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/misc/form.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/google_analytics/googleanalytics.js?ov3hkz"></script>
-<script>
-(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-55843934-1", {"cookieDomain":".uwdigital.uwyo.edu"});ga("require", "linkid", "linkid.js");ga("set", "anonymizeIp", true);ga("set", "page", location.pathname + location.search + location.hash);ga("send", "pageview");
-</script>
-<script src="https://uwdigital.uwyo.edu/sites/all/modules/islandora_internet_archive_bookreader/js/collapse.js?ov3hkz"></script>
-<script src="https://uwdigital.uwyo.edu/sites/all/themes/gratis/js-source/site.js?ov3hkz"></script>
-<script>
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"gratis","theme_token":"j62FQI45nd3YpLBeHTuFjABUAg9kZWAXVKsXcCrnKOM","jquery_version":"1.7","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.effect.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.button.min.js":1,"misc\/jquery.ba-bbq.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.slider.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.draggable.min.js":1,"sites\/all\/libraries\/bookreader\/BookReader\/\/jquery.bt.min.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/detectmobilebrowser.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/jquery_1_5.min.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/jquery.ui-1.8.10\/jquery-ui.min.js":1,"sites\/all\/libraries\/bookreader\/BookReader\/dragscrollable.js":1,"sites\/all\/libraries\/bookreader\/BookReader\/jquery.bt.min.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/libraries\/bookreader\/BookReader\/BookReader.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/islandora_book_reader.js":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/islandora_internet_archive_bookreader.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/islandora_solution_pack_oralhistories\/bootstrap\/js\/bootstrap.min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js":1,"misc\/jquery.form.js":1,"misc\/progress.js":1,"misc\/collapse.js":1,"misc\/form.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/js\/collapse.js":1,"sites\/all\/themes\/gratis\/js-source\/site.js":1,"1":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.button.css":1,"sites\/all\/libraries\/bookreader\/BookReader\/BookReader.css":1,"misc\/ui\/jquery.ui.slider.css":1,"modules\/aggregator\/aggregator.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/islandora\/css\/islandora.base.css":1,"sites\/all\/modules\/islandora\/css\/islandora.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_audio\/css\/islandora_audio.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_collection\/css\/islandora_basic_collection.base.css":1,"sites\/all\/modules\/islandora_solution_pack_collection\/css\/islandora_basic_collection.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_image\/css\/islandora_basic_image.theme.css":1,"sites\/all\/modules\/islandora_batch\/css\/views_table_contextual_links_fix.css":1,"sites\/all\/modules\/islandora_bookmark\/css\/islandora_bookmark.css":1,"sites\/all\/modules\/islandora_fits\/css\/islandora_fits.css":1,"sites\/all\/modules\/islandora_solution_pack_large_image\/css\/islandora_large_image.theme.css":1,"sites\/all\/modules\/islandora_metadata_analyzer\/css\/analyzerStyle.css":1,"sites\/all\/modules\/islandora_solution_pack_newspaper\/css\/islandora_newspaper.base.css":1,"sites\/all\/modules\/islandora_solution_pack_newspaper\/css\/islandora_newspaper.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_oralhistories\/css\/islandora_oralhistories.theme.css":1,"sites\/all\/modules\/islandora_solution_pack_oralhistories\/bootstrap\/css\/oh-bootstrap-all.css":1,"sites\/all\/modules\/islandora_solution_pack_pdf\/css\/islandora_pdf.theme.css":1,"sites\/all\/modules\/islandora_premis\/css\/islandora_premis.css":1,"sites\/all\/modules\/islandora_solr_search\/css\/islandora_solr.base.css":1,"sites\/all\/modules\/islandora_solr_metadata\/css\/islandora_solr_metadata.css":1,"sites\/all\/modules\/islandora_solution_pack_video\/css\/islandora_video.theme.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/islandora_internet_archive_bookreader\/css\/islandora_internet_archive_bookreader.css":1,"sites\/all\/modules\/islandora_solution_pack_compound\/css\/islandora_compound_object.block.css":1,"\/\/cdnjs.cloudflare.com\/ajax\/libs\/font-awesome\/4.3.0\/css\/font-awesome.min.css":1,"\/\/fonts.googleapis.com\/css?family=EB+Garamond|IM+Fell+Double+Pica|Open+Sans|Montserrat":1,"sites\/all\/themes\/gratis\/css\/normalize.css":1,"sites\/all\/themes\/gratis\/css\/color-palettes.css":1,"sites\/all\/themes\/gratis\/css\/core.css":1,"sites\/all\/themes\/gratis\/css\/styles.css":1,"sites\/all\/themes\/gratis\/system.theme.css":1,"sites\/all\/themes\/gratis\/system.menus.css":1,"sites\/all\/themes\/gratis\/css\/hacks.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"islandoraInternetArchiveBookReader":{"book":"wyu:118353","info":"   \u003Cfieldset class=\u0022islandora islandora-metadata\u0022\u003E\n  \u003Clegend\u003E\u003Cspan class=\u0022fieldset-legend\u0022\u003EDetails\u003C\/span\u003E\u003C\/legend\u003E\n  \u003Cdiv class=\u0022fieldset-wrapper\u0022\u003E\n    \u003Cdl xmlns:dcterms=\u0022http:\/\/purl.org\/dc\/terms\/\u0022 class=\u0022islandora-inline-metadata islandora-metadata-fields\u0022\u003E\n                    \u003Cdt class=\u0022 first\u0022\u003E\n          Title        \u003C\/dt\u003E\n        \u003Cdd class=\u0022 first\u0022\u003E\n          \u003Cp\u003EMechanical treatments for increasing the grazing capacity of shortgrass range\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Creator(s)        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E\u003Ca href=\u0022\/islandora\/search\/mods_name_personal_namePart_ms%3A%22Barnes%252C%255C%2BO.%255C%2BK.%255C%2B%255C%2528Oscar%255C%2BK.%255C%2529%22\u0022\u003EBarnes, O. K. (Oscar K.)\u003C\/a\u003E\u003Cbr \/\u003E\u003Ca href=\u0022\/islandora\/search\/mods_name_personal_namePart_ms%3A%22Nelson%252C%255C%2BA.%255C%2BL.%255C%2B%255C%2528August%255C%2BLevi%255C%2529%22\u0022\u003ENelson, A. L. (August Levi)\u003C\/a\u003E\u003Cbr \/\u003E\u003Ca href=\u0022\/islandora\/search\/mods_name_personal_namePart_ms%3A%221885%255C-%22\u0022\u003E1885-\u003C\/a\u003E\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Corporate Creator(s)        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003EUniversity of Wyoming\u003Cbr \/\u003E\nAgricultural Experiment Station\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Type of Resource        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003Etext\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Place of Publication        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003ELaramie, WY\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Publisher        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003EUniversity of Wyoming, Agricultural Experiment Station\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Date Created        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E1945-06-01\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Date Issued        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E1945-06-01\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Extent        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E35 p. : ill. ; 23 cm.\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Form        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003Eprint\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Topics        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_topic_ms%3A%22Range%255C%2Bmanagement%22\u0022\u003ERange management\u003C\/a\u003E\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Geographic Subjects        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E\u003Ca href=\u0022\/islandora\/search\/mods_subject_geographic_ms%3A%22Wyoming%22\u0022\u003EWyoming\u003C\/a\u003E\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Series Title        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003E\u003Ca href=\u0022\/islandora\/search\/mods_relatedItem_series_titleInfo_title_ms%3A%22Bulletin%255C%2B%255C%2528Wyoming%255C%2BAgricultural%255C%2BExperiment%255C%2BStation%255C%2529%22\u0022\u003EBulletin (Wyoming Agricultural Experiment Station)\u003C\/a\u003E\u003C\/p\u003E\n        \u003C\/dd\u003E\n                      \u003Cdt class=\u0022\u0022\u003E\n          Rights Statement        \u003C\/dt\u003E\n        \u003Cdd class=\u0022\u0022\u003E\n          \u003Cp\u003EIn Copyright\u003C\/p\u003E\n        \u003C\/dd\u003E\n                  \u003C\/dl\u003E\n  \u003C\/div\u003E\n\u003C\/fieldset\u003E\n  ","label":"Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","searchUri":"https:\/\/uwdigital.uwyo.edu\/internet_archive_bookreader_search\/wyu%3A118353\/TERM","textUri":"https:\/\/uwdigital.uwyo.edu\/internet_archive_bookreader_text\/PID","dimensionsUri":"https:\/\/uwdigital.uwyo.edu\/internet_archive_bookreader_dimensions\/PID","tokenUri":"https:\/\/uwdigital.uwyo.edu\/internet_archive_bookreader_get_image_uri\/PID","djatokaUri":"\/adore-djatoka\/","imagesFolderUri":"https:\/\/uwdigital.uwyo.edu\/sites\/all\/libraries\/bookreader\/BookReader\/images\/","compression":"4","pageProgression":"rl","pages":[{"pid":"wyu:118362","page":"FN-000000","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2031","height":"3362","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118362\/datastream\/JP2\/view?token=480cfecb6df4b1ee7de5e4aee7f21933cdf126a1f3abadaafbc3f508d08dd9cb"},{"pid":"wyu:118361","page":"FN-000001","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2097","height":"3351","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118361\/datastream\/JP2\/view?token=6a22d43df16bc093ae70b5bc6e129fe63abce89d93a9527f6f136fcbe82f32e9"},{"pid":"wyu:118383","page":"FN-000002","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2073","height":"3354","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118383\/datastream\/JP2\/view?token=d571cbc7c5d1f5d7acfd697b5548b45d9ff45ca9778134752715409fc5fae524"},{"pid":"wyu:118365","page":"FN-000003","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2090","height":"3362","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118365\/datastream\/JP2\/view?token=5d13e105b14d4cdf97a7b958846f80b00d16724b13594f6627385f53b2e02bdf"},{"pid":"wyu:118387","page":"FN-000004","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2062","height":"3365","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118387\/datastream\/JP2\/view?token=739fa86ad9c1d6578d459e1b4d541f775fe3e6ff414dc9d575bb57c8e1dfc0a6"},{"pid":"wyu:118360","page":"FN-000005","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2078","height":"3358","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118360\/datastream\/JP2\/view?token=4995eb9dea614f17da8a06e515d274496866975bce5648fd4e067f877182699d"},{"pid":"wyu:118376","page":"FN-000006","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2052","height":"3358","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118376\/datastream\/JP2\/view?token=818c794f7f8a80b3b1a564623006ab980a3b070aec2a4afa310c3d65f6adff1e"},{"pid":"wyu:118373","page":"FN-000007","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2104","height":"3353","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118373\/datastream\/JP2\/view?token=92afac8264ed972ee3605f95bce211d15335ca4d27fe417229fe6dbf4541abd6"},{"pid":"wyu:118375","page":"FN-000008","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2067","height":"3351","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118375\/datastream\/JP2\/view?token=4ad856339299a376d209483df7aa76aa9f3e5c70cd3172eef497d6221c330946"},{"pid":"wyu:118384","page":"FN-000009","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2098","height":"3351","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118384\/datastream\/JP2\/view?token=6348e4d841a789aacb8e8aade4b27703b73c6598615d2a0a135281ba1badbf08"},{"pid":"wyu:118378","page":"FN-000010","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2019","height":"3351","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118378\/datastream\/JP2\/view?token=91a9d337a5b0e7f87dfc0b119ab3530c19dc4df940e12d285c20b016a6016d1f"},{"pid":"wyu:118368","page":"FN-000011","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2051","height":"3361","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118368\/datastream\/JP2\/view?token=3b7c6afa0fcf883ba6d6c6f2080f82a6b831247a96852218fcc72943bb3ed968"},{"pid":"wyu:118363","page":"FN-000012","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2023","height":"3362","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118363\/datastream\/JP2\/view?token=df3a8c734a28dd63aaac682bb85085a858d9027e4e3a3a2bfc2fb006e276ff85"},{"pid":"wyu:118366","page":"FN-000013","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2071","height":"3359","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118366\/datastream\/JP2\/view?token=4dc3da209380ce00b78e6172264077f574f64542d90ff245d23a2a3487f23115"},{"pid":"wyu:118356","page":"FN-000014","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2059","height":"3349","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118356\/datastream\/JP2\/view?token=50bd8b3cc13277934a4b29d23b74d84af9413c92ca34e8a09e42e89dd015dd91"},{"pid":"wyu:118358","page":"FN-000015","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2081","height":"3345","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118358\/datastream\/JP2\/view?token=d2bedd6f598daf2825e236ab420a98c37f8cde174dc47d8d67ead6680164f9a4"},{"pid":"wyu:118379","page":"FN-000016","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2060","height":"3344","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118379\/datastream\/JP2\/view?token=bf36e127fa345a99faf297a3a41c706b4c68e9f179b6ec801a87e21cd8b3a081"},{"pid":"wyu:118385","page":"FN-000017","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2083","height":"3353","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118385\/datastream\/JP2\/view?token=1b9ef05159739cde49fde5c48a04e5729fdea66b586059bfb82b6b99e3d15d45"},{"pid":"wyu:118380","page":"FN-000018","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2045","height":"3350","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118380\/datastream\/JP2\/view?token=51115c359b14090b706df3b576eabf5006b3bddeaf5deb734308c8d83bcb015d"},{"pid":"wyu:118357","page":"FN-000019","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2086","height":"3362","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118357\/datastream\/JP2\/view?token=54941c889cd2bfe2d428d1f8e3b4f8f8ba06e1a860306538daa3aee5d2091765"},{"pid":"wyu:118364","page":"FN-000020","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2062","height":"3357","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118364\/datastream\/JP2\/view?token=6048800633ce0056709cfc167fe1189cdee22e7bd7938f4d75262f8e95d1b89e"},{"pid":"wyu:118369","page":"FN-000021","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2093","height":"3360","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118369\/datastream\/JP2\/view?token=13a8a2ea071029ffc55426417f1875a14bba35fb590bfabe01db574ff673ddad"},{"pid":"wyu:118381","page":"FN-000022","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2095","height":"3347","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118381\/datastream\/JP2\/view?token=ddba4e0310425e085bf68d8266af479c03ce3a51eb70c2601ce4eb08b22ceda3"},{"pid":"wyu:118354","page":"FN-000023","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2071","height":"3345","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118354\/datastream\/JP2\/view?token=7f32d4c5fd3cf6917ee45eb309cd5e44ad19d845598ca6c6dc94daa899f90ae7"},{"pid":"wyu:118367","page":"FN-000024","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2091","height":"3331","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118367\/datastream\/JP2\/view?token=c564c68faaeae040b721f333e87322db9701d0b497d7e4e22777bfe20c3b5953"},{"pid":"wyu:118374","page":"FN-000025","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2074","height":"3339","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118374\/datastream\/JP2\/view?token=644a9719a36f54a37ea176496818da1c37c453ed07f31ea872b9bd8dbd6c6ba8"},{"pid":"wyu:118377","page":"FN-000026","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2073","height":"3351","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118377\/datastream\/JP2\/view?token=b3af565de1b8dae18d21e0dd463d94758e02e64fb14fadc502ff87e49ea52fed"},{"pid":"wyu:118371","page":"FN-000027","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2087","height":"3338","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118371\/datastream\/JP2\/view?token=aba5667384fd3971984a384cb71cb1880bbd50e396d22f02ce93df38ab107c8f"},{"pid":"wyu:118359","page":"FN-000028","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2090","height":"3338","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118359\/datastream\/JP2\/view?token=9e95af978f94f7f105f9c34b4c84ec51def6394bb98a4093d02b6e71319ce4cf"},{"pid":"wyu:118388","page":"FN-000029","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2089","height":"3350","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118388\/datastream\/JP2\/view?token=8a8e6d2f8cfa28e4979766ee00d57786582837db11e53f9d29c6c788f5fbeb0d"},{"pid":"wyu:118370","page":"FN-000030","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2087","height":"3347","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118370\/datastream\/JP2\/view?token=1739ee150dff535692d81854cbb97b63756de602ba7f81194ff88a530b6b7577"},{"pid":"wyu:118386","page":"FN-000031","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2079","height":"3345","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118386\/datastream\/JP2\/view?token=29025f7e5cd35f7e583fdce69ad999f5b75eaa21592b542ccfd37ebfda9a6631"},{"pid":"wyu:118372","page":"FN-000032","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2079","height":"3343","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118372\/datastream\/JP2\/view?token=87d40dc7a1c27db2b9fa1dd580e6818fd7e2c431212aa889776e1861593c3a5c"},{"pid":"wyu:118382","page":"FN-000033","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2075","height":"3323","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118382\/datastream\/JP2\/view?token=0301b4a10b8043e2e57c97dc20215ae6bdd47a23b5d8bb59d61100e5f18e420e"},{"pid":"wyu:118355","page":"FN-000034","label":"[Page of] Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range","width":"2081","height":"3358","uri":"https:\/\/uwdigital.uwyo.edu\/islandora\/object\/wyu%3A118355\/datastream\/JP2\/view?token=297547516d63898aa45751ac6ff85a901d2a2ab30754793aa83f50cf638eac9b"}],"pageCount":35,"overlayOpacity":"0.5","mode":2,"mobilize":0,"content_type":"book","useBackupUri":0},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|tif|jpg|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1,"trackDomainMode":"1","trackUrlFragments":1},"urlIsAjaxTrusted":{"\/islandora\/object\/wyu:118353\/\/datastream\/MODS":true}});
-</script>
-    <!--[if lt IE 9]>
-  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-</head>
-<body class="html not-front not-logged-in no-sidebars page-islandora page-islandora-object page-islandora-object-wyu118353 page-islandora-object-wyu118353- page-islandora-object-wyu118353--datastream page-islandora-object-wyu118353--datastream-mods designkit preface-three postscript-one footer-three site-name-show site-slogan-show site-slogan-not-empty color-palette-chartreuse heading-typeface-opensans body-typeface-opensans header-left-right not-node themebg-dark default-layout bg_pattern_01 no_tint">
-<div id="skip-link">
-    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
-</div>
 
-  <div class="l-page-wrapper">
-    <div class="l-page">
-
-      <!-- top links-->
-            <!-- //top links-->
-
-      <!-- header -->
-      <div id="header-bar" class="l-header-wrapper" role="banner">
-        <header class="l-header l-setwidth" >
-
-                    <div class="l-logo">
-              <a href="/" title="UW Digital » UW Libraries Digital Repository.">
-                <img id="logo-img" src="https://uwdigital.uwyo.edu/sites/default/files/digilogo200.png" alt="UW Digital » UW Libraries Digital Repository."/></a>
-            </div><!--// l-logo-->
-            
-                    <div class="l-branding">
-
-                                  <h1 class="site-name">
-                    <a href="/">
-                      UW Digital</a>
-                  </h1>
-              
-                                      <h3 class="site-slogan">UW Libraries Digital Repository.</h3>
-                
-          </div><!--//branding-->
-            
-        </header>
-      </div><!-- // l-header -wrapper-->
-
-      <div id="menu-wrapper" class="l-menu-wrapper main-menu" role="navigation">
-        <div class="l-setwidth" >
-
-                      <a id="off-canvas-left-show" href="#off-canvas" class="l-off-canvas-show l-off-canvas-show--left">Show Navigation</a>
-            <div id="off-canvas-left" class="l-off-canvas l-off-canvas--left">
-              <a id="off-canvas-left-hide" href="#" class="l-off-canvas-hide l-off-canvas-hide--left">Hide Navigation</a>
-
-              <div class="main-menu-wrapper">
-
-                <ul class="menu primary"><li class="first leaf menu-218 home level-1"><a href="/" title="" class="alink menu-218 home">Home</a></li>
-<li class="expanded menu-676 collections level-1"><a href="/featured-collections" title="Check out our featured collections!" class="alink menu-676 collections">Collections</a><ul class="menu"><li class="first leaf menu-675 browseourtoplevelcollections level-2"><a href="/islandora" title="Browse top collections." class="alink menu-675 browseourtoplevelcollections">Browse Our Top-Level Collections</a></li>
-<li class="leaf menu-1076 popularitems level-2"><a href="/usage-highest" title="Check out what everyone else is looking at." class="alink menu-1076 popularitems">Popular Items</a></li>
-<li class="leaf menu-1079 specialcollections level-2"><a href="http://hdl.handle.net/10176/wyu:25864" title="Books in the public domain from our Special Collections at UW Libraries. " class="alink menu-1079 specialcollections">Special Collections</a></li>
-<li class="leaf menu-681 agriculturalbulletins level-2"><a href="/agricultural-bulletins" title="Wyoming Agricultural Experiment Station Bulletins" class="alink menu-681 agriculturalbulletins">Agricultural Bulletins</a></li>
-<li class="leaf menu-678 botanicalfieldbookstimeline level-2"><a href="/browse-fieldbooks-date" title="" class="alink menu-678 botanicalfieldbookstimeline">Botanical Fieldbooks Timeline</a></li>
-<li class="leaf menu-677 yearbooks level-2"><a href="/yearbooks" title="Check out our various digitized yearbooks!" class="alink menu-677 yearbooks">Yearbooks</a></li>
-<li class="last leaf menu-1396 willismcdonaldivcollection level-2"><a href="/willis-mcdonald-iv-collection" title="Details on the private Business Equity Collection" class="alink menu-1396 willismcdonaldivcollection">Willis McDonald IV Collection</a></li>
-</ul></li>
-<li class="leaf menu-1090 exhibits level-1"><a href="https://www-lib.uwyo.edu/digital/exhibits/" title="Check out our Digital Exhibit Platform!" class="alink menu-1090 exhibits">Exhibits</a></li>
-<li class="expanded menu-670 repositories level-1"><a href="/repositories" title="Check out the different repositories available from the Digital Collections Office." class="alink menu-670 repositories">Repositories</a><ul class="menu"><li class="first leaf menu-1295 uwdatarepository level-2"><a href="http://data.uwyo.edu/" title="Check out our Repository for Research data at UW." class="alink menu-1295 uwdatarepository">UW Data Repository</a></li>
-<li class="leaf menu-671 wyscholarsrepository level-2"><a href="/wysr" title="Wyoming Scholar&#039;s Repository" class="alink menu-671 wyscholarsrepository">Wy Scholars Repository</a></li>
-<li class="last leaf menu-674 digitalherbaria level-2"><a href="/digital-herbaria" class="alink menu-674 digitalherbaria">Digital Herbaria</a></li>
-</ul></li>
-<li class="expanded menu-682 about level-1"><a href="/about" title="Contact Information, FAQ&#039;s, Equipment, Software, and Policies." class="alink menu-682 about">About</a><ul class="menu"><li class="first leaf menu-684 people level-2"><a href="/people" title="We who work the digital." class="alink menu-684 people">People</a></li>
-<li class="leaf menu-686 digitizationequipment level-2"><a href="/equipment" title="Take a look at how we do what we do." class="alink menu-686 digitizationequipment">Digitization Equipment</a></li>
-<li class="last leaf menu-729 login level-2"><a href="https://uwdigital.uwyo.edu/login" title="Sign into the secure site." class="alink menu-729 login">Login</a></li>
-</ul></li>
-<li class="last collapsed menu-746 uwlibraries level-1"><a href="http://www-lib.uwyo.edu/" title="Visit the UW Libraries Website." class="alink menu-746 uwlibraries">UW Libraries</a></li>
-</ul>              </div>
-            </div><!-- // off-canvas-left -->
-                    <!-- //main menu -->
-
-          <!-- for third party menu systems or modules-->
-          
-        </div>
-      </div>
-
-<div class="l-content-wrap">
-
-  
-              <div id="breadcrumbs-wrapper" class="l-breadcrumbs">
-          <div class="breadcrumbs l-setwidth" >
-            <div class="s-grid"><h2 class="element-invisible">You are here</h2><nav class="breadcrumb"><a href="/">Home</a> » <a href="/islandora">Browse Our Top-Level Collections</a> » <a href="/islandora/object/wyu%3A6417">Wyoming Agricultural Experiment Station</a> » <a href="/islandora/object/wyu%3A12113">Wyoming Agricultural Experiment Station Bulletins</a> » Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range</nav></div>
-          </div>
-        </div>
-      
-      <!-- preface -->
-      
-        <div id="preface-wrap" class="l-preface-wrap">
-          <div id="preface-container" class="l-preface l-setwidth" >
-
-            <!--Preface -->
-                          <div class="preface">
-                
-
-
-  <div class="region region-preface-first">
-    <div id="block-service-links-service-links-not-node" class="block block-service-links">
-
-      
-  <div class="service-links"><a href="http://www.facebook.com/sharer.php?u=https%3A//uwdigital.uwyo.edu/islandora/object/wyu%253A118353//datastream/MODS&amp;t=Bulletin%20No.%20273%20-%20Mechanical%20treatments%20for%20increasing%20the%20grazing%20capacity%20of%20shortgrass%20range" title="Share on Facebook" class="service-links-facebook" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="https://uwdigital.uwyo.edu/sites/all/modules/service_links/images/facebook.png" alt="Facebook logo" /></a> <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//uwdigital.uwyo.edu/islandora/object/wyu%253A118353//datastream/MODS&amp;title=Bulletin%20No.%20273%20-%20Mechanical%20treatments%20for%20increasing%20the%20grazing%20capacity%20of%20shortgrass%20range&amp;summary=&amp;source=UW%20Digital" title="Publish this post to LinkedIn" class="service-links-linkedin" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="https://uwdigital.uwyo.edu/sites/all/modules/service_links/images/linkedin.png" alt="LinkedIn logo" /></a> <a href="http://www.stumbleupon.com/submit?url=https%3A//uwdigital.uwyo.edu/islandora/object/wyu%253A118353//datastream/MODS&amp;title=Bulletin%20No.%20273%20-%20Mechanical%20treatments%20for%20increasing%20the%20grazing%20capacity%20of%20shortgrass%20range" title="Thumb this up at StumbleUpon" class="service-links-stumbleupon" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="https://uwdigital.uwyo.edu/sites/all/modules/service_links/images/stumbleit.png" alt="StumbleUpon logo" /></a> <a href="https://plus.google.com/share?url=https%3A//uwdigital.uwyo.edu/islandora/object/wyu%253A118353//datastream/MODS" title="Share this on Google+" class="service-links-google-plus" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="https://uwdigital.uwyo.edu/sites/all/modules/service_links/images/google_plus.png" alt="Google+ logo" /></a></div>
-</div>
-  </div>
-              </div>
-            
-                          <div class="preface">
-                
-
-
-  <div class="region region-preface-second">
-    <div id="block-block-42" class="block block-block">
-
-      
-  <p> </p>
-
-</div>
-  </div>
-              </div>
-            
-                          <div class="preface">
-                
-
-
-  <div class="region region-preface-third">
-    <div id="block-islandora-solr-simple" class="block block-islandora-solr">
-
-      
-  <form action="/islandora/object/wyu:118353//datastream/MODS" method="post" id="islandora-solr-simple-search-form" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-simple"><div class="form-item form-type-textfield form-item-islandora-simple-search-query">
-  <input type="text" id="edit-islandora-simple-search-query" name="islandora_simple_search_query" value="" size="15" maxlength="128" class="form-text" />
-</div>
-<input type="submit" id="edit-submit" name="op" value="search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-1hNZHNz2n9TInLSpz9dEXaL_F5i6xsV0zSUw3KIGJSg" />
-<input type="hidden" name="form_id" value="islandora_solr_simple_search_form" />
-</div></form>
-</div>
-  </div>
-              </div>
-            
-          </div>
-        </div>
-        <!-- // preface -->
-
-      
-      <div class="main" >
-        <div class="l-main l-setwidth" role="main" >
-
-          <div class="l-content">
-            <a id="main-content"></a>
-                                      <h1>Bulletin No. 273 - Mechanical treatments for increasing the grazing capacity of shortgrass range</h1>
-                                                <h2 class="element-invisible">Primary tabs</h2><ul class="tabs primary"><li class="active"><a href="/islandora/object/wyu%3A118353" class="active">View<span class="element-invisible">(active tab)</span></a></li>
-<li><a href="/islandora/object/wyu%3A118353/view_mods_as_marcxml">MARCXML</a></li>
-<li><a href="/islandora/object/wyu%3A118353/pages">Pages</a></li>
-</ul>                                    
-
-
-  <div class="region region-content">
-    <div id="block-system-main" class="block block-system">
-
-      
-    <div id="book-viewer">
-    <div id="BookReader" class="islandora-internet-archive-bookreader">
-   Loading the Internet Archive BookReader, please wait...
-</div>
-  </div>
-
-  <div class="islandora-book-metadata">
-          <div>
-    <h2>In collections</h2>
-    <ul>
-              <li><a href="/islandora/object/wyu%3A12113">Wyoming Agricultural Experiment Station Bulletins</a></li>
-          </ul>
-  </div>
-       <fieldset class="islandora islandora-metadata collapsible">
-  <legend><span class="fieldset-legend">Details</span></legend>
-  <div class="fieldset-wrapper">
-    <dl xmlns:dcterms="http://purl.org/dc/terms/" class="islandora-inline-metadata islandora-metadata-fields">
-                    <dt class=" first">
-          Title        </dt>
-        <dd class=" first">
-          <p>Mechanical treatments for increasing the grazing capacity of shortgrass range</p>
-        </dd>
-                      <dt class="">
-          Creator(s)        </dt>
-        <dd class="">
-          <p><a href="/islandora/search/mods_name_personal_namePart_ms%3A%22Barnes%252C%255C%2BO.%255C%2BK.%255C%2B%255C%2528Oscar%255C%2BK.%255C%2529%22">Barnes, O. K. (Oscar K.)</a><br /><a href="/islandora/search/mods_name_personal_namePart_ms%3A%22Nelson%252C%255C%2BA.%255C%2BL.%255C%2B%255C%2528August%255C%2BLevi%255C%2529%22">Nelson, A. L. (August Levi)</a><br /><a href="/islandora/search/mods_name_personal_namePart_ms%3A%221885%255C-%22">1885-</a></p>
-        </dd>
-                      <dt class="">
-          Corporate Creator(s)        </dt>
-        <dd class="">
-          <p>University of Wyoming<br />
-Agricultural Experiment Station</p>
-        </dd>
-                      <dt class="">
-          Type of Resource        </dt>
-        <dd class="">
-          <p>text</p>
-        </dd>
-                      <dt class="">
-          Place of Publication        </dt>
-        <dd class="">
-          <p>Laramie, WY</p>
-        </dd>
-                      <dt class="">
-          Publisher        </dt>
-        <dd class="">
-          <p>University of Wyoming, Agricultural Experiment Station</p>
-        </dd>
-                      <dt class="">
-          Date Created        </dt>
-        <dd class="">
-          <p>1945-06-01</p>
-        </dd>
-                      <dt class="">
-          Date Issued        </dt>
-        <dd class="">
-          <p>1945-06-01</p>
-        </dd>
-                      <dt class="">
-          Extent        </dt>
-        <dd class="">
-          <p>35 p. : ill. ; 23 cm.</p>
-        </dd>
-                      <dt class="">
-          Form        </dt>
-        <dd class="">
-          <p>print</p>
-        </dd>
-                      <dt class="">
-          Topics        </dt>
-        <dd class="">
-          <p><a href="/islandora/search/mods_subject_topic_ms%3A%22Range%255C%2Bmanagement%22">Range management</a></p>
-        </dd>
-                      <dt class="">
-          Geographic Subjects        </dt>
-        <dd class="">
-          <p><a href="/islandora/search/mods_subject_geographic_ms%3A%22Wyoming%22">Wyoming</a></p>
-        </dd>
-                      <dt class="">
-          Series Title        </dt>
-        <dd class="">
-          <p><a href="/islandora/search/mods_relatedItem_series_titleInfo_title_ms%3A%22Bulletin%255C%2B%255C%2528Wyoming%255C%2BAgricultural%255C%2BExperiment%255C%2BStation%255C%2529%22">Bulletin (Wyoming Agricultural Experiment Station)</a></p>
-        </dd>
-                      <dt class="">
-          Rights Statement        </dt>
-        <dd class="">
-          <p>In Copyright</p>
-        </dd>
-                  </dl>
-  </div>
-</fieldset>
-    </div>
-
-</div>
-<div id="block-views-permanent-link-block" class="block block-views">
-
-      
-  <div class="view view-permanent-link view-id-permanent_link view-display-id-block view-dom-id-4df171b37637bc893e4241b65e00bb3b">
-        
-  
-  
-      <div class="view-content">
-        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
-      
-  <div class="views-field views-field-nothing">        <span class="field-content">Permanently Link to this Resource: <a href="http://hdl.handle.net/10176/wyu:118353" title="A handle is a permanent link to this resource, no matter what the URL might become over time.">hdl.handle.net/10176/wyu:118353</a></span>  </div>  </div>
-    </div>
-  
-  
-  
-  
-  
-  
-</div>
-</div>
-<div id="block-islandora-downloadable-pdf-pdf-download" class="block block-islandora-downloadable-pdf">
-
-      
-  <div class="downloadlink"><a href="https://uwdigital.uwyo.edu/islandora/object/wyu:118353/datastream/PDF/view">Download PDF</a></div>
-</div>
-  </div>
-                      </div>
-
-                            </div>
-
-      </div>
-
-      
-
-      <footer id="footer" role="footer" class="l-footer-wrapper">
-        <div class="l-setwidth l-footer" >
-
-          <!--footer -->
-                      <div class="footer">
-              
-
-
-  <div class="region region-footer-first">
-    <div id="block-block-71" class="block block-block">
-
-      
-  <h3>Contact Digital Collections</h3>
-<p>Phone: 307-766-5560 <br /><a href="mailto:digcol@uwyo.edu">email: digcol{at}uwyo{dot}edu</a></p>
-
-</div>
-  </div>
-            </div>
-          
-                      <div class="footer">
-              
-
-
-  <div class="region region-footer-second">
-    <div id="block-block-70" class="block block-block">
-
-      
-  <p> </p>
-
-</div>
-  </div>
-            </div>
-          
-                      <div class="footer">
-              
-
-
-  <div class="region region-footer-third">
-    <div id="block-block-72" class="block block-block">
-
-      
-  <p><a href="http://uwdigital.uwyo.edu/contact">Contact Form <img src="http://www-lib.uwyo.edu/img/feedback.png" /></a>  <br /><br /><a href="https://uwdigital.uwyo.edu/login">Login</a><br /><a href="/user/logout">Log Out</a></p>
-
-</div>
-  </div>
-            </div>
-          
-        </div>
-      </footer>
-
-</div>
-
-    </div>
-    <a href="#" class="scrolltop">Scroll to the top</a>
-  </div>
-</body>
-</html>
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <titleInfo>
+    <title>Mechanical treatments for increasing the grazing capacity of shortgrass range</title>
+  </titleInfo>
+  <name type="personal">
+    <namePart>Barnes, O. K. (Oscar K.)</namePart>
+    <role>
+      <roleTerm authority="marcrelator" type="text">creator</roleTerm>
+    </role>
+  </name>
+  <name type="personal">
+    <namePart>Nelson, A. L. (August Levi)</namePart>
+    <namePart type="date">1885-</namePart>
+  </name>
+  <name type="corporate">
+    <namePart>University of Wyoming</namePart>
+    <namePart>Agricultural Experiment Station</namePart>
+  </name>
+  <typeOfResource>text</typeOfResource>
+  <originInfo>
+    <place>
+      <placeTerm authority="marccountry" type="code">wyu</placeTerm>
+    </place>
+    <place>
+      <placeTerm type="text">Laramie, WY</placeTerm>
+    </place>
+    <publisher>University of Wyoming, Agricultural Experiment Station</publisher>
+    <dateIssued>1945-06-01</dateIssued>
+    <dateCreated keyDate="yes">1945-06-01</dateCreated>
+    <dateCaptured>2014-02-14</dateCaptured>
+    <issuance>monographic</issuance>
+  </originInfo>
+  <language>
+    <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+  </language>
+  <physicalDescription>
+    <form authority="marcform">print</form>
+    <extent>35 p. : ill. ; 23 cm.</extent>
+  </physicalDescription>
+  <subject>
+    <geographicCode authority="marcgac">n-us-wy</geographicCode>
+  </subject>
+  <subject authority="lcsh">
+    <topic>Range management</topic>
+    <geographic>Wyoming</geographic>
+  </subject>
+  <relatedItem type="series">
+    <titleInfo>
+      <title>Bulletin (Wyoming Agricultural Experiment Station)</title>
+    </titleInfo>
+    <detail>
+      <part>273</part>
+    </detail>
+  </relatedItem>
+  <accessCondition displayLabel="Standardized rights statement" type="use and reproduction" xlink:href="http://rightsstatements.org/page/InC/1.0/">In Copyright</accessCondition>
+  <location>
+    <url usage="primary display">http://hdl.handle.net/10176/wyu:118353</url>
+  </location>
+</mods>
