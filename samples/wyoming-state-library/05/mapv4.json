@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "http://pluto.state.wy.us/awweb/pdfopener?md=1&did=4937299",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/688007a4-7eea-11e7-bc8d-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/688007a4-7eea-11e7-bc8d-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://pluto.state.wy.us/awweb/pdfopener?md=1&did=4937299"
+      },
+      "edm:isShownAt": {
+        "@id": "http://pluto.state.wy.us/awweb/pdfopener?md=1&did=4937299"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/688007a4-7eea-11e7-bc8d-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:publisher": {
+        "@id": "http://library.wyo.gov/"
+      },
+      "dcterms:subject": [
+        "Administration & Information",
+        "Biennium Appropriations Agency Summaries"
+      ],
+      "dcterms:title": "Wyoming Military Department Biennium Appropriations Agency Summary, 2007-2008 (Through 2006 Budget Session)",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/date": "2007"
+    }
+  ]
+}

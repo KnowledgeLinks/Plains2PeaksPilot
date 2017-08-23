@@ -1,0 +1,42 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/3284cd62-8385-11e7-a1d1-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:language": "eng",
+      "dcterms:publisher": {
+        "@id": "http://www.uwyo.edu/"
+      },
+      "dcterms:title": "Feeding experiments, 1909-10",
+      "http://purl.org/dc/elements/1.1/date": "1910-05-01"
+    },
+    {
+      "@id": "https://plains2peaks.org/3284cd62-8385-11e7-a1d1-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/3284cd62-8385-11e7-a1d1-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "https://uwdigital.uwyo.edu/islandora/object/wyu:27514/"
+      },
+      "edm:isShownAt": {
+        "@id": "https://uwdigital.uwyo.edu/islandora/object/wyu:27514/"
+      },
+      "edm:preview": {
+        "@id": "https://uwdigital.uwyo.edu/islandora/object/wyu:27514/datastream/TN"
+      }
+    },
+    {
+      "@id": "https://uwdigital.uwyo.edu/islandora/object/wyu:27514/",
+      "@type": "edm:WebResource"
+    }
+  ]
+}

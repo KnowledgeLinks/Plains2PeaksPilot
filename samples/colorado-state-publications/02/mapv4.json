@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/f5a3c45a-732e-11e7-98bb-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:language": "eng",
+      "dcterms:publisher": {
+        "@id": "https://www.cde.state.co.us/stateinfo"
+      },
+      "dcterms:title": "Denver area high occupancy vehicles & express lanes",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/date": "2006"
+    },
+    {
+      "@id": "https://plains2peaks.org/f5a3c45a-732e-11e7-98bb-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/f5a3c45a-732e-11e7-98bb-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://hermes.cde.state.co.us/drupal/islandora/object/co:5102"
+      },
+      "edm:isShownAt": {
+        "@id": "http://hermes.cde.state.co.us/drupal/islandora/object/co:5102"
+      },
+      "edm:preview": {
+        "@id": "http://hermes.cde.state.co.us/drupal/islandora/object/co:5102/datatream/PREVIEW"
+      }
+    },
+    {
+      "@id": "http://hermes.cde.state.co.us/drupal/islandora/object/co:5102",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    }
+  ]
+}

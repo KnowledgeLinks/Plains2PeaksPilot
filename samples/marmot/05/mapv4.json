@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/b1a225ec-832c-11e7-9528-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:description": "A photograph of downtown Maysville in the 1880s. Visible business fronts: Stationery &amp; Post Office, and the Bakery.&#xD;\nThis photo is part of the Donna Nevens Collection.",
+      "dcterms:publisher": {
+        "@id": "http://www.salidalibrary.org/"
+      },
+      "dcterms:subject": [
+        "Stationery Store & Bakery in Maysville",
+        "maysville  -- history"
+      ],
+      "dcterms:title": "Stationery Store & Bakery in Maysville",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/page/CNE/1.0/?language=en"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/b1a225ec-832c-11e7-9528-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/b1a225ec-832c-11e7-9528-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "https://salida.marmot.org/Archive/salida%3A494/LargeImage"
+      },
+      "edm:isShownAt": {
+        "@id": "https://salida.marmot.org/Archive/salida%3A494/LargeImage"
+      },
+      "edm:preview": {
+        "@id": "https://islandora.marmot.org/islandora/object/salida:494/datastream/TN/view"
+      }
+    },
+    {
+      "@id": "https://salida.marmot.org/Archive/salida%3A494/LargeImage",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/page/CNE/1.0/?language=en"
+      },
+      "http://purl.org/dc/elements/1.1/format": "Still Image"
+    }
+  ]
+}

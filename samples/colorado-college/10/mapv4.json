@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/41c90b0c-83b0-11e7-8571-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/41c90b0c-83b0-11e7-8571-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:2771"
+      },
+      "edm:isShownAt": {
+        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:2771"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/41c90b0c-83b0-11e7-8571-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:description": "The Colorado College Block Calendar is the campus calendar of events for each block. This issue was published Block 3, 2005.",
+      "dcterms:title": "Colorado College Block Calendar [2005-2006 Block 3]",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    },
+    {
+      "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:2771",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/3968c0e4-8457-11e7-86ed-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/3968c0e4-8457-11e7-86ed-005056c00008"
+      },
+      "edm:dataProvider": [
+        "Colorado College",
+        {
+          "@id": "https://plains2peaks.org/"
+        }
+      ],
+      "edm:hasView": {
+        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:23825"
+      },
+      "edm:isShownAt": {
+        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:23825"
+      }
+    },
+    {
+      "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:23825",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/3968c0e4-8457-11e7-86ed-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:description": "\n   This map of the world was originally paired with the screen, the Battle of Lepanto.\n  ",
+      "dcterms:language": "English",
+      "dcterms:publisher": {
+        "@id": "https://www.coloradocollege.edu/"
+      },
+      "dcterms:title": "Map of the World",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    }
+  ]
+}

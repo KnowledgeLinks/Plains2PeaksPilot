@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/1a961062-780b-11e7-8a65-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/1a961062-780b-11e7-8a65-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/69520"
+      },
+      "edm:isShownAt": {
+        "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/69520"
+      }
+    },
+    {
+      "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/69520",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/format": [
+        "Photographic prints.",
+        "Portrait photographs.",
+        "Glass negatives.",
+        "Image",
+        "Imaged."
+      ]
+    },
+    {
+      "@id": "https://plains2peaks.org/1a961062-780b-11e7-8a65-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:creator": {
+        "@id": "https://plains2peaks.org/agent/barry-d-f-david-francis-1854-1934"
+      },
+      "dcterms:description": "Full length studio portrait of two unidentified Dakota men, wrapped in blankets and wearing fur pieces, standing in front of painted backdrop.",
+      "dcterms:publisher": {
+        "@id": "https://www.denverlibrary.org/"
+      },
+      "dcterms:subject": [
+        "Indians of North America--Portraits--1880-1890.",
+        "Dakota Indians.--1880-1890.",
+        "Indians of North America--Clothing & dress--1880-1890.",
+        "Indians of North America--Men--1880-1890.",
+        "Dakota Indians,--1880-1890.",
+        "Dakota Indians--1880-1890."
+      ],
+      "dcterms:title": "Two unidentified Indian men, full length",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/date": "12/23/2010"
+    }
+  ]
+}

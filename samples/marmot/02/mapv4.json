@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/682dd536-82df-11e7-abf7-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:description": " Kenneth Gerard in a blaze orange vest, standing next to an elk trophy mount indoors.  This was his favorite elk trophy, decorated with sleigh bells.",
+      "dcterms:publisher": {
+        "@id": "https://www.evld.org/"
+      },
+      "dcterms:subject": [
+        "hunting",
+        "elks",
+        "cowboys",
+        "domestic lifefurnishings",
+        "Kenneth Gerard",
+        "Cowboys"
+      ],
+      "dcterms:title": "Kenneth Gerard",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/page/CNE/1.0/?language=en"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/682dd536-82df-11e7-abf7-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/682dd536-82df-11e7-abf7-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "https://evld.marmot.org/Archive/evld%3A1922/LargeImage"
+      },
+      "edm:isShownAt": {
+        "@id": "https://evld.marmot.org/Archive/evld%3A1922/LargeImage"
+      },
+      "edm:preview": {
+        "@id": "https://islandora.marmot.org/islandora/object/evld:1922/datastream/SC/view"
+      }
+    },
+    {
+      "@id": "https://evld.marmot.org/Archive/evld%3A1922/LargeImage",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/page/CNE/1.0/?language=en"
+      },
+      "http://purl.org/dc/elements/1.1/format": "Still Image"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "http://digitalcollections.uwyo.edu/luna/servlet/detail/uwydbuwy~96~96~3387937~294422",
+      "@type": "edm:WebResource"
+    },
+    {
+      "@id": "https://plains2peaks.org/9da15e52-83b7-11e7-b1e8-ac87a3129ce6",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:description": "Botany, planting trees with dynamite, #2198",
+      "dcterms:publisher": {
+        "@id": "http://www.uwyo.edu/ahc/"
+      },
+      "dcterms:title": "Botany, planting trees with dynamite"
+    },
+    {
+      "@id": "https://plains2peaks.org/9da188b4-83b7-11e7-b429-ac87a3129ce6#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/9da15e52-83b7-11e7-b1e8-ac87a3129ce6"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://digitalcollections.uwyo.edu/luna/servlet/detail/uwydbuwy~96~96~3387937~294422"
+      },
+      "edm:isShownAt": {
+        "@id": "http://digitalcollections.uwyo.edu/luna/servlet/detail/uwydbuwy~96~96~3387937~294422"
+      }
+    }
+  ]
+}

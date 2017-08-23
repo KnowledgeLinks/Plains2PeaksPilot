@@ -1,0 +1,65 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/21364",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/format": [
+        "Glass negatives.",
+        "Image",
+        "Imaged.",
+        "Photographic prints."
+      ]
+    },
+    {
+      "@id": "https://plains2peaks.org/9a72e7f4-77fb-11e7-9f92-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:creator": {
+        "@id": "https://plains2peaks.org/agent/poley-h-s-horace-swartley"
+      },
+      "dcterms:description": "View of men standing on ancient Native American (Anasazi) mesa-top ruins, Chapin Mesa, Mesa Verde National Park, Montezuma County, Colorado. Men, some holding wooden handled tools, stand near and on the ruins of Far View House. An unhitched wagon with a wooden barrel in it stands near the ruins; on the other side stands an automobile.",
+      "dcterms:publisher": {
+        "@id": "https://www.denverlibrary.org/"
+      },
+      "dcterms:subject": [
+        "Far View House (Colo.)--1910-1920.",
+        "Archaeological sites--Colorado--1910-1920.",
+        "National Parks & reserves--Colorado--1910-1920.",
+        "Mesa Verde National Park (Colo.)--1910-1920.",
+        "Pueblo Indians--Antiquities & archaeological sites--Colorado --1910-1920.",
+        "Indians of North America--Structures--Colorado--1910-1920.",
+        "National parks & reserves--Colorado--1910-1920.",
+        "Cliff dwellings--Colorado--1910-1920.",
+        "Pueblo Indians--Antiquities & archaeological sites--Colorado--1910-1920."
+      ],
+      "dcterms:title": "Mesa Verde- Far View House",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/date": "12/22/2010"
+    },
+    {
+      "@id": "https://plains2peaks.org/9a72e7f4-77fb-11e7-9f92-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/9a72e7f4-77fb-11e7-9f92-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/21364"
+      },
+      "edm:isShownAt": {
+        "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/21364"
+      }
+    }
+  ]
+}

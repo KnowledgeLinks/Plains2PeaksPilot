@@ -1,0 +1,73 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/ebb01898-7ef4-11e7-a611-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/ebb01898-7ef4-11e7-a611-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://pluto.state.wy.us/awweb/pdfopener?md=1&did=11095896"
+      },
+      "edm:isShownAt": {
+        "@id": "http://pluto.state.wy.us/awweb/pdfopener?md=1&did=11095896"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/ebb01898-7ef4-11e7-a611-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:publisher": {
+        "@id": "http://library.wyo.gov/"
+      },
+      "dcterms:subject": [
+        "Wyoming Vital Statistics -- Annual Summaries",
+        "Wellness Notes -- Becoming More Active",
+        "Behavioral Risk factor Surveillance System Reports",
+        "Wyoming State Questionnaire",
+        "Wellness Notes -- Shingels",
+        "Wellness Notes -- Driving",
+        "Wellness Notes -- Balance Problems",
+        "Annual Reports -- 2014",
+        "Wellness Notes -- Leukemia",
+        "Directory of Wyoming Healthcare Services",
+        "Wyoming Vital Statistics -- Wyoming Vital Statistics Report",
+        "Wellness Notes -- Influenza",
+        "Wellness Notes -- High Blood Pressure",
+        "Department of Health",
+        "Wellness Notes -- Taste",
+        "Miscellaneous Reports",
+        "Annual Reports",
+        "Wellness Notes -- Smell",
+        "Wellness Notes -- Nonucler Stomach Pain",
+        "Healthy Together",
+        "Brochures",
+        "Wellness Notes -- Benefits of Exercising",
+        "Wellness Notes -- Kidney Disease",
+        "Wellness Notes -- Esophagitis",
+        "Joint Labor, Health and Social Services Interim Committee Reports",
+        "HIV/AIDS in Wyoming Report",
+        "Wellness Notes -- Hearing Loss",
+        "Department of Health Reports"
+      ],
+      "dcterms:title": "What you need to know Gonorrhea brochure",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      }
+    },
+    {
+      "@id": "http://pluto.state.wy.us/awweb/pdfopener?md=1&did=11095896",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      }
+    }
+  ]
+}

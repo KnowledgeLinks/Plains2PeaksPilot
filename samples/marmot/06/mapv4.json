@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/14635846-8335-11e7-bacd-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/14635846-8335-11e7-bacd-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "https://salida.marmot.org/Archive/salida%3A694/LargeImage"
+      },
+      "edm:isShownAt": {
+        "@id": "https://salida.marmot.org/Archive/salida%3A694/LargeImage"
+      },
+      "edm:preview": {
+        "@id": "https://islandora.marmot.org/islandora/object/salida:694/datastream/TN/view"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/14635846-8335-11e7-bacd-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:description": "Real estate appraisal card. 331 E. 1st Street, lots 4-5, block 24, in Salida, Colorado.&#xD;\nJohn H. \"Old Jack\" Julien, a railroad engineer, and his wife Amber, built this home in 1888, the year after they were married.  This address is listed in the first available Salida City Directory of 1903-04.  Mr. Julien was born on November 27, 1861 on a farm in Delphi, Indiana, to Ellis and Martha Julien.  He decided to go west when he turned 18, and got a job constructing telegraph lines for the Union Pacific railroad, then building its line west from Omaha.  After that he got a job in Denver in the engine service of the Denver &amp; Rio Grande.  He was sent to Leadville, where he worked as a fireman and was promoted to engineer in July 1887. In December of the same year he married Amber Erway of New York, who was visiting Colorado with her brother.  The Juliens moved to Salida in 1888 and built this house.  They had two sons: Clayton and Beryl M. both of whom were born in Colorado.  The 1920 Census shows&#xD;\nthat Mr. and Mrs. Julien were still living here together.  John Julien was described as a staunch member of the Brotherhood of Locomotive Engineers, of which he was an elected local official.&#xD;\n&#xD;\nHe made his last run in May 1922, and the following day underwent an operation for cancer. He died from the disease in July 1923.  It was thought that perhaps the cancer was caused by injuries Mr. Julien suffered from a railroad wreck he was in 12 years previously.  In that accident he was thrown from his engine and a coal pick pierced his throat.  His obituary noted that was the only serious wreck he had ever been in and that he was an excellent engineer, who had even hauled several U.S. presidents. \tMr. Julien was a member of the Elks lodge of Salida, the Chamber of Commerce, and the Lions Club.  Upon his death, Mr. Julien was described as one of Salida's \"most public spirited and beloved citizens.\"  Until Mr. Julien became ill, his mother, Martha Julien, had also lived with the family.&#xD;\n&#xD;\nBy 1930, Amber Julien and her son Beryl had moved out of 331 E. 1st and were living at 228 E St. Mrs. Julien died in June 1946, following a stroke.  She had been confined to a hospital in Pueblo for three years before her death. Both of her sons preceded her in death. The Juliens were buried in Fairview Cemetery.&#xD;\n&#xD;\nBenjamin and Bertha Jones lived here in 1931.  Born in Wales in 1865, Mr. Jones became a naturalized U.S. citizen in 1872, at the age of seven.  Mrs. Jones was born in Germany in 1869, becoming a naturalized U.S. citizen in 1888. At the time of the 1930 census, neither Mr. nor Mrs. Jones was employed, but by 1931, Mr. Jones was working as a foreman for Mountain Cross Granite Co.  Their son Bert and his wife Luella lived with them.   Bert was born in New York in 1899.  Luella was born in Illinois in 1897.  Bert worked as a stonecutter in 1930 but was employed as a sandblast operator for Mountain Cross Granite Co. in 1931.&#xD;\n&#xD;\nIn 1951, Arthur P. and Helen Mazzuca lived here.  Mr. Mazzuca was the owner and manager of Flary Shoe Store. He died on 14 July 1966, at the age of 62.  In 1965, this house was owned and occupied by Dean O. and Veri Maupin.  Mrs. Maupin was a cook at Longfellow School, while Mr. Maupin was a watchmaker at Donnohue's Jewelry and Gifts.  A Chaffee County Assessor's appraisal card indicates that Charles Burkhart was a later owner.&#xD;\nHistory Colorado's Architectural Inventory Forms have more information and are available at the Salida Library.",
+      "dcterms:publisher": {
+        "@id": "http://www.salidalibrary.org/"
+      },
+      "dcterms:subject": [
+        "331 E. 1st Street",
+        "real property -- valuation -- colorado -- salida"
+      ],
+      "dcterms:title": "331 E. 1st Street",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/page/CNE/1.0/?language=en"
+      }
+    },
+    {
+      "@id": "https://salida.marmot.org/Archive/salida%3A694/LargeImage",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/page/CNE/1.0/?language=en"
+      },
+      "http://purl.org/dc/elements/1.1/format": "Still Image"
+    }
+  ]
+}

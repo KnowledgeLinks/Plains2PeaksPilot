@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/b367179a-83b7-11e7-932a-ac87a3129ce6",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:description": "Unidentified places, landscapes, people, and activities in Wyoming from the 1950s-1960s",
+      "dcterms:publisher": {
+        "@id": "http://www.uwyo.edu/ahc/"
+      },
+      "dcterms:title": "#26 Tray 1957, no number"
+    },
+    {
+      "@id": "http://digitalcollections.uwyo.edu/luna/servlet/detail/uwydbuwy~148~148~3345272~292132",
+      "@type": "edm:WebResource"
+    },
+    {
+      "@id": "https://plains2peaks.org/b367459e-83b7-11e7-a9f7-ac87a3129ce6#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/b367179a-83b7-11e7-932a-ac87a3129ce6"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://digitalcollections.uwyo.edu/luna/servlet/detail/uwydbuwy~148~148~3345272~292132"
+      },
+      "edm:isShownAt": {
+        "@id": "http://digitalcollections.uwyo.edu/luna/servlet/detail/uwydbuwy~148~148~3345272~292132"
+      }
+    }
+  ]
+}

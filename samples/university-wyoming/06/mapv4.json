@@ -1,0 +1,42 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/c910309e-83ae-11e7-b6a3-ac87a3129ce6",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:language": "eng",
+      "dcterms:publisher": {
+        "@id": "http://www.uwyo.edu/"
+      },
+      "dcterms:title": [
+        "Wyo senior class of 1972",
+        "Wyo yearbook"
+      ],
+      "http://purl.org/dc/elements/1.1/date": "1972"
+    },
+    {
+      "@id": "https://plains2peaks.org/c910309e-83ae-11e7-b6a3-ac87a3129ce6#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/c910309e-83ae-11e7-b6a3-ac87a3129ce6"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "https://uwdigital.uwyo.edu/islandora/object/wyu:156464/"
+      },
+      "edm:isShownAt": {
+        "@id": "https://uwdigital.uwyo.edu/islandora/object/wyu:156464/"
+      }
+    },
+    {
+      "@id": "https://uwdigital.uwyo.edu/islandora/object/wyu:156464/",
+      "@type": "edm:WebResource"
+    }
+  ]
+}

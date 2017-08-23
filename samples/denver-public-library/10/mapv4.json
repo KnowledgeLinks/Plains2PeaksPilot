@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/22971",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/format": [
+        "Glass negatives.",
+        "Image",
+        "Photographic prints.",
+        "Imaged."
+      ]
+    },
+    {
+      "@id": "https://plains2peaks.org/18213b10-77e5-11e7-bad9-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:creator": {
+        "@id": "https://plains2peaks.org/agent/poley-h-s-horace-swartley"
+      },
+      "dcterms:description": "Native American (tribe unknown) man stands on a pile of stone masonry bricks, possibly at the Tsankawi Ruins, at Bandelier National Monument, New Mexico. The bricks stand on a rocky desert landscape. The mesas of the Pajarito Plateau stand in the distance.",
+      "dcterms:publisher": {
+        "@id": "https://www.denverlibrary.org/"
+      },
+      "dcterms:subject": [
+        "National Parks & reserves--New Mexico--1910-1920.",
+        "Indians of North America--Antiquities & archaeological sites--New Mexico--1910-1920.",
+        "National parks & reserves--New Mexico--1910-1920.",
+        "Tsankawi Ruins (N.M.)--1910-1920.",
+        "Archaeological sites--New Mexico--1910-1920.",
+        "Bandelier National Monument (N.M.)--1910-1920.",
+        "Pueblo Indians--Antiquities & archaeological sites--New Mexico--1910-1920."
+      ],
+      "dcterms:title": "Tzu?Ãªpingvinge- Tshisege",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/date": "12/22/2010"
+    },
+    {
+      "@id": "https://plains2peaks.org/18213b10-77e5-11e7-bad9-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/18213b10-77e5-11e7-bad9-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/22971"
+      },
+      "edm:isShownAt": {
+        "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/22971"
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/9e8c932c-83b7-11e7-8ae2-ac87a3129ce6",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:description": "Stacking Hay at Experiment Station, stacks of White Sweet Clover hay in foreground, Laramie, Wyo B.C.B.,   Aug 1905, #948",
+      "dcterms:publisher": {
+        "@id": "http://www.uwyo.edu/ahc/"
+      },
+      "dcterms:title": "Stacking Hay at Experiment Station, stacks of White Sweet Clover hay in foreground, Laramie, Wyo Aug 1905"
+    },
+    {
+      "@id": "http://digitalcollections.uwyo.edu/luna/servlet/detail/uwydbuwy~96~96~3390897~294576",
+      "@type": "edm:WebResource"
+    },
+    {
+      "@id": "https://plains2peaks.org/9e8cbac8-83b7-11e7-b3d4-ac87a3129ce6#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/9e8c932c-83b7-11e7-8ae2-ac87a3129ce6"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://digitalcollections.uwyo.edu/luna/servlet/detail/uwydbuwy~96~96~3390897~294576"
+      },
+      "edm:isShownAt": {
+        "@id": "http://digitalcollections.uwyo.edu/luna/servlet/detail/uwydbuwy~96~96~3390897~294576"
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/c1c32630-8393-11e7-8875-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/c1c32630-8393-11e7-8875-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:7688"
+      },
+      "edm:isShownAt": {
+        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:7688"
+      }
+    },
+    {
+      "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:7688",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/c1c32630-8393-11e7-8875-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:description": "Los Padillas, New Mexico. Recited. Quality: fair. PLEASE NOTE: this should be number 7 of 24 songs on the audiofile.",
+      "dcterms:language": "Spanish",
+      "dcterms:title": "El burrito",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    }
+  ]
+}

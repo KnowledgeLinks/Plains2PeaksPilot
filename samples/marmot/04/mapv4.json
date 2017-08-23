@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/7244f1b6-82f4-11e7-99be-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/7244f1b6-82f4-11e7-99be-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "https://evld.marmot.org/Archive/evld%3A4288/LargeImage"
+      },
+      "edm:isShownAt": {
+        "@id": "https://evld.marmot.org/Archive/evld%3A4288/LargeImage"
+      },
+      "edm:preview": {
+        "@id": "https://islandora.marmot.org/islandora/object/evld:4288/datastream/SC/view"
+      }
+    },
+    {
+      "@id": "https://evld.marmot.org/Archive/evld%3A4288/LargeImage",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/page/CNE/1.0/?language=en"
+      },
+      "http://purl.org/dc/elements/1.1/format": "Still Image"
+    },
+    {
+      "@id": "https://plains2peaks.org/7244f1b6-82f4-11e7-99be-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:description": "1st Lt. Charles Hemberger, 107th Engineers, U.S. Army 32nd Division \"Red Arrow Division,\" deployed to France February 1918, World War I.  Hemberger served as Eagle County Clerk and Recorder, 1916-1917; Eagle County State Representative, 1926-1930.\nHemberger acquired multiple parcels of land at Fulford by paying back taxes for them.  He wintered on Cooley Mesa, between Gypsum and Eagle, naming his ranch the Red Arrow Ranch.",
+      "dcterms:publisher": {
+        "@id": "https://www.evld.org/"
+      },
+      "dcterms:subject": [
+        "Fulford, Colorado",
+        "Charles Hemberger",
+        "",
+        "fulford colorado",
+        "mining",
+        "fulford mining district colorado"
+      ],
+      "dcterms:title": "Charles Hemberger",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/page/CNE/1.0/?language=en"
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://western.marmot.org/Archive/western%3A276/LargeImage",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/page/CNE/1.0/?language=en"
+      },
+      "http://purl.org/dc/elements/1.1/format": "Still Image"
+    },
+    {
+      "@id": "https://plains2peaks.org/6c74c4b8-831f-11e7-800c-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/6c74c4b8-831f-11e7-800c-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "https://western.marmot.org/Archive/western%3A276/LargeImage"
+      },
+      "edm:isShownAt": {
+        "@id": "https://western.marmot.org/Archive/western%3A276/LargeImage"
+      },
+      "edm:preview": {
+        "@id": "https://islandora.marmot.org/islandora/object/western:276/datastream/SC/view"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/6c74c4b8-831f-11e7-800c-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:publisher": {
+        "@id": "http://www.western.edu/academics/leslie-j-savage-library"
+      },
+      "dcterms:subject": [
+        "Alpine ski competition south of Crested Butte, 1950s.",
+        "cross-country skiing--colorado"
+      ],
+      "dcterms:title": "Alpine ski competition south of Crested Butte, 1950s.",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/page/CNE/1.0/?language=en"
+      }
+    }
+  ]
+}

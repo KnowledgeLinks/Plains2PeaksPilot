@@ -1,0 +1,42 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://uwdigital.uwyo.edu/islandora/object/wyu:53625/",
+      "@type": "edm:WebResource"
+    },
+    {
+      "@id": "https://plains2peaks.org/51f2f30a-83b0-11e7-8a7f-ac87a3129ce6#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/51f2f30a-83b0-11e7-8a7f-ac87a3129ce6"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "https://uwdigital.uwyo.edu/islandora/object/wyu:53625/"
+      },
+      "edm:isShownAt": {
+        "@id": "https://uwdigital.uwyo.edu/islandora/object/wyu:53625/"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/51f2f30a-83b0-11e7-8a7f-ac87a3129ce6",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:language": "eng",
+      "dcterms:publisher": {
+        "@id": "http://www.uwyo.edu/"
+      },
+      "dcterms:title": "The Yearling 1959",
+      "http://purl.org/dc/elements/1.1/date": [
+        "19uu",
+        "1973"
+      ]
+    }
+  ]
+}

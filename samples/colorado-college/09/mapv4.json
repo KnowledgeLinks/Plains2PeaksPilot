@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:22858",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/528170fa-8431-11e7-8a9f-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:description": "\n   Coastal features, straight Pacific coast: wave-eroded sea cliffs, wave-cut terrace, Mizushirazaki.  --  Japan has about 18,000 miles of coastline whose configuration differs from place to place depending upon the interaction between shoreline erosive processes and earth crustal movement.  At Mizushirazaki, the trend of rocks and geological structures is nearly parallel with the coast resulting in a fairly straight coastline.  (Compare this coastline with that shown in slide 1.19.)  Waves are actively eroding and undercutting the base of sea cliffs causing them to collapse into the water.  As the coastline retreats in this manner, a flat wave-cut bench is produced offshore a few feet below sea level.  The flat surface covered with trees above the cliffs is an old wave-cut bench that has been uplifted above sea level by crustal movement.  --  Notice the small beaches that have formed from sediment deposition in areas sheltered behind rock promontories.\n  ",
+      "dcterms:language": "English",
+      "dcterms:publisher": {
+        "@id": "https://www.coloradocollege.edu/"
+      },
+      "dcterms:title": "Landscapes of Japan, 18, Coastal features, straight Pacific coast: wave-eroded sea cliffs, wave-cut terrace, Mizushirazaki.",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/528170fa-8431-11e7-8a9f-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/528170fa-8431-11e7-8a9f-005056c00008"
+      },
+      "edm:dataProvider": [
+        {
+          "@id": "https://plains2peaks.org/"
+        },
+        "Colorado College"
+      ],
+      "edm:hasView": {
+        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:22858"
+      },
+      "edm:isShownAt": {
+        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:22858"
+      },
+      "edm:preview": {
+        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:22858/datastream/TN"
+      }
+    }
+  ]
+}

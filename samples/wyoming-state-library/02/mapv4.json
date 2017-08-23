@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "http://pluto.state.wy.us/awweb/pdfopener?md=1&did=11115833",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/2e7eb424-7ef0-11e7-8cca-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/2e7eb424-7ef0-11e7-8cca-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://pluto.state.wy.us/awweb/pdfopener?md=1&did=11115833"
+      },
+      "edm:isShownAt": {
+        "@id": "http://pluto.state.wy.us/awweb/pdfopener?md=1&did=11115833"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/2e7eb424-7ef0-11e7-8cca-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:publisher": {
+        "@id": "http://library.wyo.gov/"
+      },
+      "dcterms:subject": [
+        "Administration & Information -- Department of Fire Prevention and Electrical Safety",
+        "Administration & Information -- Board of Nursing Home Administrators",
+        "Administration & Information -- Western Interstate Commission for Higher Education (WICHE)",
+        "Administration & Information -- District Attorney - Natrona County",
+        "Administration & Information -- Pari Mutuel Commission",
+        "Administration & Information -- Collection Agency Board",
+        "Administration & Information -- Board of Occupational Therapy",
+        "Administration & Information",
+        "Biennium Budget Requests",
+        "Administration & Information -- Water Development Commission"
+      ],
+      "dcterms:title": "Wyoming Pipeline Authority Biennium Budget Request, 2017-2018",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/date": "2017"
+    }
+  ]
+}

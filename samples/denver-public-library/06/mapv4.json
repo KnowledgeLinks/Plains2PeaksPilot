@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/b7bedda2-77da-11e7-8667-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:creator": {
+        "@id": "https://plains2peaks.org/agent/poley-h-s-horace-swartley"
+      },
+      "dcterms:description": "Studio portrait (sitting) of a Native American (Ute) woman, Caras. She wears a high collar dress and a brooch.",
+      "dcterms:publisher": {
+        "@id": "https://www.denverlibrary.org/"
+      },
+      "dcterms:subject": [
+        "Indians of North America--1890-1920.",
+        "Ute Indians--Women--1890-1920."
+      ],
+      "dcterms:title": "Caras Ute",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/date": "12/22/2010"
+    },
+    {
+      "@id": "https://plains2peaks.org/b7bedda2-77da-11e7-8667-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/b7bedda2-77da-11e7-8667-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/25043"
+      },
+      "edm:isShownAt": {
+        "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/25043"
+      }
+    },
+    {
+      "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/25043",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/format": [
+        "Portrait photographs.",
+        "Imaged.",
+        "Glass negatives.",
+        "Image"
+      ]
+    }
+  ]
+}

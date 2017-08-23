@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "http://pluto.state.wy.us/awweb/pdfopener?md=1&did=11111119",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/63f8fad0-7ef1-11e7-b6bd-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/63f8fad0-7ef1-11e7-b6bd-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://pluto.state.wy.us/awweb/pdfopener?md=1&did=11111119"
+      },
+      "edm:isShownAt": {
+        "@id": "http://pluto.state.wy.us/awweb/pdfopener?md=1&did=11111119"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/63f8fad0-7ef1-11e7-b6bd-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:publisher": {
+        "@id": "http://library.wyo.gov/"
+      },
+      "dcterms:subject": [
+        "Administration & Information",
+        "General Fund Reduction Budget Request"
+      ],
+      "dcterms:title": "Wildlife and Natural Resources General Fund Reduction Budget Request, 2013-2014",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/date": "2013"
+    }
+  ]
+}

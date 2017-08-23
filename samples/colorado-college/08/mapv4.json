@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:23839",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/b5532d28-8457-11e7-92a3-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:description": "\n   This is the Korean traditional drumming originally used to keep the farmers spirits up. As time progressed, it was used more and more for other occasions. Seoul, South Korea.\n  ",
+      "dcterms:language": "English",
+      "dcterms:publisher": {
+        "@id": "https://www.coloradocollege.edu/"
+      },
+      "dcterms:title": "Salmulnori",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/b5532d28-8457-11e7-92a3-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/b5532d28-8457-11e7-92a3-005056c00008"
+      },
+      "edm:dataProvider": [
+        {
+          "@id": "https://plains2peaks.org/"
+        },
+        "Colorado College"
+      ],
+      "edm:hasView": {
+        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:23839"
+      },
+      "edm:isShownAt": {
+        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:23839"
+      }
+    }
+  ]
+}

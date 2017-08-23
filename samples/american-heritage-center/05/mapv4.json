@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/ad5bd958-83b7-11e7-9973-ac87a3129ce6#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/ad5babd8-83b7-11e7-9c4f-ac87a3129ce6"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://digitalcollections.uwyo.edu/luna/servlet/detail/uwydbuwy~148~148~3317470~291395"
+      },
+      "edm:isShownAt": {
+        "@id": "http://digitalcollections.uwyo.edu/luna/servlet/detail/uwydbuwy~148~148~3317470~291395"
+      }
+    },
+    {
+      "@id": "http://digitalcollections.uwyo.edu/luna/servlet/detail/uwydbuwy~148~148~3317470~291395",
+      "@type": "edm:WebResource"
+    },
+    {
+      "@id": "https://plains2peaks.org/ad5babd8-83b7-11e7-9c4f-ac87a3129ce6",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:description": "Party coming back from trail ride",
+      "dcterms:publisher": {
+        "@id": "http://www.uwyo.edu/ahc/"
+      },
+      "dcterms:title": "Slide case #7, 521630-522120"
+    }
+  ]
+}

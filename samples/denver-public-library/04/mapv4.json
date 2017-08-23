@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/d556ab86-77dc-11e7-bba2-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:creator": {
+        "@id": "https://plains2peaks.org/agent/dixon-joseph-kosseth"
+      },
+      "dcterms:description": "A Native American woman or girl poses by probably the Little Bighorn River in Big Horn County, Montana; she holds a metal enamel cup. Her outfit includes a hide dress and shirt with quillwork and fringe.",
+      "dcterms:publisher": {
+        "@id": "https://www.denverlibrary.org/"
+      },
+      "dcterms:subject": [
+        "Rivers--Montana--1900-1920.",
+        "Little Bighorn River (Wyo. and Mont.)--1900-1920.",
+        "Indians of North America--1900-1920.",
+        "Teenagers--Montana--1900-1920."
+      ],
+      "dcterms:title": "Young woman by river",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/date": "12/23/2010"
+    },
+    {
+      "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/69753",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/format": [
+        "Photogravures.",
+        "Imaged.",
+        "Image"
+      ]
+    },
+    {
+      "@id": "https://plains2peaks.org/d556ab86-77dc-11e7-bba2-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/d556ab86-77dc-11e7-bba2-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/69753"
+      },
+      "edm:isShownAt": {
+        "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/69753"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/2c8fc6d2-77f9-11e7-9659-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/2c8fc6d2-77f9-11e7-9659-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/45275"
+      },
+      "edm:isShownAt": {
+        "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/45275"
+      }
+    },
+    {
+      "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/45275",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/format": [
+        "Portrait photographs--1880-1890.",
+        "Image",
+        "Glass photonegatives.",
+        "Imaged."
+      ]
+    },
+    {
+      "@id": "https://plains2peaks.org/2c8fc6d2-77f9-11e7-9659-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:creator": {
+        "@id": "https://plains2peaks.org/agent/barry-d-f-david-francis-1854-1934"
+      },
+      "dcterms:description": "Seated studio portrait, 3/4 length, of Sitting Bull, Dakota Chief, holding tomahawk.",
+      "dcterms:publisher": {
+        "@id": "https://www.denverlibrary.org/"
+      },
+      "dcterms:subject": [
+        "Indians of North America--Clothing & dress--1880-1890.",
+        "Indians of North America--Portraits--1885."
+      ],
+      "dcterms:title": "Sitting Bull, Dakota Chief, seated, holding a tomahawk on lap",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/date": "12/23/2010"
+    }
+  ]
+}

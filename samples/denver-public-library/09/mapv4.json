@@ -1,0 +1,60 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/edfc24e2-7825-11e7-bb97-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:creator": {
+        "@id": "https://plains2peaks.org/agent/perry-otto-1894-1970"
+      },
+      "dcterms:description": "Passenger trainrear view, 1 car. Photographed: leaving Manitou, Colo., July, 1918.",
+      "dcterms:publisher": {
+        "@id": "https://www.denverlibrary.org/"
+      },
+      "dcterms:subject": [
+        "Railroads--Trains--Pictorial works--1918.",
+        "Locomotives--1910-1920.",
+        "Railroad locomotives--Colorado--Manitou."
+      ],
+      "dcterms:title": "M&PP train, engine number 6, engine type 0-4-2",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/date": "12/23/2010"
+    },
+    {
+      "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/52755",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/format": [
+        "Silver gelatin photoprints.",
+        "Photographic postcards.",
+        "Imaged.",
+        "Film photonegatives.",
+        "Image"
+      ]
+    },
+    {
+      "@id": "https://plains2peaks.org/edfc24e2-7825-11e7-bb97-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/edfc24e2-7825-11e7-bb97-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/52755"
+      },
+      "edm:isShownAt": {
+        "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/52755"
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/14a274cc-82dc-11e7-a671-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:description": "From left, Buster Beck, Durbin McIlnay, and Frank Robinson at a logging camp on the upper Wearyman Creek.",
+      "dcterms:publisher": {
+        "@id": "https://www.evld.org/"
+      },
+      "dcterms:subject": [
+        "logging",
+        "wearyman creek colorado",
+        "business &amp; commerce",
+        "warren brothers &amp; robinson sawmill",
+        "Buster Beck, Durbin McIlnay, Frank Robinson"
+      ],
+      "dcterms:title": "Buster Beck, Durbin McIlnay, Frank Robinson",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/page/CNE/1.0/?language=en"
+      }
+    },
+    {
+      "@id": "https://evld.marmot.org/Archive/evld%3A2294/LargeImage",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/page/CNE/1.0/?language=en"
+      },
+      "http://purl.org/dc/elements/1.1/format": "Still Image"
+    },
+    {
+      "@id": "https://plains2peaks.org/14a274cc-82dc-11e7-a671-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/14a274cc-82dc-11e7-a671-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "https://evld.marmot.org/Archive/evld%3A2294/LargeImage"
+      },
+      "edm:isShownAt": {
+        "@id": "https://evld.marmot.org/Archive/evld%3A2294/LargeImage"
+      },
+      "edm:preview": {
+        "@id": "https://islandora.marmot.org/islandora/object/evld:2294/datastream/SC/view"
+      }
+    }
+  ]
+}

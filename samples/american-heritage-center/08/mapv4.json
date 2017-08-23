@@ -1,0 +1,37 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/83587b3e-83b7-11e7-84b4-ac87a3129ce6",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:description": "Rocks",
+      "dcterms:publisher": {
+        "@id": "http://www.uwyo.edu/ahc/"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/83589b82-83b7-11e7-9d1b-ac87a3129ce6#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/83587b3e-83b7-11e7-84b4-ac87a3129ce6"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://digitalcollections.uwyo.edu/luna/servlet/detail/uwydbuwy~22~22~585470~188943"
+      },
+      "edm:isShownAt": {
+        "@id": "http://digitalcollections.uwyo.edu/luna/servlet/detail/uwydbuwy~22~22~585470~188943"
+      }
+    },
+    {
+      "@id": "http://digitalcollections.uwyo.edu/luna/servlet/detail/uwydbuwy~22~22~585470~188943",
+      "@type": "edm:WebResource"
+    }
+  ]
+}

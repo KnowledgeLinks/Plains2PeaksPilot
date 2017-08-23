@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "http://hermes.cde.state.co.us/drupal/islandora/object/co:20315",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/6f0becd2-732d-11e7-a857-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:publisher": {
+        "@id": "https://www.cde.state.co.us/stateinfo"
+      },
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/6f0becd2-732d-11e7-a857-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/6f0becd2-732d-11e7-a857-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://hermes.cde.state.co.us/drupal/islandora/object/co:20315"
+      },
+      "edm:isShownAt": {
+        "@id": "http://hermes.cde.state.co.us/drupal/islandora/object/co:20315"
+      },
+      "edm:preview": {
+        "@id": "http://hermes.cde.state.co.us/drupal/islandora/object/co:20315/datatream/PREVIEW"
+      }
+    }
+  ]
+}

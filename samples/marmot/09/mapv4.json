@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/c49688b4-8327-11e7-987f-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/c49688b4-8327-11e7-987f-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "https://evld.marmot.org/Archive/evld%3A4361/LargeImage"
+      },
+      "edm:isShownAt": {
+        "@id": "https://evld.marmot.org/Archive/evld%3A4361/LargeImage"
+      },
+      "edm:preview": {
+        "@id": "https://islandora.marmot.org/islandora/object/evld:4361/datastream/SC/view"
+      }
+    },
+    {
+      "@id": "https://evld.marmot.org/Archive/evld%3A4361/LargeImage",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/page/CNE/1.0/?language=en"
+      },
+      "http://purl.org/dc/elements/1.1/format": "Still Image"
+    },
+    {
+      "@id": "https://plains2peaks.org/c49688b4-8327-11e7-987f-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:description": "Returning to Gilman for a tour on July 26, 1997.  Buster Beck and Alan Albert.",
+      "dcterms:publisher": {
+        "@id": "https://www.evld.org/"
+      },
+      "dcterms:subject": [
+        "buildings",
+        "",
+        "towns",
+        "Buster Beck and Alan Albert",
+        "mining"
+      ],
+      "dcterms:title": "Buster Beck and Alan Albert",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/page/CNE/1.0/?language=en"
+      }
+    }
+  ]
+}

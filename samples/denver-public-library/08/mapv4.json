@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/60812",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/format": [
+        "Glass negatives.",
+        "Photographic prints.",
+        "Imaged.",
+        "Image"
+      ]
+    },
+    {
+      "@id": "https://plains2peaks.org/ec4df3e6-77e1-11e7-88c0-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:creator": {
+        "@id": "https://plains2peaks.org/agent/mckee-thomas-michael-1854-1939"
+      },
+      "dcterms:description": "View of Native American (Anasazi) ruins at Cliff Palace, Mesa Verde National Park, Colorado. Shows stone walls and round and square multi-story cliff dwellings. Stone bricks are scattered on the ground.",
+      "dcterms:publisher": {
+        "@id": "https://www.denverlibrary.org/"
+      },
+      "dcterms:subject": [
+        "Mesa Verde National Park (Colo.)--1900-1910.",
+        "Indians of North America--Antiquities & archaeological sites--Colorado--Mesa Verde National Park--1900-1910.",
+        "Cliff Palace (Colo.)--1900-1910.",
+        "Cliff dwellings--Colorado--Mesa Verde National Park--1900-1910.",
+        "Archaeological sites--Colorado--Mesa Verde National Park--1900-1910.",
+        "Pueblo Indians--Antiquities & archaeological sites--Colorado--Mesa Verde National Park--1900-1910."
+      ],
+      "dcterms:title": "Interior and exterior of east end of Cliff Palace, Mesa Verde",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/date": "12/23/2010"
+    },
+    {
+      "@id": "https://plains2peaks.org/ec4df3e6-77e1-11e7-88c0-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/ec4df3e6-77e1-11e7-88c0-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/60812"
+      },
+      "edm:isShownAt": {
+        "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/60812"
+      }
+    }
+  ]
+}

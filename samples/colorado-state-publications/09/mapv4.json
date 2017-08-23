@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/d6972bde-732e-11e7-b625-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:language": "eng",
+      "dcterms:publisher": {
+        "@id": "https://www.cde.state.co.us/stateinfo"
+      },
+      "dcterms:title": [
+        "2008 sunrise review, qualified intermediaries",
+        "Qualified intermediaries"
+      ],
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/date": "2008"
+    },
+    {
+      "@id": "http://hermes.cde.state.co.us/drupal/islandora/object/co:4901",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/d6972bde-732e-11e7-b625-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/d6972bde-732e-11e7-b625-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://hermes.cde.state.co.us/drupal/islandora/object/co:4901"
+      },
+      "edm:isShownAt": {
+        "@id": "http://hermes.cde.state.co.us/drupal/islandora/object/co:4901"
+      },
+      "edm:preview": {
+        "@id": "http://hermes.cde.state.co.us/drupal/islandora/object/co:4901/datatream/PREVIEW"
+      }
+    }
+  ]
+}

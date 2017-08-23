@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://plains2peaks.org/2ce0a9b0-7eea-11e7-be4c-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:publisher": {
+        "@id": "http://library.wyo.gov/"
+      },
+      "dcterms:subject": [
+        "Wyoming State Budget Appropriations",
+        "Capital Construction Budget",
+        "Annual Reports",
+        "Statewide Cost Allocation Plans",
+        "Strategic Plans",
+        "General Fund Reduction Budget Request",
+        "Biennium Appropriations Agency Summaries",
+        "Biennium Budget Requests",
+        "Wyoming State Budget",
+        "Supplemental Budget Requests",
+        "Administration & Information",
+        "Chapter 17, Base Budget to Standard Budget Reconciliation Reports"
+      ],
+      "dcterms:title": "State Parks and Cultural Resources Biennium Budget Request, 2007-2008",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/date": "2007"
+    },
+    {
+      "@id": "https://plains2peaks.org/2ce0a9b0-7eea-11e7-be4c-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/2ce0a9b0-7eea-11e7-be4c-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://pluto.state.wy.us/awweb/pdfopener?md=1&did=4937257"
+      },
+      "edm:isShownAt": {
+        "@id": "http://pluto.state.wy.us/awweb/pdfopener?md=1&did=4937257"
+      }
+    },
+    {
+      "@id": "http://pluto.state.wy.us/awweb/pdfopener?md=1&did=4937257",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      }
+    }
+  ]
+}

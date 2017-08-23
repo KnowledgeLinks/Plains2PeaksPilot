@@ -1,0 +1,42 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:7331",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/ecc49462-8382-11e7-b4d0-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/ecc49462-8382-11e7-b4d0-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:7331"
+      },
+      "edm:isShownAt": {
+        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:7331"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/ecc49462-8382-11e7-b4d0-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:description": "Albuquerque, New Mexico. See item 20.3.  Quality: Good.",
+      "dcterms:language": "Spanish",
+      "dcterms:title": "Celebre todo cristiano",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    }
+  ]
+}

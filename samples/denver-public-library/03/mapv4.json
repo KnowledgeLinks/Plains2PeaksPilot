@@ -1,0 +1,60 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/43633",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/format": [
+        "Silver gelatin photoprints.",
+        "Imaged.",
+        "Photographic postcards.",
+        "Film photonegatives.",
+        "Image"
+      ]
+    },
+    {
+      "@id": "https://plains2peaks.org/d0ec9e00-7826-11e7-af2b-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/d0ec9e00-7826-11e7-af2b-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/43633"
+      },
+      "edm:isShownAt": {
+        "@id": "http://cdm16079.contentdm.oclc.org:80/cdm/ref/collection/p15330coll22/id/43633"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/d0ec9e00-7826-11e7-af2b-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:creator": {
+        "@id": "https://plains2peaks.org/agent/perry-otto-1894-1970"
+      },
+      "dcterms:description": "Freight, southbound. Photographed: South of Denver, Colo., 1919.",
+      "dcterms:publisher": {
+        "@id": "https://www.denverlibrary.org/"
+      },
+      "dcterms:subject": [
+        "Railroad locomotives--Colorado--Denver.",
+        "Locomotives--1910-1920.",
+        "Railroads--Trains--Pictorial works--1919."
+      ],
+      "dcterms:title": "C&S train, engine number 802, engine type 2-8-2",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/CNE/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/date": "12/23/2010"
+    }
+  ]
+}

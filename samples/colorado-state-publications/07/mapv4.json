@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "edm": "http://www.europeana.eu/schemas/edm/",
+    "org": "http://www.openarchives.org/ore/terms"
+  },
+  "@graph": [
+    {
+      "@id": "http://hermes.cde.state.co.us/drupal/islandora/object/co:12114",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/46e08cbe-732c-11e7-8ee1-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/46e08cbe-732c-11e7-8ee1-005056c00008"
+      },
+      "edm:dataProvider": {
+        "@id": "https://plains2peaks.org/"
+      },
+      "edm:hasView": {
+        "@id": "http://hermes.cde.state.co.us/drupal/islandora/object/co:12114"
+      },
+      "edm:isShownAt": {
+        "@id": "http://hermes.cde.state.co.us/drupal/islandora/object/co:12114"
+      },
+      "edm:preview": {
+        "@id": "http://hermes.cde.state.co.us/drupal/islandora/object/co:12114/datatream/PREVIEW"
+      }
+    },
+    {
+      "@id": "https://plains2peaks.org/46e08cbe-732c-11e7-8ee1-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:language": "eng",
+      "dcterms:publisher": {
+        "@id": "https://www.cde.state.co.us/stateinfo"
+      },
+      "dcterms:title": "Division of Central Services, Colorado fiscal year 2010/2011 : first choice for service",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      },
+      "http://purl.org/dc/elements/1.1/date": "200u"
+    }
+  ]
+}
