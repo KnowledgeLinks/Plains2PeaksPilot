@@ -19,13 +19,6 @@
       }
     },
     {
-      "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:7106",
-      "@type": "edm:WebResource",
-      "edm:rights": {
-        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
-      }
-    },
-    {
       "@id": "https://plains2peaks.org/18a20c4a-8374-11e7-aadb-005056c00008#Work",
       "@type": "http://www.openarchives.org/ore/terms/Aggregation",
       "edm:aggregatedCHO": {
@@ -39,6 +32,13 @@
       },
       "edm:isShownAt": {
         "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:7106"
+      }
+    },
+    {
+      "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:7106",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     }
   ]

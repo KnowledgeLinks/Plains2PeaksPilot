@@ -6,10 +6,25 @@
   },
   "@graph": [
     {
-      "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:22858",
-      "@type": "edm:WebResource",
-      "edm:rights": {
-        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      "@id": "https://plains2peaks.org/528170fa-8431-11e7-8a9f-005056c00008#Work",
+      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
+      "edm:aggregatedCHO": {
+        "@id": "https://plains2peaks.org/528170fa-8431-11e7-8a9f-005056c00008"
+      },
+      "edm:dataProvider": [
+        "Colorado College",
+        {
+          "@id": "https://plains2peaks.org/"
+        }
+      ],
+      "edm:hasView": {
+        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:22858"
+      },
+      "edm:isShownAt": {
+        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:22858"
+      },
+      "edm:preview": {
+        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:22858/datastream/TN"
       }
     },
     {
@@ -26,25 +41,10 @@
       }
     },
     {
-      "@id": "https://plains2peaks.org/528170fa-8431-11e7-8a9f-005056c00008#Work",
-      "@type": "http://www.openarchives.org/ore/terms/Aggregation",
-      "edm:aggregatedCHO": {
-        "@id": "https://plains2peaks.org/528170fa-8431-11e7-8a9f-005056c00008"
-      },
-      "edm:dataProvider": [
-        {
-          "@id": "https://plains2peaks.org/"
-        },
-        "Colorado College"
-      ],
-      "edm:hasView": {
-        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:22858"
-      },
-      "edm:isShownAt": {
-        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:22858"
-      },
-      "edm:preview": {
-        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:22858/datastream/TN"
+      "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:22858",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
       }
     }
   ]

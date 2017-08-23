@@ -32,16 +32,19 @@
         "@id": "https://plains2peaks.org/b5532d28-8457-11e7-92a3-005056c00008"
       },
       "edm:dataProvider": [
+        "Colorado College",
         {
           "@id": "https://plains2peaks.org/"
-        },
-        "Colorado College"
+        }
       ],
       "edm:hasView": {
         "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:23839"
       },
       "edm:isShownAt": {
         "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:23839"
+      },
+      "edm:preview": {
+        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:23839/datastream/TN"
       }
     }
   ]

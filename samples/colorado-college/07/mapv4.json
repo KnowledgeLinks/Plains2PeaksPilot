@@ -6,6 +6,23 @@
   },
   "@graph": [
     {
+      "@id": "https://plains2peaks.org/8663fbd4-8417-11e7-a8cc-005056c00008",
+      "@type": "http://dp.la/about/map/SourceResource",
+      "dcterms:description": "\n   Fruit sellers peddle their wares in front of the Haidian Clock Retail Sales Department\n  ",
+      "dcterms:language": "English",
+      "dcterms:title": "Haidian Clock Retail Sales Department",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    },
+    {
+      "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:22182",
+      "@type": "edm:WebResource",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    },
+    {
       "@id": "https://plains2peaks.org/8663fbd4-8417-11e7-a8cc-005056c00008#Work",
       "@type": "http://www.openarchives.org/ore/terms/Aggregation",
       "edm:aggregatedCHO": {
@@ -19,23 +36,9 @@
       },
       "edm:isShownAt": {
         "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:22182"
-      }
-    },
-    {
-      "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:22182",
-      "@type": "edm:WebResource",
-      "edm:rights": {
-        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
-      }
-    },
-    {
-      "@id": "https://plains2peaks.org/8663fbd4-8417-11e7-a8cc-005056c00008",
-      "@type": "http://dp.la/about/map/SourceResource",
-      "dcterms:description": "\n   Fruit sellers peddle their wares in front of the Haidian Clock Retail Sales Department\n  ",
-      "dcterms:language": "English",
-      "dcterms:title": "Haidian Clock Retail Sales Department",
-      "edm:rights": {
-        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      },
+      "edm:preview": {
+        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:22182/datastream/TN"
       }
     }
   ]

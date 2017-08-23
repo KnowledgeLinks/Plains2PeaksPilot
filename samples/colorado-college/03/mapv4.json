@@ -6,13 +6,6 @@
   },
   "@graph": [
     {
-      "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:7331",
-      "@type": "edm:WebResource",
-      "edm:rights": {
-        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
-      }
-    },
-    {
       "@id": "https://plains2peaks.org/ecc49462-8382-11e7-b4d0-005056c00008#Work",
       "@type": "http://www.openarchives.org/ore/terms/Aggregation",
       "edm:aggregatedCHO": {
@@ -34,6 +27,13 @@
       "dcterms:description": "Albuquerque, New Mexico. See item 20.3.  Quality: Good.",
       "dcterms:language": "Spanish",
       "dcterms:title": "Celebre todo cristiano",
+      "edm:rights": {
+        "@id": "http://rightsstatements.org/vocab/InC/1.0/"
+      }
+    },
+    {
+      "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:7331",
+      "@type": "edm:WebResource",
       "edm:rights": {
         "@id": "http://rightsstatements.org/vocab/InC/1.0/"
       }

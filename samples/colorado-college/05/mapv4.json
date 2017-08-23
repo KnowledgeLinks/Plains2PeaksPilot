@@ -19,6 +19,9 @@
       },
       "edm:isShownAt": {
         "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:7688"
+      },
+      "edm:preview": {
+        "@id": "https://digitalcc.coloradocollege.edu/islandora/object/coccc:7688/datastream/TN"
       }
     },
     {

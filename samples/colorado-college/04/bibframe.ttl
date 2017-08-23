@@ -16,6 +16,8 @@
     bf:itemOf <https://plains2peaks.org/3968c0e4-8457-11e7-86ed-005056c00008> .
 
 <https://plains2peaks.org/3968c0e4-8457-11e7-86ed-005056c00008> a bf:Instance ;
+    bf:coverArt  [ a bf:CoverArt ;
+            rdf:value <https://digitalcc.coloradocollege.edu/islandora/object/coccc:23825/datastream/TN> ] ;
     bf:extent [ a bf:Extent ;
             rdf:value "1024 w x 465 h, 72 ppi"^^xsd:string ] ;
     bf:generationProcess [ a bf:GenerationProcess ;
