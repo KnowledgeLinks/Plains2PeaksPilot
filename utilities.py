@@ -233,11 +233,12 @@ def colorado_college_workflow(**kwargs):
     global cc_processor, rels_processor, fedora_ri_search, fedora_auth, cc_repo_base
     cc_processor = processor.XMLProcessor(
         rml_rules=["bibcat-base.ttl",
-            "bibcat-mods-to-bf.ttl",
+            "mods-to-bf.ttl",
             kwargs.get("cc_rules")],
         triplestore_url=TRIPLESTORE_URL,
         base_url=BASE_URL,
-        namespaces={"mods": "http://www.loc.gov/mods/v3"})
+        namespaces={"mods": "http://www.loc.gov/mods/v3",
+                    "xlink": "https://www.w3.org/1999/xlink"})
     rels_processor = RELSEXTIngester(base_url=BASE_URL)    
     fedora_ri_search = kwargs.get("ri_search")
     fedora_auth = kwargs.get("auth")
@@ -597,7 +598,7 @@ def setup_univ_wy():
                                         classes=[BF.Agent, BF.Person, BF.Organization, BF.Topic],
                                         base_url='https://plains2peaks.org/')
     mods_ingester = processor.XMLProcessor(
-        rml_rules = ['bibcat-base.ttl', 'bibcat-mods-to-bf.ttl'],
+        rml_rules = ['bibcat-base.ttl', 'mods-to-bf.ttl'],
         triplestore_url=TRIPLESTORE_URL,
         base_url=BASE_URL,
         namespaces={"mods": "http://www.loc.gov/mods/v3"}) 

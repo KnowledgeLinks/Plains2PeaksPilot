@@ -16,6 +16,7 @@
     
     <h4>Total Items: {{ total_items|pretty_num }}</h4>
     <h4>Total Instances: {{ total_instances|pretty_num }}</h4>
-    
+    <hr>
+    <a href="{{ url_for('reporting') }}">Reports</a> 
 
 {% endblock %}

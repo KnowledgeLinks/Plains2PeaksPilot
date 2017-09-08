@@ -11,5 +11,9 @@ from [Amanda][ARL].
 
 ## Open Issues
 
+### 2017/09/06 
+Rerunning harvester for University of Wyoming, they added rightstatements
+after last harvest.
+
 [ARL]: /people/amanda-r-lehman
 
