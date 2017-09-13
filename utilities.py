@@ -14,6 +14,7 @@ import rdflib
 import bibcat.rml.processor as processor
 import bibcat.linkers.deduplicate as deduplicate
 import bibcat.linkers.geonames as geonames
+import bibcat.linkers.loc as loc
 import bibcat.ingesters.oai_pmh as ingesters
 from bibcat.ingesters.rels_ext import RELSEXTIngester
 
@@ -53,7 +54,8 @@ P2P_DEDUPLICATOR = deduplicate.Deduplicator(
     base_url=BASE_URL,
     classes=[BF.Agent, BF.Organization, BF.Person, BF.Topic])
 
-
+LOC_DEDUP = loc.LibraryOfCongressLinker()
+    
 def add_dpl(**kwargs):
     graph = kwargs.get('graph')
     field = kwargs.get('field')
@@ -601,7 +603,8 @@ def setup_univ_wy():
         rml_rules = ['bibcat-base.ttl', 'mods-to-bf.ttl'],
         triplestore_url=TRIPLESTORE_URL,
         base_url=BASE_URL,
-        namespaces={"mods": "http://www.loc.gov/mods/v3"}) 
+        namespaces={"mods": "http://www.loc.gov/mods/v3",
+                    "xlink": "http://www.w3.org/1999/xlink"}) 
     i_harvester = ingesters.IslandoraIngester(
             triplestore_url=TRIPLESTORE_URL,
             base_url=BASE_URL,
