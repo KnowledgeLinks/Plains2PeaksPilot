@@ -145,7 +145,7 @@ WHERE {{
         item_iri = __cc_pid__(child_pid, bf_graph)
         if item_iri is None:
             continue
-        bf_graph.add((item_iri, BF.AccessPolicy, rights_stmt))
+        bf_graph.add((item_iri, BF.usageAndAccessPolicy, rights_stmt))
         instance_iri = bf_graph.value(subject=item_iri,
             predicate=BF.itemOf)
         work_iri = bf_graph.value(subject=instance_iri,
@@ -311,7 +311,7 @@ def __process_hist_colo_row__(row):
     rights_stmt = row.get("DPLA Rights").upper()
     if rights_stmt in RIGHTS_STATEMENTS:
         csv2bf.output.add((rdflib.URIRef(item_iri), 
-                           BF.AccessPolicy, 
+                           BF.usageAndAccessPolicy, 
                            RIGHTS_STATEMENTS.get(rights_stmt)))
     P2P_DEDUPLICATOR.run(csv2bf.output, [BF.Agent, 
                                          BF.Person, 
