@@ -55,6 +55,9 @@
     bf:Organization ;
     rdfs:label "History Colorado"@en .
 
+<http://prlibrary.org/> a bf:Organization, schema:Library ;
+    rdfs:label "Pine River Library"@en .
+
 <http://www.western.edu/academics/leslie-j-savage-library> a bf:Organization,
         schema:Library ;
     rdfs:label "Leslie J. Savage Library"@en .

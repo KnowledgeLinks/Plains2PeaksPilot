@@ -439,7 +439,13 @@ def univ_wy_workflow(out_file):
     print("Starting University of Wyoming Workflow using Islandora OAI-PMH at {}".format(
         start.isoformat()))
     univ_wy_graph = rdflib.Graph()
-    univ_wy_graph.parse(out_file, format='turtle') 
+    if os.path.exists(out_file):
+        univ_wy_graph.parse(out_file, format='turtle')
+    else:
+        univ_wy_graph.namespace_manager.bind("bf", BF)
+        univ_wy_graph.namespace_manager.bind("relators", RELATORS)
+        univ_wy_graph.namespace_manager.bind("schema", SCHEMA)
+        univ_wy_graph.namespace_manager.bind("skos", SKOS)
     for collection_pid in wy_collections:
         start_size = len(univ_wy_graph) 
         i_harvester.harvest(setSpec=collection_pid, dedup=bf_dedup)
