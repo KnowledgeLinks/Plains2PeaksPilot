@@ -28,7 +28,11 @@ else:
     error_log = "/Users/jeremynelson/2017/Plains2PeaksPilot/errors/error-{}.log".format(time.monotonic())
 import date_generator
 
-logging.basicConfig(filename=error_log, level=logging.WARNING)
+logging.basicConfig(filename="ingestion-{}.log".format(time.monotonic()), 
+                    level=logging.INFO,
+                    format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
+                    datefmt='%m-%d %H:%M',
+                    filemode="w")
 
 BASE_URL = "https://plains2peaks.org/"
 RANGE_4YEARS = re.compile(r"(\d{4})-(\d{4})")
@@ -452,12 +456,20 @@ def univ_wy_workflow(out_file):
         __univ_wy_covers__(i_harvester.repo_graph)
         __add_univ_wy_collection__(i_harvester.repo_graph, collection_pid)
         univ_wy_graph += i_harvester.repo_graph
-        print("=====\nFinished {} number of triples {}".format(collection_pid, 
-            len(univ_wy_graph) - start_size), end="")
-        with open(out_file, 'wb+') as fo:
-            fo.write(univ_wy_graph.serialize(format='turtle'))
+        msg = "Finished collection {} number of triples {:,}".format(collection_pid, 
+            len(univ_wy_graph) - start_size)
+        logging.info(msg)
+        print("====\n{}".format(msg))
+        #with open(out_file, 'wb+') as fo:
+        #    fo.write(univ_wy_graph.serialize(format='turtle'))
     for periodical_pid in wy_periodicals:
-        univ_wy_graph += __univ_wy_periodicals__(periodical_pid)
+        periodical_graph = __univ_wy_periodicals__(periodical_pid)
+        msg = "Finished periodical {}, number of triples {:,}".format(
+            periodical_pid,
+            len(periodical_graph))
+        logging.info(msg)
+        print("=====\n{}".format(periodical_pid))
+        univ_wy_graph += periodical_graph
     with open(out_file, "wb+") as fo:
         fo.write(univ_wy_graph.serialize(format='turtle'))
     end = datetime.datetime.utcnow()
@@ -587,7 +599,7 @@ def setup_univ_wy():
     global wy_collection_iri, wy_iri, univ_wy_graph
     wy_iri = rdflib.URIRef("http://www.uwyo.edu/")
     # Finished 'wyu_12113',
-    wy_collections = [ 'wyu_5359', 'wyu_5394', 'wyu_2807', 'wyu_161514']
+    wy_collections = ['wyu_12113', 'wyu_5359', 'wyu_5394', 'wyu_2807', 'wyu_161514']
     wy_collection_iri = {'wyu_12113': rdflib.URIRef('https://uwdigital.uwyo.edu/islandora/object/wyu:12113'),
         'wyu_5359': rdflib.URIRef('https://uwdigital.uwyo.edu/islandora/object/wyu:5359'), 
         'wyu_5394': rdflib.URIRef('https://uwdigital.uwyo.edu/islandora/object/wyu:5394'), 
@@ -596,8 +608,6 @@ def setup_univ_wy():
 
 #    wy_collections = ['wyu_5359']
     wy_periodicals = [
-        'wyu:2807', 
-        'wyu:161514',
         'wyu:12541',
         'wyu:168429',
         'wyu:169935'
