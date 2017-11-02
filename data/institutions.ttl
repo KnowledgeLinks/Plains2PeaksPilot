@@ -51,6 +51,7 @@
 <https://www.gunnisoncountylibraries.org/> a bf:Organization,
         schema:Library ;
     rdfs:label "Gunnison County Library District"@en .
+
 <http://www.historycolorado.org/> a schema:Museum,
     bf:Organization ;
     rdfs:label "History Colorado"@en .
