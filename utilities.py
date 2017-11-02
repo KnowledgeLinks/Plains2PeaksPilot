@@ -250,119 +250,6 @@ def colorado_college_workflow(**kwargs):
     fedora_auth = kwargs.get("auth")
     cc_repo_base = kwargs.get("repo_base")
 
-def __hist_co_collections__(row, bf_graph):
-    raw_collection = row.get("Collection Name")
-    collection_iri = rdflib.URIRef("{}{}".format(BASE_URL, 
-        bibcat.slugify(raw_collection)))
-    work = bf_graph.value(predicate=rdflib.RDF.type,
-        object=BF.Work)
-    bf_graph.add((work, BF.partOf, collection_iri))
-    bf_graph.add((collection_iri, rdflib.RDF.type, BF.Collection))
-    bf_graph.add((collection_iri, rdflib.RDFS.label, rdflib.Literal(raw_collection)))
-    
-def __hist_co_cover__(instance_url, cover_art_url, bf_graph):
-    instance_iri = rdflib.URIRef(instance_url)
-    cover_art_iri = rdflib.URIRef(cover_art_url)
-    cover_art_bnode = rdflib.BNode()
-    bf_graph.add((instance_iri, BF.coverArt, cover_art_bnode))
-    bf_graph.add((cover_art_bnode, rdflib.RDF.type, BF.CoverArt))
-    bf_graph.add((cover_art_bnode, rdflib.RDF.value, cover_art_iri))
-
-def __hist_co_subjects_process__(row, bf_graph):
-    work = bf_graph.value(predicate=rdflib.RDF.type,
-        object=BF.Work)
-    raw_subject_terms = row.get("Subject.Term")
-    subject_terms = [r.strip() for r in raw_subject_terms.split(",")]
-    for term in subject_terms:
-        if "collection" in term.lower():
-            collection_iri = bf_graph.value(subject=work,
-                predicate=BF.partOf)
-            temp_iri = rdflib.URIRef("{}{}".format(BASE_URL, bibcat.slugify(term)))
-            if collection_iri == temp_iri:
-                continue
-        topic_bnode = rdflib.BNode()
-        bf_graph.add((work, BF.subject, topic_bnode))
-        bf_graph.add((topic_bnode, rdflib.RDF.type, BF.Topic))
-        bf_graph.add((topic_bnode, rdflib.RDF.value, rdflib.Literal(term)))
-    raw_local_terms = row.get("Locale.Term")
-    for term in [r.strip() for r in raw_local_terms.split(",")]:
-        if len(term) < 1:
-            continue
-        local_bnode = rdflib.BNode()
-        bf_graph.add((work, BF.place, local_bnode))
-        bf_graph.add((local_bnode, rdflib.RDF.type, BF.Place))
-        bf_graph.add((local_bnode, rdflib.RDF.value, rdflib.Literal(term)))
-    raw_used_terms = row.get("Used.Term")
-    for term in [r.strip() for r in raw_used_terms.split(",")]:
-        related_bnode = rdflib.BNode()
-        bf_graph.add((work, BF.relatedTo, related_bnode))
-        bf_graph.add((related_bnode, rdflib.RDF.type, rdflib.RDFS.Resource))
-        bf_graph.add((related_bnode, rdflib.RDF.value, rdflib.Literal(term)))   
-
-def __process_hist_colo_row__(row):
-    item_iri = hist_col_urls.get(row.get("Object ID")).get("item")
-    instance_url = "{}{}".format(BASE_URL, uuid.uuid1())
-    cover_art_url = hist_col_urls.get(row.get("Object ID")).get('cover')
-    csv2bf.run(row=row,
-        instance_iri=instance_url,
-        item_iri=item_iri)
-    __hist_co_cover__(instance_url, cover_art_url, csv2bf.output)
-    __hist_co_collections__(row, csv2bf.output)
-    __hist_co_subjects_process__(row, csv2bf.output)
-      
-    p2p_date_generator = date_generator.DateGenerator(graph=csv2bf.output)
-    p2p_date_generator.run(row.get("Dates.Date Range"))
-    rights_stmt = row.get("DPLA Rights").upper()
-    if rights_stmt in RIGHTS_STATEMENTS:
-        csv2bf.output.add((rdflib.URIRef(item_iri), 
-                           BF.usageAndAccessPolicy, 
-                           RIGHTS_STATEMENTS.get(rights_stmt)))
-    P2P_DEDUPLICATOR.run(csv2bf.output, [BF.Agent, 
-                                         BF.Person, 
-                                         BF.Organization, 
-                                         BF.Topic])
-    return csv2bf.output
-
-
-
-def history_colo_workflow():
-    history_colo_graph = None
-    start_workflow = datetime.datetime.utcnow()
-    output_filename = "E:/2017/Plains2PeaksPilot/output/history-colorado.xml"
-    print("Starting History Colorado Workflow at {}".format(start_workflow.isoformat()))
-    for i,row in enumerate(hist_co_pilot):
-        try:
-            row_graph = __process_hist_colo_row__(row)
-            #result = requests.post(TRIPLESTORE_URL,
-            #    data=csv2bf.output.serialize(),
-            #    headers={"Content-Type": "application/rdf+xml"})
-        except:
-            print("E{:,} ".format(i), end="")
-            print(sys.exc_info()[1], end=" ")
-            logging.error("{} History Colorado - record {}, {}".format(
-                time.monotonic(),
-                i,
-                sys.exc_info()[1]))
-            continue
-
-        if not i%10 and i > 0:
-            print(".", end="")
-        if not i%100:
-            print("{:,}".format(i), end="")
-        if not i%250 and i > 0:
-            with open(output_filename, "wb+") as fo:
-                fo.write(history_colo_graph.serialize())
-        if history_colo_graph is None:
-            history_colo_graph = row_graph 
-        else:
-            history_colo_graph += row_graph
-    end_workflow = datetime.datetime.utcnow()
-    with open(output_filename, "wb+") as fo:
-        fo.write(history_colo_graph.serialize())
-    print("Finished History Colorado at {}, total time {} minutes for {:,} objects".format(
-        end_workflow.isoformat(),
-        (end_workflow-start_workflow).seconds / 60.0,
-        i))
     
 def __marmot_setup__(org_file):   
     global marmot_orgs, marmot_orgs_dict, org_filepath 
@@ -581,10 +468,16 @@ def wy_state_workflow(**kwargs):
     
     
 
- 
+# History Colorado Functions 
 def setup_hist_co():
-    global csv2bf, hist_co_pilot, p2p_deduplicator, hist_col_urls
-    hist_co_pilot = csv.DictReader(open("E:/2017/Plains2PeaksPilot/input/history-colorado-2017-07-11.csv"))
+    global csv2bf, hist_co_pilot, p2p_deduplicator, hist_col_urls, rights_lookup
+    rights_lookup = {"Copyright Not Evaluated": rdflib.URIRef("http://rightsstatements.org/vocab/CNE/1.0/"),
+                     "In Copyright-Educational Use Permitted": rdflib.URIRef("http://rightsstatements.org/vocab/InC-EDU/1.0/"),
+                     "No Copyright-United States": rdflib.URIRef("http://rightsstatements.org/vocab/NoC-US/1.0/"),
+                     "No Known Copyright": rdflib.URIRef("http://rightsstatements.org/vocab/NKC/1.0/")}
+                  
+
+    hist_co_pilot = csv.DictReader(open("E:/2017/Plains2PeaksPilot/input/history-colorado-2017-09-08.csv"))
     csv2bf = processor.CSVRowProcessor(rml_rules=['bibcat-base.ttl',
         'E:/2017/dpla-service-hub/profiles/history-colo-csv.ttl'])
     p2p_deduplicator = deduplicate.Deduplicator(
@@ -594,6 +487,125 @@ def setup_hist_co():
     for row in csv.DictReader(open("E:/2017/Plains2PeaksPilot/input/history-colorado-urls.csv")):
         hist_col_urls[row.get("Object ID")] = {"item": row["Portal Link"],
                                                "cover": row["Image Link"]}
+def __hist_co_collections__(row, bf_graph):
+    raw_collection = row.get("Collection Name")
+    collection_iri = rdflib.URIRef("{}{}".format(BASE_URL, 
+        bibcat.slugify(raw_collection)))
+    work = bf_graph.value(predicate=rdflib.RDF.type,
+        object=BF.Work)
+    bf_graph.add((work, BF.partOf, collection_iri))
+    bf_graph.add((collection_iri, rdflib.RDF.type, BF.Collection))
+    bf_graph.add((collection_iri, rdflib.RDFS.label, rdflib.Literal(raw_collection)))
+    
+def __hist_co_cover__(instance_url, cover_art_url, bf_graph):
+    instance_iri = rdflib.URIRef(instance_url)
+    cover_art_iri = rdflib.URIRef(cover_art_url)
+    cover_art_bnode = rdflib.BNode()
+    bf_graph.add((instance_iri, BF.coverArt, cover_art_bnode))
+    bf_graph.add((cover_art_bnode, rdflib.RDF.type, BF.CoverArt))
+    bf_graph.add((cover_art_bnode, rdflib.RDF.value, cover_art_iri))
+
+def __hist_co_subjects_process__(row, bf_graph):
+    work = bf_graph.value(predicate=rdflib.RDF.type,
+        object=BF.Work)
+    raw_subject_terms = row.get("Subject.Term")
+    subject_terms = [r.strip() for r in raw_subject_terms.split(",")]
+    for term in subject_terms:
+        if "collection" in term.lower():
+            collection_iri = bf_graph.value(subject=work,
+                predicate=BF.partOf)
+            temp_iri = rdflib.URIRef("{}{}".format(BASE_URL, bibcat.slugify(term)))
+            if collection_iri == temp_iri:
+                continue
+        topic_bnode = rdflib.BNode()
+        bf_graph.add((work, BF.subject, topic_bnode))
+        bf_graph.add((topic_bnode, rdflib.RDF.type, BF.Topic))
+        bf_graph.add((topic_bnode, rdflib.RDF.value, rdflib.Literal(term)))
+    raw_local_terms = row.get("Locale.Term")
+    for term in [r.strip() for r in raw_local_terms.split(",")]:
+        if len(term) < 1:
+            continue
+        local_bnode = rdflib.BNode()
+        bf_graph.add((work, BF.place, local_bnode))
+        bf_graph.add((local_bnode, rdflib.RDF.type, BF.Place))
+        bf_graph.add((local_bnode, rdflib.RDF.value, rdflib.Literal(term)))
+    raw_used_terms = row.get("Used.Term")
+    for term in [r.strip() for r in raw_used_terms.split(",")]:
+        related_bnode = rdflib.BNode()
+        bf_graph.add((work, BF.relatedTo, related_bnode))
+        bf_graph.add((related_bnode, rdflib.RDF.type, rdflib.RDFS.Resource))
+        bf_graph.add((related_bnode, rdflib.RDF.value, rdflib.Literal(term)))   
+
+def __process_hist_colo_row__(row):
+    item_iri = hist_col_urls.get(row.get("Object ID")).get("item")
+    instance_url = "{}{}".format(BASE_URL, uuid.uuid1())
+    cover_art_url = hist_col_urls.get(row.get("Object ID")).get('cover')
+    csv2bf.run(row=row,
+        instance_iri=instance_url,
+        item_iri=item_iri)
+    __hist_co_cover__(instance_url, cover_art_url, csv2bf.output)
+    __hist_co_collections__(row, csv2bf.output)
+    __hist_co_subjects_process__(row, csv2bf.output)
+    rights_text = row.get("DPLA Rights")
+    csv2bf.output.add((rdflib.URIRef(item_iri), 
+                       BF.usageAndAccessPolicy,
+                       rights_lookup[rights_text]))                  
+    p2p_date_generator = date_generator.DateGenerator(graph=csv2bf.output)
+    p2p_date_generator.run(row.get("Dates.Date Range"))
+    rights_stmt = row.get("DPLA Rights").upper()
+    if rights_stmt in RIGHTS_STATEMENTS:
+        csv2bf.output.add((rdflib.URIRef(item_iri), 
+                           BF.usageAndAccessPolicy, 
+                           RIGHTS_STATEMENTS.get(rights_stmt)))
+    P2P_DEDUPLICATOR.run(csv2bf.output, [BF.Agent, 
+                                         BF.Person, 
+                                         BF.Organization, 
+                                         BF.Topic])
+    return csv2bf.output
+
+
+
+def history_colo_workflow():
+    setup_hist_co()
+    history_colo_graph = None
+    start_workflow = datetime.datetime.utcnow()
+    output_filename = "E:/2017/Plains2PeaksPilot/output/history-colorado.xml"
+    print("Starting History Colorado Workflow at {}".format(start_workflow.isoformat()))
+    for i,row in enumerate(hist_co_pilot):
+        try:
+            row_graph = __process_hist_colo_row__(row)
+            #result = requests.post(TRIPLESTORE_URL,
+            #    data=csv2bf.output.serialize(),
+            #    headers={"Content-Type": "application/rdf+xml"})
+        except:
+            print("E{:,} ".format(i), end="")
+            print(sys.exc_info()[1], end=" ")
+            logging.error("{} History Colorado - record {}, {}".format(
+                time.monotonic(),
+                i,
+                sys.exc_info()[1]))
+            continue
+
+        if not i%10 and i > 0:
+            print(".", end="")
+        if not i%100:
+            print("{:,}".format(i), end="")
+        if not i%250 and i > 0:
+            with open(output_filename, "wb+") as fo:
+                fo.write(history_colo_graph.serialize())
+        if history_colo_graph is None:
+            history_colo_graph = row_graph 
+        else:
+            history_colo_graph += row_graph
+    end_workflow = datetime.datetime.utcnow()
+    with open(output_filename, "wb+") as fo:
+        fo.write(history_colo_graph.serialize())
+    print("Finished History Colorado at {}, total time {} minutes for {:,} objects".format(
+        end_workflow.isoformat(),
+        (end_workflow-start_workflow).seconds / 60.0,
+        i))
+
+
 def setup_univ_wy():
     global wy_collections, wy_periodicals, i_harvester, bf_dedup, mods_ingester
     global wy_collection_iri, wy_iri, univ_wy_graph
