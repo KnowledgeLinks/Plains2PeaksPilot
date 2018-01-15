@@ -1,39 +1,30 @@
 __author__ = "Jeremy Nelson"
 
+from instance import config
 from collections import OrderedDict
 import requests
 
-INSTITUTIONS = OrderedDict([
-    ('http://www.uwyo.edu/ahc/', 'American Heritage Center'),
-    ('https://www.steamboatlibrary.org/',
-     'Bud Werner Memorial Library'),
-    ('https://www.coloradocollege.edu/', 'Colorado College'),
-    ('https://www.cde.state.co.us/cdelib', 'Colorado State Library'),
-    ('https://www.cde.state.co.us/stateinfo',
-     'Colorado State Publications Library'),
-    ('https://www.denverlibrary.org/', 'Denver Public Library'),
-    ('https://www.evld.org/', 'Eagle Valley Library District'),
-    ('https://library.fortlewis.edu/', 'Fort Lewis College'),
-    ('https://www.gunnisoncountylibraries.org/',
-     'Gunnison County Library District'),
-    ('http://www.historycolorado.org/', 'History Colorado'),
-    ('http://www.western.edu/academics/leslie-j-savage-library',
-     'Leslie J. Savage Library'),
-    ('https://marmot.org/', 'Marmot Library Network'),
-    ('https://mesacountylibraries.org/', 'Mesa County Libraries'),
-    ('http://prlibrary.org/', "Pine River Library"),
-    ('http://www.salidalibrary.org/',
-     'Salida Regional Library (Salida, Colo.)'),
-    ('http://www.uwyo.edu/', 'University of Wyoming'),
-    ('http://vaillibrary.com/', 'Vail Public Library'),
-    ('http://library.wyo.gov/', 'Wyoming State Library')])
 
 
-TRIPLESTORE_URL = "http://localhost:9999/blazegraph/sparql"
 PREFIX = """PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>"""
 
+INSTITUTIONS = OrderedDict()
+
+INSTITUTIONS_SPARQL = PREFIX + """
+SELECT DISTINCT ?institution ?label 
+WHERE {
+    ?institution rdf:type ?type ;
+        rdfs:label ?label .
+    FILTER(?type=schema:Library||?type=schema:Museum)
+} ORDER BY ?label"""
+result = requests.post(config.TRIPLESTORE_URL,
+    data={"query": INSTITUTIONS_SPARQL,
+          "format": "json"})
+for binding in result.json().get("bindings"):
+    INSTITUTIONS[binding.get("institution").get("value")] = \
+    binding.get("label").get("value")
 
 
 def report_router(report_name):
@@ -45,25 +36,27 @@ def report_router(report_name):
 def institution_counts():
     output = {"total": 0, "institutions": []}
     sparql = PREFIX + """
-SELECT ?institution (count(?instance) as ?instance_count)
+SELECT ?institution ?label (count(?instance) as ?instance_count)
 WHERE {
      ?instance rdf:type bf:Instance .
      ?item bf:itemOf ?instance ;
            bf:heldBy ?institution .
 
 } GROUP BY ?institution"""
-    result = requests.post(TRIPLESTORE_URL,
+    result = requests.post(config.TRIPLESTORE_URL,
         data={"query": sparql,
               "format": "json"})
     bindings = result.json().get('results').get('bindings')
     for row in bindings:
         institution_iri = row.get("institution").get("value")
         count = row.get("instance_count").get("value")
+        label = INSTITUTIONS.get(institution_iri)
         output["institutions"].append(
-            {"label": INSTITUTIONS.get(institution_iri),
+            {"label": label,
              "url": institution_iri,
              "count": count})
         output['total'] += int(count)
+    sorted(output, key=lambda x: x['institutions']['label'])
     return output
         
     
@@ -76,7 +69,7 @@ SELECT ?rights_statement (count(?item) as ?count) WHERE{
   OPTIONAL { ?item bf:usageAndAccessPolicy ?rights_statement }
   
 } GROUP BY ?rights_statement"""
-    result = requests.post(TRIPLESTORE_URL,
+    result = requests.post(config.TRIPLESTORE_URL,
         data={"query": sparql,
               "format": "json"})
     bindings = result.json().get("results").get("bindings")

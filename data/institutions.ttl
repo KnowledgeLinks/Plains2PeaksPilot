@@ -36,7 +36,7 @@
     bf:Organization ;
     rdfs:label "Colorado State Publications Library"@en .
 
-<http://denverpubliclibrary.org/> a schema:Library,
+<https://www.denverlibrary.org/> a schema:Library,
     bf:Organization ;
     rdfs:label "Denver Public Library"@en .
 
