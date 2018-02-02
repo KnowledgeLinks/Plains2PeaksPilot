@@ -268,6 +268,7 @@ def __marmot_setup__(org_file):
 
 
 def marmot_workflow(marmot_url, org_file, total_pages=85):
+    """marmot_url is <https://titan.marmot.org/API/ArchiveAPI?method=getDPLAFeed&page=1&pageSize=10>"""
     __marmot_setup__(org_file)
     start = datetime.datetime.utcnow()
     print("Started Marmot Harvest at {}, total pages = {} ".format(start, total_pages))
@@ -366,17 +367,18 @@ Total number of triples: {}
         len(univ_wy_graph),
         (end-start).seconds / 60.0)) 
 
-def __wy_state_collections__(raw_name, bf_graph, existing_collections):
-    if raw_name in existing_collections:
-        return existing_collections.get('raw_name')
-    collection_iri = rdflib.URIRef("{}wy-state/{}".format(
-        BASE_URL, bibcat.slugify(raw_name)))
+def __wy_state_collections__(raw_name, bf_graph):
+    if raw_name.startswith("/"):
+        collection_template = "{}wy-state{}"
+    else:
+        collection_template = "{}wy-state/{}"
+    collection_iri = rdflib.URIRef(collection_template.format(
+        BASE_URL, raw_name))
     first_type = bf_graph.value(subject=collection_iri,
         predicate=rdflib.RDF.type)
     if first_type is None:
         bf_graph.add((collection_iri, rdflib.RDF.type, BF.Collection))
         bf_graph.add((collection_iri, rdflib.RDFS.label, rdflib.Literal(raw_name)))
-    existing_collections[raw_name] = collection_iri
     return collection_iri
     
     
@@ -392,7 +394,7 @@ def wy_state_workflow(**kwargs):
             triplestore_url=TRIPLESTORE_URL,
             base_url=BASE_URL,
             rml_rules = ['bibcat-base.ttl',
-                         'bibcat-ptfs-to-bf.ttl',
+                         'ptfs-to-bf.ttl',
                          wy_state_rule])
         p2p_deduplicator = deduplicate.Deduplicator(
             triplestore_url=TRIPLESTORE_URL,
@@ -409,20 +411,18 @@ def wy_state_workflow(**kwargs):
         if len(root_name) < 1:
             parent_collection = None
         else:
-            if root_name.startswith("\\"):
-                root_name = root_name[1:]
-            if not root_name in collections:
-                parent_collection = __wy_state_collections__(root_name,
-                    wy_state_graph,
-                    collections)
-            else:
-                parent_collection = collections.get(root_name)
+            name_parts = [bibcat.slugify(s) for s in root_name.split("\\")]
+            root_name = '/'.join(name_parts)
+            parent_collection = __wy_state_collections__(root_name,
+                wy_state_graph)
         #print("\nStarting {}".format(parent_collection or root))
         for directory in dirs:
-            collection_iri = collections.get(directory)
+            collection_iri = None#collections.get(directory)
             if collection_iri is None:
                 # Check or Create a collection IRI if doesn't exist
-                collection_iri = __wy_state_collections__(directory, wy_state_graph, collections)
+                collection_iri = __wy_state_collections__(
+                    bibcat.slugify(directory), 
+                    wy_state_graph)
             if parent_collection is not None:
                 wy_state_graph.add((collection_iri, BF.partOf, parent_collection))
         for i,file_name in enumerate(files):
@@ -430,24 +430,24 @@ def wy_state_workflow(**kwargs):
             counter += 1
             if os.path.exists(xml_path):
                 instance_uri = "{}{}".format(BASE_URL, uuid.uuid1())
-                with open(xml_path) as fo:
+                with open(xml_path, 'rb') as fo:
                     raw_xml = fo.read()
-                xml_record = lxml.etree.XML(raw_xml.encode())
+                xml_record = lxml.etree.XML(raw_xml)
+                item_iri = __wy_state_item__(xml_record)
+                if item_iri is None:
+                    import pdb; pdb.set_trace()
                 try:
                     ptfs_processor.run(xml_record, 
-                        instance_iri=instance_uri)
+                        instance_iri=instance_uri,
+                        item_iri=item_iri)
                 except AssertionError:
+                    import pdb; pdb.set_trace()
                     print("E{}".format(counter), end="")
                     logging.error("{} Wyoming State Library - file {}, error={}".format(
                         time.monotonic(),
                         xml_path,
                         "Assertion Error"))
                     continue
-                p2p_deduplicator.run(ptfs_processor.output,
-                                     [BF.Agent, 
-                                      BF.Person, 
-                                      BF.Organization, 
-                                      BF.Topic])
                 instance_iri = rdflib.URIRef(instance_uri)
                 work_iri = ptfs_processor.output.value(subject=instance_iri,
                     predicate=BF.instanceOf)
@@ -465,8 +465,22 @@ def wy_state_workflow(**kwargs):
         (end-start).seconds / 60.0,
         counter))
 
-    
-    
+BASE_WY_URI = "http://pluto.state.wy.us/awweb/pdfopener?md=1&did="
+def __wy_state_item__(xml_doc):
+    # First try to find existing URL
+    found_element = xml_doc.xpath("relation/references")
+    if len(found_element) > 0:
+        found_url = found_element[0].text
+        if BASE_WY_URI != found_url.strip():
+            return rdflib.URIRef(found_url.strip())
+    # Next try to generate an Item IRI from the document id
+    doc_id = xml_doc.xpath("aw_keywords/aw_field[@name='awdocumentid']")
+    if len(doc_id) > 0:
+        pdf_url = "{}{}".format(BASE_WY_URI, doc_id[0].text.strip())
+        find_result = requests.get(pdf_url)
+        if find_result.status_code < 400:
+            return rdflib.URIRef(pdf_url.strip())
+        
 
 # History Colorado Functions 
 def setup_hist_co():
