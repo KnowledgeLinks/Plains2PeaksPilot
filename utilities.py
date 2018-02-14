@@ -20,12 +20,13 @@ from bibcat.ingesters.rels_ext import RELSEXTIngester
 
 import lxml.etree
 
-if sys.platform.startswith("win"):
-    sys.path.append("E:/2017/dpla-service-hub")
-    error_log  = "E:/2017/Plains2PeaksPilot/errors/error-{}.log".format(time.monotonic())
-else:
-    sys.path.append("/Users/jeremynelson/2017/dpla-service-hub")
-    error_log = "/Users/jeremynelson/2017/Plains2PeaksPilot/errors/error-{}.log".format(time.monotonic())
+##if sys.platform.startswith("win"):
+##    sys.path.append("E:/2017/dpla-service-hub")
+##    error_log  = "E:/2017/Plains2PeaksPilot/errors/error-{}.log".format(time.monotonic())
+##else:
+##    sys.path.append("/Users/jeremynelson/2018/dpla-service-hub")
+##    error_log = "/Users/jeremynelson/2017/Plains2PeaksPilot/errors/error-{}.log".format(time.monotonic())
+sys.path.append("/Users/jeremynelson/2018/dpla-service-hub")
 import date_generator
 
 logging.basicConfig(filename="ingestion-{}.log".format(time.monotonic()), 
@@ -491,16 +492,43 @@ def setup_hist_co():
                      "No Known Copyright": rdflib.URIRef("http://rightsstatements.org/vocab/NKC/1.0/")}
                   
 
-    hist_co_pilot = csv.DictReader(open("E:/2017/Plains2PeaksPilot/input/history-colorado-2017-09-08.csv"))
+    hist_co_pilot = csv.DictReader(
+        open("/home/jpnelson/2018/Plains2PeaksPilot/input/history-colorado-2017-09-08.csv"))
     csv2bf = processor.CSVRowProcessor(rml_rules=['bibcat-base.ttl',
-        'E:/2017/dpla-service-hub/profiles/history-colo-csv.ttl'])
+        '/home/jpnelson/2018/dpla-service-hub/profiles/history-colo-csv.ttl'])
     p2p_deduplicator = deduplicate.Deduplicator(
         triplestore_url='http://localhost:9999/blazegraph/sparql',
         base_url=BASE_URL)
     hist_col_urls = dict()
-    for row in csv.DictReader(open("E:/2017/Plains2PeaksPilot/input/history-colorado-urls.csv")):
+    for row in csv.DictReader(open("/home/jpnelson/2018/Plains2PeaksPilot/input/history-colorado-urls.csv")):
         hist_col_urls[row.get("Object ID")] = {"item": row["Portal Link"],
                                                "cover": row["Image Link"]}
+
+def __hist_co_alt_title__(instance_url, row, bf_graph):
+    def __add_title__(raw_value):
+        title = rdflib.BNode()
+        bf_graph.add((instance_iri, BF.title, title))
+        bf_graph.add((title, rdflib.RDF.type, BF.Title))
+        bf_graph.add((title, BF.mainTitle, rdflib.Literal(raw_value.strip())))
+        return title
+    instance_iri = rdflib.URIRef(instance_url)
+    title = bf_graph.value(subject=instance_iri, predicate=BF.title)
+    if title is None:
+        title_row = row.get("Title")
+        if len(title_row) > 0:
+            title = __add_title__(title_row)
+    if title is None:
+        obj_name = row.get("Object Name.Term")
+        if len(obj_name) > 0:
+            title = __add_title__(obj_name)
+    non_org_title = row.get("Non-Original Title")
+    if len(non_org_title) > 0:
+        variant_title = rdflib.BNode()
+        bf_graph.add((instance_iri, BF.title, variant_title))
+        bf_graph.add((variant_title, rdflib.RDF.type, BF.VariantTitle))
+        bf_graph.add((variant_title, rdflib.RDF.value, rdflib.Literal(non_org_title)))
+            
+
 def __hist_co_collections__(row, bf_graph):
     raw_collection = row.get("Collection Name")
     collection_iri = rdflib.URIRef("{}{}".format(BASE_URL, 
@@ -531,6 +559,8 @@ def __hist_co_subjects_process__(row, bf_graph):
             temp_iri = rdflib.URIRef("{}{}".format(BASE_URL, bibcat.slugify(term)))
             if collection_iri == temp_iri:
                 continue
+        if len(term) < 1:
+            continue
         topic_bnode = rdflib.BNode()
         bf_graph.add((work, BF.subject, topic_bnode))
         bf_graph.add((topic_bnode, rdflib.RDF.type, BF.Topic))
@@ -560,6 +590,7 @@ def __process_hist_colo_row__(row):
     __hist_co_cover__(instance_url, cover_art_url, csv2bf.output)
     __hist_co_collections__(row, csv2bf.output)
     __hist_co_subjects_process__(row, csv2bf.output)
+    __hist_co_alt_title__(instance_url, row, csv2bf.output)
     rights_text = row.get("DPLA Rights")
     csv2bf.output.add((rdflib.URIRef(item_iri), 
                        BF.usageAndAccessPolicy,
@@ -571,10 +602,10 @@ def __process_hist_colo_row__(row):
         csv2bf.output.add((rdflib.URIRef(item_iri), 
                            BF.usageAndAccessPolicy, 
                            RIGHTS_STATEMENTS.get(rights_stmt)))
-    P2P_DEDUPLICATOR.run(csv2bf.output, [BF.Agent, 
-                                         BF.Person, 
-                                         BF.Organization, 
-                                         BF.Topic])
+##    P2P_DEDUPLICATOR.run(csv2bf.output, [BF.Agent, 
+##                                         BF.Person, 
+##                                         BF.Organization, 
+##                                         BF.Topic])
     return csv2bf.output
 
 
@@ -583,7 +614,7 @@ def history_colo_workflow():
     setup_hist_co()
     history_colo_graph = None
     start_workflow = datetime.datetime.utcnow()
-    output_filename = "E:/2017/Plains2PeaksPilot/output/history-colorado.xml"
+    output_filename = "/home/jpnelson/2018/Plains2PeaksPilot/output/history-colorado.xml"
     print("Starting History Colorado Workflow at {}".format(start_workflow.isoformat()))
     for i,row in enumerate(hist_co_pilot):
         try:
