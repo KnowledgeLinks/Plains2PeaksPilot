@@ -341,7 +341,7 @@ def univ_wy_workflow(out_file):
         univ_wy_graph.namespace_manager.bind("skos", SKOS)
     for collection_pid in wy_collections:
         start_size = len(univ_wy_graph) 
-        i_harvester.harvest(setSpec=collection_pid, dedup=bf_dedup)
+        i_harvester.harvest(setSpec=collection_pid)
         __univ_wy_covers__(i_harvester.repo_graph)
         __add_univ_wy_collection__(i_harvester.repo_graph, collection_pid)
         univ_wy_graph += i_harvester.repo_graph
@@ -681,7 +681,7 @@ def setup_univ_wy():
     i_harvester = ingesters.IslandoraIngester(
             triplestore_url=TRIPLESTORE_URL,
             base_url=BASE_URL,
-            dedup=bf_dedup,
+            #dedup=bf_dedup,
             repository='https://uwdigital.uwyo.edu/')
 
 def __marmot_orgs__(label):
