@@ -321,11 +321,6 @@ def __univ_wy_periodicals__(pid):
         instance_iri=instance_iri,
         work_iri="{}#Work".format(instance_iri),
         item_iri=pid_url)
-    bf_dedup.run(mods_ingester.output, 
-        [BF.Person, 
-         BF.Agent,
-         BF.Topic,
-         BF.Organization])
     return mods_ingester.output
 
 def univ_wy_workflow(out_file):
