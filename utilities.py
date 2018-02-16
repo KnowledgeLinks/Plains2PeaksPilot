@@ -316,8 +316,10 @@ def __univ_wy_periodicals__(pid):
         pid=pid)
     mods_url = "{}datastream/MODS".format(pid_url)
     mods_result = requests.get(mods_url)
+    instance_iri = ="{}/{}".format(BASE_URL, uuid.uuid1())
     mods_ingester.run(mods_result.text,
-        instance_iri="{}/{}".format(BASE_URL, uuid.uuid1()),
+        instance_iri=instance_iri,
+        work_iri="{}#Work".format(instance_iri),
         item_iri=pid_url)
     bf_dedup.run(mods_ingester.output, 
         [BF.Person, 
