@@ -76,6 +76,7 @@ def __amer_heritage_add_collection__(bf_graph, collection_iri):
         if held_by is None:
             bf_graph.add((item_iri, BF.heldBy, amer_iri))
 
+
 def amer_heritage_workflow(out_file):
     def __setup__():
         global collections, luna_harvester, amer_graph, amer_iri
