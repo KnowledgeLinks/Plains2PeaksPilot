@@ -859,7 +859,7 @@ class DateGenerator(object):
         self.graph.add((bnode, rdflib.RDF.type, BF.Temporal))
         self.graph.add((bnode, rdflib.RDF.value, rdflib.Literal(year)))
 
-    def run(self, raw_date):
+    def run(self, rawdate):
         if len(raw_date) == 4 and YEAR.search(raw_date):
             self.add_year(raw_date)
         if "," in raw_date:
